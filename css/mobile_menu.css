@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+span {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+p {
+  font-size: 0.8em;
+}
+
+.body {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+header .log {
+  width: 600px;
+}
+
+header .log .x_button {
+  position: relative;
+  width: 600px;
+  height: 70px;
+}
+
+header .log .x_button .header-bg {
+  position: absolute;
+  width: 600px;
+}
+
+header .log .x_button .header-bg img {
+  width: 100%;
+}
+
+header .log .x_button .cross {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: 18px;
+  right: 15px;
+}
+
+header .log .x_button .cross span {
+  position: absolute;
+  top: 16px;
+  right: 0;
+  width: 35px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #fff;
+}
+
+header .log .x_button .cross span:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+header .log .x_button .cross span:nth-child(2) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+header .contents {
+  padding: 90px 0 63px 35px;
+  height: 820px;
+}
+
+header .contents .logout {
+  display: block;
+}
+
+header .contents .logout .logout_img img {
+  width: 100px;
+  height: 100px;
+}
+
+header .contents .logout .login_button {
+  margin: 30px 0 57px 0;
+  width: 250px;
+  height: 54px;
+  border: 3px solid #8a2ae3;
+}
+
+header .contents .logout .login_button a {
+  text-align: center;
+  line-height: 54px;
+  font-size: 22px;
+}
+
+header .contents .logout .login_button a img {
+  height: 21px;
+}
+
+header .contents .login {
+  display: none;
+}
+
+header .contents .login .login_img img {
+  width: 100px;
+  height: 100px;
+}
+
+header .contents .login .logout_button {
+  width: 250px;
+  height: 54px;
+  border: 1px solid #606060;
+}
+
+header .contents .login .logout_button a {
+  color: #606060;
+  text-align: center;
+  line-height: 54px;
+  font-size: 22px;
+}
+
+header .contents .menu_1 {
+  margin: 0 0 49px 0;
+}
+
+header .contents .menu_1 .gnb_1 li a {
+  font-size: 25px;
+}
+
+header .contents .menu_1 .gnb_1 li a img {
+  width: 20px;
+  height: 22px;
+}
+
+header .contents .menu_2 {
+  margin: 49px 0;
+}
+
+header .contents .menu_2 .gnb_2 li a {
+  font-size: 25px;
+}
+
+header .contents .menu_2 .gnb_2 li a img {
+  width: 20px;
+  height: 22px;
+}
+
+header .contents .dotted_line {
+  width: 500px;
+  border: 1px dashed #606060;
+}
+
+header .contents .menu_3 {
+  margin: 49px 0 0 0;
+}
+
+header .contents .menu_3 .gnb_3 li a {
+  font-size: 25px;
+}
+
+header .contents .menu_3 .gnb_3 li a img {
+  width: 20px;
+  height: 22px;
+}
+
+header .membership {
+  position: relative;
+  width: 100%;
+  height: 70px;
+}
+
+header .membership .membership_img {
+  position: absolute;
+  width: 100%;
+}
+
+header .membership .membership_img img {
+  width: 100%;
+}
+
+header .membership .subscribe {
+  position: absolute;
+  height: 35px;
+}
+
+header .membership .subscribe a img {
+  height: 20px;
+}
+/*# sourceMappingURL=mobile_menu.css.map */

@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid {
+    width: 100%; // 모바일, 테블릿
+    max-width: 1024px; // pc
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    background-color: aqua;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    display: block;
+    color: black;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+h1 {
+    font: {
+        size: $h1-size;
+        family: $h1-family;
+        weight: $h1-weight;
+    }
+}
+
+h5 {
+    font-size: 14px;
+    color: $font-color;
+}
+
+strong {
+    font-size: 12px;
+    color: $font-color;
+}
+
+address {
+    font: {
+        style: normal;
+        size: 14px;
+    }
+    color: #606060;
+}
+
