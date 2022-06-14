@@ -2,60 +2,62 @@
 @import "./reset.scss";
 @import "./mixin.scss";
 
-.body {
-    width: 100%; //모바일, 태블릿
-    max-width: 1024px; //pc
-    margin: 0 auto;
+body {
+    width: 100%;
+    background-color: aquamarine;
 }
 
 //-------------------- header --------------------//
 header {
     .web_menu {
-        //position: fixed;
-        width: 360px;
+        position: fixed;
+        left: 0;
+        width: 288px; height: 100%;
         padding: 50px 22px 30px 22px;
+        background-color: $back_color;
         border-right: 1px solid #606060;
+        z-index: 999;
 
         //----- logo -----//
         .logo {
             width: 100%;
             text-align: center;
             img {
-                height: 57px;
+                height: 46px;
             }
         }
 
         //----- log -----//
         .log {
             width: 100%;
-            margin-top: 80px;
+            margin-top: 60px;
 
             // logout //
             .logout {
                 display: block;
-                margin-bottom: 46px;
+                margin-bottom: 30px;
 
                 .logout_img {
                     img {
-                        width: 95px; height: 95px;
+                        width: 75px; height: 75px;
                     }
                 }
         
                 .login_button {
-                    margin-top: 25px;
-                    width: 194px; height: 42px;
+                    margin-top: 20px;
+                    width: 150px; height: 33px;
                     border: 3px solid #8a2ae3;
         
                     a {
                         text-align: center;
-                        font-size: 18px;
-                        line-height: 42px;
+                        font-size: 14px;
+                        line-height: 30px;
                         letter-spacing: 3px;
                         color: $font-color_2;
         
                         img {
                             margin-right: 5px;
-                            height: 16px;
+                            height: 13px;
                         }
                     }
                 }
@@ -64,34 +66,33 @@ header {
             // login //
             .login {
                 display: none;
-                margin-bottom: 46px;
+                margin-bottom: 30px;
 
                 .login_img {
                     display: flex;
                     img {
-                        width: 95px; height: 95px;
+                        width: 75px; height: 75px;
                     }
                     p {
                         margin-left: 10px;
                         line-height: 95px;
-                        font-size: 18px;
+                        font-size: 14px;
                         
                         strong {
                             margin-right: 5px;
-                            font-size: 18px;
+                            font-size: 14px;
                         }
                     }
                 }
         
                 .logout_button {
-                    margin-top: 25px;
-                    width: 194px; height: 42px;
+                    width: 150px; height: 33px;
                     border: 1px solid #606060;
         
                     a {
                         text-align: center;
-                        font-size: 18px;
-                        line-height: 42px;
+                        font-size: 14px;
+                        line-height: 33px;
                         letter-spacing: 3px;
                         color: $font-color_1;
                     }
@@ -101,7 +102,7 @@ header {
 
         //----- search -----//
         .search {
-            width: 100%; height: 56px;
+            width: 100%; height: 45px;
             border-radius: 15px;
             background-color: #f5f5f5;
 
@@ -109,24 +110,24 @@ header {
                 display: flex;
                 align-items: center;
                 margin-left: 10px;
-                line-height: 56px;
+                line-height: 45px;
 
                 img {
                     margin-right: 10px;
-                    width: 27px;
+                    width: 16px;
                     color: #606060;
                 }
 
                 p {
-                    font-size: 18px;
+                    font-size: 14px;
                 }
             }
         }
 
         //----- contents -----//
         .contents {
-            margin-top: 80px;
-            margin-bottom: 100px;
+            margin-top: 50px;
+            margin-bottom: 80px;
             width: 100%;
     
             // menu_1 //
@@ -134,10 +135,10 @@ header {
                 .gnb_1 {
                     li {
                         a {
-                            font-size: 17px;
+                            font-size: 14px;
                             img {
                                 margin-right: 5px;
-                                width: 16px;
+                                width: 13px;
                             }
                         }
                     }
@@ -155,10 +156,10 @@ header {
                 .gnb_2 {
                     li {
                         a {
-                            font-size: 17px;
+                            font-size: 14px;
                             img {
                                 margin-right: 5px;
-                                width: 16px;
+                                width: 13px;
                             }
                         }
                     }
@@ -166,7 +167,7 @@ header {
             }
     
             .dotted_line {
-                margin: 38px 0;
+                margin: 30px 0;
                 width: 100%;
                 border: 1px dashed #606060;
             }
@@ -177,7 +178,7 @@ header {
                     li {
                         a {
                             margin-left: 25px;
-                            font-size: 17px;
+                            font-size: 14px;
                         }
                     }
                 }
@@ -189,11 +190,11 @@ header {
             padding: 13px 5px;
             border: 2px solid #8a2ae3;
             width: 100%;
-            height: 130px;
+            height: 105px;
 
             p {
                 text-align: center;
-                font-size: 15px;
+                font-size: 12px;
             }
 
             // music_time //
@@ -201,7 +202,7 @@ header {
                 display: flex;
                 justify-content: space-between;
                 span {
-                    font-size: 12px;
+                    font-size: 10px;
                 }
             }
 
@@ -211,18 +212,18 @@ header {
                 display: flex;
                 align-items: center;
                 margin-top: 10px;
-                margin-bottom: 25px;
+                margin-bottom: 20px;
                 width: 100%;
 
                 .bar_1 {
                     position: absolute;
-                    border: 2px solid #bbb;
+                    border: 1px solid #bbb;
                     width: 100%;
 
                 }
                 .bar_2 {
                     position: absolute;
-                    border: 2px solid #606060;
+                    border: 1px solid #606060;
                     width: 30%;
                 }
 
@@ -243,10 +244,10 @@ header {
                 margin: 0 6px;
 
                 img {
-                    height: 19px;
+                    height: 15px;
 
                     &:nth-child(3) {
-                        height: 23px;
+                        height: 18px;
                     }
                 }
             }
@@ -254,7 +255,1072 @@ header {
     }
 }
 
+//-------------------- main --------------------//
+main {
+    position: absolute;
+    right: 0;
+    width: 81.25%;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: antiquewhite;
+    //----- djplay_list -----//
+    .djplay_list {
+        width: 100%;
 
+        h2 {
+            margin-bottom: 13px;
+        }
+
+        // djplay_1 //
+        .djplay_1 {
+            // order_1 //
+            .order_1 {
+                position: relative;
+                display: flex;
+                align-items: center;
+                border: 1px solid #7b8892;
+                width: 470px; height: 64px;
+                
+                .crown_1 {
+                    position: relative;
+                    width: 40px; height: 32px;
+                    margin-left: 10px;
+    
+                    img {
+                        position: absolute;
+                        width: 30px;
+                    }
+                    
+                    p {
+                        position: absolute;
+                        text-align: center;
+                        width: 30px; height: 25px;
+                        line-height: 33px;
+                        font-size: 11px;
+                        color: #fff;
+                    }
+                }
+    
+                .id {
+                    display: flex;
+                    img {
+                        width: 42px;
+                        margin-right: 10PX;
+                    }
+                    p {
+                        line-height: 42px;
+                        font-size: 16px;
+                        font-family: $font-5;
+                    }
+                }
+    
+                .surge {
+                    position: absolute;
+                    right: 35px;
+                    img {
+                        width: 10px;
+                        margin-right: 5PX;
+                    }
+                }
+            }
+
+            .profile {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 0 32px;
+                border: 1px solid #7b8892;
+                border-top: 0;
+                border-bottom: 0;
+                width: 470px; height: 435px;
+
+                .story {
+                    margin: 35px 0;
+                    width: 100%;
+                    p {
+                        display: inline-block;
+                        line-height: 25px;
+                        color: $font-color_3;
+
+                        strong {
+                            margin-right: 10px;
+                            display: inline-block;
+                            width: 62px; height: 25px;
+                            text-align: center;
+                            color: $font-color;
+                            background-color: $back_color_1
+                        }
+                    }
+                }
+
+                .follow {
+                    width: 30%;
+
+                    p {
+                        line-height: 18px;
+                        span {
+                            display: inline;
+                            color: #db4242;
+                        }
+                    }
+
+                    .hashtag {
+                        display: flex;
+                        margin-top: 30px;
+                        p {
+                            border: 1px solid #606060;
+                            border-radius: 20px;
+                            width: 60px;
+                            font-size: 12px;
+                            font-family: $font-2;
+                            text-align: center;
+                        }
+                    }
+                }
+
+                .album_name {
+                    width: 15%;
+                    margin-top: -14px;
+
+                    p {
+                        line-height: 45px;
+                    }
+                }
+
+                .album_bar {
+                    width: 55%;
+                    span {
+                        border: 1px solid #606060;
+                        border-radius: 20px;
+                        height: 15px;
+                        color: $border_color_1;
+                        background-color: $back_color_2;
+
+                        &:nth-child(1) {
+                            margin-bottom: 30px;
+                            width: 100%;
+                        }
+
+                        &:nth-child(2) {
+                            margin-bottom: 30px;
+                            width: 80%;
+                        }
+
+                        &:nth-child(3) {
+                            margin-bottom: 60px;
+                            width: 70%;
+                        }
+                    }
+
+                }
+
+                .album {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    margin-bottom: 20px;
+
+                    .album_jacket_1_1 {
+                        width: 100px;
+
+                        .album_jacket {
+                            img {
+                                width: 100px; height: 100px;
+                            }
+                        }
+    
+                        .album_title {
+                            p {
+                                img {
+                                    width: 11px;
+                                    margin-right: 5px;
+                                }
+                            }
+                        }
+                    }
+
+                    .album_jacket_1_2 {
+                        width: 100px;
+
+                        .album_jacket {
+                            img {
+                                width: 100px; height: 100px;
+                            }
+                        }
+    
+                        .album_title {
+                            p {
+                                img {
+                                    width: 11px;
+                                    margin-right: 5px;
+                                }
+                            }
+                        }
+                    }
+
+                    .album_jacket_1_3 {
+                        width: 100px;
+
+                        .album_jacket {
+                            img {
+                                width: 100px; height: 100px;
+                            }
+                        }
+    
+                        .album_title {
+    
+                            p {
+                                img {
+                                    width: 11px;
+                                    margin-right: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+        // djplay_2 //
+        .djplay_2 {
+            // order_2 //
+            .order_2 {
+                position: relative;
+                display: flex;
+                align-items: center;
+                border: 1px solid #7b8892;
+                width: 470px; height: 64px;
+                
+                .crown_2 {
+                    position: relative;
+                    width: 40px; height: 32px;
+                    margin-left: 10px;
+    
+                    img {
+                        position: absolute;
+                        width: 30px;
+                    }
+                    
+                    p {
+                        position: absolute;
+                        text-align: center;
+                        width: 30px; height: 25px;
+                        line-height: 33px;
+                        font-size: 11px;
+                        color: #fff;
+                    }
+                }
+    
+                .id {
+                    display: flex;
+                    img {
+                        width: 42px;
+                        margin-right: 10PX;
+                    }
+                    p {
+                        line-height: 42px;
+                        font-size: 16px;
+                        font-family: $font-5;
+                    }
+                }
+    
+                .surge {
+                    position: absolute;
+                    right: 35px;
+                    img {
+                        width: 10px;
+                        margin-right: 5PX;
+                    }
+                }
+            }
+
+            .profile {
+                display: none;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 0 32px;
+                border: 1px solid #7b8892;
+                border-top: 0;
+                border-bottom: 0;
+                width: 470px; height: 435px;
+
+                .story {
+                    margin: 35px 0;
+                    width: 100%;
+                    p {
+                        display: inline-block;
+                        line-height: 25px;
+                        color: $font-color_3;
+
+                        strong {
+                            margin-right: 10px;
+                            display: inline-block;
+                            width: 62px; height: 25px;
+                            text-align: center;
+                            color: $font-color;
+                            background-color: $back_color_1
+                        }
+                    }
+                }
+
+                .follow {
+                    width: 30%;
+
+                    p {
+                        line-height: 18px;
+                    }
+
+                    .hashtag {
+                        display: flex;
+                        margin-top: 30px;
+                        p {
+                            border: 1px solid #606060;
+                            border-radius: 20px;
+                            width: 45px;
+                            font-size: 12px;
+                            font-family: $font-2;
+                            text-align: center;
+
+                            &:nth-child(2) {
+                                margin-left: 5px;
+                                width: 45px;
+                            }
+                        }
+                    }
+                }
+
+                .album_name {
+                    width: 15%;
+                    margin-top: -14px;
+
+                    p {
+                        line-height: 45px;
+                    }
+                }
+
+                .album_bar {
+                    width: 55%;
+                    span {
+                        border: 1px solid #606060;
+                        border-radius: 20px;
+                        height: 15px;
+                        color: $border_color_1;
+                        background-color: $back_color_2;
+
+                        &:nth-child(1) {
+                            margin-bottom: 30px;
+                            width: 100%;
+                        }
+
+                        &:nth-child(2) {
+                            margin-bottom: 30px;
+                            width: 90%;
+                        }
+
+                        &:nth-child(3) {
+                            margin-bottom: 60px;
+                            width: 50%;
+                        }
+                    }
+
+                }
+
+                .album {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    margin-bottom: 20px;
+
+                    .album_jacket_2_1 {
+                        width: 100px;
+
+                        .album_jacket {
+                            img {
+                                width: 100px; height: 100px;
+                            }
+                        }
+    
+                        .album_title {
+                            p {
+                                img {
+                                    width: 11px;
+                                    margin-right: 5px;
+                                }
+                            }
+                        }
+                    }
+
+                    .album_jacket_2_2 {
+                        width: 100px;
+
+                        .album_jacket {
+                            img {
+                                width: 100px; height: 100px;
+                            }
+                        }
+    
+                        .album_title {
+                            p {
+                                img {
+                                    width: 11px;
+                                    margin-right: 5px;
+                                }
+                            }
+                        }
+                    }
+
+                    .album_jacket_2_3 {
+                        width: 100px;
+
+                        .album_jacket {
+                            img {
+                                width: 100px; height: 100px;
+                            }
+                        }
+    
+                        .album_title {
+    
+                            p {
+                                img {
+                                    width: 11px;
+                                    margin-right: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+        // djplay_3 //
+        .djplay_3 {
+            // order_3 //
+            .order_3 {
+                position: relative;
+                display: flex;
+                align-items: center;
+                border: 1px solid #7b8892;
+                width: 470px; height: 64px;
+                
+                .crown_3 {
+                    position: relative;
+                    width: 40px; height: 32px;
+                    margin-left: 10px;
+    
+                    img {
+                        position: absolute;
+                        width: 30px;
+                    }
+                    
+                    p {
+                        position: absolute;
+                        text-align: center;
+                        width: 30px; height: 25px;
+                        line-height: 33px;
+                        font-size: 11px;
+                        color: #fff;
+                    }
+                }
+    
+                .id {
+                    display: flex;
+                    img {
+                        width: 42px;
+                        margin-right: 10PX;
+                    }
+                    p {
+                        line-height: 42px;
+                        font-size: 16px;
+                        font-family: $font-5;
+                    }
+                }
+    
+                .surge {
+                    position: absolute;
+                    right: 35px;
+                    img {
+                        width: 10px;
+                        margin-right: 5PX;
+                    }
+                }
+            }
+
+            .profile {
+                display: none;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 0 32px;
+                border: 1px solid #7b8892;
+                border-top: 0;
+                border-bottom: 0;
+                width: 470px; height: 435px;
+
+                .story {
+                    margin: 35px 0;
+                    width: 100%;
+                    p {
+                        display: inline-block;
+                        line-height: 25px;
+                        color: $font-color_3;
+
+                        strong {
+                            margin-right: 10px;
+                            display: inline-block;
+                            width: 62px; height: 25px;
+                            text-align: center;
+                            color: $font-color;
+                            background-color: $back_color_1
+                        }
+                    }
+                }
+
+                .follow {
+                    width: 30%;
+
+                    p {
+                        line-height: 18px;
+                    }
+
+                    .hashtag {
+                        display: flex;
+                        margin-top: 30px;
+                        p {
+                            border: 1px solid #606060;
+                            border-radius: 20px;
+                            width: 60px;
+                            font-size: 12px;
+                            font-family: $font-2;
+                            text-align: center;
+                        }
+                    }
+                }
+
+                .album_name {
+                    width: 15%;
+                    margin-top: -14px;
+
+                    p {
+                        line-height: 45px;
+                    }
+                }
+
+                .album_bar {
+                    width: 55%;
+                    span {
+                        border: 1px solid #606060;
+                        border-radius: 20px;
+                        height: 15px;
+                        color: $border_color_1;
+                        background-color: $back_color_2;
+
+                        &:nth-child(1) {
+                            margin-bottom: 30px;
+                            width: 100%;
+                        }
+
+                        &:nth-child(2) {
+                            margin-bottom: 30px;
+                            width: 75%;
+                        }
+
+                        &:nth-child(3) {
+                            margin-bottom: 60px;
+                            width: 60%;
+                        }
+                    }
+
+                }
+
+                .album {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    margin-bottom: 20px;
+
+                    .album_jacket_3_1 {
+                        width: 100px;
+
+                        .album_jacket {
+                            img {
+                                width: 100px; height: 100px;
+                            }
+                        }
+    
+                        .album_title {
+                            p {
+                                img {
+                                    width: 11px;
+                                    margin-right: 5px;
+                                }
+                            }
+                        }
+                    }
+
+                    .album_jacket_3_2 {
+                        width: 100px;
+
+                        .album_jacket {
+                            img {
+                                width: 100px; height: 100px;
+                            }
+                        }
+    
+                        .album_title {
+                            p {
+                                img {
+                                    width: 11px;
+                                    margin-right: 5px;
+                                }
+                            }
+                        }
+                    }
+
+                    .album_jacket_3_3 {
+                        width: 100px;
+
+                        .album_jacket {
+                            img {
+                                width: 100px; height: 100px;
+                            }
+                        }
+    
+                        .album_title {
+    
+                            p {
+                                img {
+                                    width: 11px;
+                                    margin-right: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+        // djplay_4 //
+        .djplay_4 {
+            // order_4 //
+            .order_4 {
+                position: relative;
+                display: flex;
+                align-items: center;
+                border: 1px solid #7b8892;
+                width: 470px; height: 64px;
+                
+                .crown_4 {
+                    position: relative;
+                    width: 40px; height: 32px;
+                    margin-left: 10px;
+    
+                    img {
+                        position: absolute;
+                        width: 30px;
+                    }
+                    
+                    p {
+                        position: absolute;
+                        text-align: center;
+                        width: 30px; height: 25px;
+                        line-height: 33px;
+                        font-size: 11px;
+                        color: $font-color_3;
+                    }
+                }
+    
+                .id {
+                    display: flex;
+                    img {
+                        width: 42px;
+                        margin-right: 10PX;
+                    }
+                    p {
+                        line-height: 42px;
+                        font-size: 16px;
+                        font-family: $font-5;
+                    }
+                }
+    
+                .surge {
+                    position: absolute;
+                    right: 35px;
+                    img {
+                        width: 10px;
+                        margin-right: 5PX;
+                    }
+                }
+            }
+
+            .profile {
+                display: none;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 0 32px;
+                border: 1px solid #7b8892;
+                border-top: 0;
+                border-bottom: 0;
+                width: 470px; height: 435px;
+
+                .story {
+                    margin: 35px 0;
+                    width: 100%;
+                    p {
+                        display: inline-block;
+                        line-height: 25px;
+                        color: $font-color_3;
+
+                        strong {
+                            margin-right: 10px;
+                            display: inline-block;
+                            width: 62px; height: 25px;
+                            text-align: center;
+                            color: $font-color;
+                            background-color: $back_color_1
+                        }
+                    }
+                }
+
+                .follow {
+                    width: 30%;
+
+                    p {
+                        line-height: 18px;
+                    }
+
+                    .hashtag {
+                        display: flex;
+                        margin-top: 30px;
+                        p {
+                            border: 1px solid #606060;
+                            border-radius: 20px;
+                            width: 60px;
+                            font-size: 12px;
+                            font-family: $font-2;
+                            text-align: center;
+                        }
+                    }
+                }
+
+                .album_name {
+                    width: 15%;
+                    margin-top: -14px;
+
+                    p {
+                        line-height: 45px;
+                    }
+                }
+
+                .album_bar {
+                    width: 55%;
+                    span {
+                        border: 1px solid #606060;
+                        border-radius: 20px;
+                        height: 15px;
+                        color: $border_color_1;
+                        background-color: $back_color_2;
+
+                        &:nth-child(1) {
+                            margin-bottom: 30px;
+                            width: 100%;
+                        }
+
+                        &:nth-child(2) {
+                            margin-bottom: 30px;
+                            width: 90%;
+                        }
+
+                        &:nth-child(3) {
+                            margin-bottom: 60px;
+                            width: 85%;
+                        }
+                    }
+
+                }
+
+                .album {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    margin-bottom: 20px;
+
+                    .album_jacket_4_1 {
+                        width: 100px;
+
+                        .album_jacket {
+                            img {
+                                width: 100px; height: 100px;
+                            }
+                        }
+    
+                        .album_title {
+                            p {
+                                img {
+                                    width: 11px;
+                                    margin-right: 5px;
+                                }
+                            }
+                        }
+                    }
+
+                    .album_jacket_4_2 {
+                        width: 100px;
+
+                        .album_jacket {
+                            img {
+                                width: 100px; height: 100px;
+                            }
+                        }
+    
+                        .album_title {
+                            p {
+                                img {
+                                    width: 11px;
+                                    margin-right: 5px;
+                                }
+                            }
+                        }
+                    }
+
+                    .album_jacket_4_3 {
+                        width: 100px;
+
+                        .album_jacket {
+                            img {
+                                width: 100px; height: 100px;
+                            }
+                        }
+    
+                        .album_title {
+    
+                            p {
+                                img {
+                                    width: 11px;
+                                    margin-right: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+        // djplay_5 //
+        .djplay_5 {
+            // order_5 //
+            .order_5 {
+                position: relative;
+                display: flex;
+                align-items: center;
+                border: 1px solid #7b8892;
+                width: 470px; height: 64px;
+                
+                .crown_5 {
+                    position: relative;
+                    width: 40px; height: 32px;
+                    margin-left: 10px;
+    
+                    img {
+                        position: absolute;
+                        width: 30px;
+                    }
+                    
+                    p {
+                        position: absolute;
+                        text-align: center;
+                        width: 30px; height: 25px;
+                        line-height: 33px;
+                        font-size: 11px;
+                        color: $font-color_3;
+                    }
+                }
+    
+                .id {
+                    display: flex;
+                    img {
+                        width: 42px;
+                        margin-right: 10PX;
+                    }
+                    p {
+                        line-height: 42px;
+                        font-size: 16px;
+                        font-family: $font-5;
+                    }
+                }
+    
+                .surge {
+                    position: absolute;
+                    right: 35px;
+                    img {
+                        width: 10px;
+                        margin-right: 5PX;
+                    }
+                }
+            }
+
+            .profile {
+                display: none;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 0 32px;
+                border: 1px solid #7b8892;
+                border-top: 0;
+                border-bottom: 0;
+                width: 470px; height: 435px;
+
+                .story {
+                    margin: 35px 0;
+                    width: 100%;
+                    p {
+                        display: inline-block;
+                        line-height: 25px;
+                        color: $font-color_3;
+
+                        strong {
+                            margin-right: 10px;
+                            display: inline-block;
+                            width: 62px; height: 25px;
+                            text-align: center;
+                            color: $font-color;
+                            background-color: $back_color_1
+                        }
+                    }
+                }
+
+                .follow {
+                    width: 30%;
+
+                    p {
+                        line-height: 18px;
+                    }
+
+                    .hashtag {
+                        display: flex;
+                        margin-top: 30px;
+                        p {
+                            border: 1px solid #606060;
+                            border-radius: 20px;
+                            width: 60px;
+                            font-size: 12px;
+                            font-family: $font-2;
+                            text-align: center;
+                        }
+                    }
+                }
+
+                .album_name {
+                    width: 15%;
+                    margin-top: -14px;
+
+                    p {
+                        line-height: 45px;
+                    }
+                }
+
+                .album_bar {
+                    width: 55%;
+                    span {
+                        border: 1px solid #606060;
+                        border-radius: 20px;
+                        height: 15px;
+                        color: $border_color_1;
+                        background-color: $back_color_2;
+
+                        &:nth-child(1) {
+                            margin-bottom: 30px;
+                            width: 100%;
+                        }
+
+                        &:nth-child(2) {
+                            margin-bottom: 30px;
+                            width: 80%;
+                        }
+
+                        &:nth-child(3) {
+                            margin-bottom: 60px;
+                            width: 55%;
+                        }
+                    }
+
+                }
+
+                .album {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    margin-bottom: 20px;
+
+                    .album_jacket_5_1 {
+                        width: 100px;
+
+                        .album_jacket {
+                            img {
+                                width: 100px; height: 100px;
+                            }
+                        }
+    
+                        .album_title {
+                            p {
+                                img {
+                                    width: 11px;
+                                    margin-right: 5px;
+                                }
+                            }
+                        }
+                    }
+
+                    .album_jacket_5_2 {
+                        width: 100px;
+
+                        .album_jacket {
+                            img {
+                                width: 100px; height: 100px;
+                            }
+                        }
+    
+                        .album_title {
+                            p {
+                                img {
+                                    width: 11px;
+                                    margin-right: 5px;
+                                }
+                            }
+                        }
+                    }
+
+                    .album_jacket_5_3 {
+                        width: 100px;
+
+                        .album_jacket {
+                            img {
+                                width: 100px; height: 100px;
+                            }
+                        }
+    
+                        .album_title {
+    
+                            p {
+                                img {
+                                    width: 11px;
+                                    margin-right: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//-------------------- footer --------------------//
 footer {
     .flex-box {
         display: flex;

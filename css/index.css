@@ -40,12 +40,12 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 26px;
   font-family: "S-Core Dream 5 Medium";
 }
 
 h3 {
-  font-size: 1em;
+  font-size: 20px;
   font-family: "S-Core Dream 5 Medium";
 }
 
@@ -55,12 +55,13 @@ h4 {
 
 h5 {
   font-size: 14px;
-  color: white;
+  color: #fff;
 }
 
 p {
   font-size: 0.8em;
   font-family: "S-Core Dream 4 Regular";
+  color: #606060;
 }
 
 address {
@@ -69,16 +70,20 @@ address {
   color: #606060;
 }
 
-.body {
+body {
   width: 100%;
-  max-width: 1024px;
-  margin: 0 auto;
+  background-color: aquamarine;
 }
 
 header .web_menu {
-  width: 360px;
+  position: fixed;
+  left: 0;
+  width: 288px;
+  height: 100%;
   padding: 50px 22px 30px 22px;
+  background-color: #fff;
   border-right: 1px solid #606060;
+  z-index: 999;
 }
 
 header .web_menu .logo {
@@ -87,47 +92,47 @@ header .web_menu .logo {
 }
 
 header .web_menu .logo img {
-  height: 57px;
+  height: 46px;
 }
 
 header .web_menu .log {
   width: 100%;
-  margin-top: 80px;
+  margin-top: 60px;
 }
 
 header .web_menu .log .logout {
   display: block;
-  margin-bottom: 46px;
+  margin-bottom: 30px;
 }
 
 header .web_menu .log .logout .logout_img img {
-  width: 95px;
-  height: 95px;
+  width: 75px;
+  height: 75px;
 }
 
 header .web_menu .log .logout .login_button {
-  margin-top: 25px;
-  width: 194px;
-  height: 42px;
+  margin-top: 20px;
+  width: 150px;
+  height: 33px;
   border: 3px solid #8a2ae3;
 }
 
 header .web_menu .log .logout .login_button a {
   text-align: center;
-  font-size: 18px;
-  line-height: 42px;
+  font-size: 14px;
+  line-height: 30px;
   letter-spacing: 3px;
   color: #8a2ae3;
 }
 
 header .web_menu .log .logout .login_button a img {
   margin-right: 5px;
-  height: 16px;
+  height: 13px;
 }
 
 header .web_menu .log .login {
   display: none;
-  margin-bottom: 46px;
+  margin-bottom: 30px;
 }
 
 header .web_menu .log .login .login_img {
@@ -137,39 +142,38 @@ header .web_menu .log .login .login_img {
 }
 
 header .web_menu .log .login .login_img img {
-  width: 95px;
-  height: 95px;
+  width: 75px;
+  height: 75px;
 }
 
 header .web_menu .log .login .login_img p {
   margin-left: 10px;
   line-height: 95px;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 header .web_menu .log .login .login_img p strong {
   margin-right: 5px;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 header .web_menu .log .login .logout_button {
-  margin-top: 25px;
-  width: 194px;
-  height: 42px;
+  width: 150px;
+  height: 33px;
   border: 1px solid #606060;
 }
 
 header .web_menu .log .login .logout_button a {
   text-align: center;
-  font-size: 18px;
-  line-height: 42px;
+  font-size: 14px;
+  line-height: 33px;
   letter-spacing: 3px;
   color: #606060;
 }
 
 header .web_menu .search {
   width: 100%;
-  height: 56px;
+  height: 45px;
   border-radius: 15px;
   background-color: #f5f5f5;
 }
@@ -182,32 +186,32 @@ header .web_menu .search .search_ico {
       -ms-flex-align: center;
           align-items: center;
   margin-left: 10px;
-  line-height: 56px;
+  line-height: 45px;
 }
 
 header .web_menu .search .search_ico img {
   margin-right: 10px;
-  width: 27px;
+  width: 16px;
   color: #606060;
 }
 
 header .web_menu .search .search_ico p {
-  font-size: 18px;
+  font-size: 14px;
 }
 
 header .web_menu .contents {
-  margin-top: 80px;
-  margin-bottom: 100px;
+  margin-top: 50px;
+  margin-bottom: 80px;
   width: 100%;
 }
 
 header .web_menu .contents .menu_1 .gnb_1 li a {
-  font-size: 17px;
+  font-size: 14px;
 }
 
 header .web_menu .contents .menu_1 .gnb_1 li a img {
   margin-right: 5px;
-  width: 16px;
+  width: 13px;
 }
 
 header .web_menu .contents .dotted_line {
@@ -217,35 +221,35 @@ header .web_menu .contents .dotted_line {
 }
 
 header .web_menu .contents .menu_2 .gnb_2 li a {
-  font-size: 17px;
+  font-size: 14px;
 }
 
 header .web_menu .contents .menu_2 .gnb_2 li a img {
   margin-right: 5px;
-  width: 16px;
+  width: 13px;
 }
 
 header .web_menu .contents .dotted_line {
-  margin: 38px 0;
+  margin: 30px 0;
   width: 100%;
   border: 1px dashed #606060;
 }
 
 header .web_menu .contents .menu_3 .gnb_3 li a {
   margin-left: 25px;
-  font-size: 17px;
+  font-size: 14px;
 }
 
 header .web_menu .music_box {
   padding: 13px 5px;
   border: 2px solid #8a2ae3;
   width: 100%;
-  height: 130px;
+  height: 105px;
 }
 
 header .web_menu .music_box p {
   text-align: center;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 header .web_menu .music_box .music_time {
@@ -258,7 +262,7 @@ header .web_menu .music_box .music_time {
 }
 
 header .web_menu .music_box .music_time span {
-  font-size: 12px;
+  font-size: 10px;
 }
 
 header .web_menu .music_box .music_bar {
@@ -270,19 +274,19 @@ header .web_menu .music_box .music_bar {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 10px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   width: 100%;
 }
 
 header .web_menu .music_box .music_bar .bar_1 {
   position: absolute;
-  border: 2px solid #bbb;
+  border: 1px solid #bbb;
   width: 100%;
 }
 
 header .web_menu .music_box .music_bar .bar_2 {
   position: absolute;
-  border: 2px solid #606060;
+  border: 1px solid #606060;
   width: 30%;
 }
 
@@ -309,11 +313,1095 @@ header .web_menu .music_box .music_button {
 }
 
 header .web_menu .music_box .music_button img {
-  height: 19px;
+  height: 15px;
 }
 
 header .web_menu .music_box .music_button img:nth-child(3) {
-  height: 23px;
+  height: 18px;
+}
+
+main {
+  position: absolute;
+  right: 0;
+  width: 81.25%;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: antiquewhite;
+}
+
+main .djplay_list {
+  width: 100%;
+}
+
+main .djplay_list h2 {
+  margin-bottom: 13px;
+}
+
+main .djplay_list .djplay_1 .order_1 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #7b8892;
+  width: 470px;
+  height: 64px;
+}
+
+main .djplay_list .djplay_1 .order_1 .crown_1 {
+  position: relative;
+  width: 40px;
+  height: 32px;
+  margin-left: 10px;
+}
+
+main .djplay_list .djplay_1 .order_1 .crown_1 img {
+  position: absolute;
+  width: 30px;
+}
+
+main .djplay_list .djplay_1 .order_1 .crown_1 p {
+  position: absolute;
+  text-align: center;
+  width: 30px;
+  height: 25px;
+  line-height: 33px;
+  font-size: 11px;
+  color: #fff;
+}
+
+main .djplay_list .djplay_1 .order_1 .id {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .djplay_list .djplay_1 .order_1 .id img {
+  width: 42px;
+  margin-right: 10PX;
+}
+
+main .djplay_list .djplay_1 .order_1 .id p {
+  line-height: 42px;
+  font-size: 16px;
+  font-family: "S-Core Dream 5 Medium";
+}
+
+main .djplay_list .djplay_1 .order_1 .surge {
+  position: absolute;
+  right: 35px;
+}
+
+main .djplay_list .djplay_1 .order_1 .surge img {
+  width: 10px;
+  margin-right: 5PX;
+}
+
+main .djplay_list .djplay_1 .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 32px;
+  border: 1px solid #7b8892;
+  border-top: 0;
+  border-bottom: 0;
+  width: 470px;
+  height: 435px;
+}
+
+main .djplay_list .djplay_1 .profile .story {
+  margin: 35px 0;
+  width: 100%;
+}
+
+main .djplay_list .djplay_1 .profile .story p {
+  display: inline-block;
+  line-height: 25px;
+  color: #525c63;
+}
+
+main .djplay_list .djplay_1 .profile .story p strong {
+  margin-right: 10px;
+  display: inline-block;
+  width: 62px;
+  height: 25px;
+  text-align: center;
+  color: #fff;
+  background-color: #7b8892;
+}
+
+main .djplay_list .djplay_1 .profile .follow {
+  width: 30%;
+}
+
+main .djplay_list .djplay_1 .profile .follow p {
+  line-height: 18px;
+}
+
+main .djplay_list .djplay_1 .profile .follow p span {
+  display: inline;
+  color: #db4242;
+}
+
+main .djplay_list .djplay_1 .profile .follow .hashtag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+}
+
+main .djplay_list .djplay_1 .profile .follow .hashtag p {
+  border: 1px solid #606060;
+  border-radius: 20px;
+  width: 60px;
+  font-size: 12px;
+  font-family: "S-Core Dream 2 ExtraLight";
+  text-align: center;
+}
+
+main .djplay_list .djplay_1 .profile .album_name {
+  width: 15%;
+  margin-top: -14px;
+}
+
+main .djplay_list .djplay_1 .profile .album_name p {
+  line-height: 45px;
+}
+
+main .djplay_list .djplay_1 .profile .album_bar {
+  width: 55%;
+}
+
+main .djplay_list .djplay_1 .profile .album_bar span {
+  border: 1px solid #606060;
+  border-radius: 20px;
+  height: 15px;
+  color: #7b8892;
+  background-color: #f5f5f5;
+}
+
+main .djplay_list .djplay_1 .profile .album_bar span:nth-child(1) {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+main .djplay_list .djplay_1 .profile .album_bar span:nth-child(2) {
+  margin-bottom: 30px;
+  width: 80%;
+}
+
+main .djplay_list .djplay_1 .profile .album_bar span:nth-child(3) {
+  margin-bottom: 60px;
+  width: 70%;
+}
+
+main .djplay_list .djplay_1 .profile .album {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+main .djplay_list .djplay_1 .profile .album .album_jacket_1_1 {
+  width: 100px;
+}
+
+main .djplay_list .djplay_1 .profile .album .album_jacket_1_1 .album_jacket img {
+  width: 100px;
+  height: 100px;
+}
+
+main .djplay_list .djplay_1 .profile .album .album_jacket_1_1 .album_title p img {
+  width: 11px;
+  margin-right: 5px;
+}
+
+main .djplay_list .djplay_1 .profile .album .album_jacket_1_2 {
+  width: 100px;
+}
+
+main .djplay_list .djplay_1 .profile .album .album_jacket_1_2 .album_jacket img {
+  width: 100px;
+  height: 100px;
+}
+
+main .djplay_list .djplay_1 .profile .album .album_jacket_1_2 .album_title p img {
+  width: 11px;
+  margin-right: 5px;
+}
+
+main .djplay_list .djplay_1 .profile .album .album_jacket_1_3 {
+  width: 100px;
+}
+
+main .djplay_list .djplay_1 .profile .album .album_jacket_1_3 .album_jacket img {
+  width: 100px;
+  height: 100px;
+}
+
+main .djplay_list .djplay_1 .profile .album .album_jacket_1_3 .album_title p img {
+  width: 11px;
+  margin-right: 5px;
+}
+
+main .djplay_list .djplay_2 .order_2 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #7b8892;
+  width: 470px;
+  height: 64px;
+}
+
+main .djplay_list .djplay_2 .order_2 .crown_2 {
+  position: relative;
+  width: 40px;
+  height: 32px;
+  margin-left: 10px;
+}
+
+main .djplay_list .djplay_2 .order_2 .crown_2 img {
+  position: absolute;
+  width: 30px;
+}
+
+main .djplay_list .djplay_2 .order_2 .crown_2 p {
+  position: absolute;
+  text-align: center;
+  width: 30px;
+  height: 25px;
+  line-height: 33px;
+  font-size: 11px;
+  color: #fff;
+}
+
+main .djplay_list .djplay_2 .order_2 .id {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .djplay_list .djplay_2 .order_2 .id img {
+  width: 42px;
+  margin-right: 10PX;
+}
+
+main .djplay_list .djplay_2 .order_2 .id p {
+  line-height: 42px;
+  font-size: 16px;
+  font-family: "S-Core Dream 5 Medium";
+}
+
+main .djplay_list .djplay_2 .order_2 .surge {
+  position: absolute;
+  right: 35px;
+}
+
+main .djplay_list .djplay_2 .order_2 .surge img {
+  width: 10px;
+  margin-right: 5PX;
+}
+
+main .djplay_list .djplay_2 .profile {
+  display: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 32px;
+  border: 1px solid #7b8892;
+  border-top: 0;
+  border-bottom: 0;
+  width: 470px;
+  height: 435px;
+}
+
+main .djplay_list .djplay_2 .profile .story {
+  margin: 35px 0;
+  width: 100%;
+}
+
+main .djplay_list .djplay_2 .profile .story p {
+  display: inline-block;
+  line-height: 25px;
+  color: #525c63;
+}
+
+main .djplay_list .djplay_2 .profile .story p strong {
+  margin-right: 10px;
+  display: inline-block;
+  width: 62px;
+  height: 25px;
+  text-align: center;
+  color: #fff;
+  background-color: #7b8892;
+}
+
+main .djplay_list .djplay_2 .profile .follow {
+  width: 30%;
+}
+
+main .djplay_list .djplay_2 .profile .follow p {
+  line-height: 18px;
+}
+
+main .djplay_list .djplay_2 .profile .follow .hashtag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+}
+
+main .djplay_list .djplay_2 .profile .follow .hashtag p {
+  border: 1px solid #606060;
+  border-radius: 20px;
+  width: 45px;
+  font-size: 12px;
+  font-family: "S-Core Dream 2 ExtraLight";
+  text-align: center;
+}
+
+main .djplay_list .djplay_2 .profile .follow .hashtag p:nth-child(2) {
+  margin-left: 5px;
+  width: 45px;
+}
+
+main .djplay_list .djplay_2 .profile .album_name {
+  width: 15%;
+  margin-top: -14px;
+}
+
+main .djplay_list .djplay_2 .profile .album_name p {
+  line-height: 45px;
+}
+
+main .djplay_list .djplay_2 .profile .album_bar {
+  width: 55%;
+}
+
+main .djplay_list .djplay_2 .profile .album_bar span {
+  border: 1px solid #606060;
+  border-radius: 20px;
+  height: 15px;
+  color: #7b8892;
+  background-color: #f5f5f5;
+}
+
+main .djplay_list .djplay_2 .profile .album_bar span:nth-child(1) {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+main .djplay_list .djplay_2 .profile .album_bar span:nth-child(2) {
+  margin-bottom: 30px;
+  width: 90%;
+}
+
+main .djplay_list .djplay_2 .profile .album_bar span:nth-child(3) {
+  margin-bottom: 60px;
+  width: 50%;
+}
+
+main .djplay_list .djplay_2 .profile .album {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+main .djplay_list .djplay_2 .profile .album .album_jacket_2_1 {
+  width: 100px;
+}
+
+main .djplay_list .djplay_2 .profile .album .album_jacket_2_1 .album_jacket img {
+  width: 100px;
+  height: 100px;
+}
+
+main .djplay_list .djplay_2 .profile .album .album_jacket_2_1 .album_title p img {
+  width: 11px;
+  margin-right: 5px;
+}
+
+main .djplay_list .djplay_2 .profile .album .album_jacket_2_2 {
+  width: 100px;
+}
+
+main .djplay_list .djplay_2 .profile .album .album_jacket_2_2 .album_jacket img {
+  width: 100px;
+  height: 100px;
+}
+
+main .djplay_list .djplay_2 .profile .album .album_jacket_2_2 .album_title p img {
+  width: 11px;
+  margin-right: 5px;
+}
+
+main .djplay_list .djplay_2 .profile .album .album_jacket_2_3 {
+  width: 100px;
+}
+
+main .djplay_list .djplay_2 .profile .album .album_jacket_2_3 .album_jacket img {
+  width: 100px;
+  height: 100px;
+}
+
+main .djplay_list .djplay_2 .profile .album .album_jacket_2_3 .album_title p img {
+  width: 11px;
+  margin-right: 5px;
+}
+
+main .djplay_list .djplay_3 .order_3 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #7b8892;
+  width: 470px;
+  height: 64px;
+}
+
+main .djplay_list .djplay_3 .order_3 .crown_3 {
+  position: relative;
+  width: 40px;
+  height: 32px;
+  margin-left: 10px;
+}
+
+main .djplay_list .djplay_3 .order_3 .crown_3 img {
+  position: absolute;
+  width: 30px;
+}
+
+main .djplay_list .djplay_3 .order_3 .crown_3 p {
+  position: absolute;
+  text-align: center;
+  width: 30px;
+  height: 25px;
+  line-height: 33px;
+  font-size: 11px;
+  color: #fff;
+}
+
+main .djplay_list .djplay_3 .order_3 .id {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .djplay_list .djplay_3 .order_3 .id img {
+  width: 42px;
+  margin-right: 10PX;
+}
+
+main .djplay_list .djplay_3 .order_3 .id p {
+  line-height: 42px;
+  font-size: 16px;
+  font-family: "S-Core Dream 5 Medium";
+}
+
+main .djplay_list .djplay_3 .order_3 .surge {
+  position: absolute;
+  right: 35px;
+}
+
+main .djplay_list .djplay_3 .order_3 .surge img {
+  width: 10px;
+  margin-right: 5PX;
+}
+
+main .djplay_list .djplay_3 .profile {
+  display: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 32px;
+  border: 1px solid #7b8892;
+  border-top: 0;
+  border-bottom: 0;
+  width: 470px;
+  height: 435px;
+}
+
+main .djplay_list .djplay_3 .profile .story {
+  margin: 35px 0;
+  width: 100%;
+}
+
+main .djplay_list .djplay_3 .profile .story p {
+  display: inline-block;
+  line-height: 25px;
+  color: #525c63;
+}
+
+main .djplay_list .djplay_3 .profile .story p strong {
+  margin-right: 10px;
+  display: inline-block;
+  width: 62px;
+  height: 25px;
+  text-align: center;
+  color: #fff;
+  background-color: #7b8892;
+}
+
+main .djplay_list .djplay_3 .profile .follow {
+  width: 30%;
+}
+
+main .djplay_list .djplay_3 .profile .follow p {
+  line-height: 18px;
+}
+
+main .djplay_list .djplay_3 .profile .follow .hashtag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+}
+
+main .djplay_list .djplay_3 .profile .follow .hashtag p {
+  border: 1px solid #606060;
+  border-radius: 20px;
+  width: 60px;
+  font-size: 12px;
+  font-family: "S-Core Dream 2 ExtraLight";
+  text-align: center;
+}
+
+main .djplay_list .djplay_3 .profile .album_name {
+  width: 15%;
+  margin-top: -14px;
+}
+
+main .djplay_list .djplay_3 .profile .album_name p {
+  line-height: 45px;
+}
+
+main .djplay_list .djplay_3 .profile .album_bar {
+  width: 55%;
+}
+
+main .djplay_list .djplay_3 .profile .album_bar span {
+  border: 1px solid #606060;
+  border-radius: 20px;
+  height: 15px;
+  color: #7b8892;
+  background-color: #f5f5f5;
+}
+
+main .djplay_list .djplay_3 .profile .album_bar span:nth-child(1) {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+main .djplay_list .djplay_3 .profile .album_bar span:nth-child(2) {
+  margin-bottom: 30px;
+  width: 75%;
+}
+
+main .djplay_list .djplay_3 .profile .album_bar span:nth-child(3) {
+  margin-bottom: 60px;
+  width: 60%;
+}
+
+main .djplay_list .djplay_3 .profile .album {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+main .djplay_list .djplay_3 .profile .album .album_jacket_3_1 {
+  width: 100px;
+}
+
+main .djplay_list .djplay_3 .profile .album .album_jacket_3_1 .album_jacket img {
+  width: 100px;
+  height: 100px;
+}
+
+main .djplay_list .djplay_3 .profile .album .album_jacket_3_1 .album_title p img {
+  width: 11px;
+  margin-right: 5px;
+}
+
+main .djplay_list .djplay_3 .profile .album .album_jacket_3_2 {
+  width: 100px;
+}
+
+main .djplay_list .djplay_3 .profile .album .album_jacket_3_2 .album_jacket img {
+  width: 100px;
+  height: 100px;
+}
+
+main .djplay_list .djplay_3 .profile .album .album_jacket_3_2 .album_title p img {
+  width: 11px;
+  margin-right: 5px;
+}
+
+main .djplay_list .djplay_3 .profile .album .album_jacket_3_3 {
+  width: 100px;
+}
+
+main .djplay_list .djplay_3 .profile .album .album_jacket_3_3 .album_jacket img {
+  width: 100px;
+  height: 100px;
+}
+
+main .djplay_list .djplay_3 .profile .album .album_jacket_3_3 .album_title p img {
+  width: 11px;
+  margin-right: 5px;
+}
+
+main .djplay_list .djplay_4 .order_4 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #7b8892;
+  width: 470px;
+  height: 64px;
+}
+
+main .djplay_list .djplay_4 .order_4 .crown_4 {
+  position: relative;
+  width: 40px;
+  height: 32px;
+  margin-left: 10px;
+}
+
+main .djplay_list .djplay_4 .order_4 .crown_4 img {
+  position: absolute;
+  width: 30px;
+}
+
+main .djplay_list .djplay_4 .order_4 .crown_4 p {
+  position: absolute;
+  text-align: center;
+  width: 30px;
+  height: 25px;
+  line-height: 33px;
+  font-size: 11px;
+  color: #525c63;
+}
+
+main .djplay_list .djplay_4 .order_4 .id {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .djplay_list .djplay_4 .order_4 .id img {
+  width: 42px;
+  margin-right: 10PX;
+}
+
+main .djplay_list .djplay_4 .order_4 .id p {
+  line-height: 42px;
+  font-size: 16px;
+  font-family: "S-Core Dream 5 Medium";
+}
+
+main .djplay_list .djplay_4 .order_4 .surge {
+  position: absolute;
+  right: 35px;
+}
+
+main .djplay_list .djplay_4 .order_4 .surge img {
+  width: 10px;
+  margin-right: 5PX;
+}
+
+main .djplay_list .djplay_4 .profile {
+  display: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 32px;
+  border: 1px solid #7b8892;
+  border-top: 0;
+  border-bottom: 0;
+  width: 470px;
+  height: 435px;
+}
+
+main .djplay_list .djplay_4 .profile .story {
+  margin: 35px 0;
+  width: 100%;
+}
+
+main .djplay_list .djplay_4 .profile .story p {
+  display: inline-block;
+  line-height: 25px;
+  color: #525c63;
+}
+
+main .djplay_list .djplay_4 .profile .story p strong {
+  margin-right: 10px;
+  display: inline-block;
+  width: 62px;
+  height: 25px;
+  text-align: center;
+  color: #fff;
+  background-color: #7b8892;
+}
+
+main .djplay_list .djplay_4 .profile .follow {
+  width: 30%;
+}
+
+main .djplay_list .djplay_4 .profile .follow p {
+  line-height: 18px;
+}
+
+main .djplay_list .djplay_4 .profile .follow .hashtag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+}
+
+main .djplay_list .djplay_4 .profile .follow .hashtag p {
+  border: 1px solid #606060;
+  border-radius: 20px;
+  width: 60px;
+  font-size: 12px;
+  font-family: "S-Core Dream 2 ExtraLight";
+  text-align: center;
+}
+
+main .djplay_list .djplay_4 .profile .album_name {
+  width: 15%;
+  margin-top: -14px;
+}
+
+main .djplay_list .djplay_4 .profile .album_name p {
+  line-height: 45px;
+}
+
+main .djplay_list .djplay_4 .profile .album_bar {
+  width: 55%;
+}
+
+main .djplay_list .djplay_4 .profile .album_bar span {
+  border: 1px solid #606060;
+  border-radius: 20px;
+  height: 15px;
+  color: #7b8892;
+  background-color: #f5f5f5;
+}
+
+main .djplay_list .djplay_4 .profile .album_bar span:nth-child(1) {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+main .djplay_list .djplay_4 .profile .album_bar span:nth-child(2) {
+  margin-bottom: 30px;
+  width: 90%;
+}
+
+main .djplay_list .djplay_4 .profile .album_bar span:nth-child(3) {
+  margin-bottom: 60px;
+  width: 85%;
+}
+
+main .djplay_list .djplay_4 .profile .album {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+main .djplay_list .djplay_4 .profile .album .album_jacket_4_1 {
+  width: 100px;
+}
+
+main .djplay_list .djplay_4 .profile .album .album_jacket_4_1 .album_jacket img {
+  width: 100px;
+  height: 100px;
+}
+
+main .djplay_list .djplay_4 .profile .album .album_jacket_4_1 .album_title p img {
+  width: 11px;
+  margin-right: 5px;
+}
+
+main .djplay_list .djplay_4 .profile .album .album_jacket_4_2 {
+  width: 100px;
+}
+
+main .djplay_list .djplay_4 .profile .album .album_jacket_4_2 .album_jacket img {
+  width: 100px;
+  height: 100px;
+}
+
+main .djplay_list .djplay_4 .profile .album .album_jacket_4_2 .album_title p img {
+  width: 11px;
+  margin-right: 5px;
+}
+
+main .djplay_list .djplay_4 .profile .album .album_jacket_4_3 {
+  width: 100px;
+}
+
+main .djplay_list .djplay_4 .profile .album .album_jacket_4_3 .album_jacket img {
+  width: 100px;
+  height: 100px;
+}
+
+main .djplay_list .djplay_4 .profile .album .album_jacket_4_3 .album_title p img {
+  width: 11px;
+  margin-right: 5px;
+}
+
+main .djplay_list .djplay_5 .order_5 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #7b8892;
+  width: 470px;
+  height: 64px;
+}
+
+main .djplay_list .djplay_5 .order_5 .crown_5 {
+  position: relative;
+  width: 40px;
+  height: 32px;
+  margin-left: 10px;
+}
+
+main .djplay_list .djplay_5 .order_5 .crown_5 img {
+  position: absolute;
+  width: 30px;
+}
+
+main .djplay_list .djplay_5 .order_5 .crown_5 p {
+  position: absolute;
+  text-align: center;
+  width: 30px;
+  height: 25px;
+  line-height: 33px;
+  font-size: 11px;
+  color: #525c63;
+}
+
+main .djplay_list .djplay_5 .order_5 .id {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .djplay_list .djplay_5 .order_5 .id img {
+  width: 42px;
+  margin-right: 10PX;
+}
+
+main .djplay_list .djplay_5 .order_5 .id p {
+  line-height: 42px;
+  font-size: 16px;
+  font-family: "S-Core Dream 5 Medium";
+}
+
+main .djplay_list .djplay_5 .order_5 .surge {
+  position: absolute;
+  right: 35px;
+}
+
+main .djplay_list .djplay_5 .order_5 .surge img {
+  width: 10px;
+  margin-right: 5PX;
+}
+
+main .djplay_list .djplay_5 .profile {
+  display: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 32px;
+  border: 1px solid #7b8892;
+  border-top: 0;
+  border-bottom: 0;
+  width: 470px;
+  height: 435px;
+}
+
+main .djplay_list .djplay_5 .profile .story {
+  margin: 35px 0;
+  width: 100%;
+}
+
+main .djplay_list .djplay_5 .profile .story p {
+  display: inline-block;
+  line-height: 25px;
+  color: #525c63;
+}
+
+main .djplay_list .djplay_5 .profile .story p strong {
+  margin-right: 10px;
+  display: inline-block;
+  width: 62px;
+  height: 25px;
+  text-align: center;
+  color: #fff;
+  background-color: #7b8892;
+}
+
+main .djplay_list .djplay_5 .profile .follow {
+  width: 30%;
+}
+
+main .djplay_list .djplay_5 .profile .follow p {
+  line-height: 18px;
+}
+
+main .djplay_list .djplay_5 .profile .follow .hashtag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+}
+
+main .djplay_list .djplay_5 .profile .follow .hashtag p {
+  border: 1px solid #606060;
+  border-radius: 20px;
+  width: 60px;
+  font-size: 12px;
+  font-family: "S-Core Dream 2 ExtraLight";
+  text-align: center;
+}
+
+main .djplay_list .djplay_5 .profile .album_name {
+  width: 15%;
+  margin-top: -14px;
+}
+
+main .djplay_list .djplay_5 .profile .album_name p {
+  line-height: 45px;
+}
+
+main .djplay_list .djplay_5 .profile .album_bar {
+  width: 55%;
+}
+
+main .djplay_list .djplay_5 .profile .album_bar span {
+  border: 1px solid #606060;
+  border-radius: 20px;
+  height: 15px;
+  color: #7b8892;
+  background-color: #f5f5f5;
+}
+
+main .djplay_list .djplay_5 .profile .album_bar span:nth-child(1) {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+main .djplay_list .djplay_5 .profile .album_bar span:nth-child(2) {
+  margin-bottom: 30px;
+  width: 80%;
+}
+
+main .djplay_list .djplay_5 .profile .album_bar span:nth-child(3) {
+  margin-bottom: 60px;
+  width: 55%;
+}
+
+main .djplay_list .djplay_5 .profile .album {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+main .djplay_list .djplay_5 .profile .album .album_jacket_5_1 {
+  width: 100px;
+}
+
+main .djplay_list .djplay_5 .profile .album .album_jacket_5_1 .album_jacket img {
+  width: 100px;
+  height: 100px;
+}
+
+main .djplay_list .djplay_5 .profile .album .album_jacket_5_1 .album_title p img {
+  width: 11px;
+  margin-right: 5px;
+}
+
+main .djplay_list .djplay_5 .profile .album .album_jacket_5_2 {
+  width: 100px;
+}
+
+main .djplay_list .djplay_5 .profile .album .album_jacket_5_2 .album_jacket img {
+  width: 100px;
+  height: 100px;
+}
+
+main .djplay_list .djplay_5 .profile .album .album_jacket_5_2 .album_title p img {
+  width: 11px;
+  margin-right: 5px;
+}
+
+main .djplay_list .djplay_5 .profile .album .album_jacket_5_3 {
+  width: 100px;
+}
+
+main .djplay_list .djplay_5 .profile .album .album_jacket_5_3 .album_jacket img {
+  width: 100px;
+  height: 100px;
+}
+
+main .djplay_list .djplay_5 .profile .album .album_jacket_5_3 .album_title p img {
+  width: 11px;
+  margin-right: 5px;
 }
 
 footer .flex-box {

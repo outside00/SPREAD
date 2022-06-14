@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/myhome.scss"
+    ],
+    "names": [],
+    "file": "myhome.css"
+}
