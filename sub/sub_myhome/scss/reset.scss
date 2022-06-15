@@ -4,43 +4,60 @@
     box-sizing: border-box;
 }
 
-.grid {
-    width: 100%; // 모바일, 테블릿
-    max-width: 1024px; // pc
-    margin: 0 auto;
-}
-
-header {
-    width: 100%;
-    background-color: aqua;
+body {
+    font: {
+        size: 16px;
+    }
 }
 
 ul,
-ol,
-li {
+ol {
     list-style: none;
-}
-
-img {
-    width: 100%;
+    color: $font-color_1;
 }
 
 a {
     display: block;
-    color: black;
     text-decoration: none;
+    font-family: $font-4;
+    color: $font-color_1;
+}
 
-    &:hover {
-        text-decoration: underline;
+strong {
+    font: {
+        size: 12px;
+        family: $font-4;
+        color: $strong-color;
     }
+    
+}
+
+span {
+    display: block;
+    font-family: $font-4;
+    color: $font-color_1;
 }
 
 h1 {
     font: {
-        size: $h1-size;
-        family: $h1-family;
-        weight: $h1-weight;
+        font-size: 24px;
+        font-family: $font-5;
     }
+}
+
+h2 {
+    font-size: 21px;
+    font-family: $font-5;
+}
+
+h3 {
+    font-size: 18px;
+    font-family: $font-5;
+}
+
+h4 {
+    font-size: 16px;
+    display: block;
 }
 
 h5 {
@@ -48,16 +65,17 @@ h5 {
     color: $font-color;
 }
 
-strong {
-    font-size: 12px;
-    color: $font-color;
+p {
+    font-size: 14px;
+    font-family: $font-4;
+    color: $font-color_1;
 }
 
 address {
+    font-style: normal;
+
     font: {
-        style: normal;
         size: 14px;
     }
     color: #606060;
 }
-

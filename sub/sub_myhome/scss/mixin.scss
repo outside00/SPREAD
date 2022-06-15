@@ -5,15 +5,18 @@
         }
     }
 
-    @else if $break == tablet-screens {
-        @media screen and (min-width:$break-tablet) {
-            @content;
-        }
-    }
-
     @else if $break == pc-screens {
         @media screen and (min-width:$break-pc) {
             @content;
         }
     }
+}
+
+@mixin order() {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid #7b8892;
+    width: 376px; height: 50px;
+    background-color: $back_color;
 }
