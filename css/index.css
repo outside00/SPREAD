@@ -35,21 +35,22 @@ span {
 }
 
 h1 {
-  font-font-size: 30px;
+  font-font-size: 24px;
   font-font-family: "S-Core Dream 5 Medium";
 }
 
 h2 {
-  font-size: 26px;
+  font-size: 21px;
   font-family: "S-Core Dream 5 Medium";
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 18px;
   font-family: "S-Core Dream 5 Medium";
 }
 
 h4 {
+  font-size: 16px;
   display: block;
 }
 
@@ -59,7 +60,7 @@ h5 {
 }
 
 p {
-  font-size: 0.8em;
+  font-size: 14px;
   font-family: "S-Core Dream 4 Regular";
   color: #606060;
 }
@@ -322,19 +323,25 @@ header .web_menu .music_box .music_button img:nth-child(3) {
 
 main {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   right: 0;
-  width: 81.25%;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 85%;
+  padding-left: 44px;
+  padding-right: 44px;
   background-color: antiquewhite;
 }
 
 main .djplay_list {
-  width: 100%;
+  width: 376px;
 }
 
 main .djplay_list h2 {
-  margin-bottom: 13px;
+  margin-bottom: 5px;
 }
 
 main .djplay_list .djplay_1 .order_1 {
@@ -346,29 +353,31 @@ main .djplay_list .djplay_1 .order_1 {
       -ms-flex-align: center;
           align-items: center;
   border: 1px solid #7b8892;
-  width: 470px;
-  height: 64px;
+  width: 376px;
+  height: 50px;
+  background-color: #fff;
 }
 
 main .djplay_list .djplay_1 .order_1 .crown_1 {
   position: relative;
-  width: 40px;
-  height: 32px;
+  width: 34px;
+  height: 34px;
   margin-left: 10px;
 }
 
 main .djplay_list .djplay_1 .order_1 .crown_1 img {
   position: absolute;
-  width: 30px;
+  margin-top: 5px;
+  width: 24px;
 }
 
 main .djplay_list .djplay_1 .order_1 .crown_1 p {
   position: absolute;
   text-align: center;
-  width: 30px;
-  height: 25px;
-  line-height: 33px;
-  font-size: 11px;
+  width: 24px;
+  height: 34px;
+  line-height: 37px;
+  font-size: 8px;
   color: #fff;
 }
 
@@ -379,13 +388,14 @@ main .djplay_list .djplay_1 .order_1 .id {
 }
 
 main .djplay_list .djplay_1 .order_1 .id img {
-  width: 42px;
-  margin-right: 10PX;
+  width: 34px;
+  height: 34px;
+  margin-right: 10px;
 }
 
 main .djplay_list .djplay_1 .order_1 .id p {
-  line-height: 42px;
-  font-size: 16px;
+  line-height: 34px;
+  font-size: 13px;
   font-family: "S-Core Dream 5 Medium";
 }
 
@@ -394,8 +404,12 @@ main .djplay_list .djplay_1 .order_1 .surge {
   right: 35px;
 }
 
-main .djplay_list .djplay_1 .order_1 .surge img {
-  width: 10px;
+main .djplay_list .djplay_1 .order_1 .surge p {
+  font-size: 10px;
+}
+
+main .djplay_list .djplay_1 .order_1 .surge p img {
+  width: 8px;
   margin-right: 5PX;
 }
 
@@ -412,16 +426,18 @@ main .djplay_list .djplay_1 .profile {
   border: 1px solid #7b8892;
   border-top: 0;
   border-bottom: 0;
-  width: 470px;
-  height: 435px;
+  width: 376px;
+  height: 348px;
+  background-color: #fff;
 }
 
 main .djplay_list .djplay_1 .profile .story {
-  margin: 35px 0;
+  margin: 25px 0;
   width: 100%;
 }
 
 main .djplay_list .djplay_1 .profile .story p {
+  font-size: 12px;
   display: inline-block;
   line-height: 25px;
   color: #525c63;
@@ -442,6 +458,7 @@ main .djplay_list .djplay_1 .profile .follow {
 }
 
 main .djplay_list .djplay_1 .profile .follow p {
+  font-size: 12px;
   line-height: 18px;
 }
 
@@ -454,25 +471,26 @@ main .djplay_list .djplay_1 .profile .follow .hashtag {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 main .djplay_list .djplay_1 .profile .follow .hashtag p {
   border: 1px solid #606060;
   border-radius: 20px;
-  width: 60px;
-  font-size: 12px;
+  width: 50px;
+  font-size: 9px;
   font-family: "S-Core Dream 2 ExtraLight";
   text-align: center;
 }
 
 main .djplay_list .djplay_1 .profile .album_name {
   width: 15%;
-  margin-top: -14px;
+  margin-top: -10px;
 }
 
 main .djplay_list .djplay_1 .profile .album_name p {
-  line-height: 45px;
+  font-size: 12px;
+  line-height: 37px;
 }
 
 main .djplay_list .djplay_1 .profile .album_bar {
@@ -482,23 +500,23 @@ main .djplay_list .djplay_1 .profile .album_bar {
 main .djplay_list .djplay_1 .profile .album_bar span {
   border: 1px solid #606060;
   border-radius: 20px;
-  height: 15px;
+  height: 13px;
   color: #7b8892;
   background-color: #f5f5f5;
 }
 
 main .djplay_list .djplay_1 .profile .album_bar span:nth-child(1) {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   width: 100%;
 }
 
 main .djplay_list .djplay_1 .profile .album_bar span:nth-child(2) {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   width: 80%;
 }
 
 main .djplay_list .djplay_1 .profile .album_bar span:nth-child(3) {
-  margin-bottom: 60px;
+  margin-bottom: 25px;
   width: 70%;
 }
 
@@ -510,16 +528,20 @@ main .djplay_list .djplay_1 .profile .album {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 main .djplay_list .djplay_1 .profile .album .album_jacket_1_1 {
-  width: 100px;
+  width: 90px;
 }
 
 main .djplay_list .djplay_1 .profile .album .album_jacket_1_1 .album_jacket img {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
+}
+
+main .djplay_list .djplay_1 .profile .album .album_jacket_1_1 .album_title p {
+  font-size: 11px;
 }
 
 main .djplay_list .djplay_1 .profile .album .album_jacket_1_1 .album_title p img {
@@ -528,12 +550,16 @@ main .djplay_list .djplay_1 .profile .album .album_jacket_1_1 .album_title p img
 }
 
 main .djplay_list .djplay_1 .profile .album .album_jacket_1_2 {
-  width: 100px;
+  width: 90px;
 }
 
 main .djplay_list .djplay_1 .profile .album .album_jacket_1_2 .album_jacket img {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
+}
+
+main .djplay_list .djplay_1 .profile .album .album_jacket_1_2 .album_title p {
+  font-size: 11px;
 }
 
 main .djplay_list .djplay_1 .profile .album .album_jacket_1_2 .album_title p img {
@@ -542,12 +568,16 @@ main .djplay_list .djplay_1 .profile .album .album_jacket_1_2 .album_title p img
 }
 
 main .djplay_list .djplay_1 .profile .album .album_jacket_1_3 {
-  width: 100px;
+  width: 90px;
 }
 
 main .djplay_list .djplay_1 .profile .album .album_jacket_1_3 .album_jacket img {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
+}
+
+main .djplay_list .djplay_1 .profile .album .album_jacket_1_3 .album_title p {
+  font-size: 11px;
 }
 
 main .djplay_list .djplay_1 .profile .album .album_jacket_1_3 .album_title p img {
@@ -564,29 +594,31 @@ main .djplay_list .djplay_2 .order_2 {
       -ms-flex-align: center;
           align-items: center;
   border: 1px solid #7b8892;
-  width: 470px;
-  height: 64px;
+  width: 376px;
+  height: 50px;
+  background-color: #fff;
 }
 
 main .djplay_list .djplay_2 .order_2 .crown_2 {
   position: relative;
-  width: 40px;
-  height: 32px;
+  width: 34px;
+  height: 34px;
   margin-left: 10px;
 }
 
 main .djplay_list .djplay_2 .order_2 .crown_2 img {
   position: absolute;
-  width: 30px;
+  margin-top: 5px;
+  width: 24px;
 }
 
 main .djplay_list .djplay_2 .order_2 .crown_2 p {
   position: absolute;
   text-align: center;
-  width: 30px;
-  height: 25px;
-  line-height: 33px;
-  font-size: 11px;
+  width: 24px;
+  height: 34px;
+  line-height: 37px;
+  font-size: 8px;
   color: #fff;
 }
 
@@ -597,13 +629,14 @@ main .djplay_list .djplay_2 .order_2 .id {
 }
 
 main .djplay_list .djplay_2 .order_2 .id img {
-  width: 42px;
-  margin-right: 10PX;
+  width: 34px;
+  height: 34px;
+  margin-right: 10px;
 }
 
 main .djplay_list .djplay_2 .order_2 .id p {
-  line-height: 42px;
-  font-size: 16px;
+  line-height: 34px;
+  font-size: 13px;
   font-family: "S-Core Dream 5 Medium";
 }
 
@@ -612,8 +645,12 @@ main .djplay_list .djplay_2 .order_2 .surge {
   right: 35px;
 }
 
-main .djplay_list .djplay_2 .order_2 .surge img {
-  width: 10px;
+main .djplay_list .djplay_2 .order_2 .surge p {
+  font-size: 10px;
+}
+
+main .djplay_list .djplay_2 .order_2 .surge p img {
+  width: 8px;
   margin-right: 5PX;
 }
 
@@ -628,16 +665,18 @@ main .djplay_list .djplay_2 .profile {
   border: 1px solid #7b8892;
   border-top: 0;
   border-bottom: 0;
-  width: 470px;
-  height: 435px;
+  width: 376px;
+  height: 348px;
+  background-color: #fff;
 }
 
 main .djplay_list .djplay_2 .profile .story {
-  margin: 35px 0;
+  margin: 25px 0;
   width: 100%;
 }
 
 main .djplay_list .djplay_2 .profile .story p {
+  font-size: 12px;
   display: inline-block;
   line-height: 25px;
   color: #525c63;
@@ -658,37 +697,39 @@ main .djplay_list .djplay_2 .profile .follow {
 }
 
 main .djplay_list .djplay_2 .profile .follow p {
+  font-size: 12px;
   line-height: 18px;
+}
+
+main .djplay_list .djplay_2 .profile .follow p span {
+  display: inline;
+  color: #db4242;
 }
 
 main .djplay_list .djplay_2 .profile .follow .hashtag {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 main .djplay_list .djplay_2 .profile .follow .hashtag p {
   border: 1px solid #606060;
   border-radius: 20px;
-  width: 45px;
-  font-size: 12px;
+  width: 50px;
+  font-size: 9px;
   font-family: "S-Core Dream 2 ExtraLight";
   text-align: center;
 }
 
-main .djplay_list .djplay_2 .profile .follow .hashtag p:nth-child(2) {
-  margin-left: 5px;
-  width: 45px;
-}
-
 main .djplay_list .djplay_2 .profile .album_name {
   width: 15%;
-  margin-top: -14px;
+  margin-top: -10px;
 }
 
 main .djplay_list .djplay_2 .profile .album_name p {
-  line-height: 45px;
+  font-size: 12px;
+  line-height: 37px;
 }
 
 main .djplay_list .djplay_2 .profile .album_bar {
@@ -698,24 +739,24 @@ main .djplay_list .djplay_2 .profile .album_bar {
 main .djplay_list .djplay_2 .profile .album_bar span {
   border: 1px solid #606060;
   border-radius: 20px;
-  height: 15px;
+  height: 13px;
   color: #7b8892;
   background-color: #f5f5f5;
 }
 
 main .djplay_list .djplay_2 .profile .album_bar span:nth-child(1) {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   width: 100%;
 }
 
 main .djplay_list .djplay_2 .profile .album_bar span:nth-child(2) {
-  margin-bottom: 30px;
-  width: 90%;
+  margin-bottom: 25px;
+  width: 80%;
 }
 
 main .djplay_list .djplay_2 .profile .album_bar span:nth-child(3) {
-  margin-bottom: 60px;
-  width: 50%;
+  margin-bottom: 25px;
+  width: 70%;
 }
 
 main .djplay_list .djplay_2 .profile .album {
@@ -726,16 +767,20 @@ main .djplay_list .djplay_2 .profile .album {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 main .djplay_list .djplay_2 .profile .album .album_jacket_2_1 {
-  width: 100px;
+  width: 90px;
 }
 
 main .djplay_list .djplay_2 .profile .album .album_jacket_2_1 .album_jacket img {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
+}
+
+main .djplay_list .djplay_2 .profile .album .album_jacket_2_1 .album_title p {
+  font-size: 11px;
 }
 
 main .djplay_list .djplay_2 .profile .album .album_jacket_2_1 .album_title p img {
@@ -744,12 +789,16 @@ main .djplay_list .djplay_2 .profile .album .album_jacket_2_1 .album_title p img
 }
 
 main .djplay_list .djplay_2 .profile .album .album_jacket_2_2 {
-  width: 100px;
+  width: 90px;
 }
 
 main .djplay_list .djplay_2 .profile .album .album_jacket_2_2 .album_jacket img {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
+}
+
+main .djplay_list .djplay_2 .profile .album .album_jacket_2_2 .album_title p {
+  font-size: 11px;
 }
 
 main .djplay_list .djplay_2 .profile .album .album_jacket_2_2 .album_title p img {
@@ -758,12 +807,16 @@ main .djplay_list .djplay_2 .profile .album .album_jacket_2_2 .album_title p img
 }
 
 main .djplay_list .djplay_2 .profile .album .album_jacket_2_3 {
-  width: 100px;
+  width: 90px;
 }
 
 main .djplay_list .djplay_2 .profile .album .album_jacket_2_3 .album_jacket img {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
+}
+
+main .djplay_list .djplay_2 .profile .album .album_jacket_2_3 .album_title p {
+  font-size: 11px;
 }
 
 main .djplay_list .djplay_2 .profile .album .album_jacket_2_3 .album_title p img {
@@ -780,29 +833,31 @@ main .djplay_list .djplay_3 .order_3 {
       -ms-flex-align: center;
           align-items: center;
   border: 1px solid #7b8892;
-  width: 470px;
-  height: 64px;
+  width: 376px;
+  height: 50px;
+  background-color: #fff;
 }
 
 main .djplay_list .djplay_3 .order_3 .crown_3 {
   position: relative;
-  width: 40px;
-  height: 32px;
+  width: 34px;
+  height: 34px;
   margin-left: 10px;
 }
 
 main .djplay_list .djplay_3 .order_3 .crown_3 img {
   position: absolute;
-  width: 30px;
+  margin-top: 5px;
+  width: 24px;
 }
 
 main .djplay_list .djplay_3 .order_3 .crown_3 p {
   position: absolute;
   text-align: center;
-  width: 30px;
-  height: 25px;
-  line-height: 33px;
-  font-size: 11px;
+  width: 24px;
+  height: 34px;
+  line-height: 37px;
+  font-size: 8px;
   color: #fff;
 }
 
@@ -813,13 +868,14 @@ main .djplay_list .djplay_3 .order_3 .id {
 }
 
 main .djplay_list .djplay_3 .order_3 .id img {
-  width: 42px;
-  margin-right: 10PX;
+  width: 34px;
+  height: 34px;
+  margin-right: 10px;
 }
 
 main .djplay_list .djplay_3 .order_3 .id p {
-  line-height: 42px;
-  font-size: 16px;
+  line-height: 34px;
+  font-size: 13px;
   font-family: "S-Core Dream 5 Medium";
 }
 
@@ -828,8 +884,12 @@ main .djplay_list .djplay_3 .order_3 .surge {
   right: 35px;
 }
 
-main .djplay_list .djplay_3 .order_3 .surge img {
-  width: 10px;
+main .djplay_list .djplay_3 .order_3 .surge p {
+  font-size: 10px;
+}
+
+main .djplay_list .djplay_3 .order_3 .surge p img {
+  width: 8px;
   margin-right: 5PX;
 }
 
@@ -844,16 +904,18 @@ main .djplay_list .djplay_3 .profile {
   border: 1px solid #7b8892;
   border-top: 0;
   border-bottom: 0;
-  width: 470px;
-  height: 435px;
+  width: 376px;
+  height: 348px;
+  background-color: #fff;
 }
 
 main .djplay_list .djplay_3 .profile .story {
-  margin: 35px 0;
+  margin: 25px 0;
   width: 100%;
 }
 
 main .djplay_list .djplay_3 .profile .story p {
+  font-size: 12px;
   display: inline-block;
   line-height: 25px;
   color: #525c63;
@@ -874,32 +936,39 @@ main .djplay_list .djplay_3 .profile .follow {
 }
 
 main .djplay_list .djplay_3 .profile .follow p {
+  font-size: 12px;
   line-height: 18px;
+}
+
+main .djplay_list .djplay_3 .profile .follow p span {
+  display: inline;
+  color: #db4242;
 }
 
 main .djplay_list .djplay_3 .profile .follow .hashtag {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 main .djplay_list .djplay_3 .profile .follow .hashtag p {
   border: 1px solid #606060;
   border-radius: 20px;
-  width: 60px;
-  font-size: 12px;
+  width: 50px;
+  font-size: 9px;
   font-family: "S-Core Dream 2 ExtraLight";
   text-align: center;
 }
 
 main .djplay_list .djplay_3 .profile .album_name {
   width: 15%;
-  margin-top: -14px;
+  margin-top: -10px;
 }
 
 main .djplay_list .djplay_3 .profile .album_name p {
-  line-height: 45px;
+  font-size: 12px;
+  line-height: 37px;
 }
 
 main .djplay_list .djplay_3 .profile .album_bar {
@@ -909,24 +978,24 @@ main .djplay_list .djplay_3 .profile .album_bar {
 main .djplay_list .djplay_3 .profile .album_bar span {
   border: 1px solid #606060;
   border-radius: 20px;
-  height: 15px;
+  height: 13px;
   color: #7b8892;
   background-color: #f5f5f5;
 }
 
 main .djplay_list .djplay_3 .profile .album_bar span:nth-child(1) {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   width: 100%;
 }
 
 main .djplay_list .djplay_3 .profile .album_bar span:nth-child(2) {
-  margin-bottom: 30px;
-  width: 75%;
+  margin-bottom: 25px;
+  width: 80%;
 }
 
 main .djplay_list .djplay_3 .profile .album_bar span:nth-child(3) {
-  margin-bottom: 60px;
-  width: 60%;
+  margin-bottom: 25px;
+  width: 70%;
 }
 
 main .djplay_list .djplay_3 .profile .album {
@@ -937,16 +1006,20 @@ main .djplay_list .djplay_3 .profile .album {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 main .djplay_list .djplay_3 .profile .album .album_jacket_3_1 {
-  width: 100px;
+  width: 90px;
 }
 
 main .djplay_list .djplay_3 .profile .album .album_jacket_3_1 .album_jacket img {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
+}
+
+main .djplay_list .djplay_3 .profile .album .album_jacket_3_1 .album_title p {
+  font-size: 11px;
 }
 
 main .djplay_list .djplay_3 .profile .album .album_jacket_3_1 .album_title p img {
@@ -955,12 +1028,16 @@ main .djplay_list .djplay_3 .profile .album .album_jacket_3_1 .album_title p img
 }
 
 main .djplay_list .djplay_3 .profile .album .album_jacket_3_2 {
-  width: 100px;
+  width: 90px;
 }
 
 main .djplay_list .djplay_3 .profile .album .album_jacket_3_2 .album_jacket img {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
+}
+
+main .djplay_list .djplay_3 .profile .album .album_jacket_3_2 .album_title p {
+  font-size: 11px;
 }
 
 main .djplay_list .djplay_3 .profile .album .album_jacket_3_2 .album_title p img {
@@ -969,12 +1046,16 @@ main .djplay_list .djplay_3 .profile .album .album_jacket_3_2 .album_title p img
 }
 
 main .djplay_list .djplay_3 .profile .album .album_jacket_3_3 {
-  width: 100px;
+  width: 90px;
 }
 
 main .djplay_list .djplay_3 .profile .album .album_jacket_3_3 .album_jacket img {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
+}
+
+main .djplay_list .djplay_3 .profile .album .album_jacket_3_3 .album_title p {
+  font-size: 11px;
 }
 
 main .djplay_list .djplay_3 .profile .album .album_jacket_3_3 .album_title p img {
@@ -991,30 +1072,24 @@ main .djplay_list .djplay_4 .order_4 {
       -ms-flex-align: center;
           align-items: center;
   border: 1px solid #7b8892;
-  width: 470px;
-  height: 64px;
+  width: 376px;
+  height: 50px;
+  background-color: #fff;
 }
 
 main .djplay_list .djplay_4 .order_4 .crown_4 {
-  position: relative;
-  width: 40px;
-  height: 32px;
+  width: 34px;
+  height: 34px;
   margin-left: 10px;
 }
 
-main .djplay_list .djplay_4 .order_4 .crown_4 img {
-  position: absolute;
-  width: 30px;
-}
-
 main .djplay_list .djplay_4 .order_4 .crown_4 p {
-  position: absolute;
   text-align: center;
-  width: 30px;
-  height: 25px;
-  line-height: 33px;
-  font-size: 11px;
-  color: #525c63;
+  width: 24px;
+  height: 34px;
+  line-height: 37px;
+  font-size: 8px;
+  color: #606060;
 }
 
 main .djplay_list .djplay_4 .order_4 .id {
@@ -1024,13 +1099,14 @@ main .djplay_list .djplay_4 .order_4 .id {
 }
 
 main .djplay_list .djplay_4 .order_4 .id img {
-  width: 42px;
-  margin-right: 10PX;
+  width: 34px;
+  height: 34px;
+  margin-right: 10px;
 }
 
 main .djplay_list .djplay_4 .order_4 .id p {
-  line-height: 42px;
-  font-size: 16px;
+  line-height: 34px;
+  font-size: 13px;
   font-family: "S-Core Dream 5 Medium";
 }
 
@@ -1039,8 +1115,12 @@ main .djplay_list .djplay_4 .order_4 .surge {
   right: 35px;
 }
 
-main .djplay_list .djplay_4 .order_4 .surge img {
-  width: 10px;
+main .djplay_list .djplay_4 .order_4 .surge p {
+  font-size: 10px;
+}
+
+main .djplay_list .djplay_4 .order_4 .surge p img {
+  width: 8px;
   margin-right: 5PX;
 }
 
@@ -1055,16 +1135,18 @@ main .djplay_list .djplay_4 .profile {
   border: 1px solid #7b8892;
   border-top: 0;
   border-bottom: 0;
-  width: 470px;
-  height: 435px;
+  width: 376px;
+  height: 348px;
+  background-color: #fff;
 }
 
 main .djplay_list .djplay_4 .profile .story {
-  margin: 35px 0;
+  margin: 25px 0;
   width: 100%;
 }
 
 main .djplay_list .djplay_4 .profile .story p {
+  font-size: 12px;
   display: inline-block;
   line-height: 25px;
   color: #525c63;
@@ -1085,32 +1167,39 @@ main .djplay_list .djplay_4 .profile .follow {
 }
 
 main .djplay_list .djplay_4 .profile .follow p {
+  font-size: 12px;
   line-height: 18px;
+}
+
+main .djplay_list .djplay_4 .profile .follow p span {
+  display: inline;
+  color: #db4242;
 }
 
 main .djplay_list .djplay_4 .profile .follow .hashtag {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 main .djplay_list .djplay_4 .profile .follow .hashtag p {
   border: 1px solid #606060;
   border-radius: 20px;
-  width: 60px;
-  font-size: 12px;
+  width: 50px;
+  font-size: 9px;
   font-family: "S-Core Dream 2 ExtraLight";
   text-align: center;
 }
 
 main .djplay_list .djplay_4 .profile .album_name {
   width: 15%;
-  margin-top: -14px;
+  margin-top: -10px;
 }
 
 main .djplay_list .djplay_4 .profile .album_name p {
-  line-height: 45px;
+  font-size: 12px;
+  line-height: 37px;
 }
 
 main .djplay_list .djplay_4 .profile .album_bar {
@@ -1120,24 +1209,24 @@ main .djplay_list .djplay_4 .profile .album_bar {
 main .djplay_list .djplay_4 .profile .album_bar span {
   border: 1px solid #606060;
   border-radius: 20px;
-  height: 15px;
+  height: 13px;
   color: #7b8892;
   background-color: #f5f5f5;
 }
 
 main .djplay_list .djplay_4 .profile .album_bar span:nth-child(1) {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   width: 100%;
 }
 
 main .djplay_list .djplay_4 .profile .album_bar span:nth-child(2) {
-  margin-bottom: 30px;
-  width: 90%;
+  margin-bottom: 25px;
+  width: 80%;
 }
 
 main .djplay_list .djplay_4 .profile .album_bar span:nth-child(3) {
-  margin-bottom: 60px;
-  width: 85%;
+  margin-bottom: 25px;
+  width: 70%;
 }
 
 main .djplay_list .djplay_4 .profile .album {
@@ -1148,16 +1237,20 @@ main .djplay_list .djplay_4 .profile .album {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 main .djplay_list .djplay_4 .profile .album .album_jacket_4_1 {
-  width: 100px;
+  width: 90px;
 }
 
 main .djplay_list .djplay_4 .profile .album .album_jacket_4_1 .album_jacket img {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
+}
+
+main .djplay_list .djplay_4 .profile .album .album_jacket_4_1 .album_title p {
+  font-size: 11px;
 }
 
 main .djplay_list .djplay_4 .profile .album .album_jacket_4_1 .album_title p img {
@@ -1166,12 +1259,16 @@ main .djplay_list .djplay_4 .profile .album .album_jacket_4_1 .album_title p img
 }
 
 main .djplay_list .djplay_4 .profile .album .album_jacket_4_2 {
-  width: 100px;
+  width: 90px;
 }
 
 main .djplay_list .djplay_4 .profile .album .album_jacket_4_2 .album_jacket img {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
+}
+
+main .djplay_list .djplay_4 .profile .album .album_jacket_4_2 .album_title p {
+  font-size: 11px;
 }
 
 main .djplay_list .djplay_4 .profile .album .album_jacket_4_2 .album_title p img {
@@ -1180,12 +1277,16 @@ main .djplay_list .djplay_4 .profile .album .album_jacket_4_2 .album_title p img
 }
 
 main .djplay_list .djplay_4 .profile .album .album_jacket_4_3 {
-  width: 100px;
+  width: 90px;
 }
 
 main .djplay_list .djplay_4 .profile .album .album_jacket_4_3 .album_jacket img {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
+}
+
+main .djplay_list .djplay_4 .profile .album .album_jacket_4_3 .album_title p {
+  font-size: 11px;
 }
 
 main .djplay_list .djplay_4 .profile .album .album_jacket_4_3 .album_title p img {
@@ -1202,30 +1303,24 @@ main .djplay_list .djplay_5 .order_5 {
       -ms-flex-align: center;
           align-items: center;
   border: 1px solid #7b8892;
-  width: 470px;
-  height: 64px;
+  width: 376px;
+  height: 50px;
+  background-color: #fff;
 }
 
 main .djplay_list .djplay_5 .order_5 .crown_5 {
-  position: relative;
-  width: 40px;
-  height: 32px;
+  width: 34px;
+  height: 34px;
   margin-left: 10px;
 }
 
-main .djplay_list .djplay_5 .order_5 .crown_5 img {
-  position: absolute;
-  width: 30px;
-}
-
 main .djplay_list .djplay_5 .order_5 .crown_5 p {
-  position: absolute;
   text-align: center;
-  width: 30px;
-  height: 25px;
-  line-height: 33px;
-  font-size: 11px;
-  color: #525c63;
+  width: 24px;
+  height: 34px;
+  line-height: 37px;
+  font-size: 8px;
+  color: #606060;
 }
 
 main .djplay_list .djplay_5 .order_5 .id {
@@ -1235,13 +1330,14 @@ main .djplay_list .djplay_5 .order_5 .id {
 }
 
 main .djplay_list .djplay_5 .order_5 .id img {
-  width: 42px;
-  margin-right: 10PX;
+  width: 34px;
+  height: 34px;
+  margin-right: 10px;
 }
 
 main .djplay_list .djplay_5 .order_5 .id p {
-  line-height: 42px;
-  font-size: 16px;
+  line-height: 34px;
+  font-size: 13px;
   font-family: "S-Core Dream 5 Medium";
 }
 
@@ -1250,8 +1346,12 @@ main .djplay_list .djplay_5 .order_5 .surge {
   right: 35px;
 }
 
-main .djplay_list .djplay_5 .order_5 .surge img {
-  width: 10px;
+main .djplay_list .djplay_5 .order_5 .surge p {
+  font-size: 10px;
+}
+
+main .djplay_list .djplay_5 .order_5 .surge p img {
+  width: 8px;
   margin-right: 5PX;
 }
 
@@ -1266,16 +1366,18 @@ main .djplay_list .djplay_5 .profile {
   border: 1px solid #7b8892;
   border-top: 0;
   border-bottom: 0;
-  width: 470px;
-  height: 435px;
+  width: 376px;
+  height: 348px;
+  background-color: #fff;
 }
 
 main .djplay_list .djplay_5 .profile .story {
-  margin: 35px 0;
+  margin: 25px 0;
   width: 100%;
 }
 
 main .djplay_list .djplay_5 .profile .story p {
+  font-size: 12px;
   display: inline-block;
   line-height: 25px;
   color: #525c63;
@@ -1296,32 +1398,39 @@ main .djplay_list .djplay_5 .profile .follow {
 }
 
 main .djplay_list .djplay_5 .profile .follow p {
+  font-size: 12px;
   line-height: 18px;
+}
+
+main .djplay_list .djplay_5 .profile .follow p span {
+  display: inline;
+  color: #db4242;
 }
 
 main .djplay_list .djplay_5 .profile .follow .hashtag {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 main .djplay_list .djplay_5 .profile .follow .hashtag p {
   border: 1px solid #606060;
   border-radius: 20px;
-  width: 60px;
-  font-size: 12px;
+  width: 50px;
+  font-size: 9px;
   font-family: "S-Core Dream 2 ExtraLight";
   text-align: center;
 }
 
 main .djplay_list .djplay_5 .profile .album_name {
   width: 15%;
-  margin-top: -14px;
+  margin-top: -10px;
 }
 
 main .djplay_list .djplay_5 .profile .album_name p {
-  line-height: 45px;
+  font-size: 12px;
+  line-height: 37px;
 }
 
 main .djplay_list .djplay_5 .profile .album_bar {
@@ -1331,24 +1440,24 @@ main .djplay_list .djplay_5 .profile .album_bar {
 main .djplay_list .djplay_5 .profile .album_bar span {
   border: 1px solid #606060;
   border-radius: 20px;
-  height: 15px;
+  height: 13px;
   color: #7b8892;
   background-color: #f5f5f5;
 }
 
 main .djplay_list .djplay_5 .profile .album_bar span:nth-child(1) {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   width: 100%;
 }
 
 main .djplay_list .djplay_5 .profile .album_bar span:nth-child(2) {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   width: 80%;
 }
 
 main .djplay_list .djplay_5 .profile .album_bar span:nth-child(3) {
-  margin-bottom: 60px;
-  width: 55%;
+  margin-bottom: 25px;
+  width: 70%;
 }
 
 main .djplay_list .djplay_5 .profile .album {
@@ -1359,16 +1468,20 @@ main .djplay_list .djplay_5 .profile .album {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 main .djplay_list .djplay_5 .profile .album .album_jacket_5_1 {
-  width: 100px;
+  width: 90px;
 }
 
 main .djplay_list .djplay_5 .profile .album .album_jacket_5_1 .album_jacket img {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
+}
+
+main .djplay_list .djplay_5 .profile .album .album_jacket_5_1 .album_title p {
+  font-size: 11px;
 }
 
 main .djplay_list .djplay_5 .profile .album .album_jacket_5_1 .album_title p img {
@@ -1377,12 +1490,16 @@ main .djplay_list .djplay_5 .profile .album .album_jacket_5_1 .album_title p img
 }
 
 main .djplay_list .djplay_5 .profile .album .album_jacket_5_2 {
-  width: 100px;
+  width: 90px;
 }
 
 main .djplay_list .djplay_5 .profile .album .album_jacket_5_2 .album_jacket img {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
+}
+
+main .djplay_list .djplay_5 .profile .album .album_jacket_5_2 .album_title p {
+  font-size: 11px;
 }
 
 main .djplay_list .djplay_5 .profile .album .album_jacket_5_2 .album_title p img {
@@ -1391,17 +1508,88 @@ main .djplay_list .djplay_5 .profile .album .album_jacket_5_2 .album_title p img
 }
 
 main .djplay_list .djplay_5 .profile .album .album_jacket_5_3 {
-  width: 100px;
+  width: 90px;
 }
 
 main .djplay_list .djplay_5 .profile .album .album_jacket_5_3 .album_jacket img {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
+}
+
+main .djplay_list .djplay_5 .profile .album .album_jacket_5_3 .album_title p {
+  font-size: 11px;
 }
 
 main .djplay_list .djplay_5 .profile .album .album_jacket_5_3 .album_title p img {
   width: 11px;
   margin-right: 5px;
+}
+
+main .taste {
+  position: relative;
+  width: 936px;
+  height: 160px;
+}
+
+main .taste .taste_text {
+  position: absolute;
+  padding: 20px;
+  width: 936px;
+  z-index: 998;
+  line-height: 28px;
+}
+
+main .taste .taste_text p {
+  font-size: 18px;
+  font-family: "S-Core Dream 5 Medium";
+}
+
+main .taste .taste_text p strong {
+  font-size: 18px;
+  color: #8a2ae3;
+  font-family: "S-Core Dream 7 ExtraBold";
+}
+
+main .taste .taste_text .text p {
+  font-size: 13px;
+  font-family: "S-Core Dream 3 Light";
+}
+
+main .taste .taste_text button {
+  margin-top: 18px;
+  border: 0;
+  border-radius: 5px;
+  width: 120px;
+  height: 35px;
+  font-size: 13px;
+  font-family: "S-Core Dream 5 Medium";
+  color: #fff;
+  background-color: #8a2ae3;
+}
+
+main .taste .taste_bg_img {
+  position: absolute;
+}
+
+main .taste .taste_bg_img img {
+  width: 936px;
+  height: 160px;
+}
+
+footer {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  right: 0;
+  bottom: 0;
+  width: 85%;
+  padding-left: 44px;
+  padding-right: 44px;
+  background-color: violet;
 }
 
 footer .flex-box {
@@ -1411,12 +1599,15 @@ footer .flex-box {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 15px;
+  width: 936px;
+  height: 154px;
+  background-color: #fff;
 }
 
 footer .flex-box .footer-logo {
-  width: 100px;
-  height: 85px;
-  margin-top: 20px;
+  width: 77px;
+  line-height: 169px;
 }
 
 footer .flex-box .footer-logo a {
@@ -1456,6 +1647,7 @@ footer .flex-box .info-box nav .footer_info .footer-menu {
 }
 
 footer .flex-box .info-box nav .footer_info .footer-menu li {
+  font-size: 12px;
   padding-right: 10px;
   border-right: 1px solid #606060;
 }
@@ -1470,5 +1662,10 @@ footer .flex-box .info-box nav .footer_info .footer-menu li:last-child {
 
 footer .flex-box .info-box nav .footer_info .footer-menu li a {
   color: #606060;
+}
+
+footer .flex-box .info-box address {
+  font-size: 12px;
+  font-family: "S-Core Dream 3 Light";
 }
 /*# sourceMappingURL=index.css.map */
