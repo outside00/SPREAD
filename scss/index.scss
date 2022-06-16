@@ -263,8 +263,11 @@ main {
     padding-left: 348px;
     padding-right: 348px;
     text-align: center;
-    // background-color: antiquewhite;
+    background-color: antiquewhite;
     
+
+
+    //----- sect-main-slide 하진 -----//
     .sect-main-slide {
         margin-top: 50px;
         text-align: center;
@@ -311,7 +314,7 @@ main {
         .dots {
             margin: 0 auto;
             cursor: pointer;
-            width: 150px;
+            width: 936px;
             span.dot {
                 display: inline-block;
                 margin:  3px;
@@ -327,7 +330,11 @@ main {
         }
     }//sect-main-slide
 
+
+
+    //----- sect-music-playlist 하진 -----//
     .sect-music-playlist {
+        margin: 45px 0;
         .music-playlist-flex-box { 
             display: flex;
             .recent-playlist {
@@ -382,15 +389,17 @@ main {
                 }
             }
         } //music-playlist-flex-box
-    } //sect-music-playlist  //////하진
+    } //sect-music-playlist - 하진 -
 
 
     
-    //----- djplay_list -----//
+    //----- djplay_list 혜령 -----//
     .djplay_list {
         width: 40%;
         text-align: left;
         h2 {
+            width: 376px;
+            color: $h2_font-color_1;
             margin-bottom: 5px;
         }
 
@@ -1472,13 +1481,18 @@ main {
         }
     }
 
-    //----- taste -----//
+
+
+    //----- taste 혜령 -----//
     .taste {
         position: relative;
+        margin-top: 64px;
         width: 936px; height: 160px;
+        text-align: left;
+        
         .taste_text {
             position: absolute;
-            padding: 20px;
+            padding: 26px 0 20px 68px;
             width: 936px;
             z-index: 998;
             line-height: 28px;
@@ -1524,6 +1538,7 @@ main {
 
 //-------------------- footer --------------------//
 footer {
+    display: none;
     position: absolute;
     right: 0; bottom: 0;
     width: 85%;
@@ -1532,6 +1547,7 @@ footer {
     text-align: center;
     background-color: antiquewhite;
 
+    //----- flex-box -----//
     .flex-box {
         display: flex;
         justify-content: center;
@@ -1589,6 +1605,7 @@ footer {
             }
 
             address {
+                text-align: left;
                 font-size: 12px;
                 font-family: $font-3;
             }

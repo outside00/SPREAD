@@ -332,6 +332,7 @@ main {
   padding-left: 348px;
   padding-right: 348px;
   text-align: center;
+  background-color: antiquewhite;
 }
 
 main .sect-main-slide {
@@ -886,7 +887,7 @@ main .sect-main-slide .main-img-night_6 .main-music-flex-box .musicbox-1 .music 
 main .sect-main-slide .dots {
   margin: 0 auto;
   cursor: pointer;
-  width: 150px;
+  width: 936px;
 }
 
 main .sect-main-slide .dots span.dot {
@@ -901,6 +902,10 @@ main .sect-main-slide .dots span.dot {
 
 main .sect-main-slide .dots span.dot:hover {
   background-color: #8a2ae3;
+}
+
+main .sect-music-playlist {
+  margin: 45px 0;
 }
 
 main .sect-music-playlist .music-playlist-flex-box {
@@ -1015,6 +1020,8 @@ main .djplay_list {
 }
 
 main .djplay_list h2 {
+  width: 376px;
+  color: #333;
   margin-bottom: 5px;
 }
 
@@ -2201,13 +2208,15 @@ main .djplay_list .djplay_5 .profile .album .album_jacket_5_3 .album_title p img
 
 main .taste {
   position: relative;
+  margin-top: 64px;
   width: 936px;
   height: 160px;
+  text-align: left;
 }
 
 main .taste .taste_text {
   position: absolute;
-  padding: 20px;
+  padding: 26px 0 20px 68px;
   width: 936px;
   z-index: 998;
   line-height: 28px;
@@ -2251,6 +2260,7 @@ main .taste .taste_bg_img img {
 }
 
 footer {
+  display: none;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -2334,6 +2344,7 @@ footer .flex-box .info-box nav .footer_info .footer-menu li a {
 }
 
 footer .flex-box .info-box address {
+  text-align: left;
   font-size: 12px;
   font-family: "S-Core Dream 3 Light";
 }
