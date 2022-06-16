@@ -9,6 +9,10 @@ body {
   font-size: 16px;
 }
 
+main {
+  position: relative;
+}
+
 ul,
 ol {
   list-style: none;
@@ -237,7 +241,7 @@ header .web_menu .contents .dotted_line {
 }
 
 header .web_menu .contents .menu_3 .gnb_3 li a {
-  margin-left: 25px;
+  margin-left: 18px;
   font-size: 14px;
 }
 
@@ -323,21 +327,691 @@ header .web_menu .music_box .music_button img:nth-child(3) {
 
 main {
   position: absolute;
+  right: 0;
+  width: 85%;
+  padding-left: 348px;
+  padding-right: 348px;
+  text-align: center;
+}
+
+main .sect-main-slide {
+  margin-top: 50px;
+  text-align: center;
+  position: relative;
+}
+
+main .sect-main-slide .main-img-skateboard_1 {
+  text-align: left;
+  background: url(../image/main_image_board_1.jpg) no-repeat;
+  background-size: cover;
+  width: 936px;
+  height: 320px;
+}
+
+main .sect-main-slide .main-img-skateboard_1 .transbox {
+  background-color: black;
+  opacity: 0.7;
+  float: right;
+  width: 656px;
+  height: 320px;
+}
+
+main .sect-main-slide .main-img-skateboard_1 .transbox .transbox-1 {
+  background-color: black;
+  margin-left: -280px;
+  opacity: 0.5;
+  width: 280px;
+  height: 320px;
+}
+
+main .sect-main-slide .main-img-skateboard_1 .main_title {
+  position: absolute;
+  top: 58px;
+  left: 45px;
+}
+
+main .sect-main-slide .main-img-skateboard_1 .main_title h1 {
+  color: #fff;
+  width: 200px;
+  padding-bottom: 20px;
+}
+
+main .sect-main-slide .main-img-skateboard_1 .main_title a {
+  font-size: 17px;
+  color: #fff;
+  font-weight: "S-Core Dream 3 Light";
+  padding-bottom: 63px;
+}
+
+main .sect-main-slide .main-img-skateboard_1 .arrow {
+  position: absolute;
+  top: 150px;
+  left: 3px;
+}
+
+main .sect-main-slide .main-img-skateboard_1 .arrow a img {
+  width: 920px;
+}
+
+main .sect-main-slide .main-img-skateboard_1 .main-music-flex-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  right: 0;
-  width: 85%;
-  padding-left: 44px;
-  padding-right: 44px;
-  background-color: antiquewhite;
+  position: absolute;
+  top: 58px;
+  left: 325px;
+}
+
+main .sect-main-slide .main-img-skateboard_1 .main-music-flex-box .musicbox-1 .music {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 10px;
+}
+
+main .sect-main-slide .main-img-skateboard_1 .main-music-flex-box .musicbox-1 .music img {
+  width: 56px;
+  height: 56px;
+}
+
+main .sect-main-slide .main-img-skateboard_1 .main-music-flex-box .musicbox-1 .music p {
+  padding: 10px 20px;
+}
+
+main .sect-main-slide .main-img-skateboard_1 .main-music-flex-box .musicbox-1 .music p a:first-child {
+  font-size: 13px;
+  color: #fff;
+}
+
+main .sect-main-slide .main-img-skateboard_1 .main-music-flex-box .musicbox-1 .music p a:nth-child(2) {
+  font-size: 12px;
+  color: #7b8892;
+}
+
+main .sect-main-slide .main-img-spring_2 {
+  display: none;
+  margin-top: 400px;
+  text-align: left;
+  background: url(../image/main_image_board_1.jpg) no-repeat;
+  background-size: cover;
+  width: 936px;
+  height: 320px;
+  background: url(../image/main_image_spring_2.jpg) no-repeat;
+}
+
+main .sect-main-slide .main-img-spring_2 .transbox {
+  background-color: black;
+  opacity: 0.7;
+  float: right;
+  width: 656px;
+  height: 320px;
+}
+
+main .sect-main-slide .main-img-spring_2 .transbox .transbox-1 {
+  background-color: black;
+  margin-left: -280px;
+  opacity: 0.5;
+  width: 280px;
+  height: 320px;
+}
+
+main .sect-main-slide .main-img-spring_2 .main_title {
+  position: absolute;
+  top: 58px;
+  left: 45px;
+}
+
+main .sect-main-slide .main-img-spring_2 .main_title h1 {
+  color: #fff;
+  width: 200px;
+  padding-bottom: 20px;
+}
+
+main .sect-main-slide .main-img-spring_2 .main_title a {
+  font-size: 17px;
+  color: #fff;
+  font-weight: "S-Core Dream 3 Light";
+  padding-bottom: 63px;
+}
+
+main .sect-main-slide .main-img-spring_2 .arrow {
+  position: absolute;
+  top: 150px;
+  left: 3px;
+}
+
+main .sect-main-slide .main-img-spring_2 .arrow a img {
+  width: 920px;
+}
+
+main .sect-main-slide .main-img-spring_2 .main-music-flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 58px;
+  left: 325px;
+}
+
+main .sect-main-slide .main-img-spring_2 .main-music-flex-box .musicbox-1 .music {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 10px;
+}
+
+main .sect-main-slide .main-img-spring_2 .main-music-flex-box .musicbox-1 .music img {
+  width: 56px;
+  height: 56px;
+}
+
+main .sect-main-slide .main-img-spring_2 .main-music-flex-box .musicbox-1 .music p {
+  padding: 10px 20px;
+}
+
+main .sect-main-slide .main-img-spring_2 .main-music-flex-box .musicbox-1 .music p a:first-child {
+  font-size: 13px;
+  color: #fff;
+}
+
+main .sect-main-slide .main-img-spring_2 .main-music-flex-box .musicbox-1 .music p a:nth-child(2) {
+  font-size: 12px;
+  color: #7b8892;
+}
+
+main .sect-main-slide .main-img-concert_3 {
+  display: none;
+  margin-top: 400px;
+  text-align: left;
+  background: url(../image/main_image_board_1.jpg) no-repeat;
+  background-size: cover;
+  width: 936px;
+  height: 320px;
+  background: url(../image/main_image_concert_3.jpg) no-repeat;
+}
+
+main .sect-main-slide .main-img-concert_3 .transbox {
+  background-color: black;
+  opacity: 0.7;
+  float: right;
+  width: 656px;
+  height: 320px;
+}
+
+main .sect-main-slide .main-img-concert_3 .transbox .transbox-1 {
+  background-color: black;
+  margin-left: -280px;
+  opacity: 0.5;
+  width: 280px;
+  height: 320px;
+}
+
+main .sect-main-slide .main-img-concert_3 .main_title {
+  position: absolute;
+  top: 58px;
+  left: 45px;
+}
+
+main .sect-main-slide .main-img-concert_3 .main_title h1 {
+  color: #fff;
+  width: 200px;
+  padding-bottom: 20px;
+}
+
+main .sect-main-slide .main-img-concert_3 .main_title a {
+  font-size: 17px;
+  color: #fff;
+  font-weight: "S-Core Dream 3 Light";
+  padding-bottom: 63px;
+}
+
+main .sect-main-slide .main-img-concert_3 .arrow {
+  position: absolute;
+  top: 150px;
+  left: 3px;
+}
+
+main .sect-main-slide .main-img-concert_3 .arrow a img {
+  width: 920px;
+}
+
+main .sect-main-slide .main-img-concert_3 .main-music-flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 58px;
+  left: 325px;
+}
+
+main .sect-main-slide .main-img-concert_3 .main-music-flex-box .musicbox-1 .music {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 10px;
+}
+
+main .sect-main-slide .main-img-concert_3 .main-music-flex-box .musicbox-1 .music img {
+  width: 56px;
+  height: 56px;
+}
+
+main .sect-main-slide .main-img-concert_3 .main-music-flex-box .musicbox-1 .music p {
+  padding: 10px 20px;
+}
+
+main .sect-main-slide .main-img-concert_3 .main-music-flex-box .musicbox-1 .music p a:first-child {
+  font-size: 13px;
+  color: #fff;
+}
+
+main .sect-main-slide .main-img-concert_3 .main-music-flex-box .musicbox-1 .music p a:nth-child(2) {
+  font-size: 12px;
+  color: #7b8892;
+}
+
+main .sect-main-slide .main-img-cafe_4 {
+  display: none;
+  margin-top: 400px;
+  text-align: left;
+  background: url(../image/main_image_board_1.jpg) no-repeat;
+  background-size: cover;
+  width: 936px;
+  height: 320px;
+  background: url(../image/main_image_cafe_4.jpg) no-repeat;
+}
+
+main .sect-main-slide .main-img-cafe_4 .transbox {
+  background-color: black;
+  opacity: 0.7;
+  float: right;
+  width: 656px;
+  height: 320px;
+}
+
+main .sect-main-slide .main-img-cafe_4 .transbox .transbox-1 {
+  background-color: black;
+  margin-left: -280px;
+  opacity: 0.5;
+  width: 280px;
+  height: 320px;
+}
+
+main .sect-main-slide .main-img-cafe_4 .main_title {
+  position: absolute;
+  top: 58px;
+  left: 45px;
+}
+
+main .sect-main-slide .main-img-cafe_4 .main_title h1 {
+  color: #fff;
+  width: 200px;
+  padding-bottom: 20px;
+}
+
+main .sect-main-slide .main-img-cafe_4 .main_title a {
+  font-size: 17px;
+  color: #fff;
+  font-weight: "S-Core Dream 3 Light";
+  padding-bottom: 63px;
+}
+
+main .sect-main-slide .main-img-cafe_4 .arrow {
+  position: absolute;
+  top: 150px;
+  left: 3px;
+}
+
+main .sect-main-slide .main-img-cafe_4 .arrow a img {
+  width: 920px;
+}
+
+main .sect-main-slide .main-img-cafe_4 .main-music-flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 58px;
+  left: 325px;
+}
+
+main .sect-main-slide .main-img-cafe_4 .main-music-flex-box .musicbox-1 .music {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 10px;
+}
+
+main .sect-main-slide .main-img-cafe_4 .main-music-flex-box .musicbox-1 .music img {
+  width: 56px;
+  height: 56px;
+}
+
+main .sect-main-slide .main-img-cafe_4 .main-music-flex-box .musicbox-1 .music p {
+  padding: 10px 20px;
+}
+
+main .sect-main-slide .main-img-cafe_4 .main-music-flex-box .musicbox-1 .music p a:first-child {
+  font-size: 13px;
+  color: #fff;
+}
+
+main .sect-main-slide .main-img-cafe_4 .main-music-flex-box .musicbox-1 .music p a:nth-child(2) {
+  font-size: 12px;
+  color: #7b8892;
+}
+
+main .sect-main-slide .main-img-work_5 {
+  display: none;
+  margin-top: 400px;
+  text-align: left;
+  background: url(../image/main_image_board_1.jpg) no-repeat;
+  background-size: cover;
+  width: 936px;
+  height: 320px;
+  background: url(../image/main_image_work_5.jpg) no-repeat;
+}
+
+main .sect-main-slide .main-img-work_5 .transbox {
+  background-color: black;
+  opacity: 0.7;
+  float: right;
+  width: 656px;
+  height: 320px;
+}
+
+main .sect-main-slide .main-img-work_5 .transbox .transbox-1 {
+  background-color: black;
+  margin-left: -280px;
+  opacity: 0.5;
+  width: 280px;
+  height: 320px;
+}
+
+main .sect-main-slide .main-img-work_5 .main_title {
+  position: absolute;
+  top: 58px;
+  left: 45px;
+}
+
+main .sect-main-slide .main-img-work_5 .main_title h1 {
+  color: #fff;
+  width: 200px;
+  padding-bottom: 20px;
+}
+
+main .sect-main-slide .main-img-work_5 .main_title a {
+  font-size: 17px;
+  color: #fff;
+  font-weight: "S-Core Dream 3 Light";
+  padding-bottom: 63px;
+}
+
+main .sect-main-slide .main-img-work_5 .arrow {
+  position: absolute;
+  top: 150px;
+  left: 3px;
+}
+
+main .sect-main-slide .main-img-work_5 .arrow a img {
+  width: 920px;
+}
+
+main .sect-main-slide .main-img-work_5 .main-music-flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 58px;
+  left: 325px;
+}
+
+main .sect-main-slide .main-img-work_5 .main-music-flex-box .musicbox-1 .music {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 10px;
+}
+
+main .sect-main-slide .main-img-work_5 .main-music-flex-box .musicbox-1 .music img {
+  width: 56px;
+  height: 56px;
+}
+
+main .sect-main-slide .main-img-work_5 .main-music-flex-box .musicbox-1 .music p {
+  padding: 10px 20px;
+}
+
+main .sect-main-slide .main-img-work_5 .main-music-flex-box .musicbox-1 .music p a:first-child {
+  font-size: 13px;
+  color: #fff;
+}
+
+main .sect-main-slide .main-img-work_5 .main-music-flex-box .musicbox-1 .music p a:nth-child(2) {
+  font-size: 12px;
+  color: #7b8892;
+}
+
+main .sect-main-slide .main-img-night_6 {
+  display: none;
+  margin-top: 400px;
+  text-align: left;
+  background: url(../image/main_image_board_1.jpg) no-repeat;
+  background-size: cover;
+  width: 936px;
+  height: 320px;
+  background: url(../image/main_image_night_view_6.png) no-repeat;
+}
+
+main .sect-main-slide .main-img-night_6 .transbox {
+  background-color: black;
+  opacity: 0.7;
+  float: right;
+  width: 656px;
+  height: 320px;
+}
+
+main .sect-main-slide .main-img-night_6 .transbox .transbox-1 {
+  background-color: black;
+  margin-left: -280px;
+  opacity: 0.5;
+  width: 280px;
+  height: 320px;
+}
+
+main .sect-main-slide .main-img-night_6 .main_title {
+  position: absolute;
+  top: 58px;
+  left: 45px;
+}
+
+main .sect-main-slide .main-img-night_6 .main_title h1 {
+  color: #fff;
+  width: 200px;
+  padding-bottom: 20px;
+}
+
+main .sect-main-slide .main-img-night_6 .main_title a {
+  font-size: 17px;
+  color: #fff;
+  font-weight: "S-Core Dream 3 Light";
+  padding-bottom: 63px;
+}
+
+main .sect-main-slide .main-img-night_6 .arrow {
+  position: absolute;
+  top: 150px;
+  left: 3px;
+}
+
+main .sect-main-slide .main-img-night_6 .arrow a img {
+  width: 920px;
+}
+
+main .sect-main-slide .main-img-night_6 .main-music-flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 58px;
+  left: 325px;
+}
+
+main .sect-main-slide .main-img-night_6 .main-music-flex-box .musicbox-1 .music {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 10px;
+}
+
+main .sect-main-slide .main-img-night_6 .main-music-flex-box .musicbox-1 .music img {
+  width: 56px;
+  height: 56px;
+}
+
+main .sect-main-slide .main-img-night_6 .main-music-flex-box .musicbox-1 .music p {
+  padding: 10px 20px;
+}
+
+main .sect-main-slide .main-img-night_6 .main-music-flex-box .musicbox-1 .music p a:first-child {
+  font-size: 13px;
+  color: #fff;
+}
+
+main .sect-main-slide .main-img-night_6 .main-music-flex-box .musicbox-1 .music p a:nth-child(2) {
+  font-size: 12px;
+  color: #7b8892;
+}
+
+main .sect-main-slide .dots {
+  margin: 0 auto;
+  cursor: pointer;
+  width: 150px;
+}
+
+main .sect-main-slide .dots span.dot {
+  display: inline-block;
+  margin: 3px;
+  border: 1px solid #7b8892;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #7b8892;
+}
+
+main .sect-main-slide .dots span.dot:hover {
+  background-color: #8a2ae3;
+}
+
+main .sect-music-playlist .music-playlist-flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .sect-music-playlist .music-playlist-flex-box .recent-playlist {
+  text-align: left;
+}
+
+main .sect-music-playlist .music-playlist-flex-box .recent-playlist h2 {
+  color: #333;
+  margin-bottom: 5px;
+}
+
+main .sect-music-playlist .music-playlist-flex-box .recent-playlist a img {
+  width: 200px;
+  height: 200px;
+}
+
+main .sect-music-playlist .music-playlist-flex-box .recent-playlist .title {
+  font-size: 14px;
+  color: #333;
+  font-family: "S-Core Dream 5 Medium";
+}
+
+main .sect-music-playlist .music-playlist-flex-box .recent-playlist .artist {
+  font-size: 13px;
+  color: #7b8892;
+  font-family: "S-Core Dream 4 Regular";
+  width: 200px;
+}
+
+main .sect-music-playlist .music-playlist-flex-box .ai-playlist {
+  text-align: left;
+}
+
+main .sect-music-playlist .music-playlist-flex-box .ai-playlist h2 {
+  color: #333;
+  margin-bottom: 5px;
+}
+
+main .sect-music-playlist .music-playlist-flex-box .ai-playlist a img {
+  width: 200px;
+  height: 200px;
+}
+
+main .sect-music-playlist .music-playlist-flex-box .ai-playlist .title {
+  font-size: 14px;
+  color: #333;
+  font-family: "S-Core Dream 5 Medium";
+}
+
+main .sect-music-playlist .music-playlist-flex-box .ai-playlist .artist {
+  font-size: 13px;
+  color: #7b8892;
+  font-family: "S-Core Dream 4 Regular";
+  width: 200px;
+}
+
+main .sect-music-playlist .music-playlist-flex-box .ai-playlist h2 {
+  padding-left: 50px;
+}
+
+main .sect-music-playlist .music-playlist-flex-box .ai-playlist .ai-flex-box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 48px;
+  background-color: #f5f5f5;
+}
+
+main .sect-music-playlist .music-playlist-flex-box .ai-playlist .ai-flex-box .ai-playlist_1 {
+  width: 33.33333%;
+  height: 200px;
+  padding: 15px 0;
+  text-align: center;
+}
+
+main .sect-music-playlist .music-playlist-flex-box .ai-playlist .ai-flex-box .ai-playlist_1 img {
+  width: 168px;
+  height: 168px;
+}
+
+main .sect-music-playlist .music-playlist-flex-box .ai-playlist .ai-flex-box .ai-playlist_1 .title {
+  text-align: left;
+  margin: 20px 0 0 20px;
+}
+
+main .sect-music-playlist .music-playlist-flex-box .ai-playlist .ai-flex-box .ai-playlist_1 .artist {
+  text-align: left;
+  margin: 0 0 0 20px;
+}
+
+main .sect-music-playlist .music-playlist-flex-box .arrow {
+  position: absolute;
+  top: 510px;
+  right: 368px;
+}
+
+main .sect-music-playlist .music-playlist-flex-box .arrow a img {
+  width: 650px;
+  height: 30px;
 }
 
 main .djplay_list {
-  width: 376px;
+  width: 40%;
+  text-align: left;
 }
 
 main .djplay_list h2 {
@@ -1578,18 +2252,13 @@ main .taste .taste_bg_img img {
 
 footer {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   right: 0;
   bottom: 0;
   width: 85%;
-  padding-left: 44px;
-  padding-right: 44px;
-  background-color: violet;
+  padding-left: 348px;
+  padding-right: 348px;
+  text-align: center;
+  background-color: antiquewhite;
 }
 
 footer .flex-box {

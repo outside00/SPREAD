@@ -177,7 +177,7 @@ header {
                 .gnb_3 {
                     li {
                         a {
-                            margin-left: 25px;
+                            margin-left: 18px;
                             font-size: 14px;
                         }
                     }
@@ -258,15 +258,138 @@ header {
 //-------------------- main --------------------//
 main {
     position: absolute;
-    display: flex;
-    justify-content: center;
     right: 0;
-    background-color: antiquewhite;
+    width: 85%;
+    padding-left: 348px;
+    padding-right: 348px;
+    text-align: center;
+    // background-color: antiquewhite;
+    
+    .sect-main-slide {
+        margin-top: 50px;
+        text-align: center;
+        position: relative;
+        .main-img-skateboard_1 {
+            @include main-slide();
+        } 
+
+        .main-img-spring_2 {
+            display: none;
+            margin-top: 400px;
+            @include main-slide();
+            background: url(../image/main_image_spring_2.jpg)no-repeat;
+        }
+
+        .main-img-concert_3 {
+            display: none;
+            margin-top: 400px;
+            @include main-slide();
+            background: url(../image/main_image_concert_3.jpg)no-repeat;
+        }
+
+        .main-img-cafe_4 {
+            display: none;
+            margin-top: 400px;
+            @include main-slide();
+            background: url(../image/main_image_cafe_4.jpg)no-repeat;
+        }
+
+        .main-img-work_5 {
+            display: none;
+            margin-top: 400px;
+            @include main-slide();
+            background: url(../image/main_image_work_5.jpg)no-repeat;
+        }
+
+        .main-img-night_6 {
+            display: none;
+            margin-top: 400px;
+            @include main-slide();
+            background: url(../image/main_image_night_view_6.png)no-repeat;
+        }
+
+        .dots {
+            margin: 0 auto;
+            cursor: pointer;
+            width: 150px;
+            span.dot {
+                display: inline-block;
+                margin:  3px;
+                border: 1px solid $font-slide-artist;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background-color: $font-slide-artist;
+                &:hover {
+                    background-color: $font-color_2;
+                }
+            }
+        }
+    }//sect-main-slide
+
+    .sect-music-playlist {
+        .music-playlist-flex-box { 
+            display: flex;
+            .recent-playlist {
+                @include music-playlist();
+            }
+
+            .ai-playlist {
+                @include music-playlist();
+                h2 {
+                    padding-left: 50px;
+                }
+                .ai-flex-box {
+                    position: relative;
+                    display: flex;
+                    margin-left: 48px;
+                    // padding-top: 10px;
+                    background-color: #f5f5f5;
+
+                    .ai-playlist_1 {
+                        width: (100%/3);
+                        height: 200px;
+                        padding: 15px 0;
+                        text-align: center;
+                        
+                        img {
+                            width: 168px;
+                            height: 168px;
+                        }
+
+                        .title {
+                            text-align: left;
+                            margin: 20px 0 0 20px;
+                        }
+                        
+                        .artist {
+                            text-align: left;
+                            margin: 0 0 0 20px;
+                        }
+                    }
+                } //ai-flex-box
+            } //ai-playlist
+
+            .arrow {
+                position: absolute;
+                top: 510px;
+                right: 368px;
+                a {
+                    img {
+                        width: 650px;
+                        height: 30px;
+                    }
+                }
+            }
+        } //music-playlist-flex-box
+    } //sect-music-playlist  //////하진
+
+
     
     //----- djplay_list -----//
     .djplay_list {
-        width: 376px;
-
+        width: 40%;
+        text-align: left;
         h2 {
             margin-bottom: 5px;
         }
@@ -1402,13 +1525,12 @@ main {
 //-------------------- footer --------------------//
 footer {
     position: absolute;
-    display: flex;
-    justify-content: center;
     right: 0; bottom: 0;
     width: 85%;
-    padding-left: 44px;
-    padding-right: 44px;
-    background-color: violet;
+    padding-left: 348px;
+    padding-right: 348px;
+    text-align: center;
+    background-color: antiquewhite;
 
     .flex-box {
         display: flex;
