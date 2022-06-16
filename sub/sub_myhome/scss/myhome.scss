@@ -3,7 +3,7 @@
 @import "./mixin.scss";
 
 body {
-    width: 100%;
+    width: 100%; height: 100%;
     background-color: aquamarine;
 }
 
@@ -13,7 +13,7 @@ header {
         position: fixed;
         left: 0;
         width: 288px; height: 100%;
-        padding: 50px 22px 30px 22px;
+        padding: 50px 18px 30px 30px;
         background-color: $back_color;
         border-right: 1px solid #606060;
         z-index: 999;
@@ -177,7 +177,7 @@ header {
                 .gnb_3 {
                     li {
                         a {
-                            margin-left: 25px;
+                            margin-left: 18px;
                             font-size: 14px;
                         }
                     }
@@ -258,54 +258,184 @@ header {
 //-------------------- main --------------------//
 main {
     position: absolute;
-    display: flex;
-    justify-content: center;
     right: 0;
     width: 85%;
-    padding-left: 44px;
-    padding-right: 44px;
+    padding-left: 348px;
+    padding-right: 348px;
+    text-align: center;
     background-color: antiquewhite;
     
     //----- mymusic -----//
     .mymusic {
+        padding-top: 50px;
         width: 936px;
-        .music_list1{
-            display: flex;
-            align-items: center;
-            width: 100%; height: 64px;
-            border: 1px solid #7f7f7f;
-            background-color: $back_color;
+        text-align: left;
 
-            img {
-                margin: 0 30px;
-                width: 48px;
-            }
-
-            p {
-                span {
-                    display: inline;
-                }
-            }
+        h2 {
+            border-left: 5px solid #8a2ae3;
+            padding-left: 5px;
+        }
+        .right_button {
+            text-align: right;
 
             button {
-                img {
-                    width: 16px;
+                border: 0;
+                width: 80px; height: 24px;
+                background-color: #e8e8e8;
+            }
+        }
+
+        label {
+            display: block;
+            margin-bottom: 15px;
+        }
+        
+        .music_list1{
+            @include music_list();
+
+            label { margin: 0 24px; }
+            
+            img { width: 48px; }
+
+            p {
+                margin: 0 24px;
+                width: 216px;
+            }
+
+            span {
+                width: 400px;
+                display: inline;
+            }
+
+            .mymusic_button {
+                margin: 0 24px;
+                width: 112px;
+
+                button {
+                    width: 20px; height: 20px;
+
+                    &:nth-child(2) {
+                       margin: 0 20px;
+                    }
+                    &:nth-child(3) {
+                        display: none;
+                    }
+
+                    img {
+                        width: 16px;
+                    }
                 }
+            }
+        }
+
+        .more {
+            text-align: center;
+            button {
+                width: 96px; height: 32px;
+                border: 0;
+                border-radius: 10px;
             }
         }
     }
 
+
+
+    //----- myplaylist -----//
+    .myplaylist {
+        margin-top: 85px;
+        width: 936px;
+        text-align: left;
+
+        h2 {
+            border-left: 5px solid #8a2ae3;
+            padding-left: 5px;
+            margin-bottom: 22px;
+        }
+
+        .play_list {
+            display: flex;
+            justify-content: space-between;
+            .list {
+                a {
+                    img {
+                        width: 136px;
+                    }
+                }
+
+                // .list_text {
+                //     p {}
+                //     span {}
+                // }
+            }
+        }
+    }
+
+
+
+    //----- artist -----//
+    .artist {
+        margin-top: 85px;
+        width: 936px;
+        text-align: left;
+
+        h2 {
+            border-left: 5px solid #8a2ae3;
+            padding-left: 5px;
+            margin-bottom: 22px;
+        }
+
+        .artist_list {
+            display: flex;
+            justify-content: space-between;
+
+            .list {
+                a {
+                    &:hover {
+                        border-radius: 100px;
+                        background-color: #000;
+                    }
+                    img {
+                        display: block;
+                        width: 136px;
+                        border-radius: 100px;
+
+                        &:hover {
+                            background-color: #000;
+                            opacity: 0.5;
+                        }
+                    }
+                }
+
+                .list_heart {
+                    button {
+                        border: 0;
+                        border-radius: 100px;
+                        img {
+                            width: 36px;
+                        }
+                    }
+                }
+
+                .list_text {
+                    p {
+                        // width: 136px; height: 136px;
+                        // line-height: 136px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
 }
 
 //-------------------- footer --------------------//
 footer {
     position: absolute;
-    display: flex;
-    justify-content: center;
     right: 0; bottom: 0;
     width: 85%;
-    padding-left: 44px;
-    padding-right: 44px;
+    padding-left: 348px;
+    padding-right: 348px;
+    text-align: center;
     background-color: violet;
 
     .flex-box {
