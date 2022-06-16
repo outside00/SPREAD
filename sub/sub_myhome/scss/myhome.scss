@@ -13,7 +13,7 @@ header {
         position: fixed;
         left: 0;
         width: 288px; height: 100%;
-        padding: 50px 18px 30px 30px;
+        padding: 50px 22px 30px 22px;
         background-color: $back_color;
         border-right: 1px solid #606060;
         z-index: 999;
@@ -290,7 +290,7 @@ main {
             margin-bottom: 15px;
         }
         
-        .music_list1{
+        .music_list{
             @include music_list();
 
             label { margin: 0 24px; }
@@ -362,10 +362,18 @@ main {
                     }
                 }
 
-                // .list_text {
-                //     p {}
-                //     span {}
-                // }
+                .list_text {
+                    font-size: 13px;
+                    
+                    p {
+                        color: #333;
+                        font-family: $font-5;
+                    }
+                    span {
+                        color: #565656;
+                        font-family: $font-4;
+                    }
+                }
             }
         }
     }
@@ -420,6 +428,7 @@ main {
                     p {
                         // width: 136px; height: 136px;
                         // line-height: 136px;
+                        font-family: $font-5;
                         text-align: center;
                     }
                 }
@@ -495,6 +504,7 @@ footer {
             }
 
             address {
+                text-align: left;
                 font-size: 12px;
                 font-family: $font-3;
             }

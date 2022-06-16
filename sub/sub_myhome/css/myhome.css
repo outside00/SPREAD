@@ -82,7 +82,7 @@ header .web_menu {
   left: 0;
   width: 288px;
   height: 100%;
-  padding: 50px 18px 30px 30px;
+  padding: 50px 22px 30px 22px;
   background-color: #fff;
   border-right: 1px solid #606060;
   z-index: 999;
@@ -359,7 +359,7 @@ main .mymusic label {
   margin-bottom: 15px;
 }
 
-main .mymusic .music_list1 {
+main .mymusic .music_list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -373,43 +373,43 @@ main .mymusic .music_list1 {
   background-color: #fff;
 }
 
-main .mymusic .music_list1 label {
+main .mymusic .music_list label {
   margin: 0 24px;
 }
 
-main .mymusic .music_list1 img {
+main .mymusic .music_list img {
   width: 48px;
 }
 
-main .mymusic .music_list1 p {
+main .mymusic .music_list p {
   margin: 0 24px;
   width: 216px;
 }
 
-main .mymusic .music_list1 span {
+main .mymusic .music_list span {
   width: 400px;
   display: inline;
 }
 
-main .mymusic .music_list1 .mymusic_button {
+main .mymusic .music_list .mymusic_button {
   margin: 0 24px;
   width: 112px;
 }
 
-main .mymusic .music_list1 .mymusic_button button {
+main .mymusic .music_list .mymusic_button button {
   width: 20px;
   height: 20px;
 }
 
-main .mymusic .music_list1 .mymusic_button button:nth-child(2) {
+main .mymusic .music_list .mymusic_button button:nth-child(2) {
   margin: 0 20px;
 }
 
-main .mymusic .music_list1 .mymusic_button button:nth-child(3) {
+main .mymusic .music_list .mymusic_button button:nth-child(3) {
   display: none;
 }
 
-main .mymusic .music_list1 .mymusic_button button img {
+main .mymusic .music_list .mymusic_button button img {
   width: 16px;
 }
 
@@ -447,6 +447,20 @@ main .myplaylist .play_list {
 
 main .myplaylist .play_list .list a img {
   width: 136px;
+}
+
+main .myplaylist .play_list .list .list_text {
+  font-size: 13px;
+}
+
+main .myplaylist .play_list .list .list_text p {
+  color: #333;
+  font-family: "S-Core Dream 5 Medium";
+}
+
+main .myplaylist .play_list .list .list_text span {
+  color: #565656;
+  font-family: "S-Core Dream 4 Regular";
 }
 
 main .artist {
@@ -496,6 +510,7 @@ main .artist .artist_list .list .list_heart button img {
 }
 
 main .artist .artist_list .list .list_text p {
+  font-family: "S-Core Dream 5 Medium";
   text-align: center;
 }
 
@@ -583,6 +598,7 @@ footer .flex-box .info-box nav .footer_info .footer-menu li a {
 }
 
 footer .flex-box .info-box address {
+  text-align: left;
   font-size: 12px;
   font-family: "S-Core Dream 3 Light";
 }
