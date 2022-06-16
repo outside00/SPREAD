@@ -73,6 +73,7 @@ address {
 
 body {
   width: 100%;
+  height: 100%;
   background-color: aquamarine;
 }
 
@@ -237,7 +238,7 @@ header .web_menu .contents .dotted_line {
 }
 
 header .web_menu .contents .menu_3 .gnb_3 li a {
-  margin-left: 25px;
+  margin-left: 18px;
   font-size: 14px;
 }
 
@@ -323,24 +324,42 @@ header .web_menu .music_box .music_button img:nth-child(3) {
 
 main {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   right: 0;
   width: 85%;
-  padding-left: 44px;
-  padding-right: 44px;
+  padding-left: 348px;
+  padding-right: 348px;
+  text-align: center;
   background-color: antiquewhite;
 }
 
 main .mymusic {
+  padding-top: 50px;
   width: 936px;
+  text-align: left;
 }
 
-main .mymusic .music_list1 {
+main .mymusic h2 {
+  border-left: 5px solid #8a2ae3;
+  padding-left: 5px;
+}
+
+main .mymusic .right_button {
+  text-align: right;
+}
+
+main .mymusic .right_button button {
+  border: 0;
+  width: 80px;
+  height: 24px;
+  background-color: #e8e8e8;
+}
+
+main .mymusic label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+main .mymusic .music_list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -349,36 +368,160 @@ main .mymusic .music_list1 {
           align-items: center;
   width: 100%;
   height: 64px;
-  border: 1px solid #7f7f7f;
+  border-top: 1px solid #7f7f7f;
+  border-bottom: 1px solid #7f7f7f;
   background-color: #fff;
 }
 
-main .mymusic .music_list1 img {
-  margin: 0 30px;
+main .mymusic .music_list label {
+  margin: 0 24px;
+}
+
+main .mymusic .music_list img {
   width: 48px;
 }
 
-main .mymusic .music_list1 p span {
+main .mymusic .music_list p {
+  margin: 0 24px;
+  width: 216px;
+}
+
+main .mymusic .music_list span {
+  width: 400px;
   display: inline;
 }
 
-main .mymusic .music_list1 button img {
+main .mymusic .music_list .mymusic_button {
+  margin: 0 24px;
+  width: 112px;
+}
+
+main .mymusic .music_list .mymusic_button button {
+  width: 20px;
+  height: 20px;
+}
+
+main .mymusic .music_list .mymusic_button button:nth-child(2) {
+  margin: 0 20px;
+}
+
+main .mymusic .music_list .mymusic_button button:nth-child(3) {
+  display: none;
+}
+
+main .mymusic .music_list .mymusic_button button img {
   width: 16px;
+}
+
+main .mymusic .more {
+  text-align: center;
+}
+
+main .mymusic .more button {
+  width: 96px;
+  height: 32px;
+  border: 0;
+  border-radius: 10px;
+}
+
+main .myplaylist {
+  margin-top: 85px;
+  width: 936px;
+  text-align: left;
+}
+
+main .myplaylist h2 {
+  border-left: 5px solid #8a2ae3;
+  padding-left: 5px;
+  margin-bottom: 22px;
+}
+
+main .myplaylist .play_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .myplaylist .play_list .list a img {
+  width: 136px;
+}
+
+main .myplaylist .play_list .list .list_text {
+  font-size: 13px;
+}
+
+main .myplaylist .play_list .list .list_text p {
+  color: #333;
+  font-family: "S-Core Dream 5 Medium";
+}
+
+main .myplaylist .play_list .list .list_text span {
+  color: #565656;
+  font-family: "S-Core Dream 4 Regular";
+}
+
+main .artist {
+  margin-top: 85px;
+  width: 936px;
+  text-align: left;
+}
+
+main .artist h2 {
+  border-left: 5px solid #8a2ae3;
+  padding-left: 5px;
+  margin-bottom: 22px;
+}
+
+main .artist .artist_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .artist .artist_list .list a:hover {
+  border-radius: 100px;
+  background-color: #000;
+}
+
+main .artist .artist_list .list a img {
+  display: block;
+  width: 136px;
+  border-radius: 100px;
+}
+
+main .artist .artist_list .list a img:hover {
+  background-color: #000;
+  opacity: 0.5;
+}
+
+main .artist .artist_list .list .list_heart button {
+  border: 0;
+  border-radius: 100px;
+}
+
+main .artist .artist_list .list .list_heart button img {
+  width: 36px;
+}
+
+main .artist .artist_list .list .list_text p {
+  font-family: "S-Core Dream 5 Medium";
+  text-align: center;
 }
 
 footer {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   right: 0;
   bottom: 0;
   width: 85%;
-  padding-left: 44px;
-  padding-right: 44px;
+  padding-left: 348px;
+  padding-right: 348px;
+  text-align: center;
   background-color: violet;
 }
 
@@ -455,6 +598,7 @@ footer .flex-box .info-box nav .footer_info .footer-menu li a {
 }
 
 footer .flex-box .info-box address {
+  text-align: left;
   font-size: 12px;
   font-family: "S-Core Dream 3 Light";
 }
