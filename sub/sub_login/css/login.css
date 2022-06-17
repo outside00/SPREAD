@@ -1,9 +1,9 @@
 * {
   margin: 0;
   padding: 0;
-  text-align: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  text-align: center;
 }
 
 body {
@@ -110,16 +110,19 @@ main .wid .login {
   width: 320px;
   height: 554px;
   padding: 0 12px;
-  border: 1px solid #333;
+  border: 1px solid #7b8892;
   background-color: #fff;
 }
 
 main .wid .login .id-pw input {
   border: 0;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #7b8892;
   text-align: left;
   width: 100%;
   height: 40px;
+  font-family: "S-Core Dream 4 Regular";
+  font-size: 13px;
+  color: #7b8892;
 }
 
 main .wid .login .id-pw-save {
@@ -134,14 +137,14 @@ main .wid .login .id-pw-save {
 }
 
 main .wid .login .id-pw-save label {
-  margin-right: 112px;
+  margin-right: 94px;
   font-size: 10px;
   font-family: "S-Core Dream 4 Regular";
   color: #606060;
 }
 
 main .wid .login .id-pw-save a {
-  padding-left: 3px;
+  padding-left: 12px;
   font-size: 10px;
 }
 
@@ -158,25 +161,37 @@ main .wid .login .login-a a {
 }
 
 main .wid .login .sns-login P {
-  margin: 30px 0 40px 0;
+  margin: 30px 0 23px 0;
   font-size: 11px;
 }
 
 main .wid .login button {
   border: 0;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #7b8892;
   width: 100%;
   height: 40px;
+  font-size: 13px;
+  font-family: "S-Core Dream 5 Medium";
+  color: #333;
   background-color: #fff;
 }
 
 main .wid .login button img {
   width: 19px;
-  height: 19px;
+  background-color: #7b8892;
+}
+
+main .wid .login .login-h a {
+  margin-top: 32px;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  background-color: #8a2ae3;
 }
 
 main .wid .login .mb {
-  margin-top: 40px;
+  margin-top: 24px;
 }
 
 main .wid .login .mb p {
@@ -197,7 +212,6 @@ footer {
 }
 
 footer nav {
-  margin-top: 80px;
   width: 100%;
 }
 
@@ -208,6 +222,7 @@ footer nav .footer-menu {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 80px;
 }
 
 footer nav .footer-menu li {
@@ -229,6 +244,7 @@ footer nav .footer-menu li a {
 }
 
 footer address {
+  margin-top: 45px;
   font-size: 12px;
   font-family: "S-Core Dream 3 Light";
 }

@@ -28,15 +28,18 @@ main{
         .login {
             width: 320px; height: 554px;
             padding: 0 12px;
-            border: 1px solid #333;
+            border: 1px solid #7b8892;
             background-color: $back_color;
     
             .id-pw {
                 input {
                     border: 0;
-                    border-bottom: 1px solid #333;
+                    border-bottom: 1px solid #7b8892;
                     text-align: left;
                     width: 100%; height: 40px;
+                    font-family: $font-4;
+                    font-size: 13px;
+                    color: #7b8892;
                 }
             }
     
@@ -45,14 +48,14 @@ main{
                 align-items: center;
                 width: 100%; height: 60px;
                 label {
-                    margin-right: 112px;
+                    margin-right: 94px;
                     font-size: 10px;
                     font-family: $font-4;
                     color: $font-color_1;
                 }
     
                 a {
-                    padding-left: 3px;
+                    padding-left: 12px;
                     font-size: 10px;
     
                     &:last-child {
@@ -71,22 +74,37 @@ main{
             }
             .sns-login {
                 P {
-                    margin: 30px 0 40px 0;
+                    margin: 30px 0 23px 0;
                     font-size: 11px;
                 }
             }
     
             button {
                 border: 0;
-                border-bottom: 1px solid #333;
+                border-bottom: 1px solid #7b8892;
                 width: 100%; height: 40px;
+                font-size: 13px;
+                font-family: $font-5;
+                color: #333;
                 background-color: $back_color;
-    
-                img { width: 19px; height: 19px; }
+                img {
+                    width: 19px;
+                    background-color: #7b8892;
+                }
+            }
+
+            .login-h {
+                a {
+                    margin-top: 32px;
+                    width: 100%; height: 40px;
+                    line-height: 40px;
+                    color: $font-color;
+                    background-color: $back_color_3;
+                }
             }
     
             .mb {
-                margin-top: 40px;
+                margin-top: 24px;
                 p {
                     font-size: 11px;
                     display: inline;
@@ -105,12 +123,15 @@ main{
 //-------------------- footer --------------------//
 footer{
     width: 100%;
+
     nav {
-        margin-top: 80px;
         width: 100%;
+
         .footer-menu {
             display: flex;
             justify-content: center;
+            margin-top: 80px;
+
             li {
                 font-size: 12px;
                 padding-right: 10px;
@@ -131,6 +152,7 @@ footer{
     }
 
     address {
+        margin-top: 45px;
         font-size: 12px;
         font-family: $font-3;
     }
