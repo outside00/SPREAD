@@ -23,8 +23,9 @@ header {
 main{
     width: 100%;
     .login-flex {
-    display: flex;
-    justify-content: center;
+        display: flex;
+        justify-content: center;
+        
         .login-page {
             width: 320px; height: 554px;
             padding: 0 12px;
