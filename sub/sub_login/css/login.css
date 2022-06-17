@@ -97,7 +97,7 @@ main {
   width: 100%;
 }
 
-main .wid {
+main .login-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -106,7 +106,7 @@ main .wid {
           justify-content: center;
 }
 
-main .wid .login {
+main .login-flex .login-page {
   width: 320px;
   height: 554px;
   padding: 0 12px;
@@ -114,7 +114,7 @@ main .wid .login {
   background-color: #fff;
 }
 
-main .wid .login .id-pw input {
+main .login-flex .login-page .id-pw input {
   border: 0;
   border-bottom: 1px solid #7b8892;
   text-align: left;
@@ -125,7 +125,7 @@ main .wid .login .id-pw input {
   color: #7b8892;
 }
 
-main .wid .login .id-pw-save {
+main .login-flex .login-page .id-pw-find {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -136,23 +136,23 @@ main .wid .login .id-pw-save {
   height: 60px;
 }
 
-main .wid .login .id-pw-save label {
+main .login-flex .login-page .id-pw-find label {
   margin-right: 94px;
   font-size: 10px;
   font-family: "S-Core Dream 4 Regular";
   color: #606060;
 }
 
-main .wid .login .id-pw-save a {
+main .login-flex .login-page .id-pw-find a {
   padding-left: 12px;
   font-size: 10px;
 }
 
-main .wid .login .id-pw-save a:last-child {
+main .login-flex .login-page .id-pw-find a:last-child {
   border-right: 0;
 }
 
-main .wid .login .login-a a {
+main .login-flex .login-page .login-button a {
   width: 100%;
   height: 40px;
   line-height: 40px;
@@ -160,12 +160,16 @@ main .wid .login .login-a a {
   background-color: #8a2ae3;
 }
 
-main .wid .login .sns-login P {
+main .login-flex .login-page .sns-login P {
   margin: 30px 0 23px 0;
   font-size: 11px;
 }
 
-main .wid .login button {
+main .login-flex .login-page .sns-button {
+  width: 100%;
+}
+
+main .login-flex .login-page .sns-button button {
   border: 0;
   border-bottom: 1px solid #7b8892;
   width: 100%;
@@ -176,11 +180,11 @@ main .wid .login button {
   background-color: #fff;
 }
 
-main .wid .login button img {
+main .login-flex .login-page .sns-button img {
   width: 19px;
 }
 
-main .wid .login .login-h a {
+main .login-flex .login-page .member-button a {
   margin-top: 32px;
   width: 100%;
   height: 40px;
@@ -189,20 +193,20 @@ main .wid .login .login-h a {
   background-color: #8a2ae3;
 }
 
-main .wid .login .mb {
+main .login-flex .login-page .member-ship {
   margin-top: 24px;
 }
 
-main .wid .login .mb p {
+main .login-flex .login-page .member-ship p {
   font-size: 11px;
   display: inline;
 }
 
-main .wid .login .mb a {
+main .login-flex .login-page .member-ship a {
   display: inline;
 }
 
-main .wid .login .mb a img {
+main .login-flex .login-page .member-ship a img {
   height: 9px;
 }
 
