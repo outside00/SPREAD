@@ -1,1 +1,235 @@
-/* No CSS *//*# sourceMappingURL=login.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+
+main {
+  position: relative;
+}
+
+ul,
+ol {
+  list-style: none;
+  color: #606060;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  font-family: "S-Core Dream 4 Regular";
+  color: #606060;
+}
+
+strong {
+  font-size: 12px;
+  font-family: "S-Core Dream 4 Regular";
+  font-color: #333;
+}
+
+span {
+  display: block;
+  font-family: "S-Core Dream 4 Regular";
+  color: #606060;
+}
+
+h1 {
+  font-font-size: 24px;
+  font-font-family: "S-Core Dream 5 Medium";
+}
+
+h2 {
+  font-size: 21px;
+  font-family: "S-Core Dream 5 Medium";
+}
+
+h3 {
+  font-size: 18px;
+  font-family: "S-Core Dream 5 Medium";
+}
+
+h4 {
+  font-size: 16px;
+  display: block;
+}
+
+h5 {
+  font-size: 14px;
+  color: #fff;
+}
+
+p {
+  font-size: 14px;
+  font-family: "S-Core Dream 4 Regular";
+  color: #606060;
+}
+
+address {
+  font-style: normal;
+  font-size: 14px;
+  color: #606060;
+}
+
+body {
+  width: 100%;
+}
+
+header {
+  width: 100%;
+}
+
+header .logo {
+  width: 100%;
+}
+
+header .logo img {
+  margin: 55px 0;
+  height: 32px;
+}
+
+main {
+  width: 100%;
+}
+
+main .wid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .wid .login {
+  width: 320px;
+  height: 554px;
+  padding: 0 12px;
+  border: 1px solid #333;
+  background-color: #fff;
+}
+
+main .wid .login .id-pw input {
+  border: 0;
+  border-bottom: 1px solid #333;
+  text-align: left;
+  width: 100%;
+  height: 40px;
+}
+
+main .wid .login .id-pw-save {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 60px;
+}
+
+main .wid .login .id-pw-save label {
+  margin-right: 112px;
+  font-size: 10px;
+  font-family: "S-Core Dream 4 Regular";
+  color: #606060;
+}
+
+main .wid .login .id-pw-save a {
+  padding-left: 3px;
+  font-size: 10px;
+}
+
+main .wid .login .id-pw-save a:last-child {
+  border-right: 0;
+}
+
+main .wid .login .login-a a {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  background-color: #8a2ae3;
+}
+
+main .wid .login .sns-login P {
+  margin: 30px 0 40px 0;
+  font-size: 11px;
+}
+
+main .wid .login button {
+  border: 0;
+  border-bottom: 1px solid #333;
+  width: 100%;
+  height: 40px;
+  background-color: #fff;
+}
+
+main .wid .login button img {
+  width: 19px;
+  height: 19px;
+}
+
+main .wid .login .mb {
+  margin-top: 40px;
+}
+
+main .wid .login .mb p {
+  font-size: 11px;
+  display: inline;
+}
+
+main .wid .login .mb a {
+  display: inline;
+}
+
+main .wid .login .mb a img {
+  height: 9px;
+}
+
+footer {
+  width: 100%;
+}
+
+footer nav {
+  margin-top: 80px;
+  width: 100%;
+}
+
+footer nav .footer-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer nav .footer-menu li {
+  font-size: 12px;
+  padding-right: 10px;
+  border-right: 1px solid #606060;
+}
+
+footer nav .footer-menu li:first-child ~ li {
+  padding-left: 10px;
+}
+
+footer nav .footer-menu li:last-child {
+  border-right: 0;
+}
+
+footer nav .footer-menu li a {
+  color: #606060;
+}
+
+footer address {
+  font-size: 12px;
+  font-family: "S-Core Dream 3 Light";
+}
+/*# sourceMappingURL=login.css.map */

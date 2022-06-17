@@ -1,0 +1,137 @@
+@import "./style.scss";
+@import "./reset.scss";
+@import "./mixin.scss";
+
+body {
+    width: 100%;
+    //background-color: aquamarine;
+}
+
+//-------------------- header --------------------//
+header {
+    width: 100%;
+    .logo {
+        width: 100%;
+        img {
+            margin: 55px 0;
+            height: 32px;
+        }
+    }
+}
+
+//-------------------- main --------------------//
+main{
+    width: 100%;
+    .wid {
+    display: flex;
+    justify-content: center;
+        .login {
+            width: 320px; height: 554px;
+            padding: 0 12px;
+            border: 1px solid #333;
+            background-color: $back_color;
+    
+            .id-pw {
+                input {
+                    border: 0;
+                    border-bottom: 1px solid #333;
+                    text-align: left;
+                    width: 100%; height: 40px;
+                }
+            }
+    
+            .id-pw-save {
+                display: flex;
+                align-items: center;
+                width: 100%; height: 60px;
+                label {
+                    margin-right: 112px;
+                    font-size: 10px;
+                    font-family: $font-4;
+                    color: $font-color_1;
+                }
+    
+                a {
+                    padding-left: 3px;
+                    font-size: 10px;
+    
+                    &:last-child {
+                        border-right: 0;
+                    }
+                }
+            }
+    
+            .login-a {
+                a {
+                    width: 100%; height: 40px;
+                    line-height: 40px;
+                    color: $font-color;
+                    background-color: $back_color_3;
+                }
+            }
+            .sns-login {
+                P {
+                    margin: 30px 0 40px 0;
+                    font-size: 11px;
+                }
+            }
+    
+            button {
+                border: 0;
+                border-bottom: 1px solid #333;
+                width: 100%; height: 40px;
+                background-color: $back_color;
+    
+                img { width: 19px; height: 19px; }
+            }
+    
+            .mb {
+                margin-top: 40px;
+                p {
+                    font-size: 11px;
+                    display: inline;
+                }
+                a {
+                    display: inline;
+                    img {
+                        height: 9px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//-------------------- footer --------------------//
+footer{
+    width: 100%;
+    nav {
+        margin-top: 80px;
+        width: 100%;
+        .footer-menu {
+            display: flex;
+            justify-content: center;
+            li {
+                font-size: 12px;
+                padding-right: 10px;
+                border-right: 1px solid $border_color;
+                &:first-child ~ li {
+                    padding-left: 10px;
+                }
+
+                &:last-child {
+                    border-right: 0;
+                }
+                
+                a {
+                    color : $footer_color;
+                }
+            }
+        }
+    }
+
+    address {
+        font-size: 12px;
+        font-family: $font-3;
+    }
+}
