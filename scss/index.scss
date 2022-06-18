@@ -275,50 +275,49 @@ header {
     
         //----- sect-main-slide 하진 -----//
         .sect-main-slide {
+            position: relative;
             margin-top: 50px;
             text-align: center;
-            position: relative;
-            .main-img-skateboard_1 {
-                @include main-slide();
-            } 
-    
-            .main-img-spring_2 {
-                display: none;
-                margin-top: 400px;
-                @include main-slide();
-                background: url(../image/main_image_spring_2.jpg)no-repeat;
-            }
-    
-            .main-img-concert_3 {
-                display: none;
-                margin-top: 400px;
-                @include main-slide();
-                background: url(../image/main_image_concert_3.jpg)no-repeat;
-            }
-    
-            .main-img-cafe_4 {
-                display: none;
-                margin-top: 400px;
-                @include main-slide();
-                background: url(../image/main_image_cafe_4.jpg)no-repeat;
-            }
-    
-            .main-img-work_5 {
-                display: none;
-                margin-top: 400px;
-                @include main-slide();
-                background: url(../image/main_image_work_5.jpg)no-repeat;
-            }
-    
-            .main-img-night_6 {
-                display: none;
-                margin-top: 400px;
-                @include main-slide();
-                background: url(../image/main_image_night_view_6.png)no-repeat;
+            .main-slide-flexbox {
+                display: flex;
+
+                .main-img-skateboard_1 {
+                    @include main-slide();
+                } 
+        
+                .main-img-spring_2 {
+                    display: none;
+                    @include main-slide();
+                    background: url(../image/main-slide_spring_2.png)no-repeat;
+                }
+        
+                .main-img-concert_3 {
+                    display: none;
+                    @include main-slide();
+                    background: url(../image/main-slide_concert_3.png)no-repeat;
+                }
+        
+                .main-img-cafe_4 {
+                    display: none;
+                    @include main-slide();
+                    background: url(../image/main-slide_cafe_4.png)no-repeat;
+                }
+        
+                .main-img-work_5 {
+                    display: none;
+                    @include main-slide();
+                    background: url(../image/main-slide_work_5.png)no-repeat;
+                }
+        
+                .main-img-night_6 {
+                    display: none;
+                    @include main-slide();
+                    background: url(../image/main-slide_night_6.png)no-repeat;
+                }
             }
     
             .dots {
-                margin: 0 auto;
+                margin: 20px auto;
                 cursor: pointer;
                 width: 936px;
                 span.dot {
@@ -356,7 +355,7 @@ header {
                         position: relative;
                         display: flex;
                         margin-left: 48px;
-                        // padding-top: 10px;
+                        width: 640px;
                         background-color: #f5f5f5;
     
                         .ai-playlist_1 {
@@ -381,25 +380,23 @@ header {
                             }
                         }
                     } //ai-flex-box
-                } //ai-playlist
-    
-                .arrow {
-                    position: absolute;
-                    top: 510px;
-                    right: 368px;
-                    a {
+
+                    .prev-next-btn {
+                        width: 680px;
+                        margin: -105px 20px; 
                         img {
-                            width: 650px;
-                            height: 30px;
+                            width: 704px;
+                            height: 24px;
                         }
                     }
-                }
+                } //ai-playlist
             } //music-playlist-flex-box
         } //sect-music-playlist - 하진 -
     
     
         
         //----- djplay_list 혜령 -----//
+
         .djplay_list {
             width: 40%;
             text-align: left;
@@ -1490,6 +1487,7 @@ header {
     
     
         //----- taste 혜령 -----//
+
         .taste {
             position: relative;
             margin-top: 64px;
