@@ -22,104 +22,189 @@ header {
 //-------------------- main --------------------//
 main{
     width: 100%;
-    .login-flex {
+    .contract-flex {
         display: flex;
         justify-content: center;
         
-        .login-page {
+        .contract-page {
             width: 320px; height: 554px;
             padding: 0 12px;
             border: 1px solid #7b8892;
             background-color: $back_color;
-    
-            .id-pw {
-                input {
-                    border: 0;
-                    border-bottom: 1px solid #7b8892;
-                    text-align: left;
-                    width: 100%; height: 40px;
-                    font-family: $font-4;
-                    font-size: 13px;
-                    color: #7b8892;
-                }
-            }
-    
-            .id-pw-find {
-                display: flex;
-                align-items: center;
-                width: 100%; height: 60px;
 
-                label {
-                    margin-right: 94px;
-                    font-size: 10px;
-                    font-family: $font-4;
-                    color: $font-color_1;
-                }
-    
-                a {
-                    padding-left: 12px;
-                    font-size: 10px;
-    
-                    &:last-child {
-                        border-right: 0;
-                    }
+            .agree {
+                margin: 40px 0 20px 0;
+                p {
+                    font-size: 16px;
+                    font-family: $font-5;
+                    color: #333;
                 }
             }
-    
-            .login-button {
-                a {
-                    width: 100%; height: 40px;
-                    line-height: 40px;
-                    color: $font-color;
-                    background-color: $back_color_3;
-                }
-            }
-            .sns-login {
-                P {
-                    margin: 30px 0 23px 0;
-                    font-size: 11px;
-                }
-            }
-    
-            .sns-button {
-                width: 100%;
+
+            .check-1 {
+                height: 73px;
+                padding: 23px 0 16px 5px;
+                border: 1px solid #7b8892;
+                text-align: left;
 
                 button {
                     border: 0;
-                    border-bottom: 1px solid #7b8892;
-                    width: 100%; height: 40px;
-                    font-size: 13px;
-                    font-family: $font-5;
-                    color: #333;
                     background-color: $back_color;
-                }
-                img {
-                    width: 19px;
-                }
-            }
 
-            .member-button {
-                a {
-                    margin-top: 32px;
-                    width: 100%; height: 40px;
-                    line-height: 40px;
-                    color: $font-color;
-                    background-color: $back_color_3;
+                    &:nth-child(2) {
+                        display: none;
+                    }
+
+                    img {
+                        width: 15px;
+                    }
                 }
-            }
-    
-            .member-ship {
-                margin-top: 24px;
 
                 p {
-                    font-size: 11px;
                     display: inline;
+                    font-size: 13px;
+                    color: #333;
                 }
 
-                a {
-                    display: inline;
+                span {
+                    text-align: left;
+                    font-size: 10px;
+                }
+            }
+
+            .check-2 {
+                display: flex;
+                align-items: center;
+                padding: 23px 0 16px 5px;
+                height: 73px;
+                border-right: 1px solid #7b8892;
+                border-left: 1px solid #7b8892;
+                text-align: left;
+
+                button {
+                    border: 0;
+                    background-color: $back_color;
+                    &:nth-child(2) {
+                        display: none;
+                    }
+
                     img {
-                        height: 9px;
+                        width: 15px;
+                    }
+                }
+
+                p {
+                    display: inline;
+                    font-size: 13px;
+                    color: #333;
+
+                    strong {
+                        margin-left: 6px;
+                        font-size: 13px;
+                        color: $font-color_2;
+                    }
+                }
+
+                .arrow-1 {
+                    margin-left: 85px;
+                    img {
+                        height: 15px;
+                    }
+                }
+            }
+
+            .check-3 {
+                display: flex;
+                align-items: center;
+                padding: 0 0 16px 5px;
+                height: 73px;
+                border-right: 1px solid #7b8892;
+                border-left: 1px solid #7b8892;
+                text-align: left;
+
+                button {
+                    border: 0;
+                    background-color: $back_color;
+                    &:nth-child(2) {
+                        display: none;
+                    }
+
+                    img {
+                        width: 15px;
+                    }
+                }
+
+                p {
+                    display: inline;
+                    font-size: 13px;
+                    color: #333;
+
+                    strong {
+                        margin-left: 6px;
+                        font-size: 13px;
+                        color: $font-color_2;
+                    }
+                }
+
+                .arrow-2 {
+                    margin-left: 66px;
+                    img {
+                        height: 15px;
+                    }
+                }
+            }
+
+            .check-4 {
+                height: 77px;
+                padding: 0 0 20px 5px;
+                border: 1px solid #7b8892;
+                border-top: 0;
+                text-align: left;
+
+                button {
+                    border: 0;
+                    background-color: $back_color;
+                    &:nth-child(2) {
+                        display: none;
+                    }
+
+                    img {
+                        width: 15px;
+                    }
+                }
+
+                p {
+                    display: inline;
+                    font-size: 13px;
+                    color: #333;
+
+                    strong {
+                        font-size: 13px;
+                    }
+                }
+
+                span {
+                    text-align: left;
+                    font-size: 10px;
+                }
+            }
+
+            .button {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 58px;
+
+                a {
+                    width: 136px;
+                    padding: 10px;
+                    border: 2px solid $back_color_1;
+                    border-radius: 12px;
+                    font-size: 13px;
+                    font-family: $font-5;
+
+                    &:nth-child(2) {
+                        border: 2px solid $font-color_2;
+                        color: $font-color_2;
                     }
                 }
             }

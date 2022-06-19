@@ -22,11 +22,11 @@ header {
 //-------------------- main --------------------//
 main{
     width: 100%;
-    .login-flex {
+    .sign_up-flex {
         display: flex;
         justify-content: center;
         
-        .login-page {
+        .sign_up-page {
             width: 320px; height: 554px;
             padding: 0 12px;
             border: 1px solid #7b8892;
@@ -57,10 +57,10 @@ main{
                 }
             }
     
-            .id-pw-find {
+            .number {
                 display: flex;
                 justify-content: space-between;
-                margin-top: 7px;
+                margin-top: 8px;
                 width: 100%; height: 40px;
 
                 input {
@@ -81,7 +81,7 @@ main{
             }
     
             .sign_up-button {
-                margin-top: 28px;
+                margin-top: 27px;
                 
                 a {
                     width: 100%; height: 40px;

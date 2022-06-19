@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/login.css">
-    <title>SPREAD-Login</title>
+    <link rel="stylesheet" href="./css/find_id.css">
+    <title>SPREAD-find_pw</title>
 </head>
 <body>
     <header>
@@ -15,46 +15,45 @@
     </header>
 
     <main>
-        <div class="login-flex">
-            <div class="login-page">
+        <div class="find_id-flex">
+            <div class="find_id-page">
+                <div class="id-pw-find">
+                    <div class="id">
+                        <a href="#">아이디 찾기</a>
+                    </div>
+
+                    <div class="pw">
+                        <a href="#">비밀번호 찾기</a>
+                    </div>
+                </div>
+    
+                <div class="pw-find-text">
+                    <p>아이디를 잃어버리셨나요?<br> 하단의 정보를 상세히 입력하세요.</p>
+                </div>
+    
+                <div class="data">
+                    <label><input type="radio" value="phone" name="data" checked/>휴대폰으로 찾기</label>
+                    <label><input type="radio" value="e-mail" name="data" />이메일로 찾기</label>
+                </div>
 
                 <ul class="id-pw">
                     <li>
-                        <input type="text" id="id" placeholder="아이디를 입력하세요." maxlength="20" required>
+                        <input type="text" id="name" placeholder=" 이름을 입력하세요." maxlength="10" required>
                     </li>
-                    <li>
-                        <input type="password" id="pw" placeholder="비밀번호를 입력하세요." maxlength="20" required>
-                    </li>
-                </ul>
-    
-                <div class="id-pw-find">
-                    <label><input type="checkbox" name="music" />아이디 저장</label>
-                    <a href="#">아이디 찾기</a>
-                    <a href="#">비밀번호 찾기</a>
-                </div>
-    
-                <div class="login-button">
-                    <a href="#">로그인</a>
-                </div>
-    
-                <div class="sns-login">
-                    <p>SNS로 간편하게 로그인 하기</p>
-                </div>
 
-                <div class="sns-button">
-                    <button><img src="./image/login/login_kakao.png" alt="카카오"> 카카오계정 로그인</button>
-                    <button><img src="./image/login/login_naver.png" alt="네이버"> 네이버계정 로그인</button>
-                    <button><img src="./image/login/login_google.png" alt="구글"> 구글계정 로그인</button>
-                    <button><img src="./image/login/login_apple.png" alt="애플"> 애플계정 로그인</button>
+                    <li>
+                        <input type="text" id="phone" placeholder=" 휴대폰 번호를 입력하세요.(-제외)" maxlength="11" required>
+                    </li>
+                </ul><!--id-pw-->
+    
+                <div class="number">
+                    <input type="text" id="number" placeholder=" 인증번호를 입력하세요." maxlength="10" required>
+                    <button>인증받기</button>
                 </div>
     
-                <div class="member-button">
-                    <a href="#">회원가입</a>
-                </div>
-    
-                <div class="member-ship">
-                    <p>아직 가입을 안하셨나요? <a href="#">멤버십혜택보기 <img src="./image/pass_button.png" alt="화살표"></a></p>
-                </div>
+                <div class="next-button">
+                    <a href="#">다음</a>
+                </div><!--sign_up-button-->
             </div><!--login-->
         </div>
     </main>

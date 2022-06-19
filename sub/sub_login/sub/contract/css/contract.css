@@ -97,7 +97,7 @@ main {
   width: 100%;
 }
 
-main .login-flex {
+main .contract-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -106,7 +106,7 @@ main .login-flex {
           justify-content: center;
 }
 
-main .login-flex .login-page {
+main .contract-flex .contract-page {
   width: 320px;
   height: 554px;
   padding: 0 12px;
@@ -114,100 +114,199 @@ main .login-flex .login-page {
   background-color: #fff;
 }
 
-main .login-flex .login-page .id-pw input {
-  border: 0;
-  border-bottom: 1px solid #7b8892;
-  text-align: left;
-  width: 100%;
-  height: 40px;
-  font-family: "S-Core Dream 4 Regular";
-  font-size: 13px;
-  color: #7b8892;
+main .contract-flex .contract-page .agree {
+  margin: 40px 0 20px 0;
 }
 
-main .login-flex .login-page .id-pw-find {
+main .contract-flex .contract-page .agree p {
+  font-size: 16px;
+  font-family: "S-Core Dream 5 Medium";
+  color: #333;
+}
+
+main .contract-flex .contract-page .check-1 {
+  height: 73px;
+  padding: 23px 0 16px 5px;
+  border: 1px solid #7b8892;
+  text-align: left;
+}
+
+main .contract-flex .contract-page .check-1 button {
+  border: 0;
+  background-color: #fff;
+}
+
+main .contract-flex .contract-page .check-1 button:nth-child(2) {
+  display: none;
+}
+
+main .contract-flex .contract-page .check-1 button img {
+  width: 15px;
+}
+
+main .contract-flex .contract-page .check-1 p {
+  display: inline;
+  font-size: 13px;
+  color: #333;
+}
+
+main .contract-flex .contract-page .check-1 span {
+  text-align: left;
+  font-size: 10px;
+}
+
+main .contract-flex .contract-page .check-2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
-  height: 60px;
+  padding: 23px 0 16px 5px;
+  height: 73px;
+  border-right: 1px solid #7b8892;
+  border-left: 1px solid #7b8892;
+  text-align: left;
 }
 
-main .login-flex .login-page .id-pw-find label {
-  margin-right: 94px;
-  font-size: 10px;
-  font-family: "S-Core Dream 4 Regular";
-  color: #606060;
-}
-
-main .login-flex .login-page .id-pw-find a {
-  padding-left: 12px;
-  font-size: 10px;
-}
-
-main .login-flex .login-page .id-pw-find a:last-child {
-  border-right: 0;
-}
-
-main .login-flex .login-page .login-button a {
-  width: 100%;
-  height: 40px;
-  line-height: 40px;
-  color: #fff;
-  background-color: #8a2ae3;
-}
-
-main .login-flex .login-page .sns-login P {
-  margin: 30px 0 23px 0;
-  font-size: 11px;
-}
-
-main .login-flex .login-page .sns-button {
-  width: 100%;
-}
-
-main .login-flex .login-page .sns-button button {
+main .contract-flex .contract-page .check-2 button {
   border: 0;
-  border-bottom: 1px solid #7b8892;
-  width: 100%;
-  height: 40px;
-  font-size: 13px;
-  font-family: "S-Core Dream 5 Medium";
-  color: #333;
   background-color: #fff;
 }
 
-main .login-flex .login-page .sns-button img {
-  width: 19px;
+main .contract-flex .contract-page .check-2 button:nth-child(2) {
+  display: none;
 }
 
-main .login-flex .login-page .member-button a {
-  margin-top: 32px;
-  width: 100%;
-  height: 40px;
-  line-height: 40px;
-  color: #fff;
-  background-color: #8a2ae3;
+main .contract-flex .contract-page .check-2 button img {
+  width: 15px;
 }
 
-main .login-flex .login-page .member-ship {
-  margin-top: 24px;
-}
-
-main .login-flex .login-page .member-ship p {
-  font-size: 11px;
+main .contract-flex .contract-page .check-2 p {
   display: inline;
+  font-size: 13px;
+  color: #333;
 }
 
-main .login-flex .login-page .member-ship a {
+main .contract-flex .contract-page .check-2 p strong {
+  margin-left: 6px;
+  font-size: 13px;
+  color: #8a2ae3;
+}
+
+main .contract-flex .contract-page .check-2 .arrow-1 {
+  margin-left: 85px;
+}
+
+main .contract-flex .contract-page .check-2 .arrow-1 img {
+  height: 15px;
+}
+
+main .contract-flex .contract-page .check-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0 16px 5px;
+  height: 73px;
+  border-right: 1px solid #7b8892;
+  border-left: 1px solid #7b8892;
+  text-align: left;
+}
+
+main .contract-flex .contract-page .check-3 button {
+  border: 0;
+  background-color: #fff;
+}
+
+main .contract-flex .contract-page .check-3 button:nth-child(2) {
+  display: none;
+}
+
+main .contract-flex .contract-page .check-3 button img {
+  width: 15px;
+}
+
+main .contract-flex .contract-page .check-3 p {
   display: inline;
+  font-size: 13px;
+  color: #333;
 }
 
-main .login-flex .login-page .member-ship a img {
-  height: 9px;
+main .contract-flex .contract-page .check-3 p strong {
+  margin-left: 6px;
+  font-size: 13px;
+  color: #8a2ae3;
+}
+
+main .contract-flex .contract-page .check-3 .arrow-2 {
+  margin-left: 66px;
+}
+
+main .contract-flex .contract-page .check-3 .arrow-2 img {
+  height: 15px;
+}
+
+main .contract-flex .contract-page .check-4 {
+  height: 77px;
+  padding: 0 0 20px 5px;
+  border: 1px solid #7b8892;
+  border-top: 0;
+  text-align: left;
+}
+
+main .contract-flex .contract-page .check-4 button {
+  border: 0;
+  background-color: #fff;
+}
+
+main .contract-flex .contract-page .check-4 button:nth-child(2) {
+  display: none;
+}
+
+main .contract-flex .contract-page .check-4 button img {
+  width: 15px;
+}
+
+main .contract-flex .contract-page .check-4 p {
+  display: inline;
+  font-size: 13px;
+  color: #333;
+}
+
+main .contract-flex .contract-page .check-4 p strong {
+  font-size: 13px;
+}
+
+main .contract-flex .contract-page .check-4 span {
+  text-align: left;
+  font-size: 10px;
+}
+
+main .contract-flex .contract-page .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 58px;
+}
+
+main .contract-flex .contract-page .button a {
+  width: 136px;
+  padding: 10px;
+  border: 2px solid #7b8892;
+  border-radius: 12px;
+  font-size: 13px;
+  font-family: "S-Core Dream 5 Medium";
+}
+
+main .contract-flex .contract-page .button a:nth-child(2) {
+  border: 2px solid #8a2ae3;
+  color: #8a2ae3;
 }
 
 footer {
