@@ -9,10 +9,30 @@ body {
 //-------------------- main --------------------//
 main {
     width: 100%;
-    background-color: antiquewhite;
+    margin-top: 50px;
     .teenager {
         width: 936px; height: 100%;
+        margin: 0 auto;
         background-color: $back_color;
+
+        h3 {
+            font-size: 16px;
+            font-family: $font-5;
+            color: #333;
+            margin-bottom: 65px;
+        }
+
+        p {
+            font-size: 13px;
+            font-family: $font-4;
+            color: #606060;
+
+            strong {
+            font-size: 13px;
+            font-family: $font-4;
+            color: #333;
+            }
+        }
     }
 }
 
@@ -20,12 +40,12 @@ main {
 footer {
     width: 100%;
     margin-top: 80px;
-    background-color: pink;
 
     //----- flex-box 재진 -----//
     .flex-box {
         display: flex;
         justify-content: center;
+        margin: 0 auto;
         padding: 15px;
         width: 936px; height: 154px;
         background-color: $back_color;
