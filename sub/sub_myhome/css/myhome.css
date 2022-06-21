@@ -74,7 +74,6 @@ address {
 body {
   width: 100%;
   height: 100%;
-  background-color: aquamarine;
 }
 
 header .web_menu {
@@ -322,44 +321,47 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   height: 18px;
 }
 
-main {
+.main-footer {
   position: absolute;
   right: 0;
   width: 85%;
+}
+
+.main-footer main {
+  width: 100%;
   padding-left: 348px;
   padding-right: 348px;
   text-align: center;
-  background-color: antiquewhite;
 }
 
-main .mymusic {
+.main-footer main .mymusic {
   padding-top: 50px;
   width: 936px;
   text-align: left;
 }
 
-main .mymusic h2 {
+.main-footer main .mymusic h2 {
   border-left: 5px solid #8a2ae3;
   padding-left: 5px;
 }
 
-main .mymusic .right_button {
+.main-footer main .mymusic .right_button {
   text-align: right;
 }
 
-main .mymusic .right_button button {
+.main-footer main .mymusic .right_button button {
   border: 0;
   width: 80px;
   height: 24px;
   background-color: #e8e8e8;
 }
 
-main .mymusic label {
+.main-footer main .mymusic label {
   display: block;
   margin-bottom: 15px;
 }
 
-main .mymusic .music_list {
+.main-footer main .mymusic .music_list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -373,70 +375,71 @@ main .mymusic .music_list {
   background-color: #fff;
 }
 
-main .mymusic .music_list label {
+.main-footer main .mymusic .music_list label {
   margin: 0 24px;
 }
 
-main .mymusic .music_list img {
+.main-footer main .mymusic .music_list img {
   width: 48px;
 }
 
-main .mymusic .music_list p {
+.main-footer main .mymusic .music_list p {
   margin: 0 24px;
   width: 216px;
 }
 
-main .mymusic .music_list span {
+.main-footer main .mymusic .music_list span {
   width: 400px;
   display: inline;
 }
 
-main .mymusic .music_list .mymusic_button {
+.main-footer main .mymusic .music_list .mymusic_button {
   margin: 0 24px;
   width: 112px;
 }
 
-main .mymusic .music_list .mymusic_button button {
+.main-footer main .mymusic .music_list .mymusic_button button {
   width: 20px;
   height: 20px;
 }
 
-main .mymusic .music_list .mymusic_button button:nth-child(2) {
+.main-footer main .mymusic .music_list .mymusic_button button:nth-child(2) {
   margin: 0 20px;
 }
 
-main .mymusic .music_list .mymusic_button button:nth-child(3) {
+.main-footer main .mymusic .music_list .mymusic_button button:nth-child(3) {
   display: none;
 }
 
-main .mymusic .music_list .mymusic_button button img {
+.main-footer main .mymusic .music_list .mymusic_button button img {
   width: 16px;
 }
 
-main .mymusic .more {
+.main-footer main .mymusic .more {
+  margin-top: 16px;
   text-align: center;
 }
 
-main .mymusic .more button {
+.main-footer main .mymusic .more button {
   width: 96px;
   height: 32px;
   border: 0;
   border-radius: 10px;
 }
 
-main .myplaylist {
+.main-footer main .myplaylist {
   margin-top: 85px;
   width: 936px;
   text-align: left;
 }
 
-main .myplaylist h2 {
+.main-footer main .myplaylist h2 {
   border-left: 5px solid #8a2ae3;
   padding-left: 5px;
   margin-bottom: 22px;
 }
 
-main .myplaylist .play_list {
+.main-footer main .myplaylist .play_list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -445,37 +448,37 @@ main .myplaylist .play_list {
           justify-content: space-between;
 }
 
-main .myplaylist .play_list .list a img {
+.main-footer main .myplaylist .play_list .list a img {
   width: 136px;
 }
 
-main .myplaylist .play_list .list .list_text {
+.main-footer main .myplaylist .play_list .list .list_text {
   font-size: 13px;
 }
 
-main .myplaylist .play_list .list .list_text p {
+.main-footer main .myplaylist .play_list .list .list_text p {
   color: #333;
   font-family: "S-Core Dream 5 Medium";
 }
 
-main .myplaylist .play_list .list .list_text span {
+.main-footer main .myplaylist .play_list .list .list_text span {
   color: #565656;
   font-family: "S-Core Dream 4 Regular";
 }
 
-main .artist {
+.main-footer main .artist {
   margin-top: 85px;
   width: 936px;
   text-align: left;
 }
 
-main .artist h2 {
+.main-footer main .artist h2 {
   border-left: 5px solid #8a2ae3;
   padding-left: 5px;
   margin-bottom: 22px;
 }
 
-main .artist .artist_list {
+.main-footer main .artist .artist_list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -484,48 +487,59 @@ main .artist .artist_list {
           justify-content: space-between;
 }
 
-main .artist .artist_list .list a:hover {
+.main-footer main .artist .artist_list .list {
+  position: relative;
+}
+
+.main-footer main .artist .artist_list .list a:hover {
   border-radius: 100px;
   background-color: #000;
 }
 
-main .artist .artist_list .list a img {
+.main-footer main .artist .artist_list .list a img {
   display: block;
   width: 136px;
   border-radius: 100px;
 }
 
-main .artist .artist_list .list a img:hover {
+.main-footer main .artist .artist_list .list a img:hover {
   background-color: #000;
   opacity: 0.5;
 }
 
-main .artist .artist_list .list .list_heart button {
+.main-footer main .artist .artist_list .list .list_heart {
+  position: absolute;
+  right: 0;
+  bottom: 10%;
+}
+
+.main-footer main .artist .artist_list .list .list_heart button {
   border: 0;
   border-radius: 100px;
 }
 
-main .artist .artist_list .list .list_heart button img {
+.main-footer main .artist .artist_list .list .list_heart button img {
   width: 36px;
 }
 
-main .artist .artist_list .list .list_text p {
+.main-footer main .artist .artist_list .list .list_heart button:first-child {
+  display: none;
+}
+
+.main-footer main .artist .artist_list .list .list_text p {
   font-family: "S-Core Dream 5 Medium";
   text-align: center;
 }
 
-footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 85%;
+.main-footer footer {
+  width: 100%;
+  margin-top: 80px;
   padding-left: 348px;
   padding-right: 348px;
   text-align: center;
-  background-color: violet;
 }
 
-footer .flex-box {
+.main-footer footer .flex-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -538,66 +552,66 @@ footer .flex-box {
   background-color: #fff;
 }
 
-footer .flex-box .footer-logo {
+.main-footer footer .flex-box .footer-logo {
   width: 77px;
   line-height: 169px;
 }
 
-footer .flex-box .footer-logo a {
+.main-footer footer .flex-box .footer-logo a {
   width: 100%;
 }
 
-footer .flex-box .footer-logo a img {
+.main-footer footer .flex-box .footer-logo a img {
   width: 100%;
 }
 
-footer .flex-box .info-box {
+.main-footer footer .flex-box .info-box {
   margin-left: 30px;
 }
 
-footer .flex-box .info-box .notice-menu {
+.main-footer footer .flex-box .info-box .notice-menu {
   margin-bottom: 30px;
 }
 
-footer .flex-box .info-box .notice-menu .title-flex {
+.main-footer footer .flex-box .info-box .notice-menu .title-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-footer .flex-box .info-box .notice-menu .title-flex h4 {
+.main-footer footer .flex-box .info-box .notice-menu .title-flex h4 {
   margin-right: 20px;
 }
 
-footer .flex-box .info-box nav {
+.main-footer footer .flex-box .info-box nav {
   margin-bottom: 20px;
 }
 
-footer .flex-box .info-box nav .footer_info .footer-menu {
+.main-footer footer .flex-box .info-box nav .footer_info .footer-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-footer .flex-box .info-box nav .footer_info .footer-menu li {
+.main-footer footer .flex-box .info-box nav .footer_info .footer-menu li {
   font-size: 12px;
   padding-right: 10px;
   border-right: 1px solid #606060;
 }
 
-footer .flex-box .info-box nav .footer_info .footer-menu li:first-child ~ li {
+.main-footer footer .flex-box .info-box nav .footer_info .footer-menu li:first-child ~ li {
   padding-left: 10px;
 }
 
-footer .flex-box .info-box nav .footer_info .footer-menu li:last-child {
+.main-footer footer .flex-box .info-box nav .footer_info .footer-menu li:last-child {
   border-right: 0;
 }
 
-footer .flex-box .info-box nav .footer_info .footer-menu li a {
+.main-footer footer .flex-box .info-box nav .footer_info .footer-menu li a {
   color: #606060;
 }
 
-footer .flex-box .info-box address {
+.main-footer footer .flex-box .info-box address {
   text-align: left;
   font-size: 12px;
   font-family: "S-Core Dream 3 Light";

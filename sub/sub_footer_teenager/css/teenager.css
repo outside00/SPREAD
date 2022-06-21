@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+
+main {
+  position: relative;
+}
+
+ul,
+ol {
+  list-style: none;
+  color: #606060;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  font-family: "S-Core Dream 4 Regular";
+  color: #606060;
+}
+
+strong {
+  font-size: 12px;
+  font-family: "S-Core Dream 4 Regular";
+  font-color: #333;
+}
+
+span {
+  display: block;
+  font-family: "S-Core Dream 4 Regular";
+  color: #606060;
+}
+
+h1 {
+  font-font-size: 24px;
+  font-font-family: "S-Core Dream 5 Medium";
+}
+
+h2 {
+  font-size: 21px;
+  font-family: "S-Core Dream 5 Medium";
+}
+
+h3 {
+  font-size: 18px;
+  font-family: "S-Core Dream 5 Medium";
+}
+
+h4 {
+  font-size: 16px;
+  display: block;
+}
+
+h5 {
+  font-size: 14px;
+  color: #fff;
+}
+
+p {
+  font-size: 14px;
+  font-family: "S-Core Dream 4 Regular";
+  color: #606060;
+}
+
+address {
+  font-style: normal;
+  font-size: 14px;
+  color: #606060;
+}
+
+body {
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  background-color: antiquewhite;
+}
+
+main .teenager {
+  width: 936px;
+  height: 100%;
+  background-color: #fff;
+}
+
+footer {
+  width: 100%;
+  margin-top: 80px;
+  background-color: pink;
+}
+
+footer .flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px;
+  width: 936px;
+  height: 154px;
+  background-color: #fff;
+}
+
+footer .flex-box .footer-logo {
+  width: 77px;
+  line-height: 169px;
+}
+
+footer .flex-box .footer-logo a {
+  width: 100%;
+}
+
+footer .flex-box .footer-logo a img {
+  width: 100%;
+}
+
+footer .flex-box .info-box {
+  margin-left: 30px;
+}
+
+footer .flex-box .info-box .notice-menu {
+  margin-bottom: 30px;
+}
+
+footer .flex-box .info-box .notice-menu .title-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .flex-box .info-box .notice-menu .title-flex h4 {
+  margin-right: 20px;
+}
+
+footer .flex-box .info-box nav {
+  margin-bottom: 20px;
+}
+
+footer .flex-box .info-box nav .footer_info .footer-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .flex-box .info-box nav .footer_info .footer-menu li {
+  font-size: 12px;
+  padding-right: 10px;
+  border-right: 1px solid #606060;
+}
+
+footer .flex-box .info-box nav .footer_info .footer-menu li:first-child ~ li {
+  padding-left: 10px;
+}
+
+footer .flex-box .info-box nav .footer_info .footer-menu li:last-child {
+  border-right: 0;
+}
+
+footer .flex-box .info-box nav .footer_info .footer-menu li a {
+  color: #606060;
+}
+
+footer .flex-box .info-box address {
+  text-align: left;
+  font-size: 12px;
+  font-family: "S-Core Dream 3 Light";
+}
+/*# sourceMappingURL=teenager.css.map */
