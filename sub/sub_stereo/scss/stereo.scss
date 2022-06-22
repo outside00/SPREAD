@@ -13,10 +13,11 @@ header {
         left: 15px;
         .login {
             border-radius: 3px;
-            background: $a-color;
-            border: 2px solid $a-color;
+            background: white;
+            border: 2px solid white;
             font-family: $font-4;
             padding: 5px 15px;
+            color: black;
         }
 
         .logo {
@@ -28,16 +29,170 @@ header {
     }
 } // header
 
-// ========= main =========
+//========= main =========
 main {
     .sect-audio-movie {
-        margin: 10px;
-        width: 10px;
         h1 {
+            padding: 120px 0 25px;
         }
-        img {
-            
+        h2 {
+            padding: 43px 0 26px;
         }
     }
 
+    .sect-asmr {
+        h1 {
+            padding: 120px 0 35px;
+        }
+        p {
+            padding-bottom: 25px;
+            font-size: 24px;
+        }
+
+        .asmr-flexbox {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .transbox {
+                // text-align: center;
+                position: relative;
+                .txt {
+                    position: absolute;
+                    top: 15px;
+                    left: 70px;
+                }
+                img {
+                    width: 295px;
+                    height: 295px;
+                }
+            }
+        }
+    }
+
+    .sect-more {
+        h1 {
+            padding: 120px 0 25px;
+        }
+        .more-flexbox {
+            display: flex;
+            justify-content: space-between;
+            .transbox {
+                position: relative;
+                img {
+                    width: 456px;
+                    height: 456px;
+                }
+                .txt {
+                    position: absolute;
+                    bottom: 30px;
+                    left: 15px;
+                    right: 15px;
+                    a {
+                        line-height: 23px;
+                        h2 {
+                            line-height: 27px;
+                            padding-bottom: 25px;
+                        }
+                    }
+                }
+            }
+        } //more-flexbox
+
+        .end {
+            padding: 200px 0 84px;
+            text-align: center;
+            p {
+                font-size: 30px;
+            }
+        } //end
+
+        .button {
+            text-align: center;
+            a {
+                display: inline-block;
+                border: 1px solid black;
+                border-radius: 50px;
+                background-color: black;
+                padding: 15px 20px;
+            }
+        }
+    } //sect-more
+} //main
+
+//-------------------- footer --------------------//
+footer {
+    width: 100%;
+    margin-top: 80px;
+    padding-left: 348px;
+    padding-right: 348px;
+    text-align: center;
+    // background-color: antiquewhite;
+
+    .flex-box {
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+        width: 936px; height: 154px;
+        background-color: $back_color;
+
+        .footer-logo {
+            width: 75px;
+            line-height: 220px;
+            a {
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .info-box {
+            margin-left: 30px;
+            .notice-menu {
+                .title-flex {
+                    display: flex; 
+                    h4 {
+                        margin-right: 20px;
+                        a {
+                            color: black;
+                        }
+                    }
+                }
+
+                margin-bottom: 30px;
+            }
+
+            nav {
+                margin-bottom: 20px;
+                .footer_info {
+                    .footer-menu {
+                        display: flex;
+                        li {
+                            font-size: 12px;
+                            padding-right: 10px;
+                            border-right: 1px solid $border_color;
+                            &:first-child ~ li {
+                                padding-left: 10px;
+                            }
+
+                            &:last-child {
+                                border-right: 0;
+                            }
+
+                            a {
+                                color: black;
+                            }
+                        }
+                    }
+                }
+            }
+
+            address {
+                text-align: left;
+                font-size: 12px;
+                font-family: $font-3;
+            }
+        }
+    }
 }

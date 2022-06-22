@@ -7,13 +7,12 @@
 
 .grid {
   width: 100%;
-  max-width: 1024px;
+  max-width: 936px;
   margin: 0 auto;
 }
 
 header {
   width: 100%;
-  background-color: aqua;
 }
 
 ul,
@@ -28,7 +27,7 @@ img {
 
 a {
   display: block;
-  color: black;
+  color: white;
   text-decoration: none;
   font-size: 16px;
 }
@@ -38,19 +37,23 @@ a:hover {
 }
 
 h1 {
-  font-size: 26px;
-  font-family: BM DoHyeon;
-  font-weight: lighter;
+  font-size: 40px;
+  font-family: 'S-Core Dream';
+  color: #777;
 }
 
-h5 {
-  font-size: 14px;
-  color: white;
+span {
+  color: black;
 }
 
-strong {
-  font-size: 12px;
-  color: white;
+h2 {
+  font-size: 24px;
+  font-family: 'S-Core Dream';
+}
+
+p {
+  font-size: 16px;
+  font-family: 'S-Core Dream';
 }
 
 address {
@@ -78,6 +81,7 @@ header .logo-login-flexbox .login {
   border: 2px solid white;
   font-family: "S-Core Dream 4 Regular";
   padding: 5px 15px;
+  color: black;
 }
 
 header .logo-login-flexbox .logo {
@@ -86,5 +90,197 @@ header .logo-login-flexbox .logo {
 
 header .logo-login-flexbox .logo img {
   width: 100px;
+}
+
+main .sect-audio-movie h1 {
+  padding: 120px 0 25px;
+}
+
+main .sect-audio-movie h2 {
+  padding: 43px 0 26px;
+}
+
+main .sect-asmr h1 {
+  padding: 120px 0 35px;
+}
+
+main .sect-asmr p {
+  padding-bottom: 25px;
+  font-size: 24px;
+}
+
+main .sect-asmr .asmr-flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .sect-asmr .asmr-flexbox .transbox {
+  position: relative;
+}
+
+main .sect-asmr .asmr-flexbox .transbox .txt {
+  position: absolute;
+  top: 15px;
+  left: 70px;
+}
+
+main .sect-asmr .asmr-flexbox .transbox img {
+  width: 295px;
+  height: 295px;
+}
+
+main .sect-more h1 {
+  padding: 120px 0 25px;
+}
+
+main .sect-more .more-flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .sect-more .more-flexbox .transbox {
+  position: relative;
+}
+
+main .sect-more .more-flexbox .transbox img {
+  width: 456px;
+  height: 456px;
+}
+
+main .sect-more .more-flexbox .transbox .txt {
+  position: absolute;
+  bottom: 30px;
+  left: 15px;
+  right: 15px;
+}
+
+main .sect-more .more-flexbox .transbox .txt a {
+  line-height: 23px;
+}
+
+main .sect-more .more-flexbox .transbox .txt a h2 {
+  line-height: 27px;
+  padding-bottom: 25px;
+}
+
+main .sect-more .end {
+  padding: 200px 0 84px;
+  text-align: center;
+}
+
+main .sect-more .end p {
+  font-size: 30px;
+}
+
+main .sect-more .button {
+  text-align: center;
+}
+
+main .sect-more .button a {
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 50px;
+  background-color: black;
+  padding: 15px 20px;
+}
+
+footer {
+  width: 100%;
+  margin-top: 80px;
+  padding-left: 348px;
+  padding-right: 348px;
+  text-align: center;
+}
+
+footer .flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px;
+  width: 936px;
+  height: 154px;
+  background-color: #fff;
+}
+
+footer .flex-box .footer-logo {
+  width: 75px;
+  line-height: 220px;
+}
+
+footer .flex-box .footer-logo a {
+  width: 100%;
+}
+
+footer .flex-box .footer-logo a img {
+  width: 100%;
+}
+
+footer .flex-box .info-box {
+  margin-left: 30px;
+}
+
+footer .flex-box .info-box .notice-menu {
+  margin-bottom: 30px;
+}
+
+footer .flex-box .info-box .notice-menu .title-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .flex-box .info-box .notice-menu .title-flex h4 {
+  margin-right: 20px;
+}
+
+footer .flex-box .info-box .notice-menu .title-flex h4 a {
+  color: black;
+}
+
+footer .flex-box .info-box nav {
+  margin-bottom: 20px;
+}
+
+footer .flex-box .info-box nav .footer_info .footer-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .flex-box .info-box nav .footer_info .footer-menu li {
+  font-size: 12px;
+  padding-right: 10px;
+  border-right: 1px solid #606060;
+}
+
+footer .flex-box .info-box nav .footer_info .footer-menu li:first-child ~ li {
+  padding-left: 10px;
+}
+
+footer .flex-box .info-box nav .footer_info .footer-menu li:last-child {
+  border-right: 0;
+}
+
+footer .flex-box .info-box nav .footer_info .footer-menu li a {
+  color: black;
+}
+
+footer .flex-box .info-box address {
+  text-align: left;
+  font-size: 12px;
+  font-family: "S-Core Dream 3 Light";
 }
 /*# sourceMappingURL=stereo.css.map */
