@@ -1,0 +1,117 @@
+@import "./style.scss";
+@import "./reset.scss";
+@import "./mixin.scss";
+
+body {
+    width: 100%;
+}
+
+//-------------------- main --------------------//
+main {
+    width: 100%;
+    margin-top: 50px;
+    .terms_of_service {
+        width: 936px; height: 100%;
+        margin: 0 auto;
+        background-color: $back_color;
+
+        h3 {
+            font-size: 16px;
+            font-family: $font-5;
+            color: #333;
+            margin-bottom: 65px;
+        }
+
+        .article {
+            h4 {
+                font-size: 13px;
+                font-family: $font-5;
+                color: #333;
+            }
+            
+            p {
+                font-size: 13px;
+                font-family: $font-4;
+                color: #606060;
+    
+                strong {
+                    font-size: 13px;
+                    font-family: $font-5;
+                    color: #606060;
+                }
+            }
+        }
+    }
+}
+
+//-------------------- footer --------------------//
+footer {
+    width: 100%;
+    margin-top: 80px;
+
+    //----- flex-box 재진 -----//
+    .flex-box {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 15px;
+        width: 936px; height: 154px;
+        background-color: $back_color;
+
+        .footer-logo {
+            width: 77px;
+            line-height: 169px;
+            a {
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .info-box {
+            margin-left: 30px;
+            .notice-menu {
+                .title-flex {
+                    display: flex; 
+                    h4 {
+                        margin-right: 20px;
+                    }
+                }
+
+                margin-bottom: 30px;
+            }
+
+            nav {
+                margin-bottom: 20px;
+                .footer_info {
+                    .footer-menu {
+                        display: flex;
+                        li {
+                            font-size: 12px;
+                            padding-right: 10px;
+                            border-right: 1px solid $border_color;
+                            &:first-child ~ li {
+                                padding-left: 10px;
+                            }
+
+                            &:last-child {
+                                border-right: 0;
+                            }
+                            
+                            a {
+                                color : $footer_color;
+                            }
+                        }
+                    }
+                }
+            }
+
+            address {
+                text-align: left;
+                font-size: 12px;
+                font-family: $font-3;
+            }
+        }
+    }
+}

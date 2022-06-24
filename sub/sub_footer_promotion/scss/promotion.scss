@@ -1,0 +1,200 @@
+@import "./style.scss";
+@import "./reset.scss";
+@import "./mixin.scss";
+
+body {
+    width: 100%;
+}
+//-------------------- header --------------------//
+header {
+    width: 100%;
+    .spread-logo {
+        display: flex;
+        justify-content: space-between;
+        width: 936px; height: 85px;
+        margin: 0 auto;
+
+        a {
+            line-height: 85px;
+            img {
+                width: 66px;
+            }
+
+            p {
+                font-size: 16px;
+                font-family: $font-5;
+                color: $font-color_1;
+            }
+        }
+    }
+}
+
+//-------------------- main --------------------//
+main {
+    width: 100%;
+    .app {
+        position: relative;
+        width: 936px; height: 160px;
+        margin: 0 auto;
+
+        h2 {
+            position: absolute;
+            color: #fff;
+            z-index: 999;
+            line-height: 40px;
+            padding: 44px;
+        }
+
+        img {
+            position: absolute;
+            width: 936px;
+        }
+    }
+
+    .promotion {
+        width: 936px; height: 100%;
+        margin: 0 auto;
+        background-color: $back_color;
+
+        h3 {
+            margin-top: 40px;
+            margin-bottom: 45px;
+            font-size: 16px;
+            font-family: $font-5;
+            color: #333;
+        }
+
+        p {
+            font-size: 13px;
+            font-family: $font-4;
+            color: #606060;
+
+            strong {
+                font-size: 13px;
+                font-family: $font-5;
+                color: #333;
+            }
+        }
+    }
+
+    .process {
+        display: flex;
+        justify-content: space-between;
+        width: 936px; height: 160px;
+        margin: 0 auto;
+
+        div {
+            width: 320px; height: 144px;
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        .process-2 {
+            border-left: 1px solid #000;
+            border-right: 1px solid #000;
+        }
+    }
+
+    .e-mail {
+        width: 936px; height: 100%;
+        margin: 0 auto;
+
+        a {
+            width: 136px; height: 40px;
+            line-height: 40px;
+            text-align: center;
+            margin: 0 auto;
+            color: #fff;
+            background-color: $back_color_4;
+        }
+    }
+
+    .coalition {
+        width: 936px; height: 100%;
+        margin: 0 auto;
+
+        strong {
+            font-size: 13px;
+            font-family: $font-5;
+            color: #333;
+        }
+        
+        p {
+            font-size: 13px;
+            font-family: $font-4;
+            color: #606060;
+        }
+    }
+}
+
+//-------------------- footer --------------------//
+footer {
+    width: 100%;
+    margin-top: 80px;
+
+    //----- flex-box 재진 -----//
+    .flex-box {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 15px;
+        width: 936px; height: 154px;
+        background-color: $back_color;
+
+        .footer-logo {
+            width: 77px;
+            line-height: 169px;
+            a {
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .info-box {
+            margin-left: 30px;
+            .notice-menu {
+                .title-flex {
+                    display: flex; 
+                    h4 {
+                        margin-right: 20px;
+                    }
+                }
+
+                margin-bottom: 30px;
+            }
+
+            nav {
+                margin-bottom: 20px;
+                .footer_info {
+                    .footer-menu {
+                        display: flex;
+                        li {
+                            font-size: 12px;
+                            padding-right: 10px;
+                            border-right: 1px solid $border_color;
+                            &:first-child ~ li {
+                                padding-left: 10px;
+                            }
+
+                            &:last-child {
+                                border-right: 0;
+                            }
+                            
+                            a {
+                                color : $footer_color;
+                            }
+                        }
+                    }
+                }
+            }
+
+            address {
+                text-align: left;
+                font-size: 12px;
+                font-family: $font-3;
+            }
+        }
+    }
+}
