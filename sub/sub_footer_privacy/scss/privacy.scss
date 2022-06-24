@@ -1,0 +1,137 @@
+@import "./style.scss";
+@import "./reset.scss";
+@import "./mixin.scss";
+
+body {
+    width: 100%;
+}
+
+//-------------------- main --------------------//
+main {
+    width: 100%;
+    margin-top: 50px;
+
+    .privacy-text {
+        width: 936px; height: 100%;
+        margin: 0 auto;
+        background-color: $back_color;
+
+        h3 {
+            font-size: 16px;
+            font-family: $font-5;
+            color: #333;
+            margin-bottom: 36px;
+        }
+
+        p {
+            strong {
+                font-size: 13px;
+                font-family: $font-5;
+                color: #333;
+            }
+        }
+    }
+
+    .privacy {
+        width: 936px; height: 100%;
+        margin: 0 auto;
+
+        .table {
+            width: 936px;
+            border: 1px solid;
+        }
+
+        table,
+        th, td {
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+    
+        th, td {
+            padding: 15px;
+            text-align: center;
+            font-family: $font-5;
+            color: #333;
+        }
+
+        th {
+            font-size: 16px;
+        }
+
+        td {
+            font-size: 13px;
+        }
+    }
+}
+
+//-------------------- footer --------------------//
+footer {
+    width: 100%;
+    margin-top: 80px;
+
+    //----- flex-box 재진 -----//
+    .flex-box {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 15px;
+        width: 936px; height: 154px;
+        background-color: $back_color;
+
+        .footer-logo {
+            width: 77px;
+            line-height: 169px;
+            a {
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .info-box {
+            margin-left: 30px;
+            .notice-menu {
+                .title-flex {
+                    display: flex; 
+                    h4 {
+                        margin-right: 20px;
+                    }
+                }
+
+                margin-bottom: 30px;
+            }
+
+            nav {
+                margin-bottom: 20px;
+                .footer_info {
+                    .footer-menu {
+                        display: flex;
+                        li {
+                            font-size: 12px;
+                            padding-right: 10px;
+                            border-right: 1px solid $border_color;
+                            &:first-child ~ li {
+                                padding-left: 10px;
+                            }
+
+                            &:last-child {
+                                border-right: 0;
+                            }
+                            
+                            a {
+                                color : $footer_color;
+                            }
+                        }
+                    }
+                }
+            }
+
+            address {
+                text-align: left;
+                font-size: 12px;
+                font-family: $font-3;
+            }
+        }
+    }
+}
