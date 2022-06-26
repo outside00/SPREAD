@@ -4,7 +4,6 @@
 
 body {
     width: 100%;
-    background-color: aquamarine;
 }
 
 //-------------------- header --------------------//
@@ -266,13 +265,11 @@ header {
     //-------------------- main --------------------//
     main {
         width: 100%;
+        height: 1700px;
         padding-left: 348px;
-        padding-right: 348px;
-        text-align: center;
-        background-color: antiquewhite;
-        
-    
-    
+        padding-right: 334px;
+
+
         //----- sect-main-slide 하진 -----//
         .sect-main-slide {
             position: relative;
@@ -396,1087 +393,1461 @@ header {
     
         
         //----- djplay_list 혜령 -----//
+        .flex-box {
+            display: flex;
+            width: 936px;
+            height: 645px;
+            .djplay_list {
+                margin-right: 20px;
+                text-align: left;
 
-        .djplay_list {
-            width: 40%;
-            text-align: left;
-            h2 {
-                width: 376px;
-                color: $h2_font-color_1;
-                margin-bottom: 5px;
+                h2 {
+                    width: 376px;
+                    color: $h2_font-color_1;
+                    margin-bottom: 5px;
+                }
+        
+                // djplay_1 //
+                .djplay_1 {
+                    // order_1 //
+                    .order_1 {
+                        @include order();
+                        
+                        .crown_1 {
+                            position: relative;
+                            width: 34px; height: 34px;
+                            margin-left: 10px;
+            
+                            img {
+                                position: absolute;
+                                margin-top: 5px;
+                                width: 24px;
+                            }
+                            
+                            p {
+                                position: absolute;
+                                text-align: center;
+                                width: 24px; height: 34px;
+                                line-height: 37px;
+                                font-size: 8px;
+                                color: #fff;
+                            }
+                        }
+            
+                        .id {
+                            display: flex;
+                            img {
+                                width: 34px; height: 34px;
+                                margin-right: 10px;
+                            }
+                            p {
+                                line-height: 34px;
+                                font-size: 13px;
+                                font-family: $font-5;
+                            }
+                        }
+            
+                        .surge {
+                            position: absolute;
+                            right: 35px;
+                            p {
+                                font-size: 10px;
+                                img {
+                                    width: 8px;
+                                    margin-right: 5PX;
+                                }
+                            }
+                        }
+                    }
+        
+                    .profile {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        padding: 0 32px;
+                        border: 1px solid #7b8892;
+                        border-top: 0;
+                        border-bottom: 0;
+                        width: 376px; height: 348px;
+                        background-color: $back_color;
+        
+                        .story {
+                            margin: 25px 0;
+                            width: 100%;
+                            p {
+                                font-size: 12px;
+                                display: inline-block;
+                                line-height: 25px;
+                                color: $font-color_3;
+        
+                                strong {
+                                    margin-right: 10px;
+                                    display: inline-block;
+                                    width: 62px; height: 25px;
+                                    text-align: center;
+                                    color: $font-color;
+                                    background-color: $back_color_1
+                                }
+                            }
+                        }
+        
+                        .follow {
+                            width: 30%;
+        
+                            p {
+                                font-size: 12px;
+                                line-height: 18px;
+                                span {
+                                    display: inline;
+                                    color: #db4242;
+                                }
+                            }
+        
+                            .hashtag {
+                                display: flex;
+                                margin-top: 20px;
+                                p {
+                                    border: 1px solid #606060;
+                                    border-radius: 20px;
+                                    width: 50px;
+                                    font-size: 9px;
+                                    font-family: $font-2;
+                                    text-align: center;
+                                }
+                            }
+                        }
+        
+                        .album_name {
+                            width: 15%;
+                            margin-top: -10px;
+        
+                            p {
+                                font-size: 12px;
+                                line-height: 37px;
+                            }
+                        }
+        
+                        .album_bar {
+                            width: 55%;
+                            span {
+                                border: 1px solid #606060;
+                                border-radius: 20px;
+                                height: 13px;
+                                color: $border_color_1;
+                                background-color: $back_color_2;
+        
+                                &:nth-child(1) {
+                                    margin-bottom: 25px;
+                                    width: 100%;
+                                }
+        
+                                &:nth-child(2) {
+                                    margin-bottom: 25px;
+                                    width: 80%;
+                                }
+        
+                                &:nth-child(3) {
+                                    margin-bottom: 25px;
+                                    width: 70%;
+                                }
+                            }
+        
+                        }
+        
+                        .album {
+                            display: flex;
+                            justify-content: space-between;
+                            width: 100%;
+                            margin-bottom: 10px;
+        
+                            .album_jacket_1_1 {
+                                width: 90px;
+        
+                                .album_jacket {
+                                    img {
+                                        width: 90px; height: 90px;
+                                    }
+                                }
+            
+                                .album_title {
+                                    p {
+                                        font-size: 11px;
+                                        img {
+                                            width: 11px;
+                                            margin-right: 5px;
+                                        }
+                                    }
+                                }
+                            }
+        
+                            .album_jacket_1_2 {
+                                width: 90px;
+        
+                                .album_jacket {
+                                    img {
+                                        width: 90px; height: 90px;
+                                    }
+                                }
+            
+                                .album_title {
+                                    p {
+                                        font-size: 11px;
+                                        img {
+                                            width: 11px;
+                                            margin-right: 5px;
+                                        }
+                                    }
+                                }
+                            }
+        
+                            .album_jacket_1_3 {
+                                width: 90px;
+        
+                                .album_jacket {
+                                    img {
+                                        width: 90px; height: 90px;
+                                    }
+                                }
+            
+                                .album_title {
+            
+                                    p {
+                                        font-size: 11px;
+                                        img {
+                                            width: 11px;
+                                            margin-right: 5px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+        
+        
+        
+                // djplay_2 //
+                .djplay_2 {
+                    // order_2 //
+                    .order_2 {
+                        @include order();
+                        
+                        .crown_2 {
+                            position: relative;
+                            width: 34px; height: 34px;
+                            margin-left: 10px;
+            
+                            img {
+                                position: absolute;
+                                margin-top: 5px;
+                                width: 24px;
+                            }
+                            
+                            p {
+                                position: absolute;
+                                text-align: center;
+                                width: 24px; height: 34px;
+                                line-height: 37px;
+                                font-size: 8px;
+                                color: #fff;
+                            }
+                        }
+            
+                        .id {
+                            display: flex;
+                            img {
+                                width: 34px; height: 34px;
+                                margin-right: 10px;
+                            }
+                            p {
+                                line-height: 34px;
+                                font-size: 13px;
+                                font-family: $font-5;
+                            }
+                        }
+            
+                        .surge {
+                            position: absolute;
+                            right: 35px;
+                            p {
+                                font-size: 10px;
+                                img {
+                                    width: 8px;
+                                    margin-right: 5PX;
+                                }
+                            }
+                        }
+                    }
+        
+                    .profile {
+                        display: none;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        padding: 0 32px;
+                        border: 1px solid #7b8892;
+                        border-top: 0;
+                        border-bottom: 0;
+                        width: 376px; height: 348px;
+                        background-color: $back_color;
+        
+                        .story {
+                            margin: 25px 0;
+                            width: 100%;
+                            p {
+                                font-size: 12px;
+                                display: inline-block;
+                                line-height: 25px;
+                                color: $font-color_3;
+        
+                                strong {
+                                    margin-right: 10px;
+                                    display: inline-block;
+                                    width: 62px; height: 25px;
+                                    text-align: center;
+                                    color: $font-color;
+                                    background-color: $back_color_1
+                                }
+                            }
+                        }
+        
+                        .follow {
+                            width: 30%;
+        
+                            p {
+                                font-size: 12px;
+                                line-height: 18px;
+                                span {
+                                    display: inline;
+                                    color: #db4242;
+                                }
+                            }
+        
+                            .hashtag {
+                                display: flex;
+                                margin-top: 20px;
+                                p {
+                                    border: 1px solid #606060;
+                                    border-radius: 20px;
+                                    width: 50px;
+                                    font-size: 9px;
+                                    font-family: $font-2;
+                                    text-align: center;
+                                }
+                            }
+                        }
+        
+                        .album_name {
+                            width: 15%;
+                            margin-top: -10px;
+        
+                            p {
+                                font-size: 12px;
+                                line-height: 37px;
+                            }
+                        }
+        
+                        .album_bar {
+                            width: 55%;
+                            span {
+                                border: 1px solid #606060;
+                                border-radius: 20px;
+                                height: 13px;
+                                color: $border_color_1;
+                                background-color: $back_color_2;
+        
+                                &:nth-child(1) {
+                                    margin-bottom: 25px;
+                                    width: 100%;
+                                }
+        
+                                &:nth-child(2) {
+                                    margin-bottom: 25px;
+                                    width: 80%;
+                                }
+        
+                                &:nth-child(3) {
+                                    margin-bottom: 25px;
+                                    width: 70%;
+                                }
+                            }
+        
+                        }
+        
+                        .album {
+                            display: flex;
+                            justify-content: space-between;
+                            width: 100%;
+                            margin-bottom: 10px;
+        
+                            .album_jacket_2_1 {
+                                width: 90px;
+        
+                                .album_jacket {
+                                    img {
+                                        width: 90px; height: 90px;
+                                    }
+                                }
+            
+                                .album_title {
+                                    p {
+                                        font-size: 11px;
+                                        img {
+                                            width: 11px;
+                                            margin-right: 5px;
+                                        }
+                                    }
+                                }
+                            }
+        
+                            .album_jacket_2_2 {
+                                width: 90px;
+        
+                                .album_jacket {
+                                    img {
+                                        width: 90px; height: 90px;
+                                    }
+                                }
+            
+                                .album_title {
+                                    p {
+                                        font-size: 11px;
+                                        img {
+                                            width: 11px;
+                                            margin-right: 5px;
+                                        }
+                                    }
+                                }
+                            }
+        
+                            .album_jacket_2_3 {
+                                width: 90px;
+        
+                                .album_jacket {
+                                    img {
+                                        width: 90px; height: 90px;
+                                    }
+                                }
+            
+                                .album_title {
+            
+                                    p {
+                                        font-size: 11px;
+                                        img {
+                                            width: 11px;
+                                            margin-right: 5px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+        
+        
+        
+                // djplay_3 //
+                .djplay_3 {
+                    // order_3 //
+                    .order_3 {
+                        @include order();
+                        
+                        .crown_3 {
+                            position: relative;
+                            width: 34px; height: 34px;
+                            margin-left: 10px;
+            
+                            img {
+                                position: absolute;
+                                margin-top: 5px;
+                                width: 24px;
+                            }
+                            
+                            p {
+                                position: absolute;
+                                text-align: center;
+                                width: 24px; height: 34px;
+                                line-height: 37px;
+                                font-size: 8px;
+                                color: #fff;
+                            }
+                        }
+            
+                        .id {
+                            display: flex;
+                            img {
+                                width: 34px; height: 34px;
+                                margin-right: 10px;
+                            }
+                            p {
+                                line-height: 34px;
+                                font-size: 13px;
+                                font-family: $font-5;
+                            }
+                        }
+            
+                        .surge {
+                            position: absolute;
+                            right: 35px;
+                            p {
+                                font-size: 10px;
+                                img {
+                                    width: 8px;
+                                    margin-right: 5PX;
+                                }
+                            }
+                        }
+                    }
+        
+                    .profile {
+                        display: none;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        padding: 0 32px;
+                        border: 1px solid #7b8892;
+                        border-top: 0;
+                        border-bottom: 0;
+                        width: 376px; height: 348px;
+                        background-color: $back_color;
+        
+                        .story {
+                            margin: 25px 0;
+                            width: 100%;
+                            p {
+                                font-size: 12px;
+                                display: inline-block;
+                                line-height: 25px;
+                                color: $font-color_3;
+        
+                                strong {
+                                    margin-right: 10px;
+                                    display: inline-block;
+                                    width: 62px; height: 25px;
+                                    text-align: center;
+                                    color: $font-color;
+                                    background-color: $back_color_1
+                                }
+                            }
+                        }
+        
+                        .follow {
+                            width: 30%;
+        
+                            p {
+                                font-size: 12px;
+                                line-height: 18px;
+                                span {
+                                    display: inline;
+                                    color: #db4242;
+                                }
+                            }
+        
+                            .hashtag {
+                                display: flex;
+                                margin-top: 20px;
+                                p {
+                                    border: 1px solid #606060;
+                                    border-radius: 20px;
+                                    width: 50px;
+                                    font-size: 9px;
+                                    font-family: $font-2;
+                                    text-align: center;
+                                }
+                            }
+                        }
+        
+                        .album_name {
+                            width: 15%;
+                            margin-top: -10px;
+        
+                            p {
+                                font-size: 12px;
+                                line-height: 37px;
+                            }
+                        }
+        
+                        .album_bar {
+                            width: 55%;
+                            span {
+                                border: 1px solid #606060;
+                                border-radius: 20px;
+                                height: 13px;
+                                color: $border_color_1;
+                                background-color: $back_color_2;
+        
+                                &:nth-child(1) {
+                                    margin-bottom: 25px;
+                                    width: 100%;
+                                }
+        
+                                &:nth-child(2) {
+                                    margin-bottom: 25px;
+                                    width: 80%;
+                                }
+        
+                                &:nth-child(3) {
+                                    margin-bottom: 25px;
+                                    width: 70%;
+                                }
+                            }
+        
+                        }
+        
+                        .album {
+                            display: flex;
+                            justify-content: space-between;
+                            width: 100%;
+                            margin-bottom: 10px;
+        
+                            .album_jacket_3_1 {
+                                width: 90px;
+        
+                                .album_jacket {
+                                    img {
+                                        width: 90px; height: 90px;
+                                    }
+                                }
+            
+                                .album_title {
+                                    p {
+                                        font-size: 11px;
+                                        img {
+                                            width: 11px;
+                                            margin-right: 5px;
+                                        }
+                                    }
+                                }
+                            }
+        
+                            .album_jacket_3_2 {
+                                width: 90px;
+        
+                                .album_jacket {
+                                    img {
+                                        width: 90px; height: 90px;
+                                    }
+                                }
+            
+                                .album_title {
+                                    p {
+                                        font-size: 11px;
+                                        img {
+                                            width: 11px;
+                                            margin-right: 5px;
+                                        }
+                                    }
+                                }
+                            }
+        
+                            .album_jacket_3_3 {
+                                width: 90px;
+        
+                                .album_jacket {
+                                    img {
+                                        width: 90px; height: 90px;
+                                    }
+                                }
+            
+                                .album_title {
+            
+                                    p {
+                                        font-size: 11px;
+                                        img {
+                                            width: 11px;
+                                            margin-right: 5px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+        
+        
+        
+                // djplay_4 //
+                .djplay_4 {
+                    // order_4 //
+                    .order_4 {
+                        @include order();
+                        
+                        .crown_4 {
+                            width: 34px; height: 34px;
+                            margin-left: 10px;
+                            
+                            p {
+                                text-align: center;
+                                width: 24px; height: 34px;
+                                line-height: 37px;
+                                font-size: 8px;
+                                color: #606060;
+                            }
+                        }
+            
+                        .id {
+                            display: flex;
+                            img {
+                                width: 34px; height: 34px;
+                                margin-right: 10px;
+                            }
+                            p {
+                                line-height: 34px;
+                                font-size: 13px;
+                                font-family: $font-5;
+                            }
+                        }
+            
+                        .surge {
+                            position: absolute;
+                            right: 35px;
+                            p {
+                                font-size: 10px;
+                                img {
+                                    width: 8px;
+                                    margin-right: 5PX;
+                                }
+                            }
+                        }
+                    }
+        
+                    .profile {
+                        display: none;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        padding: 0 32px;
+                        border: 1px solid #7b8892;
+                        border-top: 0;
+                        border-bottom: 0;
+                        width: 376px; height: 348px;
+                        background-color: $back_color;
+        
+                        .story {
+                            margin: 25px 0;
+                            width: 100%;
+                            p {
+                                font-size: 12px;
+                                display: inline-block;
+                                line-height: 25px;
+                                color: $font-color_3;
+        
+                                strong {
+                                    margin-right: 10px;
+                                    display: inline-block;
+                                    width: 62px; height: 25px;
+                                    text-align: center;
+                                    color: $font-color;
+                                    background-color: $back_color_1
+                                }
+                            }
+                        }
+        
+                        .follow {
+                            width: 30%;
+        
+                            p {
+                                font-size: 12px;
+                                line-height: 18px;
+                                span {
+                                    display: inline;
+                                    color: #db4242;
+                                }
+                            }
+        
+                            .hashtag {
+                                display: flex;
+                                margin-top: 20px;
+                                p {
+                                    border: 1px solid #606060;
+                                    border-radius: 20px;
+                                    width: 50px;
+                                    font-size: 9px;
+                                    font-family: $font-2;
+                                    text-align: center;
+                                }
+                            }
+                        }
+        
+                        .album_name {
+                            width: 15%;
+                            margin-top: -10px;
+        
+                            p {
+                                font-size: 12px;
+                                line-height: 37px;
+                            }
+                        }
+        
+                        .album_bar {
+                            width: 55%;
+                            span {
+                                border: 1px solid #606060;
+                                border-radius: 20px;
+                                height: 13px;
+                                color: $border_color_1;
+                                background-color: $back_color_2;
+        
+                                &:nth-child(1) {
+                                    margin-bottom: 25px;
+                                    width: 100%;
+                                }
+        
+                                &:nth-child(2) {
+                                    margin-bottom: 25px;
+                                    width: 80%;
+                                }
+        
+                                &:nth-child(3) {
+                                    margin-bottom: 25px;
+                                    width: 70%;
+                                }
+                            }
+        
+                        }
+        
+                        .album {
+                            display: flex;
+                            justify-content: space-between;
+                            width: 100%;
+                            margin-bottom: 10px;
+        
+                            .album_jacket_4_1 {
+                                width: 90px;
+        
+                                .album_jacket {
+                                    img {
+                                        width: 90px; height: 90px;
+                                    }
+                                }
+            
+                                .album_title {
+                                    p {
+                                        font-size: 11px;
+                                        img {
+                                            width: 11px;
+                                            margin-right: 5px;
+                                        }
+                                    }
+                                }
+                            }
+        
+                            .album_jacket_4_2 {
+                                width: 90px;
+        
+                                .album_jacket {
+                                    img {
+                                        width: 90px; height: 90px;
+                                    }
+                                }
+            
+                                .album_title {
+                                    p {
+                                        font-size: 11px;
+                                        img {
+                                            width: 11px;
+                                            margin-right: 5px;
+                                        }
+                                    }
+                                }
+                            }
+        
+                            .album_jacket_4_3 {
+                                width: 90px;
+        
+                                .album_jacket {
+                                    img {
+                                        width: 90px; height: 90px;
+                                    }
+                                }
+            
+                                .album_title {
+            
+                                    p {
+                                        font-size: 11px;
+                                        img {
+                                            width: 11px;
+                                            margin-right: 5px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+        
+        
+        
+                // djplay_5 //
+                .djplay_5 {
+                    // order_5 //
+                    .order_5 {
+                        @include order();
+                        
+                        .crown_5 {
+                            width: 34px; height: 34px;
+                            margin-left: 10px;
+                            
+                            p {
+                                text-align: center;
+                                width: 24px; height: 34px;
+                                line-height: 37px;
+                                font-size: 8px;
+                                color: #606060;
+                            }
+                        }
+            
+                        .id {
+                            display: flex;
+                            img {
+                                width: 34px; height: 34px;
+                                margin-right: 10px;
+                            }
+                            p {
+                                line-height: 34px;
+                                font-size: 13px;
+                                font-family: $font-5;
+                            }
+                        }
+            
+                        .surge {
+                            position: absolute;
+                            right: 35px;
+                            p {
+                                font-size: 10px;
+                                img {
+                                    width: 8px;
+                                    margin-right: 5PX;
+                                }
+                            }
+                        }
+                    }
+        
+                    .profile {
+                        display: none;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        padding: 0 32px;
+                        border: 1px solid #7b8892;
+                        border-top: 0;
+                        border-bottom: 0;
+                        width: 376px; height: 348px;
+                        background-color: $back_color;
+        
+                        .story {
+                            margin: 25px 0;
+                            width: 100%;
+                            p {
+                                font-size: 12px;
+                                display: inline-block;
+                                line-height: 25px;
+                                color: $font-color_3;
+        
+                                strong {
+                                    margin-right: 10px;
+                                    display: inline-block;
+                                    width: 62px; height: 25px;
+                                    text-align: center;
+                                    color: $font-color;
+                                    background-color: $back_color_1
+                                }
+                            }
+                        }
+        
+                        .follow {
+                            width: 30%;
+        
+                            p {
+                                font-size: 12px;
+                                line-height: 18px;
+                                span {
+                                    display: inline;
+                                    color: #db4242;
+                                }
+                            }
+        
+                            .hashtag {
+                                display: flex;
+                                margin-top: 20px;
+                                p {
+                                    border: 1px solid #606060;
+                                    border-radius: 20px;
+                                    width: 50px;
+                                    font-size: 9px;
+                                    font-family: $font-2;
+                                    text-align: center;
+                                }
+                            }
+                        }
+        
+                        .album_name {
+                            width: 15%;
+                            margin-top: -10px;
+        
+                            p {
+                                font-size: 12px;
+                                line-height: 37px;
+                            }
+                        }
+        
+                        .album_bar {
+                            width: 55%;
+                            span {
+                                border: 1px solid #606060;
+                                border-radius: 20px;
+                                height: 13px;
+                                color: $border_color_1;
+                                background-color: $back_color_2;
+        
+                                &:nth-child(1) {
+                                    margin-bottom: 25px;
+                                    width: 100%;
+                                }
+        
+                                &:nth-child(2) {
+                                    margin-bottom: 25px;
+                                    width: 80%;
+                                }
+        
+                                &:nth-child(3) {
+                                    margin-bottom: 25px;
+                                    width: 70%;
+                                }
+                            }
+        
+                        }
+        
+                        .album {
+                            display: flex;
+                            justify-content: space-between;
+                            width: 100%;
+                            margin-bottom: 10px;
+        
+                            .album_jacket_5_1 {
+                                width: 90px;
+        
+                                .album_jacket {
+                                    img {
+                                        width: 90px; height: 90px;
+                                    }
+                                }
+            
+                                .album_title {
+                                    p {
+                                        font-size: 11px;
+                                        img {
+                                            width: 11px;
+                                            margin-right: 5px;
+                                        }
+                                    }
+                                }
+                            }
+        
+                            .album_jacket_5_2 {
+                                width: 90px;
+        
+                                .album_jacket {
+                                    img {
+                                        width: 90px; height: 90px;
+                                    }
+                                }
+            
+                                .album_title {
+                                    p {
+                                        font-size: 11px;
+                                        img {
+                                            width: 11px;
+                                            margin-right: 5px;
+                                        }
+                                    }
+                                }
+                            }
+        
+                            .album_jacket_5_3 {
+                                width: 90px;
+        
+                                .album_jacket {
+                                    img {
+                                        width: 90px; height: 90px;
+                                    }
+                                }
+            
+                                .album_title {
+            
+                                    p {
+                                        font-size: 11px;
+                                        img {
+                                            width: 11px;
+                                            margin-right: 5px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
+        
+        
+            /////////////////////// 재진
     
-            // djplay_1 //
-            .djplay_1 {
-                // order_1 //
-                .order_1 {
-                    @include order();
-                    
-                    .crown_1 {
+            .contents {
+                width: 537px;
+                h2 {
+                    text-align: left;
+                }
+                    .box-boder {
+                        margin-top: 5px;
+                        border: $border_color2;
+                        border-bottom: 0;
+                        .profile-img {
+                            display: flex;
+                            padding: 10px;
+                            .nick-img {
+                                a {
+                                    img {
+                                        width: 42px;
+                                    }
+                                }
+                            }
+                            .text-area {
+                                margin-left: 20px;
+                                textarea {
+                                    width: 100%;
+                                    resize: none;
+                                    border: 0;
+                                }
+                            }
+                        }
+            
+                        .img-imoticon {
+                            display: flex;
+                            border-bottom: $border_color4;
+                            .imoticon {
+                                display: flex;
+                                margin-top: 5px;
+                                margin-left: 70px;
+                                
+                                a {
+                                    margin-right: 10px;
+                                    
+                                    img {
+                                        display: block;
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                            .sp-btn {
+                                width: 80px;
+                                margin-left: 255px;
+                                margin-bottom: 10px;
+                                button {
+                                    width: 100%;
+                                    height: 30px;
+                                    border: 0;
+                                    border-radius: 50px;
+                                    cursor: pointer;
+                                    color: $btn_color;
+                                    background-color: $btn_backColor1;
+                                }
+                            }   
+                        }
+        
+                        .profile-set {
+                            position: relative;
+                            padding: 10px;
+                            .set-img {
+                                display: flex;
+                                .nick-img {
+                                    a {
+                                        img {
+                                            width: 36px;
+                                        }
+                                    }
+                                }
+                                .nick {
+                                    font: {
+                                        size: 16px;
+                                        weight: 600;
+                                    }
+                                    margin-left: 10px;
+                                    margin-top: 10px;
+                                }
+                            }
+                            .sp-set {
+                                display: flex;
+                                position: absolute;
+                                top: 24px;
+                                right: 36px;
+                                cursor: pointer;
+        
+                                span {
+                                    display: block;
+                                    width: 5px;
+                                    height: 5px;
+                                    margin: 2px;
+                                    border-radius: 50%;
+                                    background-color: $back_color4;
+                                }
+                            }
+                        }
+                    }
+        
+                .more-box {
+                        display: flex;
+                        width: 100%;
+                        .sns {
+                            border: $border_color3;
+                        .music-txt {
+                            .music-img {
+                                padding: 10px;
+                                a {
+                                    img {
+                                        width: 168px;
+                                        height: 160px;
+                                    }
+                                }
+                            }
+                            .like-txt {
+                                width: 100%;
+                                border-bottom: $border_color2;
+                                &:last-child {
+                                    border-bottom: 0;
+                                }
+                                .heart-img {
+                                    float:left;                                    
+                                    margin-right: 5px;
+                                    a {
+                                        img {
+                                            display: block;
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+        
+                                p {
+                                    text-align: left;
+                                    color: $font-color_4;
+                                }
+                                strong {
+                                    display: block;
+                                    text-align: left;
+                                    color: $strong-color2;
+                                    margin-top: 5px;
+                                }
+                            }
+                            .music-txt {
+                                display: flex;
+                                padding: 35px 10px 10px 10px;
+                                .music-img2 {
+                                    padding-top: 5px;
+                                    a {
+                                        img {
+                                            width: 65px;
+                                        }
+                                    }
+                                }
+                                .play-item {
+                                    padding-top: 10px;
+                                    padding-left: 10px;
+                                    .play-img {
+                                        text-align: left;
+                                        a {
+                                            img {
+                                                width: 25px;
+                                            }
+                                        }
+                                    }
+                                    p {
+                                        color: $font-color_4;
+                                        font-size: 12px;
+                                        span {
+                                            margin-left: 0;
+                                            font-size: 12px;
+                                            color: $font-color_3;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+        
+                    /////////////////////////////////////////////////
+                    .comment {
+                        width: 100%;
+                        border: $border_color2;
+                        border-top: 0;
+                        border-left: 0;
+                        .comment-txt {
+                            text-align: left;
+                            border-top: $border_color2;
+                            border-left: 0;
+                            border-right: 0;
+                            a {
+                                font-size: 14px;
+                            }
+                        }
+        
+                        .like-comment {
+                            padding: 8px;
+                            
+                            .like-item {
+                                margin-bottom: 10px;
+                                .like-profile { // 공통
+                                    .heart-img {
+                                        float: right;
+                                    }
+        
+                                    .like-pro {
+                                        text-align: left;
+                                        margin-left: 40px;
+                                    }
+        
+                                    .like-com {
+                                        display: flex;
+                                        margin-left: 40px;
+                                        a {
+                                            &:first-child {
+                                                margin-right: 10px;
+                                            }
+                                        }
+                                    }
+                                }
+        
+                                &:first-child {
+                                    .profile-sp {
+                                        span {
+                                            background-color: $span-bgy;
+                                        }
+                                    }
+                                }
+        
+                                &:nth-child(2) {
+                                    margin-left: 20px;
+                                    .nick-img {
+                                        float: left;
+                                        a {
+                                            img {
+                                                width: 32px;
+                                            }
+                                        }
+                                    }
+                                    span {
+                                        background-color: $span-bgg;
+                                    }
+                                }
+        
+                                &:nth-child(3) {
+                                    display: none;
+                                    .profile-sp {
+                                        span {
+                                            background-color: $span-bgb;
+                                        }
+                                    }
+                                }
+        
+                                &:nth-child(4) {
+                                    display: none;
+                                    .profile-sp {
+                                        span {
+                                            background-color: $span-bgp;
+                                        }
+                                    }
+                                }
+                            }
+        
+                            .plus {
+                                position: relative;
+                                height: 20px;
+                                cursor: pointer;
+                                border: $border_color4;
+                                .plus-bd {
+                                    position: absolute;
+                                    top: 4px;
+                                    left: 50%;
+                                    transform: translate(-50%);
+                                    border: $border_color4;
+                                    border-radius: 50%;
+                                    width: 10px;
+                                    height: 10px;
+                                    span {
+                                        &:first-child {
+                                            position: absolute;
+                                            top: 40%;
+                                            left: 50%;
+                                            width: 6px;
+                                            height: 2px;
+                                            transform: translate(-50%);
+                                            background-color: $span-bgn;
+                                        }
+            
+                                        &:last-child {
+                                            position: absolute;
+                                            top: 40%;
+                                            left: 10%;
+                                            width: 6px;
+                                            height: 2px;
+                                            transform: rotate(90deg);
+                                            background-color: $span-bgn;
+                                        }
+                                    }
+                                }
+                            }
+        
+                            &:last-child {
+                                .like-item {
+                                    &:first-child {
+                                        .profile-sp {
+                                            span {
+                                                background-color: $span-bgn;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .input-comment {
+                    display: none;
+                    width: 336px;
+                    .input-title {
                         position: relative;
-                        width: 34px; height: 34px;
-                        margin-left: 10px;
-        
-                        img {
-                            position: absolute;
-                            margin-top: 5px;
-                            width: 24px;
+                        padding: 10px;
+                        border: $border_color2;
+                        h3 {
+                            color: $h3_font-color_1;
                         }
-                        
-                        p {
-                            position: absolute;
-                            text-align: center;
-                            width: 24px; height: 34px;
-                            line-height: 37px;
-                            font-size: 8px;
-                            color: #fff;
-                        }
-                    }
-        
-                    .id {
-                        display: flex;
-                        img {
-                            width: 34px; height: 34px;
-                            margin-right: 10px;
-                        }
-                        p {
-                            line-height: 34px;
-                            font-size: 13px;
-                            font-family: $font-5;
-                        }
-                    }
-        
-                    .surge {
-                        position: absolute;
-                        right: 35px;
-                        p {
-                            font-size: 10px;
-                            img {
-                                width: 8px;
-                                margin-right: 5PX;
-                            }
-                        }
-                    }
-                }
-    
-                .profile {
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: space-between;
-                    padding: 0 32px;
-                    border: 1px solid #7b8892;
-                    border-top: 0;
-                    border-bottom: 0;
-                    width: 376px; height: 348px;
-                    background-color: $back_color;
-    
-                    .story {
-                        margin: 25px 0;
-                        width: 100%;
-                        p {
-                            font-size: 12px;
-                            display: inline-block;
-                            line-height: 25px;
-                            color: $font-color_3;
-    
-                            strong {
-                                margin-right: 10px;
-                                display: inline-block;
-                                width: 62px; height: 25px;
-                                text-align: center;
-                                color: $font-color;
-                                background-color: $back_color_1
-                            }
-                        }
-                    }
-    
-                    .follow {
-                        width: 30%;
-    
-                        p {
-                            font-size: 12px;
-                            line-height: 18px;
+                        .input-close {
+                            cursor: pointer;
                             span {
-                                display: inline;
-                                color: #db4242;
-                            }
-                        }
-    
-                        .hashtag {
-                            display: flex;
-                            margin-top: 20px;
-                            p {
-                                border: 1px solid #606060;
-                                border-radius: 20px;
-                                width: 50px;
-                                font-size: 9px;
-                                font-family: $font-2;
-                                text-align: center;
-                            }
-                        }
-                    }
-    
-                    .album_name {
-                        width: 15%;
-                        margin-top: -10px;
-    
-                        p {
-                            font-size: 12px;
-                            line-height: 37px;
-                        }
-                    }
-    
-                    .album_bar {
-                        width: 55%;
-                        span {
-                            border: 1px solid #606060;
-                            border-radius: 20px;
-                            height: 13px;
-                            color: $border_color_1;
-                            background-color: $back_color_2;
-    
-                            &:nth-child(1) {
-                                margin-bottom: 25px;
-                                width: 100%;
-                            }
-    
-                            &:nth-child(2) {
-                                margin-bottom: 25px;
-                                width: 80%;
-                            }
-    
-                            &:nth-child(3) {
-                                margin-bottom: 25px;
-                                width: 70%;
-                            }
-                        }
-    
-                    }
-    
-                    .album {
-                        display: flex;
-                        justify-content: space-between;
-                        width: 100%;
-                        margin-bottom: 10px;
-    
-                        .album_jacket_1_1 {
-                            width: 90px;
-    
-                            .album_jacket {
-                                img {
-                                    width: 90px; height: 90px;
+                                width: 15px;
+                                height: 2px;
+                                background-color: $span-bgg2;
+                                &:first-child {
+                                    position: absolute;
+                                    top: 20px;
+                                    right: 10px;
+                                    transform: rotate(-45deg);
                                 }
-                            }
-        
-                            .album_title {
-                                p {
-                                    font-size: 11px;
-                                    img {
-                                        width: 11px;
-                                        margin-right: 5px;
-                                    }
-                                }
-                            }
-                        }
-    
-                        .album_jacket_1_2 {
-                            width: 90px;
-    
-                            .album_jacket {
-                                img {
-                                    width: 90px; height: 90px;
-                                }
-                            }
-        
-                            .album_title {
-                                p {
-                                    font-size: 11px;
-                                    img {
-                                        width: 11px;
-                                        margin-right: 5px;
-                                    }
-                                }
-                            }
-                        }
-    
-                        .album_jacket_1_3 {
-                            width: 90px;
-    
-                            .album_jacket {
-                                img {
-                                    width: 90px; height: 90px;
-                                }
-                            }
-        
-                            .album_title {
-        
-                                p {
-                                    font-size: 11px;
-                                    img {
-                                        width: 11px;
-                                        margin-right: 5px;
-                                    }
+                                &:last-child {
+                                    position: absolute;
+                                    top: 20px;
+                                    right: 10px;
+                                    transform: rotate(45deg);
                                 }
                             }
                         }
                     }
-                }
-            }
-    
-    
-    
-            // djplay_2 //
-            .djplay_2 {
-                // order_2 //
-                .order_2 {
-                    @include order();
-                    
-                    .crown_2 {
-                        position: relative;
-                        width: 34px; height: 34px;
-                        margin-left: 10px;
         
-                        img {
-                            position: absolute;
-                            margin-top: 5px;
-                            width: 24px;
+                    .comment-text {
+                        textarea {
+                            resize: none;
+                            float: left;
+                            width: 300px;
+                            height: 22px;
+                            margin-right: 5px;
                         }
-                        
-                        p {
-                            position: absolute;
-                            text-align: center;
-                            width: 24px; height: 34px;
-                            line-height: 37px;
-                            font-size: 8px;
-                            color: #fff;
-                        }
-                    }
-        
-                    .id {
-                        display: flex;
-                        img {
-                            width: 34px; height: 34px;
-                            margin-right: 10px;
-                        }
-                        p {
-                            line-height: 34px;
-                            font-size: 13px;
-                            font-family: $font-5;
-                        }
-                    }
-        
-                    .surge {
-                        position: absolute;
-                        right: 35px;
-                        p {
-                            font-size: 10px;
-                            img {
-                                width: 8px;
-                                margin-right: 5PX;
-                            }
-                        }
-                    }
-                }
-    
-                .profile {
-                    display: none;
-                    flex-wrap: wrap;
-                    justify-content: space-between;
-                    padding: 0 32px;
-                    border: 1px solid #7b8892;
-                    border-top: 0;
-                    border-bottom: 0;
-                    width: 376px; height: 348px;
-                    background-color: $back_color;
-    
-                    .story {
-                        margin: 25px 0;
-                        width: 100%;
-                        p {
-                            font-size: 12px;
-                            display: inline-block;
-                            line-height: 25px;
-                            color: $font-color_3;
-    
-                            strong {
-                                margin-right: 10px;
-                                display: inline-block;
-                                width: 62px; height: 25px;
-                                text-align: center;
-                                color: $font-color;
-                                background-color: $back_color_1
-                            }
-                        }
-                    }
-    
-                    .follow {
-                        width: 30%;
-    
-                        p {
-                            font-size: 12px;
-                            line-height: 18px;
-                            span {
-                                display: inline;
-                                color: #db4242;
-                            }
-                        }
-    
-                        .hashtag {
-                            display: flex;
-                            margin-top: 20px;
-                            p {
-                                border: 1px solid #606060;
-                                border-radius: 20px;
-                                width: 50px;
-                                font-size: 9px;
-                                font-family: $font-2;
-                                text-align: center;
-                            }
-                        }
-                    }
-    
-                    .album_name {
-                        width: 15%;
-                        margin-top: -10px;
-    
-                        p {
-                            font-size: 12px;
-                            line-height: 37px;
-                        }
-                    }
-    
-                    .album_bar {
-                        width: 55%;
-                        span {
-                            border: 1px solid #606060;
-                            border-radius: 20px;
-                            height: 13px;
-                            color: $border_color_1;
-                            background-color: $back_color_2;
-    
-                            &:nth-child(1) {
-                                margin-bottom: 25px;
-                                width: 100%;
-                            }
-    
-                            &:nth-child(2) {
-                                margin-bottom: 25px;
-                                width: 80%;
-                            }
-    
-                            &:nth-child(3) {
-                                margin-bottom: 25px;
-                                width: 70%;
-                            }
-                        }
-    
-                    }
-    
-                    .album {
-                        display: flex;
-                        justify-content: space-between;
-                        width: 100%;
-                        margin-bottom: 10px;
-    
-                        .album_jacket_2_1 {
-                            width: 90px;
-    
-                            .album_jacket {
-                                img {
-                                    width: 90px; height: 90px;
-                                }
-                            }
-        
-                            .album_title {
-                                p {
-                                    font-size: 11px;
-                                    img {
-                                        width: 11px;
-                                        margin-right: 5px;
-                                    }
-                                }
-                            }
-                        }
-    
-                        .album_jacket_2_2 {
-                            width: 90px;
-    
-                            .album_jacket {
-                                img {
-                                    width: 90px; height: 90px;
-                                }
-                            }
-        
-                            .album_title {
-                                p {
-                                    font-size: 11px;
-                                    img {
-                                        width: 11px;
-                                        margin-right: 5px;
-                                    }
-                                }
-                            }
-                        }
-    
-                        .album_jacket_2_3 {
-                            width: 90px;
-    
-                            .album_jacket {
-                                img {
-                                    width: 90px; height: 90px;
-                                }
-                            }
-        
-                            .album_title {
-        
-                                p {
-                                    font-size: 11px;
-                                    img {
-                                        width: 11px;
-                                        margin-right: 5px;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-    
-    
-    
-            // djplay_3 //
-            .djplay_3 {
-                // order_3 //
-                .order_3 {
-                    @include order();
-                    
-                    .crown_3 {
-                        position: relative;
-                        width: 34px; height: 34px;
-                        margin-left: 10px;
-        
-                        img {
-                            position: absolute;
-                            margin-top: 5px;
-                            width: 24px;
-                        }
-                        
-                        p {
-                            position: absolute;
-                            text-align: center;
-                            width: 24px; height: 34px;
-                            line-height: 37px;
-                            font-size: 8px;
-                            color: #fff;
-                        }
-                    }
-        
-                    .id {
-                        display: flex;
-                        img {
-                            width: 34px; height: 34px;
-                            margin-right: 10px;
-                        }
-                        p {
-                            line-height: 34px;
-                            font-size: 13px;
-                            font-family: $font-5;
-                        }
-                    }
-        
-                    .surge {
-                        position: absolute;
-                        right: 35px;
-                        p {
-                            font-size: 10px;
-                            img {
-                                width: 8px;
-                                margin-right: 5PX;
-                            }
-                        }
-                    }
-                }
-    
-                .profile {
-                    display: none;
-                    flex-wrap: wrap;
-                    justify-content: space-between;
-                    padding: 0 32px;
-                    border: 1px solid #7b8892;
-                    border-top: 0;
-                    border-bottom: 0;
-                    width: 376px; height: 348px;
-                    background-color: $back_color;
-    
-                    .story {
-                        margin: 25px 0;
-                        width: 100%;
-                        p {
-                            font-size: 12px;
-                            display: inline-block;
-                            line-height: 25px;
-                            color: $font-color_3;
-    
-                            strong {
-                                margin-right: 10px;
-                                display: inline-block;
-                                width: 62px; height: 25px;
-                                text-align: center;
-                                color: $font-color;
-                                background-color: $back_color_1
-                            }
-                        }
-                    }
-    
-                    .follow {
-                        width: 30%;
-    
-                        p {
-                            font-size: 12px;
-                            line-height: 18px;
-                            span {
-                                display: inline;
-                                color: #db4242;
-                            }
-                        }
-    
-                        .hashtag {
-                            display: flex;
-                            margin-top: 20px;
-                            p {
-                                border: 1px solid #606060;
-                                border-radius: 20px;
-                                width: 50px;
-                                font-size: 9px;
-                                font-family: $font-2;
-                                text-align: center;
-                            }
-                        }
-                    }
-    
-                    .album_name {
-                        width: 15%;
-                        margin-top: -10px;
-    
-                        p {
-                            font-size: 12px;
-                            line-height: 37px;
-                        }
-                    }
-    
-                    .album_bar {
-                        width: 55%;
-                        span {
-                            border: 1px solid #606060;
-                            border-radius: 20px;
-                            height: 13px;
-                            color: $border_color_1;
-                            background-color: $back_color_2;
-    
-                            &:nth-child(1) {
-                                margin-bottom: 25px;
-                                width: 100%;
-                            }
-    
-                            &:nth-child(2) {
-                                margin-bottom: 25px;
-                                width: 80%;
-                            }
-    
-                            &:nth-child(3) {
-                                margin-bottom: 25px;
-                                width: 70%;
-                            }
-                        }
-    
-                    }
-    
-                    .album {
-                        display: flex;
-                        justify-content: space-between;
-                        width: 100%;
-                        margin-bottom: 10px;
-    
-                        .album_jacket_3_1 {
-                            width: 90px;
-    
-                            .album_jacket {
-                                img {
-                                    width: 90px; height: 90px;
-                                }
-                            }
-        
-                            .album_title {
-                                p {
-                                    font-size: 11px;
-                                    img {
-                                        width: 11px;
-                                        margin-right: 5px;
-                                    }
-                                }
-                            }
-                        }
-    
-                        .album_jacket_3_2 {
-                            width: 90px;
-    
-                            .album_jacket {
-                                img {
-                                    width: 90px; height: 90px;
-                                }
-                            }
-        
-                            .album_title {
-                                p {
-                                    font-size: 11px;
-                                    img {
-                                        width: 11px;
-                                        margin-right: 5px;
-                                    }
-                                }
-                            }
-                        }
-    
-                        .album_jacket_3_3 {
-                            width: 90px;
-    
-                            .album_jacket {
-                                img {
-                                    width: 90px; height: 90px;
-                                }
-                            }
-        
-                            .album_title {
-        
-                                p {
-                                    font-size: 11px;
-                                    img {
-                                        width: 11px;
-                                        margin-right: 5px;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-    
-    
-    
-            // djplay_4 //
-            .djplay_4 {
-                // order_4 //
-                .order_4 {
-                    @include order();
-                    
-                    .crown_4 {
-                        width: 34px; height: 34px;
-                        margin-left: 10px;
-                        
-                        p {
-                            text-align: center;
-                            width: 24px; height: 34px;
-                            line-height: 37px;
-                            font-size: 8px;
-                            color: #606060;
-                        }
-                    }
-        
-                    .id {
-                        display: flex;
-                        img {
-                            width: 34px; height: 34px;
-                            margin-right: 10px;
-                        }
-                        p {
-                            line-height: 34px;
-                            font-size: 13px;
-                            font-family: $font-5;
-                        }
-                    }
-        
-                    .surge {
-                        position: absolute;
-                        right: 35px;
-                        p {
-                            font-size: 10px;
-                            img {
-                                width: 8px;
-                                margin-right: 5PX;
-                            }
-                        }
-                    }
-                }
-    
-                .profile {
-                    display: none;
-                    flex-wrap: wrap;
-                    justify-content: space-between;
-                    padding: 0 32px;
-                    border: 1px solid #7b8892;
-                    border-top: 0;
-                    border-bottom: 0;
-                    width: 376px; height: 348px;
-                    background-color: $back_color;
-    
-                    .story {
-                        margin: 25px 0;
-                        width: 100%;
-                        p {
-                            font-size: 12px;
-                            display: inline-block;
-                            line-height: 25px;
-                            color: $font-color_3;
-    
-                            strong {
-                                margin-right: 10px;
-                                display: inline-block;
-                                width: 62px; height: 25px;
-                                text-align: center;
-                                color: $font-color;
-                                background-color: $back_color_1
-                            }
-                        }
-                    }
-    
-                    .follow {
-                        width: 30%;
-    
-                        p {
-                            font-size: 12px;
-                            line-height: 18px;
-                            span {
-                                display: inline;
-                                color: #db4242;
-                            }
-                        }
-    
-                        .hashtag {
-                            display: flex;
-                            margin-top: 20px;
-                            p {
-                                border: 1px solid #606060;
-                                border-radius: 20px;
-                                width: 50px;
-                                font-size: 9px;
-                                font-family: $font-2;
-                                text-align: center;
-                            }
-                        }
-                    }
-    
-                    .album_name {
-                        width: 15%;
-                        margin-top: -10px;
-    
-                        p {
-                            font-size: 12px;
-                            line-height: 37px;
-                        }
-                    }
-    
-                    .album_bar {
-                        width: 55%;
-                        span {
-                            border: 1px solid #606060;
-                            border-radius: 20px;
-                            height: 13px;
-                            color: $border_color_1;
-                            background-color: $back_color_2;
-    
-                            &:nth-child(1) {
-                                margin-bottom: 25px;
-                                width: 100%;
-                            }
-    
-                            &:nth-child(2) {
-                                margin-bottom: 25px;
-                                width: 80%;
-                            }
-    
-                            &:nth-child(3) {
-                                margin-bottom: 25px;
-                                width: 70%;
-                            }
-                        }
-    
-                    }
-    
-                    .album {
-                        display: flex;
-                        justify-content: space-between;
-                        width: 100%;
-                        margin-bottom: 10px;
-    
-                        .album_jacket_4_1 {
-                            width: 90px;
-    
-                            .album_jacket {
-                                img {
-                                    width: 90px; height: 90px;
-                                }
-                            }
-        
-                            .album_title {
-                                p {
-                                    font-size: 11px;
-                                    img {
-                                        width: 11px;
-                                        margin-right: 5px;
-                                    }
-                                }
-                            }
-                        }
-    
-                        .album_jacket_4_2 {
-                            width: 90px;
-    
-                            .album_jacket {
-                                img {
-                                    width: 90px; height: 90px;
-                                }
-                            }
-        
-                            .album_title {
-                                p {
-                                    font-size: 11px;
-                                    img {
-                                        width: 11px;
-                                        margin-right: 5px;
-                                    }
-                                }
-                            }
-                        }
-    
-                        .album_jacket_4_3 {
-                            width: 90px;
-    
-                            .album_jacket {
-                                img {
-                                    width: 90px; height: 90px;
-                                }
-                            }
-        
-                            .album_title {
-        
-                                p {
-                                    font-size: 11px;
-                                    img {
-                                        width: 11px;
-                                        margin-right: 5px;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-    
-    
-    
-            // djplay_5 //
-            .djplay_5 {
-                // order_5 //
-                .order_5 {
-                    @include order();
-                    
-                    .crown_5 {
-                        width: 34px; height: 34px;
-                        margin-left: 10px;
-                        
-                        p {
-                            text-align: center;
-                            width: 24px; height: 34px;
-                            line-height: 37px;
-                            font-size: 8px;
-                            color: #606060;
-                        }
-                    }
-        
-                    .id {
-                        display: flex;
-                        img {
-                            width: 34px; height: 34px;
-                            margin-right: 10px;
-                        }
-                        p {
-                            line-height: 34px;
-                            font-size: 13px;
-                            font-family: $font-5;
-                        }
-                    }
-        
-                    .surge {
-                        position: absolute;
-                        right: 35px;
-                        p {
-                            font-size: 10px;
-                            img {
-                                width: 8px;
-                                margin-right: 5PX;
-                            }
-                        }
-                    }
-                }
-    
-                .profile {
-                    display: none;
-                    flex-wrap: wrap;
-                    justify-content: space-between;
-                    padding: 0 32px;
-                    border: 1px solid #7b8892;
-                    border-top: 0;
-                    border-bottom: 0;
-                    width: 376px; height: 348px;
-                    background-color: $back_color;
-    
-                    .story {
-                        margin: 25px 0;
-                        width: 100%;
-                        p {
-                            font-size: 12px;
-                            display: inline-block;
-                            line-height: 25px;
-                            color: $font-color_3;
-    
-                            strong {
-                                margin-right: 10px;
-                                display: inline-block;
-                                width: 62px; height: 25px;
-                                text-align: center;
-                                color: $font-color;
-                                background-color: $back_color_1
-                            }
-                        }
-                    }
-    
-                    .follow {
-                        width: 30%;
-    
-                        p {
-                            font-size: 12px;
-                            line-height: 18px;
-                            span {
-                                display: inline;
-                                color: #db4242;
-                            }
-                        }
-    
-                        .hashtag {
-                            display: flex;
-                            margin-top: 20px;
-                            p {
-                                border: 1px solid #606060;
-                                border-radius: 20px;
-                                width: 50px;
-                                font-size: 9px;
-                                font-family: $font-2;
-                                text-align: center;
-                            }
-                        }
-                    }
-    
-                    .album_name {
-                        width: 15%;
-                        margin-top: -10px;
-    
-                        p {
-                            font-size: 12px;
-                            line-height: 37px;
-                        }
-                    }
-    
-                    .album_bar {
-                        width: 55%;
-                        span {
-                            border: 1px solid #606060;
-                            border-radius: 20px;
-                            height: 13px;
-                            color: $border_color_1;
-                            background-color: $back_color_2;
-    
-                            &:nth-child(1) {
-                                margin-bottom: 25px;
-                                width: 100%;
-                            }
-    
-                            &:nth-child(2) {
-                                margin-bottom: 25px;
-                                width: 80%;
-                            }
-    
-                            &:nth-child(3) {
-                                margin-bottom: 25px;
-                                width: 70%;
-                            }
-                        }
-    
-                    }
-    
-                    .album {
-                        display: flex;
-                        justify-content: space-between;
-                        width: 100%;
-                        margin-bottom: 10px;
-    
-                        .album_jacket_5_1 {
-                            width: 90px;
-    
-                            .album_jacket {
-                                img {
-                                    width: 90px; height: 90px;
-                                }
-                            }
-        
-                            .album_title {
-                                p {
-                                    font-size: 11px;
-                                    img {
-                                        width: 11px;
-                                        margin-right: 5px;
-                                    }
-                                }
-                            }
-                        }
-    
-                        .album_jacket_5_2 {
-                            width: 90px;
-    
-                            .album_jacket {
-                                img {
-                                    width: 90px; height: 90px;
-                                }
-                            }
-        
-                            .album_title {
-                                p {
-                                    font-size: 11px;
-                                    img {
-                                        width: 11px;
-                                        margin-right: 5px;
-                                    }
-                                }
-                            }
-                        }
-    
-                        .album_jacket_5_3 {
-                            width: 90px;
-    
-                            .album_jacket {
-                                img {
-                                    width: 90px; height: 90px;
-                                }
-                            }
-        
-                            .album_title {
-        
-                                p {
-                                    font-size: 11px;
-                                    img {
-                                        width: 11px;
-                                        margin-right: 5px;
-                                    }
-                                }
+                        .comment-btn {
+                            button {
+                                color: $font-color_2;
                             }
                         }
                     }
@@ -1484,21 +1855,25 @@ header {
             }
         }
     
-    
-    
         //----- taste 혜령 -----//
 
         .taste {
-            position: relative;
-            margin-top: 64px;
-            width: 936px; height: 160px;
-            text-align: left;
+            position: absolute;
+            bottom: 0;
             
+            width: 936px; height: 160px;
+            
+            .taste_bg_img {
+                img {
+                    width: 936px; height: 160px;
+                }
+            }
+
             .taste_text {
                 position: absolute;
+                left: 0;
+                top: 0;
                 padding: 26px 0 20px 68px;
-                width: 936px;
-                z-index: 998;
                 line-height: 28px;
     
                 p {
@@ -1530,31 +1905,23 @@ header {
                     background-color: $back_color_3;
                 }
             }
-    
-            .taste_bg_img {
-                position: absolute;
-                img {
-                    width: 936px; height: 160px;
-                }
-            }
         }
     }
     
     //-------------------- footer --------------------//
     footer {
-        width: 100%;
         margin-top: 80px;
         padding-left: 348px;
         padding-right: 348px;
         text-align: center;
-        background-color: antiquewhite;
-    
+        // background-color: antiquewhite;
+        
         //----- flex-box 재진 -----//
         .flex-box {
             display: flex;
             justify-content: center;
-            padding: 15px;
             width: 936px; height: 154px;
+            padding: 15px;
             background-color: $back_color;
     
             .footer-logo {

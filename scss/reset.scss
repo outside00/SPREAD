@@ -75,6 +75,36 @@ p {
     color: $font-color_1;
 }
 
+.like-txt {
+    padding: 5px 0 10px 10px;
+    border: {
+        top: $border_color2;
+    };
+}
+
+.profile-sp {
+    float: left;
+    span {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+    }
+}
+
+.heart-img {
+    width: 15px;
+    margin-top: 5px;
+}
+
+.comment-txt {
+    padding: 10px;
+    border: $border_color2;
+    border-top: 0;
+    a {
+        font-weight: 600;
+    }
+}
+
 address {
     font-style: normal;
 

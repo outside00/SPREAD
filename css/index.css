@@ -69,6 +69,36 @@ p {
   color: #606060;
 }
 
+.like-txt {
+  padding: 5px 0 10px 10px;
+  border-top: 1px solid #7B8892;
+}
+
+.profile-sp {
+  float: left;
+}
+
+.profile-sp span {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.heart-img {
+  width: 15px;
+  margin-top: 5px;
+}
+
+.comment-txt {
+  padding: 10px;
+  border: 1px solid #7B8892;
+  border-top: 0;
+}
+
+.comment-txt a {
+  font-weight: 600;
+}
+
 address {
   font-style: normal;
   font-size: 14px;
@@ -77,7 +107,6 @@ address {
 
 body {
   width: 100%;
-  background-color: aquamarine;
 }
 
 header .web_menu {
@@ -333,10 +362,9 @@ header .web_menu .music_box .music_button img:nth-child(3) {
 
 .main-footer main {
   width: 100%;
+  height: 1700px;
   padding-left: 348px;
-  padding-right: 348px;
-  text-align: center;
-  background-color: antiquewhite;
+  padding-right: 334px;
 }
 
 .main-footer main .sect-main-slide {
@@ -935,18 +963,26 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   height: 24px;
 }
 
-.main-footer main .djplay_list {
-  width: 40%;
+.main-footer main .flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 936px;
+  height: 645px;
+}
+
+.main-footer main .flex-box .djplay_list {
+  margin-right: 20px;
   text-align: left;
 }
 
-.main-footer main .djplay_list h2 {
+.main-footer main .flex-box .djplay_list h2 {
   width: 376px;
   color: #333;
   margin-bottom: 5px;
 }
 
-.main-footer main .djplay_list .djplay_1 .order_1 {
+.main-footer main .flex-box .djplay_list .djplay_1 .order_1 {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -960,20 +996,20 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   background-color: #fff;
 }
 
-.main-footer main .djplay_list .djplay_1 .order_1 .crown_1 {
+.main-footer main .flex-box .djplay_list .djplay_1 .order_1 .crown_1 {
   position: relative;
   width: 34px;
   height: 34px;
   margin-left: 10px;
 }
 
-.main-footer main .djplay_list .djplay_1 .order_1 .crown_1 img {
+.main-footer main .flex-box .djplay_list .djplay_1 .order_1 .crown_1 img {
   position: absolute;
   margin-top: 5px;
   width: 24px;
 }
 
-.main-footer main .djplay_list .djplay_1 .order_1 .crown_1 p {
+.main-footer main .flex-box .djplay_list .djplay_1 .order_1 .crown_1 p {
   position: absolute;
   text-align: center;
   width: 24px;
@@ -983,39 +1019,39 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   color: #fff;
 }
 
-.main-footer main .djplay_list .djplay_1 .order_1 .id {
+.main-footer main .flex-box .djplay_list .djplay_1 .order_1 .id {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.main-footer main .djplay_list .djplay_1 .order_1 .id img {
+.main-footer main .flex-box .djplay_list .djplay_1 .order_1 .id img {
   width: 34px;
   height: 34px;
   margin-right: 10px;
 }
 
-.main-footer main .djplay_list .djplay_1 .order_1 .id p {
+.main-footer main .flex-box .djplay_list .djplay_1 .order_1 .id p {
   line-height: 34px;
   font-size: 13px;
   font-family: "S-Core Dream 5 Medium";
 }
 
-.main-footer main .djplay_list .djplay_1 .order_1 .surge {
+.main-footer main .flex-box .djplay_list .djplay_1 .order_1 .surge {
   position: absolute;
   right: 35px;
 }
 
-.main-footer main .djplay_list .djplay_1 .order_1 .surge p {
+.main-footer main .flex-box .djplay_list .djplay_1 .order_1 .surge p {
   font-size: 10px;
 }
 
-.main-footer main .djplay_list .djplay_1 .order_1 .surge p img {
+.main-footer main .flex-box .djplay_list .djplay_1 .order_1 .surge p img {
   width: 8px;
   margin-right: 5PX;
 }
 
-.main-footer main .djplay_list .djplay_1 .profile {
+.main-footer main .flex-box .djplay_list .djplay_1 .profile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1033,19 +1069,19 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   background-color: #fff;
 }
 
-.main-footer main .djplay_list .djplay_1 .profile .story {
+.main-footer main .flex-box .djplay_list .djplay_1 .profile .story {
   margin: 25px 0;
   width: 100%;
 }
 
-.main-footer main .djplay_list .djplay_1 .profile .story p {
+.main-footer main .flex-box .djplay_list .djplay_1 .profile .story p {
   font-size: 12px;
   display: inline-block;
   line-height: 25px;
   color: #525c63;
 }
 
-.main-footer main .djplay_list .djplay_1 .profile .story p strong {
+.main-footer main .flex-box .djplay_list .djplay_1 .profile .story p strong {
   margin-right: 10px;
   display: inline-block;
   width: 62px;
@@ -1055,28 +1091,28 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   background-color: #7b8892;
 }
 
-.main-footer main .djplay_list .djplay_1 .profile .follow {
+.main-footer main .flex-box .djplay_list .djplay_1 .profile .follow {
   width: 30%;
 }
 
-.main-footer main .djplay_list .djplay_1 .profile .follow p {
+.main-footer main .flex-box .djplay_list .djplay_1 .profile .follow p {
   font-size: 12px;
   line-height: 18px;
 }
 
-.main-footer main .djplay_list .djplay_1 .profile .follow p span {
+.main-footer main .flex-box .djplay_list .djplay_1 .profile .follow p span {
   display: inline;
   color: #db4242;
 }
 
-.main-footer main .djplay_list .djplay_1 .profile .follow .hashtag {
+.main-footer main .flex-box .djplay_list .djplay_1 .profile .follow .hashtag {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 20px;
 }
 
-.main-footer main .djplay_list .djplay_1 .profile .follow .hashtag p {
+.main-footer main .flex-box .djplay_list .djplay_1 .profile .follow .hashtag p {
   border: 1px solid #606060;
   border-radius: 20px;
   width: 50px;
@@ -1085,21 +1121,21 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   text-align: center;
 }
 
-.main-footer main .djplay_list .djplay_1 .profile .album_name {
+.main-footer main .flex-box .djplay_list .djplay_1 .profile .album_name {
   width: 15%;
   margin-top: -10px;
 }
 
-.main-footer main .djplay_list .djplay_1 .profile .album_name p {
+.main-footer main .flex-box .djplay_list .djplay_1 .profile .album_name p {
   font-size: 12px;
   line-height: 37px;
 }
 
-.main-footer main .djplay_list .djplay_1 .profile .album_bar {
+.main-footer main .flex-box .djplay_list .djplay_1 .profile .album_bar {
   width: 55%;
 }
 
-.main-footer main .djplay_list .djplay_1 .profile .album_bar span {
+.main-footer main .flex-box .djplay_list .djplay_1 .profile .album_bar span {
   border: 1px solid #606060;
   border-radius: 20px;
   height: 13px;
@@ -1107,22 +1143,22 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   background-color: #f5f5f5;
 }
 
-.main-footer main .djplay_list .djplay_1 .profile .album_bar span:nth-child(1) {
+.main-footer main .flex-box .djplay_list .djplay_1 .profile .album_bar span:nth-child(1) {
   margin-bottom: 25px;
   width: 100%;
 }
 
-.main-footer main .djplay_list .djplay_1 .profile .album_bar span:nth-child(2) {
+.main-footer main .flex-box .djplay_list .djplay_1 .profile .album_bar span:nth-child(2) {
   margin-bottom: 25px;
   width: 80%;
 }
 
-.main-footer main .djplay_list .djplay_1 .profile .album_bar span:nth-child(3) {
+.main-footer main .flex-box .djplay_list .djplay_1 .profile .album_bar span:nth-child(3) {
   margin-bottom: 25px;
   width: 70%;
 }
 
-.main-footer main .djplay_list .djplay_1 .profile .album {
+.main-footer main .flex-box .djplay_list .djplay_1 .profile .album {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1133,61 +1169,61 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   margin-bottom: 10px;
 }
 
-.main-footer main .djplay_list .djplay_1 .profile .album .album_jacket_1_1 {
+.main-footer main .flex-box .djplay_list .djplay_1 .profile .album .album_jacket_1_1 {
   width: 90px;
 }
 
-.main-footer main .djplay_list .djplay_1 .profile .album .album_jacket_1_1 .album_jacket img {
-  width: 90px;
-  height: 90px;
-}
-
-.main-footer main .djplay_list .djplay_1 .profile .album .album_jacket_1_1 .album_title p {
-  font-size: 11px;
-}
-
-.main-footer main .djplay_list .djplay_1 .profile .album .album_jacket_1_1 .album_title p img {
-  width: 11px;
-  margin-right: 5px;
-}
-
-.main-footer main .djplay_list .djplay_1 .profile .album .album_jacket_1_2 {
-  width: 90px;
-}
-
-.main-footer main .djplay_list .djplay_1 .profile .album .album_jacket_1_2 .album_jacket img {
+.main-footer main .flex-box .djplay_list .djplay_1 .profile .album .album_jacket_1_1 .album_jacket img {
   width: 90px;
   height: 90px;
 }
 
-.main-footer main .djplay_list .djplay_1 .profile .album .album_jacket_1_2 .album_title p {
+.main-footer main .flex-box .djplay_list .djplay_1 .profile .album .album_jacket_1_1 .album_title p {
   font-size: 11px;
 }
 
-.main-footer main .djplay_list .djplay_1 .profile .album .album_jacket_1_2 .album_title p img {
+.main-footer main .flex-box .djplay_list .djplay_1 .profile .album .album_jacket_1_1 .album_title p img {
   width: 11px;
   margin-right: 5px;
 }
 
-.main-footer main .djplay_list .djplay_1 .profile .album .album_jacket_1_3 {
+.main-footer main .flex-box .djplay_list .djplay_1 .profile .album .album_jacket_1_2 {
   width: 90px;
 }
 
-.main-footer main .djplay_list .djplay_1 .profile .album .album_jacket_1_3 .album_jacket img {
+.main-footer main .flex-box .djplay_list .djplay_1 .profile .album .album_jacket_1_2 .album_jacket img {
   width: 90px;
   height: 90px;
 }
 
-.main-footer main .djplay_list .djplay_1 .profile .album .album_jacket_1_3 .album_title p {
+.main-footer main .flex-box .djplay_list .djplay_1 .profile .album .album_jacket_1_2 .album_title p {
   font-size: 11px;
 }
 
-.main-footer main .djplay_list .djplay_1 .profile .album .album_jacket_1_3 .album_title p img {
+.main-footer main .flex-box .djplay_list .djplay_1 .profile .album .album_jacket_1_2 .album_title p img {
   width: 11px;
   margin-right: 5px;
 }
 
-.main-footer main .djplay_list .djplay_2 .order_2 {
+.main-footer main .flex-box .djplay_list .djplay_1 .profile .album .album_jacket_1_3 {
+  width: 90px;
+}
+
+.main-footer main .flex-box .djplay_list .djplay_1 .profile .album .album_jacket_1_3 .album_jacket img {
+  width: 90px;
+  height: 90px;
+}
+
+.main-footer main .flex-box .djplay_list .djplay_1 .profile .album .album_jacket_1_3 .album_title p {
+  font-size: 11px;
+}
+
+.main-footer main .flex-box .djplay_list .djplay_1 .profile .album .album_jacket_1_3 .album_title p img {
+  width: 11px;
+  margin-right: 5px;
+}
+
+.main-footer main .flex-box .djplay_list .djplay_2 .order_2 {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1201,20 +1237,20 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   background-color: #fff;
 }
 
-.main-footer main .djplay_list .djplay_2 .order_2 .crown_2 {
+.main-footer main .flex-box .djplay_list .djplay_2 .order_2 .crown_2 {
   position: relative;
   width: 34px;
   height: 34px;
   margin-left: 10px;
 }
 
-.main-footer main .djplay_list .djplay_2 .order_2 .crown_2 img {
+.main-footer main .flex-box .djplay_list .djplay_2 .order_2 .crown_2 img {
   position: absolute;
   margin-top: 5px;
   width: 24px;
 }
 
-.main-footer main .djplay_list .djplay_2 .order_2 .crown_2 p {
+.main-footer main .flex-box .djplay_list .djplay_2 .order_2 .crown_2 p {
   position: absolute;
   text-align: center;
   width: 24px;
@@ -1224,39 +1260,39 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   color: #fff;
 }
 
-.main-footer main .djplay_list .djplay_2 .order_2 .id {
+.main-footer main .flex-box .djplay_list .djplay_2 .order_2 .id {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.main-footer main .djplay_list .djplay_2 .order_2 .id img {
+.main-footer main .flex-box .djplay_list .djplay_2 .order_2 .id img {
   width: 34px;
   height: 34px;
   margin-right: 10px;
 }
 
-.main-footer main .djplay_list .djplay_2 .order_2 .id p {
+.main-footer main .flex-box .djplay_list .djplay_2 .order_2 .id p {
   line-height: 34px;
   font-size: 13px;
   font-family: "S-Core Dream 5 Medium";
 }
 
-.main-footer main .djplay_list .djplay_2 .order_2 .surge {
+.main-footer main .flex-box .djplay_list .djplay_2 .order_2 .surge {
   position: absolute;
   right: 35px;
 }
 
-.main-footer main .djplay_list .djplay_2 .order_2 .surge p {
+.main-footer main .flex-box .djplay_list .djplay_2 .order_2 .surge p {
   font-size: 10px;
 }
 
-.main-footer main .djplay_list .djplay_2 .order_2 .surge p img {
+.main-footer main .flex-box .djplay_list .djplay_2 .order_2 .surge p img {
   width: 8px;
   margin-right: 5PX;
 }
 
-.main-footer main .djplay_list .djplay_2 .profile {
+.main-footer main .flex-box .djplay_list .djplay_2 .profile {
   display: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -1272,19 +1308,19 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   background-color: #fff;
 }
 
-.main-footer main .djplay_list .djplay_2 .profile .story {
+.main-footer main .flex-box .djplay_list .djplay_2 .profile .story {
   margin: 25px 0;
   width: 100%;
 }
 
-.main-footer main .djplay_list .djplay_2 .profile .story p {
+.main-footer main .flex-box .djplay_list .djplay_2 .profile .story p {
   font-size: 12px;
   display: inline-block;
   line-height: 25px;
   color: #525c63;
 }
 
-.main-footer main .djplay_list .djplay_2 .profile .story p strong {
+.main-footer main .flex-box .djplay_list .djplay_2 .profile .story p strong {
   margin-right: 10px;
   display: inline-block;
   width: 62px;
@@ -1294,28 +1330,28 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   background-color: #7b8892;
 }
 
-.main-footer main .djplay_list .djplay_2 .profile .follow {
+.main-footer main .flex-box .djplay_list .djplay_2 .profile .follow {
   width: 30%;
 }
 
-.main-footer main .djplay_list .djplay_2 .profile .follow p {
+.main-footer main .flex-box .djplay_list .djplay_2 .profile .follow p {
   font-size: 12px;
   line-height: 18px;
 }
 
-.main-footer main .djplay_list .djplay_2 .profile .follow p span {
+.main-footer main .flex-box .djplay_list .djplay_2 .profile .follow p span {
   display: inline;
   color: #db4242;
 }
 
-.main-footer main .djplay_list .djplay_2 .profile .follow .hashtag {
+.main-footer main .flex-box .djplay_list .djplay_2 .profile .follow .hashtag {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 20px;
 }
 
-.main-footer main .djplay_list .djplay_2 .profile .follow .hashtag p {
+.main-footer main .flex-box .djplay_list .djplay_2 .profile .follow .hashtag p {
   border: 1px solid #606060;
   border-radius: 20px;
   width: 50px;
@@ -1324,21 +1360,21 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   text-align: center;
 }
 
-.main-footer main .djplay_list .djplay_2 .profile .album_name {
+.main-footer main .flex-box .djplay_list .djplay_2 .profile .album_name {
   width: 15%;
   margin-top: -10px;
 }
 
-.main-footer main .djplay_list .djplay_2 .profile .album_name p {
+.main-footer main .flex-box .djplay_list .djplay_2 .profile .album_name p {
   font-size: 12px;
   line-height: 37px;
 }
 
-.main-footer main .djplay_list .djplay_2 .profile .album_bar {
+.main-footer main .flex-box .djplay_list .djplay_2 .profile .album_bar {
   width: 55%;
 }
 
-.main-footer main .djplay_list .djplay_2 .profile .album_bar span {
+.main-footer main .flex-box .djplay_list .djplay_2 .profile .album_bar span {
   border: 1px solid #606060;
   border-radius: 20px;
   height: 13px;
@@ -1346,22 +1382,22 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   background-color: #f5f5f5;
 }
 
-.main-footer main .djplay_list .djplay_2 .profile .album_bar span:nth-child(1) {
+.main-footer main .flex-box .djplay_list .djplay_2 .profile .album_bar span:nth-child(1) {
   margin-bottom: 25px;
   width: 100%;
 }
 
-.main-footer main .djplay_list .djplay_2 .profile .album_bar span:nth-child(2) {
+.main-footer main .flex-box .djplay_list .djplay_2 .profile .album_bar span:nth-child(2) {
   margin-bottom: 25px;
   width: 80%;
 }
 
-.main-footer main .djplay_list .djplay_2 .profile .album_bar span:nth-child(3) {
+.main-footer main .flex-box .djplay_list .djplay_2 .profile .album_bar span:nth-child(3) {
   margin-bottom: 25px;
   width: 70%;
 }
 
-.main-footer main .djplay_list .djplay_2 .profile .album {
+.main-footer main .flex-box .djplay_list .djplay_2 .profile .album {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1372,61 +1408,61 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   margin-bottom: 10px;
 }
 
-.main-footer main .djplay_list .djplay_2 .profile .album .album_jacket_2_1 {
+.main-footer main .flex-box .djplay_list .djplay_2 .profile .album .album_jacket_2_1 {
   width: 90px;
 }
 
-.main-footer main .djplay_list .djplay_2 .profile .album .album_jacket_2_1 .album_jacket img {
-  width: 90px;
-  height: 90px;
-}
-
-.main-footer main .djplay_list .djplay_2 .profile .album .album_jacket_2_1 .album_title p {
-  font-size: 11px;
-}
-
-.main-footer main .djplay_list .djplay_2 .profile .album .album_jacket_2_1 .album_title p img {
-  width: 11px;
-  margin-right: 5px;
-}
-
-.main-footer main .djplay_list .djplay_2 .profile .album .album_jacket_2_2 {
-  width: 90px;
-}
-
-.main-footer main .djplay_list .djplay_2 .profile .album .album_jacket_2_2 .album_jacket img {
+.main-footer main .flex-box .djplay_list .djplay_2 .profile .album .album_jacket_2_1 .album_jacket img {
   width: 90px;
   height: 90px;
 }
 
-.main-footer main .djplay_list .djplay_2 .profile .album .album_jacket_2_2 .album_title p {
+.main-footer main .flex-box .djplay_list .djplay_2 .profile .album .album_jacket_2_1 .album_title p {
   font-size: 11px;
 }
 
-.main-footer main .djplay_list .djplay_2 .profile .album .album_jacket_2_2 .album_title p img {
+.main-footer main .flex-box .djplay_list .djplay_2 .profile .album .album_jacket_2_1 .album_title p img {
   width: 11px;
   margin-right: 5px;
 }
 
-.main-footer main .djplay_list .djplay_2 .profile .album .album_jacket_2_3 {
+.main-footer main .flex-box .djplay_list .djplay_2 .profile .album .album_jacket_2_2 {
   width: 90px;
 }
 
-.main-footer main .djplay_list .djplay_2 .profile .album .album_jacket_2_3 .album_jacket img {
+.main-footer main .flex-box .djplay_list .djplay_2 .profile .album .album_jacket_2_2 .album_jacket img {
   width: 90px;
   height: 90px;
 }
 
-.main-footer main .djplay_list .djplay_2 .profile .album .album_jacket_2_3 .album_title p {
+.main-footer main .flex-box .djplay_list .djplay_2 .profile .album .album_jacket_2_2 .album_title p {
   font-size: 11px;
 }
 
-.main-footer main .djplay_list .djplay_2 .profile .album .album_jacket_2_3 .album_title p img {
+.main-footer main .flex-box .djplay_list .djplay_2 .profile .album .album_jacket_2_2 .album_title p img {
   width: 11px;
   margin-right: 5px;
 }
 
-.main-footer main .djplay_list .djplay_3 .order_3 {
+.main-footer main .flex-box .djplay_list .djplay_2 .profile .album .album_jacket_2_3 {
+  width: 90px;
+}
+
+.main-footer main .flex-box .djplay_list .djplay_2 .profile .album .album_jacket_2_3 .album_jacket img {
+  width: 90px;
+  height: 90px;
+}
+
+.main-footer main .flex-box .djplay_list .djplay_2 .profile .album .album_jacket_2_3 .album_title p {
+  font-size: 11px;
+}
+
+.main-footer main .flex-box .djplay_list .djplay_2 .profile .album .album_jacket_2_3 .album_title p img {
+  width: 11px;
+  margin-right: 5px;
+}
+
+.main-footer main .flex-box .djplay_list .djplay_3 .order_3 {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1440,20 +1476,20 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   background-color: #fff;
 }
 
-.main-footer main .djplay_list .djplay_3 .order_3 .crown_3 {
+.main-footer main .flex-box .djplay_list .djplay_3 .order_3 .crown_3 {
   position: relative;
   width: 34px;
   height: 34px;
   margin-left: 10px;
 }
 
-.main-footer main .djplay_list .djplay_3 .order_3 .crown_3 img {
+.main-footer main .flex-box .djplay_list .djplay_3 .order_3 .crown_3 img {
   position: absolute;
   margin-top: 5px;
   width: 24px;
 }
 
-.main-footer main .djplay_list .djplay_3 .order_3 .crown_3 p {
+.main-footer main .flex-box .djplay_list .djplay_3 .order_3 .crown_3 p {
   position: absolute;
   text-align: center;
   width: 24px;
@@ -1463,39 +1499,39 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   color: #fff;
 }
 
-.main-footer main .djplay_list .djplay_3 .order_3 .id {
+.main-footer main .flex-box .djplay_list .djplay_3 .order_3 .id {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.main-footer main .djplay_list .djplay_3 .order_3 .id img {
+.main-footer main .flex-box .djplay_list .djplay_3 .order_3 .id img {
   width: 34px;
   height: 34px;
   margin-right: 10px;
 }
 
-.main-footer main .djplay_list .djplay_3 .order_3 .id p {
+.main-footer main .flex-box .djplay_list .djplay_3 .order_3 .id p {
   line-height: 34px;
   font-size: 13px;
   font-family: "S-Core Dream 5 Medium";
 }
 
-.main-footer main .djplay_list .djplay_3 .order_3 .surge {
+.main-footer main .flex-box .djplay_list .djplay_3 .order_3 .surge {
   position: absolute;
   right: 35px;
 }
 
-.main-footer main .djplay_list .djplay_3 .order_3 .surge p {
+.main-footer main .flex-box .djplay_list .djplay_3 .order_3 .surge p {
   font-size: 10px;
 }
 
-.main-footer main .djplay_list .djplay_3 .order_3 .surge p img {
+.main-footer main .flex-box .djplay_list .djplay_3 .order_3 .surge p img {
   width: 8px;
   margin-right: 5PX;
 }
 
-.main-footer main .djplay_list .djplay_3 .profile {
+.main-footer main .flex-box .djplay_list .djplay_3 .profile {
   display: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -1511,19 +1547,19 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   background-color: #fff;
 }
 
-.main-footer main .djplay_list .djplay_3 .profile .story {
+.main-footer main .flex-box .djplay_list .djplay_3 .profile .story {
   margin: 25px 0;
   width: 100%;
 }
 
-.main-footer main .djplay_list .djplay_3 .profile .story p {
+.main-footer main .flex-box .djplay_list .djplay_3 .profile .story p {
   font-size: 12px;
   display: inline-block;
   line-height: 25px;
   color: #525c63;
 }
 
-.main-footer main .djplay_list .djplay_3 .profile .story p strong {
+.main-footer main .flex-box .djplay_list .djplay_3 .profile .story p strong {
   margin-right: 10px;
   display: inline-block;
   width: 62px;
@@ -1533,28 +1569,28 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   background-color: #7b8892;
 }
 
-.main-footer main .djplay_list .djplay_3 .profile .follow {
+.main-footer main .flex-box .djplay_list .djplay_3 .profile .follow {
   width: 30%;
 }
 
-.main-footer main .djplay_list .djplay_3 .profile .follow p {
+.main-footer main .flex-box .djplay_list .djplay_3 .profile .follow p {
   font-size: 12px;
   line-height: 18px;
 }
 
-.main-footer main .djplay_list .djplay_3 .profile .follow p span {
+.main-footer main .flex-box .djplay_list .djplay_3 .profile .follow p span {
   display: inline;
   color: #db4242;
 }
 
-.main-footer main .djplay_list .djplay_3 .profile .follow .hashtag {
+.main-footer main .flex-box .djplay_list .djplay_3 .profile .follow .hashtag {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 20px;
 }
 
-.main-footer main .djplay_list .djplay_3 .profile .follow .hashtag p {
+.main-footer main .flex-box .djplay_list .djplay_3 .profile .follow .hashtag p {
   border: 1px solid #606060;
   border-radius: 20px;
   width: 50px;
@@ -1563,21 +1599,21 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   text-align: center;
 }
 
-.main-footer main .djplay_list .djplay_3 .profile .album_name {
+.main-footer main .flex-box .djplay_list .djplay_3 .profile .album_name {
   width: 15%;
   margin-top: -10px;
 }
 
-.main-footer main .djplay_list .djplay_3 .profile .album_name p {
+.main-footer main .flex-box .djplay_list .djplay_3 .profile .album_name p {
   font-size: 12px;
   line-height: 37px;
 }
 
-.main-footer main .djplay_list .djplay_3 .profile .album_bar {
+.main-footer main .flex-box .djplay_list .djplay_3 .profile .album_bar {
   width: 55%;
 }
 
-.main-footer main .djplay_list .djplay_3 .profile .album_bar span {
+.main-footer main .flex-box .djplay_list .djplay_3 .profile .album_bar span {
   border: 1px solid #606060;
   border-radius: 20px;
   height: 13px;
@@ -1585,22 +1621,22 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   background-color: #f5f5f5;
 }
 
-.main-footer main .djplay_list .djplay_3 .profile .album_bar span:nth-child(1) {
+.main-footer main .flex-box .djplay_list .djplay_3 .profile .album_bar span:nth-child(1) {
   margin-bottom: 25px;
   width: 100%;
 }
 
-.main-footer main .djplay_list .djplay_3 .profile .album_bar span:nth-child(2) {
+.main-footer main .flex-box .djplay_list .djplay_3 .profile .album_bar span:nth-child(2) {
   margin-bottom: 25px;
   width: 80%;
 }
 
-.main-footer main .djplay_list .djplay_3 .profile .album_bar span:nth-child(3) {
+.main-footer main .flex-box .djplay_list .djplay_3 .profile .album_bar span:nth-child(3) {
   margin-bottom: 25px;
   width: 70%;
 }
 
-.main-footer main .djplay_list .djplay_3 .profile .album {
+.main-footer main .flex-box .djplay_list .djplay_3 .profile .album {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1611,61 +1647,61 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   margin-bottom: 10px;
 }
 
-.main-footer main .djplay_list .djplay_3 .profile .album .album_jacket_3_1 {
+.main-footer main .flex-box .djplay_list .djplay_3 .profile .album .album_jacket_3_1 {
   width: 90px;
 }
 
-.main-footer main .djplay_list .djplay_3 .profile .album .album_jacket_3_1 .album_jacket img {
-  width: 90px;
-  height: 90px;
-}
-
-.main-footer main .djplay_list .djplay_3 .profile .album .album_jacket_3_1 .album_title p {
-  font-size: 11px;
-}
-
-.main-footer main .djplay_list .djplay_3 .profile .album .album_jacket_3_1 .album_title p img {
-  width: 11px;
-  margin-right: 5px;
-}
-
-.main-footer main .djplay_list .djplay_3 .profile .album .album_jacket_3_2 {
-  width: 90px;
-}
-
-.main-footer main .djplay_list .djplay_3 .profile .album .album_jacket_3_2 .album_jacket img {
+.main-footer main .flex-box .djplay_list .djplay_3 .profile .album .album_jacket_3_1 .album_jacket img {
   width: 90px;
   height: 90px;
 }
 
-.main-footer main .djplay_list .djplay_3 .profile .album .album_jacket_3_2 .album_title p {
+.main-footer main .flex-box .djplay_list .djplay_3 .profile .album .album_jacket_3_1 .album_title p {
   font-size: 11px;
 }
 
-.main-footer main .djplay_list .djplay_3 .profile .album .album_jacket_3_2 .album_title p img {
+.main-footer main .flex-box .djplay_list .djplay_3 .profile .album .album_jacket_3_1 .album_title p img {
   width: 11px;
   margin-right: 5px;
 }
 
-.main-footer main .djplay_list .djplay_3 .profile .album .album_jacket_3_3 {
+.main-footer main .flex-box .djplay_list .djplay_3 .profile .album .album_jacket_3_2 {
   width: 90px;
 }
 
-.main-footer main .djplay_list .djplay_3 .profile .album .album_jacket_3_3 .album_jacket img {
+.main-footer main .flex-box .djplay_list .djplay_3 .profile .album .album_jacket_3_2 .album_jacket img {
   width: 90px;
   height: 90px;
 }
 
-.main-footer main .djplay_list .djplay_3 .profile .album .album_jacket_3_3 .album_title p {
+.main-footer main .flex-box .djplay_list .djplay_3 .profile .album .album_jacket_3_2 .album_title p {
   font-size: 11px;
 }
 
-.main-footer main .djplay_list .djplay_3 .profile .album .album_jacket_3_3 .album_title p img {
+.main-footer main .flex-box .djplay_list .djplay_3 .profile .album .album_jacket_3_2 .album_title p img {
   width: 11px;
   margin-right: 5px;
 }
 
-.main-footer main .djplay_list .djplay_4 .order_4 {
+.main-footer main .flex-box .djplay_list .djplay_3 .profile .album .album_jacket_3_3 {
+  width: 90px;
+}
+
+.main-footer main .flex-box .djplay_list .djplay_3 .profile .album .album_jacket_3_3 .album_jacket img {
+  width: 90px;
+  height: 90px;
+}
+
+.main-footer main .flex-box .djplay_list .djplay_3 .profile .album .album_jacket_3_3 .album_title p {
+  font-size: 11px;
+}
+
+.main-footer main .flex-box .djplay_list .djplay_3 .profile .album .album_jacket_3_3 .album_title p img {
+  width: 11px;
+  margin-right: 5px;
+}
+
+.main-footer main .flex-box .djplay_list .djplay_4 .order_4 {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1679,13 +1715,13 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   background-color: #fff;
 }
 
-.main-footer main .djplay_list .djplay_4 .order_4 .crown_4 {
+.main-footer main .flex-box .djplay_list .djplay_4 .order_4 .crown_4 {
   width: 34px;
   height: 34px;
   margin-left: 10px;
 }
 
-.main-footer main .djplay_list .djplay_4 .order_4 .crown_4 p {
+.main-footer main .flex-box .djplay_list .djplay_4 .order_4 .crown_4 p {
   text-align: center;
   width: 24px;
   height: 34px;
@@ -1694,39 +1730,39 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   color: #606060;
 }
 
-.main-footer main .djplay_list .djplay_4 .order_4 .id {
+.main-footer main .flex-box .djplay_list .djplay_4 .order_4 .id {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.main-footer main .djplay_list .djplay_4 .order_4 .id img {
+.main-footer main .flex-box .djplay_list .djplay_4 .order_4 .id img {
   width: 34px;
   height: 34px;
   margin-right: 10px;
 }
 
-.main-footer main .djplay_list .djplay_4 .order_4 .id p {
+.main-footer main .flex-box .djplay_list .djplay_4 .order_4 .id p {
   line-height: 34px;
   font-size: 13px;
   font-family: "S-Core Dream 5 Medium";
 }
 
-.main-footer main .djplay_list .djplay_4 .order_4 .surge {
+.main-footer main .flex-box .djplay_list .djplay_4 .order_4 .surge {
   position: absolute;
   right: 35px;
 }
 
-.main-footer main .djplay_list .djplay_4 .order_4 .surge p {
+.main-footer main .flex-box .djplay_list .djplay_4 .order_4 .surge p {
   font-size: 10px;
 }
 
-.main-footer main .djplay_list .djplay_4 .order_4 .surge p img {
+.main-footer main .flex-box .djplay_list .djplay_4 .order_4 .surge p img {
   width: 8px;
   margin-right: 5PX;
 }
 
-.main-footer main .djplay_list .djplay_4 .profile {
+.main-footer main .flex-box .djplay_list .djplay_4 .profile {
   display: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -1742,19 +1778,19 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   background-color: #fff;
 }
 
-.main-footer main .djplay_list .djplay_4 .profile .story {
+.main-footer main .flex-box .djplay_list .djplay_4 .profile .story {
   margin: 25px 0;
   width: 100%;
 }
 
-.main-footer main .djplay_list .djplay_4 .profile .story p {
+.main-footer main .flex-box .djplay_list .djplay_4 .profile .story p {
   font-size: 12px;
   display: inline-block;
   line-height: 25px;
   color: #525c63;
 }
 
-.main-footer main .djplay_list .djplay_4 .profile .story p strong {
+.main-footer main .flex-box .djplay_list .djplay_4 .profile .story p strong {
   margin-right: 10px;
   display: inline-block;
   width: 62px;
@@ -1764,28 +1800,28 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   background-color: #7b8892;
 }
 
-.main-footer main .djplay_list .djplay_4 .profile .follow {
+.main-footer main .flex-box .djplay_list .djplay_4 .profile .follow {
   width: 30%;
 }
 
-.main-footer main .djplay_list .djplay_4 .profile .follow p {
+.main-footer main .flex-box .djplay_list .djplay_4 .profile .follow p {
   font-size: 12px;
   line-height: 18px;
 }
 
-.main-footer main .djplay_list .djplay_4 .profile .follow p span {
+.main-footer main .flex-box .djplay_list .djplay_4 .profile .follow p span {
   display: inline;
   color: #db4242;
 }
 
-.main-footer main .djplay_list .djplay_4 .profile .follow .hashtag {
+.main-footer main .flex-box .djplay_list .djplay_4 .profile .follow .hashtag {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 20px;
 }
 
-.main-footer main .djplay_list .djplay_4 .profile .follow .hashtag p {
+.main-footer main .flex-box .djplay_list .djplay_4 .profile .follow .hashtag p {
   border: 1px solid #606060;
   border-radius: 20px;
   width: 50px;
@@ -1794,21 +1830,21 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   text-align: center;
 }
 
-.main-footer main .djplay_list .djplay_4 .profile .album_name {
+.main-footer main .flex-box .djplay_list .djplay_4 .profile .album_name {
   width: 15%;
   margin-top: -10px;
 }
 
-.main-footer main .djplay_list .djplay_4 .profile .album_name p {
+.main-footer main .flex-box .djplay_list .djplay_4 .profile .album_name p {
   font-size: 12px;
   line-height: 37px;
 }
 
-.main-footer main .djplay_list .djplay_4 .profile .album_bar {
+.main-footer main .flex-box .djplay_list .djplay_4 .profile .album_bar {
   width: 55%;
 }
 
-.main-footer main .djplay_list .djplay_4 .profile .album_bar span {
+.main-footer main .flex-box .djplay_list .djplay_4 .profile .album_bar span {
   border: 1px solid #606060;
   border-radius: 20px;
   height: 13px;
@@ -1816,22 +1852,22 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   background-color: #f5f5f5;
 }
 
-.main-footer main .djplay_list .djplay_4 .profile .album_bar span:nth-child(1) {
+.main-footer main .flex-box .djplay_list .djplay_4 .profile .album_bar span:nth-child(1) {
   margin-bottom: 25px;
   width: 100%;
 }
 
-.main-footer main .djplay_list .djplay_4 .profile .album_bar span:nth-child(2) {
+.main-footer main .flex-box .djplay_list .djplay_4 .profile .album_bar span:nth-child(2) {
   margin-bottom: 25px;
   width: 80%;
 }
 
-.main-footer main .djplay_list .djplay_4 .profile .album_bar span:nth-child(3) {
+.main-footer main .flex-box .djplay_list .djplay_4 .profile .album_bar span:nth-child(3) {
   margin-bottom: 25px;
   width: 70%;
 }
 
-.main-footer main .djplay_list .djplay_4 .profile .album {
+.main-footer main .flex-box .djplay_list .djplay_4 .profile .album {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1842,61 +1878,61 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   margin-bottom: 10px;
 }
 
-.main-footer main .djplay_list .djplay_4 .profile .album .album_jacket_4_1 {
+.main-footer main .flex-box .djplay_list .djplay_4 .profile .album .album_jacket_4_1 {
   width: 90px;
 }
 
-.main-footer main .djplay_list .djplay_4 .profile .album .album_jacket_4_1 .album_jacket img {
-  width: 90px;
-  height: 90px;
-}
-
-.main-footer main .djplay_list .djplay_4 .profile .album .album_jacket_4_1 .album_title p {
-  font-size: 11px;
-}
-
-.main-footer main .djplay_list .djplay_4 .profile .album .album_jacket_4_1 .album_title p img {
-  width: 11px;
-  margin-right: 5px;
-}
-
-.main-footer main .djplay_list .djplay_4 .profile .album .album_jacket_4_2 {
-  width: 90px;
-}
-
-.main-footer main .djplay_list .djplay_4 .profile .album .album_jacket_4_2 .album_jacket img {
+.main-footer main .flex-box .djplay_list .djplay_4 .profile .album .album_jacket_4_1 .album_jacket img {
   width: 90px;
   height: 90px;
 }
 
-.main-footer main .djplay_list .djplay_4 .profile .album .album_jacket_4_2 .album_title p {
+.main-footer main .flex-box .djplay_list .djplay_4 .profile .album .album_jacket_4_1 .album_title p {
   font-size: 11px;
 }
 
-.main-footer main .djplay_list .djplay_4 .profile .album .album_jacket_4_2 .album_title p img {
+.main-footer main .flex-box .djplay_list .djplay_4 .profile .album .album_jacket_4_1 .album_title p img {
   width: 11px;
   margin-right: 5px;
 }
 
-.main-footer main .djplay_list .djplay_4 .profile .album .album_jacket_4_3 {
+.main-footer main .flex-box .djplay_list .djplay_4 .profile .album .album_jacket_4_2 {
   width: 90px;
 }
 
-.main-footer main .djplay_list .djplay_4 .profile .album .album_jacket_4_3 .album_jacket img {
+.main-footer main .flex-box .djplay_list .djplay_4 .profile .album .album_jacket_4_2 .album_jacket img {
   width: 90px;
   height: 90px;
 }
 
-.main-footer main .djplay_list .djplay_4 .profile .album .album_jacket_4_3 .album_title p {
+.main-footer main .flex-box .djplay_list .djplay_4 .profile .album .album_jacket_4_2 .album_title p {
   font-size: 11px;
 }
 
-.main-footer main .djplay_list .djplay_4 .profile .album .album_jacket_4_3 .album_title p img {
+.main-footer main .flex-box .djplay_list .djplay_4 .profile .album .album_jacket_4_2 .album_title p img {
   width: 11px;
   margin-right: 5px;
 }
 
-.main-footer main .djplay_list .djplay_5 .order_5 {
+.main-footer main .flex-box .djplay_list .djplay_4 .profile .album .album_jacket_4_3 {
+  width: 90px;
+}
+
+.main-footer main .flex-box .djplay_list .djplay_4 .profile .album .album_jacket_4_3 .album_jacket img {
+  width: 90px;
+  height: 90px;
+}
+
+.main-footer main .flex-box .djplay_list .djplay_4 .profile .album .album_jacket_4_3 .album_title p {
+  font-size: 11px;
+}
+
+.main-footer main .flex-box .djplay_list .djplay_4 .profile .album .album_jacket_4_3 .album_title p img {
+  width: 11px;
+  margin-right: 5px;
+}
+
+.main-footer main .flex-box .djplay_list .djplay_5 .order_5 {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1910,13 +1946,13 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   background-color: #fff;
 }
 
-.main-footer main .djplay_list .djplay_5 .order_5 .crown_5 {
+.main-footer main .flex-box .djplay_list .djplay_5 .order_5 .crown_5 {
   width: 34px;
   height: 34px;
   margin-left: 10px;
 }
 
-.main-footer main .djplay_list .djplay_5 .order_5 .crown_5 p {
+.main-footer main .flex-box .djplay_list .djplay_5 .order_5 .crown_5 p {
   text-align: center;
   width: 24px;
   height: 34px;
@@ -1925,39 +1961,39 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   color: #606060;
 }
 
-.main-footer main .djplay_list .djplay_5 .order_5 .id {
+.main-footer main .flex-box .djplay_list .djplay_5 .order_5 .id {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.main-footer main .djplay_list .djplay_5 .order_5 .id img {
+.main-footer main .flex-box .djplay_list .djplay_5 .order_5 .id img {
   width: 34px;
   height: 34px;
   margin-right: 10px;
 }
 
-.main-footer main .djplay_list .djplay_5 .order_5 .id p {
+.main-footer main .flex-box .djplay_list .djplay_5 .order_5 .id p {
   line-height: 34px;
   font-size: 13px;
   font-family: "S-Core Dream 5 Medium";
 }
 
-.main-footer main .djplay_list .djplay_5 .order_5 .surge {
+.main-footer main .flex-box .djplay_list .djplay_5 .order_5 .surge {
   position: absolute;
   right: 35px;
 }
 
-.main-footer main .djplay_list .djplay_5 .order_5 .surge p {
+.main-footer main .flex-box .djplay_list .djplay_5 .order_5 .surge p {
   font-size: 10px;
 }
 
-.main-footer main .djplay_list .djplay_5 .order_5 .surge p img {
+.main-footer main .flex-box .djplay_list .djplay_5 .order_5 .surge p img {
   width: 8px;
   margin-right: 5PX;
 }
 
-.main-footer main .djplay_list .djplay_5 .profile {
+.main-footer main .flex-box .djplay_list .djplay_5 .profile {
   display: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -1973,19 +2009,19 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   background-color: #fff;
 }
 
-.main-footer main .djplay_list .djplay_5 .profile .story {
+.main-footer main .flex-box .djplay_list .djplay_5 .profile .story {
   margin: 25px 0;
   width: 100%;
 }
 
-.main-footer main .djplay_list .djplay_5 .profile .story p {
+.main-footer main .flex-box .djplay_list .djplay_5 .profile .story p {
   font-size: 12px;
   display: inline-block;
   line-height: 25px;
   color: #525c63;
 }
 
-.main-footer main .djplay_list .djplay_5 .profile .story p strong {
+.main-footer main .flex-box .djplay_list .djplay_5 .profile .story p strong {
   margin-right: 10px;
   display: inline-block;
   width: 62px;
@@ -1995,28 +2031,28 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   background-color: #7b8892;
 }
 
-.main-footer main .djplay_list .djplay_5 .profile .follow {
+.main-footer main .flex-box .djplay_list .djplay_5 .profile .follow {
   width: 30%;
 }
 
-.main-footer main .djplay_list .djplay_5 .profile .follow p {
+.main-footer main .flex-box .djplay_list .djplay_5 .profile .follow p {
   font-size: 12px;
   line-height: 18px;
 }
 
-.main-footer main .djplay_list .djplay_5 .profile .follow p span {
+.main-footer main .flex-box .djplay_list .djplay_5 .profile .follow p span {
   display: inline;
   color: #db4242;
 }
 
-.main-footer main .djplay_list .djplay_5 .profile .follow .hashtag {
+.main-footer main .flex-box .djplay_list .djplay_5 .profile .follow .hashtag {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 20px;
 }
 
-.main-footer main .djplay_list .djplay_5 .profile .follow .hashtag p {
+.main-footer main .flex-box .djplay_list .djplay_5 .profile .follow .hashtag p {
   border: 1px solid #606060;
   border-radius: 20px;
   width: 50px;
@@ -2025,21 +2061,21 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   text-align: center;
 }
 
-.main-footer main .djplay_list .djplay_5 .profile .album_name {
+.main-footer main .flex-box .djplay_list .djplay_5 .profile .album_name {
   width: 15%;
   margin-top: -10px;
 }
 
-.main-footer main .djplay_list .djplay_5 .profile .album_name p {
+.main-footer main .flex-box .djplay_list .djplay_5 .profile .album_name p {
   font-size: 12px;
   line-height: 37px;
 }
 
-.main-footer main .djplay_list .djplay_5 .profile .album_bar {
+.main-footer main .flex-box .djplay_list .djplay_5 .profile .album_bar {
   width: 55%;
 }
 
-.main-footer main .djplay_list .djplay_5 .profile .album_bar span {
+.main-footer main .flex-box .djplay_list .djplay_5 .profile .album_bar span {
   border: 1px solid #606060;
   border-radius: 20px;
   height: 13px;
@@ -2047,22 +2083,22 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   background-color: #f5f5f5;
 }
 
-.main-footer main .djplay_list .djplay_5 .profile .album_bar span:nth-child(1) {
+.main-footer main .flex-box .djplay_list .djplay_5 .profile .album_bar span:nth-child(1) {
   margin-bottom: 25px;
   width: 100%;
 }
 
-.main-footer main .djplay_list .djplay_5 .profile .album_bar span:nth-child(2) {
+.main-footer main .flex-box .djplay_list .djplay_5 .profile .album_bar span:nth-child(2) {
   margin-bottom: 25px;
   width: 80%;
 }
 
-.main-footer main .djplay_list .djplay_5 .profile .album_bar span:nth-child(3) {
+.main-footer main .flex-box .djplay_list .djplay_5 .profile .album_bar span:nth-child(3) {
   margin-bottom: 25px;
   width: 70%;
 }
 
-.main-footer main .djplay_list .djplay_5 .profile .album {
+.main-footer main .flex-box .djplay_list .djplay_5 .profile .album {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2073,73 +2109,463 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   margin-bottom: 10px;
 }
 
-.main-footer main .djplay_list .djplay_5 .profile .album .album_jacket_5_1 {
+.main-footer main .flex-box .djplay_list .djplay_5 .profile .album .album_jacket_5_1 {
   width: 90px;
 }
 
-.main-footer main .djplay_list .djplay_5 .profile .album .album_jacket_5_1 .album_jacket img {
-  width: 90px;
-  height: 90px;
-}
-
-.main-footer main .djplay_list .djplay_5 .profile .album .album_jacket_5_1 .album_title p {
-  font-size: 11px;
-}
-
-.main-footer main .djplay_list .djplay_5 .profile .album .album_jacket_5_1 .album_title p img {
-  width: 11px;
-  margin-right: 5px;
-}
-
-.main-footer main .djplay_list .djplay_5 .profile .album .album_jacket_5_2 {
-  width: 90px;
-}
-
-.main-footer main .djplay_list .djplay_5 .profile .album .album_jacket_5_2 .album_jacket img {
+.main-footer main .flex-box .djplay_list .djplay_5 .profile .album .album_jacket_5_1 .album_jacket img {
   width: 90px;
   height: 90px;
 }
 
-.main-footer main .djplay_list .djplay_5 .profile .album .album_jacket_5_2 .album_title p {
+.main-footer main .flex-box .djplay_list .djplay_5 .profile .album .album_jacket_5_1 .album_title p {
   font-size: 11px;
 }
 
-.main-footer main .djplay_list .djplay_5 .profile .album .album_jacket_5_2 .album_title p img {
+.main-footer main .flex-box .djplay_list .djplay_5 .profile .album .album_jacket_5_1 .album_title p img {
   width: 11px;
   margin-right: 5px;
 }
 
-.main-footer main .djplay_list .djplay_5 .profile .album .album_jacket_5_3 {
+.main-footer main .flex-box .djplay_list .djplay_5 .profile .album .album_jacket_5_2 {
   width: 90px;
 }
 
-.main-footer main .djplay_list .djplay_5 .profile .album .album_jacket_5_3 .album_jacket img {
+.main-footer main .flex-box .djplay_list .djplay_5 .profile .album .album_jacket_5_2 .album_jacket img {
   width: 90px;
   height: 90px;
 }
 
-.main-footer main .djplay_list .djplay_5 .profile .album .album_jacket_5_3 .album_title p {
+.main-footer main .flex-box .djplay_list .djplay_5 .profile .album .album_jacket_5_2 .album_title p {
   font-size: 11px;
 }
 
-.main-footer main .djplay_list .djplay_5 .profile .album .album_jacket_5_3 .album_title p img {
+.main-footer main .flex-box .djplay_list .djplay_5 .profile .album .album_jacket_5_2 .album_title p img {
   width: 11px;
   margin-right: 5px;
+}
+
+.main-footer main .flex-box .djplay_list .djplay_5 .profile .album .album_jacket_5_3 {
+  width: 90px;
+}
+
+.main-footer main .flex-box .djplay_list .djplay_5 .profile .album .album_jacket_5_3 .album_jacket img {
+  width: 90px;
+  height: 90px;
+}
+
+.main-footer main .flex-box .djplay_list .djplay_5 .profile .album .album_jacket_5_3 .album_title p {
+  font-size: 11px;
+}
+
+.main-footer main .flex-box .djplay_list .djplay_5 .profile .album .album_jacket_5_3 .album_title p img {
+  width: 11px;
+  margin-right: 5px;
+}
+
+.main-footer main .flex-box .contents {
+  width: 537px;
+}
+
+.main-footer main .flex-box .contents h2 {
+  text-align: left;
+}
+
+.main-footer main .flex-box .contents .box-boder {
+  margin-top: 5px;
+  border: 1px solid #7B8892;
+  border-bottom: 0;
+}
+
+.main-footer main .flex-box .contents .box-boder .profile-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+}
+
+.main-footer main .flex-box .contents .box-boder .profile-img .nick-img a img {
+  width: 42px;
+}
+
+.main-footer main .flex-box .contents .box-boder .profile-img .text-area {
+  margin-left: 20px;
+}
+
+.main-footer main .flex-box .contents .box-boder .profile-img .text-area textarea {
+  width: 100%;
+  resize: none;
+  border: 0;
+}
+
+.main-footer main .flex-box .contents .box-boder .img-imoticon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #606060;
+}
+
+.main-footer main .flex-box .contents .box-boder .img-imoticon .imoticon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5px;
+  margin-left: 70px;
+}
+
+.main-footer main .flex-box .contents .box-boder .img-imoticon .imoticon a {
+  margin-right: 10px;
+}
+
+.main-footer main .flex-box .contents .box-boder .img-imoticon .imoticon a img {
+  display: block;
+  width: 100%;
+}
+
+.main-footer main .flex-box .contents .box-boder .img-imoticon .sp-btn {
+  width: 80px;
+  margin-left: 255px;
+  margin-bottom: 10px;
+}
+
+.main-footer main .flex-box .contents .box-boder .img-imoticon .sp-btn button {
+  width: 100%;
+  height: 30px;
+  border: 0;
+  border-radius: 50px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #3DB8FC;
+}
+
+.main-footer main .flex-box .contents .box-boder .profile-set {
+  position: relative;
+  padding: 10px;
+}
+
+.main-footer main .flex-box .contents .box-boder .profile-set .set-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-footer main .flex-box .contents .box-boder .profile-set .set-img .nick-img a img {
+  width: 36px;
+}
+
+.main-footer main .flex-box .contents .box-boder .profile-set .set-img .nick {
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.main-footer main .flex-box .contents .box-boder .profile-set .sp-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 24px;
+  right: 36px;
+  cursor: pointer;
+}
+
+.main-footer main .flex-box .contents .box-boder .profile-set .sp-set span {
+  display: block;
+  width: 5px;
+  height: 5px;
+  margin: 2px;
+  border-radius: 50%;
+  background-color: #606060;
+}
+
+.main-footer main .flex-box .contents .more-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.main-footer main .flex-box .contents .more-box .sns {
+  border: 1px solid #A1ADB5;
+}
+
+.main-footer main .flex-box .contents .more-box .sns .music-txt .music-img {
+  padding: 10px;
+}
+
+.main-footer main .flex-box .contents .more-box .sns .music-txt .music-img a img {
+  width: 168px;
+  height: 160px;
+}
+
+.main-footer main .flex-box .contents .more-box .sns .music-txt .like-txt {
+  width: 100%;
+  border-bottom: 1px solid #7B8892;
+}
+
+.main-footer main .flex-box .contents .more-box .sns .music-txt .like-txt:last-child {
+  border-bottom: 0;
+}
+
+.main-footer main .flex-box .contents .more-box .sns .music-txt .like-txt .heart-img {
+  float: left;
+  margin-right: 5px;
+}
+
+.main-footer main .flex-box .contents .more-box .sns .music-txt .like-txt .heart-img a img {
+  display: block;
+  width: 100%;
+}
+
+.main-footer main .flex-box .contents .more-box .sns .music-txt .like-txt p {
+  text-align: left;
+  color: #7B8892;
+}
+
+.main-footer main .flex-box .contents .more-box .sns .music-txt .like-txt strong {
+  display: block;
+  text-align: left;
+  color: #7B8892;
+  margin-top: 5px;
+}
+
+.main-footer main .flex-box .contents .more-box .sns .music-txt .music-txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 35px 10px 10px 10px;
+}
+
+.main-footer main .flex-box .contents .more-box .sns .music-txt .music-txt .music-img2 {
+  padding-top: 5px;
+}
+
+.main-footer main .flex-box .contents .more-box .sns .music-txt .music-txt .music-img2 a img {
+  width: 65px;
+}
+
+.main-footer main .flex-box .contents .more-box .sns .music-txt .music-txt .play-item {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.main-footer main .flex-box .contents .more-box .sns .music-txt .music-txt .play-item .play-img {
+  text-align: left;
+}
+
+.main-footer main .flex-box .contents .more-box .sns .music-txt .music-txt .play-item .play-img a img {
+  width: 25px;
+}
+
+.main-footer main .flex-box .contents .more-box .sns .music-txt .music-txt .play-item p {
+  color: #7B8892;
+  font-size: 12px;
+}
+
+.main-footer main .flex-box .contents .more-box .sns .music-txt .music-txt .play-item p span {
+  margin-left: 0;
+  font-size: 12px;
+  color: #525c63;
+}
+
+.main-footer main .flex-box .contents .more-box .comment {
+  width: 100%;
+  border: 1px solid #7B8892;
+  border-top: 0;
+  border-left: 0;
+}
+
+.main-footer main .flex-box .contents .more-box .comment .comment-txt {
+  text-align: left;
+  border-top: 1px solid #7B8892;
+  border-left: 0;
+  border-right: 0;
+}
+
+.main-footer main .flex-box .contents .more-box .comment .comment-txt a {
+  font-size: 14px;
+}
+
+.main-footer main .flex-box .contents .more-box .comment .like-comment {
+  padding: 8px;
+}
+
+.main-footer main .flex-box .contents .more-box .comment .like-comment .like-item {
+  margin-bottom: 10px;
+}
+
+.main-footer main .flex-box .contents .more-box .comment .like-comment .like-item .like-profile .heart-img {
+  float: right;
+}
+
+.main-footer main .flex-box .contents .more-box .comment .like-comment .like-item .like-profile .like-pro {
+  text-align: left;
+  margin-left: 40px;
+}
+
+.main-footer main .flex-box .contents .more-box .comment .like-comment .like-item .like-profile .like-com {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 40px;
+}
+
+.main-footer main .flex-box .contents .more-box .comment .like-comment .like-item .like-profile .like-com a:first-child {
+  margin-right: 10px;
+}
+
+.main-footer main .flex-box .contents .more-box .comment .like-comment .like-item:first-child .profile-sp span {
+  background-color: #F7CB41;
+}
+
+.main-footer main .flex-box .contents .more-box .comment .like-comment .like-item:nth-child(2) {
+  margin-left: 20px;
+}
+
+.main-footer main .flex-box .contents .more-box .comment .like-comment .like-item:nth-child(2) .nick-img {
+  float: left;
+}
+
+.main-footer main .flex-box .contents .more-box .comment .like-comment .like-item:nth-child(2) .nick-img a img {
+  width: 32px;
+}
+
+.main-footer main .flex-box .contents .more-box .comment .like-comment .like-item:nth-child(2) span {
+  background-color: #DDE7F1;
+}
+
+.main-footer main .flex-box .contents .more-box .comment .like-comment .like-item:nth-child(3) {
+  display: none;
+}
+
+.main-footer main .flex-box .contents .more-box .comment .like-comment .like-item:nth-child(3) .profile-sp span {
+  background-color: #4340EF;
+}
+
+.main-footer main .flex-box .contents .more-box .comment .like-comment .like-item:nth-child(4) {
+  display: none;
+}
+
+.main-footer main .flex-box .contents .more-box .comment .like-comment .like-item:nth-child(4) .profile-sp span {
+  background-color: #F4B8CE;
+}
+
+.main-footer main .flex-box .contents .more-box .comment .like-comment .plus {
+  position: relative;
+  height: 20px;
+  cursor: pointer;
+  border: 1px solid #606060;
+}
+
+.main-footer main .flex-box .contents .more-box .comment .like-comment .plus .plus-bd {
+  position: absolute;
+  top: 4px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  border: 1px solid #606060;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.main-footer main .flex-box .contents .more-box .comment .like-comment .plus .plus-bd span:first-child {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 6px;
+  height: 2px;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  background-color: #192758;
+}
+
+.main-footer main .flex-box .contents .more-box .comment .like-comment .plus .plus-bd span:last-child {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  width: 6px;
+  height: 2px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  background-color: #192758;
+}
+
+.main-footer main .flex-box .contents .more-box .comment .like-comment:last-child .like-item:first-child .profile-sp span {
+  background-color: #192758;
+}
+
+.main-footer main .flex-box .contents .input-comment {
+  display: none;
+  width: 336px;
+}
+
+.main-footer main .flex-box .contents .input-comment .input-title {
+  position: relative;
+  padding: 10px;
+  border: 1px solid #7B8892;
+}
+
+.main-footer main .flex-box .contents .input-comment .input-title h3 {
+  color: #7B8892;
+}
+
+.main-footer main .flex-box .contents .input-comment .input-title .input-close {
+  cursor: pointer;
+}
+
+.main-footer main .flex-box .contents .input-comment .input-title .input-close span {
+  width: 15px;
+  height: 2px;
+  background-color: #7B8892;
+}
+
+.main-footer main .flex-box .contents .input-comment .input-title .input-close span:first-child {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.main-footer main .flex-box .contents .input-comment .input-title .input-close span:last-child {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.main-footer main .flex-box .contents .input-comment .comment-text textarea {
+  resize: none;
+  float: left;
+  width: 300px;
+  height: 22px;
+  margin-right: 5px;
+}
+
+.main-footer main .flex-box .contents .input-comment .comment-text .comment-btn button {
+  color: #8a2ae3;
 }
 
 .main-footer main .taste {
-  position: relative;
-  margin-top: 64px;
+  position: absolute;
+  bottom: 0;
   width: 936px;
   height: 160px;
-  text-align: left;
+}
+
+.main-footer main .taste .taste_bg_img img {
+  width: 936px;
+  height: 160px;
 }
 
 .main-footer main .taste .taste_text {
   position: absolute;
+  left: 0;
+  top: 0;
   padding: 26px 0 20px 68px;
-  width: 936px;
-  z-index: 998;
   line-height: 28px;
 }
 
@@ -2171,22 +2597,11 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   background-color: #8a2ae3;
 }
 
-.main-footer main .taste .taste_bg_img {
-  position: absolute;
-}
-
-.main-footer main .taste .taste_bg_img img {
-  width: 936px;
-  height: 160px;
-}
-
 .main-footer footer {
-  width: 100%;
   margin-top: 80px;
   padding-left: 348px;
   padding-right: 348px;
   text-align: center;
-  background-color: antiquewhite;
 }
 
 .main-footer footer .flex-box {
@@ -2196,9 +2611,9 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 15px;
   width: 936px;
   height: 154px;
+  padding: 15px;
   background-color: #fff;
 }
 
