@@ -1,0 +1,347 @@
+@import "./style.scss";
+@import "./reset.scss";
+@import "./mixin.scss";
+
+body {
+    width: 100%;
+}
+
+//-------------------- header --------------------//
+header {
+    .web_menu {
+        position: fixed;
+        left: 0;
+        width: 288px; height: 100%;
+        padding: 50px 22px 30px 22px;
+        background-color: $back_color;
+        border-right: 1px solid #606060;
+        z-index: 999;
+
+        //----- logo -----//
+        .logo {
+            width: 100%;
+            text-align: center;
+            img {
+                height: 46px;
+            }
+        }
+
+        //----- log -----//
+        .log {
+            width: 100%;
+            margin-top: 60px;
+
+            // logout //
+            .logout {
+                display: block;
+                margin-bottom: 30px;
+
+                .logout_img {
+                    img {
+                        width: 75px; height: 75px;
+                    }
+                }
+        
+                .login_button {
+                    margin-top: 20px;
+                    width: 150px; height: 33px;
+                    border: 3px solid #8a2ae3;
+        
+                    a {
+                        text-align: center;
+                        font-size: 14px;
+                        line-height: 30px;
+                        letter-spacing: 3px;
+                        color: $font-color_2;
+        
+                        img {
+                            margin-right: 5px;
+                            height: 13px;
+                        }
+                    }
+                }
+            }
+
+            // login //
+            .login {
+                display: none;
+                margin-bottom: 30px;
+
+                .login_img {
+                    display: flex;
+                    img {
+                        width: 75px; height: 75px;
+                    }
+                    p {
+                        margin-left: 10px;
+                        line-height: 95px;
+                        font-size: 14px;
+                        
+                        strong {
+                            margin-right: 5px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+        
+                .logout_button {
+                    width: 150px; height: 33px;
+                    border: 1px solid #606060;
+        
+                    a {
+                        text-align: center;
+                        font-size: 14px;
+                        line-height: 33px;
+                        letter-spacing: 3px;
+                        color: $font-color_1;
+                    }
+                }
+            }
+        }
+
+        //----- search -----//
+        .search {
+            width: 100%; height: 45px;
+            border-radius: 15px;
+            background-color: #f5f5f5;
+
+            .search_ico {
+                display: flex;
+                align-items: center;
+                margin-left: 10px;
+                line-height: 45px;
+
+                img {
+                    margin-right: 10px;
+                    width: 16px;
+                    color: #606060;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        //----- contents -----//
+        .contents {
+            margin-top: 50px;
+            margin-bottom: 80px;
+            width: 100%;
+    
+            // menu_1 //
+            .menu_1 {
+                .gnb_1 {
+                    li {
+                        a {
+                            font-size: 14px;
+                            img {
+                                margin-right: 5px;
+                                width: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .dotted_line {
+                margin: 38px 0;
+                width: 100%;
+                border: 1px dashed #606060;
+            }
+    
+            // menu_2 //
+            .menu_2 {
+                .gnb_2 {
+                    li {
+                        a {
+                            font-size: 14px;
+                            img {
+                                margin-right: 5px;
+                                width: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .dotted_line {
+                margin: 30px 0;
+                width: 100%;
+                border: 1px dashed #606060;
+            }
+    
+            // menu_3 //
+            .menu_3 {
+                .gnb_3 {
+                    li {
+                        a {
+                            margin-left: 18px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+
+        //----- music_box -----//
+        .music_box {
+            padding: 13px 5px;
+            border: 2px solid #8a2ae3;
+            width: 100%;
+            height: 105px;
+
+            p {
+                text-align: center;
+                font-size: 12px;
+            }
+
+            // music_time //
+            .music_time {
+                display: flex;
+                justify-content: space-between;
+                span {
+                    font-size: 10px;
+                }
+            }
+
+            // music_bar //
+            .music_bar {
+                position: relative;
+                display: flex;
+                align-items: center;
+                margin-top: 10px;
+                margin-bottom: 20px;
+                width: 100%;
+
+                .bar_1 {
+                    position: absolute;
+                    border: 1px solid #bbb;
+                    width: 100%;
+
+                }
+                .bar_2 {
+                    position: absolute;
+                    border: 1px solid #606060;
+                    width: 30%;
+                }
+
+                .circle {
+                    position: absolute;
+                    width: 15px; height: 15px;
+                    left: 30%;
+                    border-radius: 50%;
+                    background-color: #606060;
+                }
+            }
+
+            // music_button //
+            .music_button {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0 6px;
+
+                img {
+                    height: 15px;
+
+                    &:nth-child(3) {
+                        height: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+//------------------------- main-footer -------------------------//
+.main-footer {
+    position: absolute;
+    right: 0;
+    width: 85%;
+    
+    //-------------------- main --------------------//
+    main {
+        width: 100%;
+        height: 1700px;
+        padding-left: 348px;
+        padding-right: 334px;
+
+
+    }
+    
+    //-------------------- footer --------------------//
+    footer {
+        margin-top: 80px;
+        padding-left: 348px;
+        padding-right: 348px;
+        text-align: center;
+        
+        //----- flex-box 재진 -----//
+        .flex-box {
+            display: flex;
+            justify-content: center;
+            width: 936px; height: 154px;
+            padding: 15px;
+            background-color: $back_color;
+    
+            .footer-logo {
+                width: 77px;
+                line-height: 169px;
+                a {
+                    width: 100%;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+    
+            .info-box {
+                margin-left: 30px;
+                .notice-menu {
+                    .title-flex {
+                        display: flex; 
+                        h4 {
+                            margin-right: 20px;
+                        }
+                    }
+    
+                    margin-bottom: 30px;
+                }
+    
+                nav {
+                    margin-bottom: 20px;
+                    .footer_info {
+                        .footer-menu {
+                            display: flex;
+                            li {
+                                font-size: 12px;
+                                padding-right: 10px;
+                                border-right: 1px solid $border_color;
+                                &:first-child ~ li {
+                                    padding-left: 10px;
+                                }
+    
+                                &:last-child {
+                                    border-right: 0;
+                                }
+                                
+                                a {
+                                    color : $footer_color;
+                                }
+                            }
+                        }
+                    }
+                }
+    
+                address {
+                    text-align: left;
+                    font-size: 12px;
+                    font-family: $font-3;
+                }
+            }
+        }
+    }
+}

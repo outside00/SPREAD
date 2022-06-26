@@ -6,13 +6,12 @@
 
 .grid {
     width: 100%; // 모바일, 테블릿
-    max-width: 1024px; // pc
+    max-width: 936px; // pc
     margin: 0 auto;
 }
 
 header {
     width: 100%;
-    background-color: aqua;
 }
 
 ul,
@@ -26,38 +25,30 @@ img {
 }
 
 a {
+    font-size: 16px;
     display: block;
-    color: black;
+    color: $gray;
     text-decoration: none;
-
+    font-family: $font-5;
     &:hover {
         text-decoration: underline;
     }
 }
 
 h1 {
-    font: {
-        size: $h1-size;
-        family: $h1-family;
-        weight: $h1-weight;
-    }
+   font-size: 48px;
+   font-family: $spread-font;
+   color: $white;
 }
 
-h5 {
-    font-size: 14px;
-    color: $font-color;
+h2 {
+    font-size: 40px;
+    font-family: $font-6;
+    color: $gray;
 }
 
-strong {
-    font-size: 12px;
-    color: $font-color;
+p {
+    font-size: 16px;
+    font-family: $font-3;
+    color: $gray;
 }
-
-address {
-    font: {
-        style: normal;
-        size: 14px;
-    }
-    color: #606060;
-}
-

@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "../scss/stayle.scss"
+        "../scss/style.scss"
     ],
     "names": [],
-    "file": "stayle.css"
+    "file": "style.css"
 }

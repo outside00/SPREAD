@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "../scss/magazine.scss"
+        "../scss/style.scss"
     ],
     "names": [],
-    "file": "magazine.css"
+    "file": "style.css"
 }

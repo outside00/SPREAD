@@ -9,59 +9,140 @@
 </head>
 <body>
     <header>
-        <a href="#">SPREAD</a>
-        <a href="#">로그인</a>
+        <div class="grid">
+            <a href="#" class="spread">SPREAD</a>
+            <a href="#" class="login">로그인</a>
+        </div>
     </header>
 
     <main>
-        <section class="1st-section">
+        <section class="intro-title">
             <div class="main-background">
-                <img src="./image/1.sect_bg.png" alt="보라색 배경">
+                <img src="./image/1.sect_bg.png" class="fixed-bg" alt="보라색 배경">
+                <img src="./image/1.sect_ani_pinkcircle.png" class="p-cir" alt="pink circle">
+                <img src="./image/1.sect_ani_pinkcircle.png" class="p-cir2" alt="pink circle2">
+                <img src="./image/1.sect_ani_pinkcross.png" class="p-cross" alt="pink cross">
+                <img src="./image/1.sect_ani_pinkline.png" class="p-line" alt="pink line">
+                <img src="./image/1.sect_ani_whitecircle.png" class="wh-cir" alt="white circle">
+                <img src="./image/1.sect_ani_whitecircle.png" class="wh-cir2" alt="white circle2">
+                <img src="./image/1.sect_ani_whitecircle.png" class="wh-cir3" alt="white circle3">
+                <img src="./image/1.sect_ani_whitecircle.png" class="wh-cir4" alt="white circle4">
+                <img src="./image/1.sect_ani_whitecross.png" class="wh-cross" alt="white cross">
+                <img src="./image/1.sect_ani_whitecross.png" class="wh-cross2" alt="white cross">
+                <img src="./image/1.sect_ani_whiteline.png" class="wh-line" alt="white line">
+                <img src="./image/1.sect_ani_whiteline.png" class="wh-line2" alt="white line2">
             </div>
-            <img src="./image/1.sect_ani_pinkcircle.png" alt="pink circle">
-            <img src="./image/1.sect_ani_pinkcross.png" alt="pink cross">
-            <img src="./image/1.sect_ani_pinkline.png" alt="pink line">
-            <img src="./image/1.sect_ani_whitecircle.png" alt="white circle">
-            <img src="./image/1.sect_ani_whitecross.png" alt="white cross">
-            <img src="./image/1.sect_ani_whiteline.png" alt="white line">
             
-            <div class="title-flexbox">
-                <h1>SPREAD<br>나의 음악이<br>확산되다</h1>
-                <img src="./image/1.sect_album.png" alt="album">
-            </div>
-            <p>음악 그 이상을 채워보세요.</p>
-            <div class="window-apple-flexbox">
-                <div class="window-flexbox">
-                    <img src="./image/1.sect_window.png" alt="window logo">
-                    <p>Windows 다운로드</p>
+            <div class="grid">
+                <div class="title-flexbox">
+                    <h1>SPREAD<br><br> 나의 음악이<br>확산되다</h1>
+                    <img src="./image/1.sect_album.png" alt="album">
                 </div>
-                <div class="apple-flexbox">
-                    <img src="./image/1.sect_apple.png" alt="apple logo">
-                    <p>Mac App Store 다운로드</p>
-                </div>
-            </div> <!-- window-apple-flexbox -->
+                <div class="title-des">
+                    <p>음악 그 이상을 채워보세요.</p>
+                    <div class="window-apple-flexbox">
+                        <div class="window-flexbox">
+                            <a href="#"><img src="./image/1.sect_window.png" alt="window logo"></a>
+                            <a href="#"><p>Windows 다운로드</p></a>
+                        </div>
+                        <div class="apple-flexbox">
+                            <a href="#"><img src="./image/1.sect_apple.png" alt="apple logo"></a>
+                            <a href="#"><p>Mac App Store 다운로드</p></a>
+                        </div>
+                    </div> <!-- window-apple-flexbox -->
+                </div> <!-- title-des -->
+            </div> <!-- grid -->
         </section> <!-- 1st-section -->
 
-        <section class="2nd-section">
-            <h2>오늘 하루가 <br> 당신의 음악으로 가득 차도록</h2>
+        <section class="intro-slide">
+            <div class="grid">
+                <h2>오늘 하루가 <br> 당신의 음악으로 가득 차도록</h2>
+                <p>
+                    똑같은 음악은 질리셨나요?<br>
+                    SPREAD는 매일 내게 맞춘 음악을 배달합니다.<br>
+                    오늘의 날씨 분위기 상황에 맞는 음악도 들어보세요
+                </p>
+                <div class="slide-img-flexbox">
+                    <!-- <img src="./image/2.sect_slide_album_1.png" alt="album1"> -->
+                    <img src="./image/2.sect_slide_album_2.png" alt="album2">
+                    <img src="./image/2.sect_slide_album_3.png" alt="album3">
+                    <img src="./image/2.sect_slide_album_4.png" alt="album4">
+                    <!-- <img src="./image/2.sect_slide_album_5.png" alt="album5"> -->
+                </div>
+            </div> <!-- grid -->   
+        </section> <!-- intro-slide -->
+
+        <section class="intro-playlist">
+            <h2>SPREAD 추천 플레이리스트와 <br> DJ 플레이리스트까지</h2>
             <p>
-                똑같은 음악은 질리셨나요?<br>
-                SPREAD는 매일 내게 맞춘 음악을 배달합니다.<br>
-                오늘의 날씨 분위기 상황에 맞는 음악도 들어보세요
+                나의 음악 리스트를 늘리고 싶어! <br>
+                SPREAD는 AI가 최근에 들은 음악을 분석하여 <br>
+                꼭 맞는 음악을 추천해드립니다. <br>
+                <br>
+                한 주간 사랑받은 스프레드 이용자DJ의 플레이리스트 랭킹도 확인해보세요
             </p>
-            <div class="slide-img-flexbox">
-                <img src="./image/2.sect_slide_album_1.png" alt="album1">
-                <img src="./image/2.sect_slide_album_2.png" alt="album2">
-                <img src="./image/2.sect_slide_album_3.png" alt="album3">
-                <img src="./image/2.sect_slide_album_4.png" alt="album4">
-                <img src="./image/2.sect_slide_album_5.png" alt="album5">
+            <div class="phone-album">
+                <div class="left-album">
+                    <img src="./image/3.sect_ani_album_left.png" class="left-album" alt="left images">
+                </div>
+                <img src="./image/3.sect_phone.png" class="phone" alt="폰">
+                <div class="right-album">
+                    <img src="./image/3.sect_ani_album_right.png" class="right-album" alt="right images">
+                </div>
             </div>
-        </section> 
+        </section> <!-- intro-playlist -->
 
+        <section class="intro-emoji">
+            <h2>음악은 같이 듣는 거야</h2>
+            <p>
+                좋아하는 음악을 함께 듣고, 음성 대화와 <br>
+                이모지로 감상을 나눌 수 있는 스프레드만의 공간 <br>
+                지금 즐겨보세요. <br>
+            </p>
+
+            <div class="phone-icon">
+                <div class="left-icon">
+                    <img src="./image/4.sect_emoji_icon_left.png" alt="left icon">
+                </div>
+                <img src="./image/4.sect_phone.png" class="phone" alt="폰">
+                <div class="right-icon">
+                    <img src="./image/4.sect_emoji_icon_right.png" alt="right icon">
+                </div>
+            </div>
+        </section> <!-- intro-emoji -->
+
+        <section class="intro-mega-audio">
+            <div class="grid">
+                <h2>SPREAD Exclusive</h2>
+                <p>
+                    SPREAD 에서만 즐길 수 있는 독점 컨텐츠를 <br>
+                    만나보실 수 있습니다.
+                </p>
+                <div class="audio-maga-flexbox">
+                    <a href="#"><img src="./image/5.sect_audio.png" alt="오디오"></a>
+                    <a href="#"><img src="./image/5.sect_magazine.png" alt="매거진"></a>
+                </div>
+            </div>
+        </section> <!-- intro-mega-audio -->
+
+        <section class="intro-subscribe">
+            <!-- <img src="./image/6.sect_bg.png" alt="bg"> -->
+            <h1>Everywhere <br> SPREAD</h1>
+
+            <div class="subscribe">
+                <h4>첫 구독자 3개월 무료</h4>
+                <p>월 6,900원</p>
+            </div>
+            
+            <div class="collabo">
+                <h4>Netflix & Spread <br> 무제한 이용권</h4>
+                <p>월 10,900원</p>
+            </div>
+
+            <a href="#">구매하러가기 > </a>
+        </section> <!-- intro-subscribe -->
     </main>
-
     <footer>
-
     </footer>
 </body>
 </html>
