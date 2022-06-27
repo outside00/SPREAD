@@ -1,22 +1,51 @@
 @import "./style.scss";
 @import "./reset.scss";
 @import "./mixin.scss";
+@font-face {
+    font-family: 'S-CoreDream-5Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-6Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BMDOHYEON';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body {
     width: 100%;
-    background-color: aquamarine;
 }
 
 //====== header ======//
 header {
+    position: fixed;
+    z-index: 100;
+    height: 85px;
+    line-height: 85px;
+    background-color: #fff;
     .grid {
         display: flex;
-        height: 85px;
-        line-height: 85px;
         justify-content: space-between;
         .spread {
             color: $spread-color;
-            font-family: $spread-font;
+            font-family: 'BMDOHYEON';
+        }
+        .login {
+            font-weight: 600;
         }
     }
 }
@@ -176,11 +205,14 @@ main {
             }
             .slide-img-flexbox {
                 display: flex;
-                justify-content: space-between;
+                width: 936px;
+                overflow: hidden;
+                justify-content: center;
                 padding-top: 70px;
                 img {
                     width: 240px;
                     height: 240px;
+                    margin: 0 20px;
                 }
             }
         }
@@ -201,17 +233,17 @@ main {
             display: flex;
             justify-content: center;
             .left-album {
-                margin-top: 10px;
+                margin-top: 3px;
                 width: 430px;
             }
             .phone {
-                margin-top: 80px;
+                margin-top: 66px;
                 width: 479px;
                 height: 295px;
             }
             .right-album {
-                margin-top: 10px;
-                width: 450px;
+                margin-top: 23px;
+                width: 400px;
             }
         }
     } //intro-playlist
@@ -227,22 +259,24 @@ main {
         .phone-icon {
             display: flex;
             justify-content: center;
+            margin-left: 250px;
             .left-icon {
                 img {
-                    margin: 50px;
-                    width: 259px;
+                    margin-right: -100px;
+                    width: 260px;
                 }
             }
             .phone {
-                margin-top: 166px;
-                width: 900px;
-                height: 505px;
-                background-color: aqua;
+                margin-top: 102px;
+                margin-right: 400px;
+                width: 580px;
+                height: 350px;
             }
             .right-icon {
                 margin-top: 30px;
                 img {
-                    width: 300px;
+                    margin-left: -800px;
+                    width: 350px;
                 }
             }
         }
@@ -276,8 +310,45 @@ main {
         background: url(../image/6.sect_bg.png) no-repeat;
         height: 778px;
         h1 {
-            
+            padding: 130px 0 50px;
+            line-height: 90px;
         }
+        .sub-collabo-flexbox {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $white;
+            p {
+                font-size: 16px;
+                color: $p;
+                margin-top: 50px;
+            }
+            .subscribe {
+                border: 1px solid $white;
+                border-bottom: none;
+                border-top: none;
+                padding: 50px 100px;
+            }
+            .collabo {
+                border-right: 1px solid $white;
+                padding: 40px 100px;
+            }
+        }
+
+        .button {
+            text-align: center;
+            a {
+                margin-top: 60px;
+                color: $white;
+                font-size: 24px;
+                border: 1px solid $button;
+                background-color: $button;
+                padding: 10px 50px;
+                display: inline-block;
+            }
+        }
+        
     }
 } //main
 

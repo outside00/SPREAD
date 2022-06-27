@@ -29,7 +29,7 @@ a {
     display: block;
     color: $gray;
     text-decoration: none;
-    font-family: $font-5;
+    font-family: 'S-CoreDream-5Medium';
     &:hover {
         text-decoration: underline;
     }
@@ -37,18 +37,23 @@ a {
 
 h1 {
    font-size: 48px;
-   font-family: $spread-font;
+   font-family: 'BMDOHYEON';
    color: $white;
 }
 
 h2 {
     font-size: 40px;
-    font-family: $font-6;
+    font-family: 'S-CoreDream-6Bold';
     color: $gray;
+}
+
+h4 {
+    font-size: 24px;
+    font-family: 'S-CoreDream-5Medium';
 }
 
 p {
     font-size: 16px;
-    font-family: $font-3;
+    font-family: 'S-CoreDream-3Light';
     color: $gray;
 }
