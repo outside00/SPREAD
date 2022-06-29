@@ -2,6 +2,76 @@
 @import "./reset.scss";
 @import "./mixin.scss";
 
+@font-face {
+    font-family: 'BMDOHYEON';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-1Thin';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-1Thin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-2ExtraLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-4Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-5Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-6Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-7ExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-7ExtraBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-8Heavy';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-8Heavy.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-9Black';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     width: 100%;
 }
@@ -397,18 +467,20 @@ header {
             display: flex;
             width: 936px;
             height: 645px;
+            
             .djplay_list {
                 margin-right: 20px;
                 text-align: left;
-
+                
                 h2 {
                     width: 376px;
                     color: $h2_font-color_1;
                     margin-bottom: 5px;
                 }
-        
+                
                 // djplay_1 //
                 .djplay_1 {
+                    background-color: antiquewhite;
                     // order_1 //
                     .order_1 {
                         @include order();
@@ -430,7 +502,6 @@ header {
                                 width: 24px; height: 34px;
                                 line-height: 37px;
                                 font-size: 8px;
-                                color: #fff;
                             }
                         }
             
@@ -443,7 +514,7 @@ header {
                             p {
                                 line-height: 34px;
                                 font-size: 13px;
-                                font-family: $font-5;
+                                font-family: 'S-CoreDream-5Medium';
                             }
                         }
             
@@ -459,36 +530,13 @@ header {
                             }
                         }
                     }
-        
+
+                    //profile//
                     .profile {
-                        display: flex;
-                        flex-wrap: wrap;
-                        justify-content: space-between;
-                        padding: 0 32px;
-                        border: 1px solid #7b8892;
-                        border-top: 0;
-                        border-bottom: 0;
-                        width: 376px; height: 348px;
-                        background-color: $back_color;
+                        @include profile-flex();
         
                         .story {
-                            margin: 25px 0;
-                            width: 100%;
-                            p {
-                                font-size: 12px;
-                                display: inline-block;
-                                line-height: 25px;
-                                color: $font-color_3;
-        
-                                strong {
-                                    margin-right: 10px;
-                                    display: inline-block;
-                                    width: 62px; height: 25px;
-                                    text-align: center;
-                                    color: $font-color;
-                                    background-color: $back_color_1
-                                }
-                            }
+                            @include story();
                         }
         
                         .follow {
@@ -511,7 +559,7 @@ header {
                                     border-radius: 20px;
                                     width: 50px;
                                     font-size: 9px;
-                                    font-family: $font-2;
+                                    font-family: 'S-CoreDream-2ExtraLight';
                                     text-align: center;
                                 }
                             }
@@ -561,64 +609,15 @@ header {
                             margin-bottom: 10px;
         
                             .album_jacket_1_1 {
-                                width: 90px;
-        
-                                .album_jacket {
-                                    img {
-                                        width: 90px; height: 90px;
-                                    }
-                                }
-            
-                                .album_title {
-                                    p {
-                                        font-size: 11px;
-                                        img {
-                                            width: 11px;
-                                            margin-right: 5px;
-                                        }
-                                    }
-                                }
+                                @include album_jacket();
                             }
         
                             .album_jacket_1_2 {
-                                width: 90px;
-        
-                                .album_jacket {
-                                    img {
-                                        width: 90px; height: 90px;
-                                    }
-                                }
-            
-                                .album_title {
-                                    p {
-                                        font-size: 11px;
-                                        img {
-                                            width: 11px;
-                                            margin-right: 5px;
-                                        }
-                                    }
-                                }
+                                @include album_jacket();
                             }
         
                             .album_jacket_1_3 {
-                                width: 90px;
-        
-                                .album_jacket {
-                                    img {
-                                        width: 90px; height: 90px;
-                                    }
-                                }
-            
-                                .album_title {
-            
-                                    p {
-                                        font-size: 11px;
-                                        img {
-                                            width: 11px;
-                                            margin-right: 5px;
-                                        }
-                                    }
-                                }
+                                @include album_jacket();
                             }
                         }
                     }
@@ -662,7 +661,7 @@ header {
                             p {
                                 line-height: 34px;
                                 font-size: 13px;
-                                font-family: $font-5;
+                                font-family: 'S-CoreDream-5Medium';
                             }
                         }
             
@@ -678,36 +677,13 @@ header {
                             }
                         }
                     }
-        
+
+                    //profile//
                     .profile {
-                        display: none;
-                        flex-wrap: wrap;
-                        justify-content: space-between;
-                        padding: 0 32px;
-                        border: 1px solid #7b8892;
-                        border-top: 0;
-                        border-bottom: 0;
-                        width: 376px; height: 348px;
-                        background-color: $back_color;
+                        @include profile-none();
         
                         .story {
-                            margin: 25px 0;
-                            width: 100%;
-                            p {
-                                font-size: 12px;
-                                display: inline-block;
-                                line-height: 25px;
-                                color: $font-color_3;
-        
-                                strong {
-                                    margin-right: 10px;
-                                    display: inline-block;
-                                    width: 62px; height: 25px;
-                                    text-align: center;
-                                    color: $font-color;
-                                    background-color: $back_color_1
-                                }
-                            }
+                            @include story();
                         }
         
                         .follow {
@@ -730,7 +706,7 @@ header {
                                     border-radius: 20px;
                                     width: 50px;
                                     font-size: 9px;
-                                    font-family: $font-2;
+                                    font-family: 'S-CoreDream-2ExtraLight';
                                     text-align: center;
                                 }
                             }
@@ -780,64 +756,15 @@ header {
                             margin-bottom: 10px;
         
                             .album_jacket_2_1 {
-                                width: 90px;
-        
-                                .album_jacket {
-                                    img {
-                                        width: 90px; height: 90px;
-                                    }
-                                }
-            
-                                .album_title {
-                                    p {
-                                        font-size: 11px;
-                                        img {
-                                            width: 11px;
-                                            margin-right: 5px;
-                                        }
-                                    }
-                                }
+                                @include album_jacket();
                             }
         
                             .album_jacket_2_2 {
-                                width: 90px;
-        
-                                .album_jacket {
-                                    img {
-                                        width: 90px; height: 90px;
-                                    }
-                                }
-            
-                                .album_title {
-                                    p {
-                                        font-size: 11px;
-                                        img {
-                                            width: 11px;
-                                            margin-right: 5px;
-                                        }
-                                    }
-                                }
+                                @include album_jacket();
                             }
         
                             .album_jacket_2_3 {
-                                width: 90px;
-        
-                                .album_jacket {
-                                    img {
-                                        width: 90px; height: 90px;
-                                    }
-                                }
-            
-                                .album_title {
-            
-                                    p {
-                                        font-size: 11px;
-                                        img {
-                                            width: 11px;
-                                            margin-right: 5px;
-                                        }
-                                    }
-                                }
+                                @include album_jacket();
                             }
                         }
                     }
@@ -881,7 +808,7 @@ header {
                             p {
                                 line-height: 34px;
                                 font-size: 13px;
-                                font-family: $font-5;
+                                font-family: 'S-CoreDream-5Medium';
                             }
                         }
             
@@ -897,36 +824,13 @@ header {
                             }
                         }
                     }
-        
+
+                    //profile//
                     .profile {
-                        display: none;
-                        flex-wrap: wrap;
-                        justify-content: space-between;
-                        padding: 0 32px;
-                        border: 1px solid #7b8892;
-                        border-top: 0;
-                        border-bottom: 0;
-                        width: 376px; height: 348px;
-                        background-color: $back_color;
+                        @include profile-none();
         
                         .story {
-                            margin: 25px 0;
-                            width: 100%;
-                            p {
-                                font-size: 12px;
-                                display: inline-block;
-                                line-height: 25px;
-                                color: $font-color_3;
-        
-                                strong {
-                                    margin-right: 10px;
-                                    display: inline-block;
-                                    width: 62px; height: 25px;
-                                    text-align: center;
-                                    color: $font-color;
-                                    background-color: $back_color_1
-                                }
-                            }
+                            @include story();
                         }
         
                         .follow {
@@ -949,7 +853,7 @@ header {
                                     border-radius: 20px;
                                     width: 50px;
                                     font-size: 9px;
-                                    font-family: $font-2;
+                                    font-family: 'S-CoreDream-2ExtraLight';
                                     text-align: center;
                                 }
                             }
@@ -999,64 +903,15 @@ header {
                             margin-bottom: 10px;
         
                             .album_jacket_3_1 {
-                                width: 90px;
-        
-                                .album_jacket {
-                                    img {
-                                        width: 90px; height: 90px;
-                                    }
-                                }
-            
-                                .album_title {
-                                    p {
-                                        font-size: 11px;
-                                        img {
-                                            width: 11px;
-                                            margin-right: 5px;
-                                        }
-                                    }
-                                }
+                                @include album_jacket();
                             }
         
                             .album_jacket_3_2 {
-                                width: 90px;
-        
-                                .album_jacket {
-                                    img {
-                                        width: 90px; height: 90px;
-                                    }
-                                }
-            
-                                .album_title {
-                                    p {
-                                        font-size: 11px;
-                                        img {
-                                            width: 11px;
-                                            margin-right: 5px;
-                                        }
-                                    }
-                                }
+                                @include album_jacket();
                             }
         
                             .album_jacket_3_3 {
-                                width: 90px;
-        
-                                .album_jacket {
-                                    img {
-                                        width: 90px; height: 90px;
-                                    }
-                                }
-            
-                                .album_title {
-            
-                                    p {
-                                        font-size: 11px;
-                                        img {
-                                            width: 11px;
-                                            margin-right: 5px;
-                                        }
-                                    }
-                                }
+                                @include album_jacket();
                             }
                         }
                     }
@@ -1092,7 +947,7 @@ header {
                             p {
                                 line-height: 34px;
                                 font-size: 13px;
-                                font-family: $font-5;
+                                font-family: 'S-CoreDream-5Medium';
                             }
                         }
             
@@ -1108,35 +963,16 @@ header {
                             }
                         }
                     }
-        
+
+                    //profile//
                     .profile {
-                        display: none;
-                        flex-wrap: wrap;
-                        justify-content: space-between;
-                        padding: 0 32px;
-                        border: 1px solid #7b8892;
-                        border-top: 0;
-                        border-bottom: 0;
-                        width: 376px; height: 348px;
-                        background-color: $back_color;
+                        @include profile-none();
         
                         .story {
                             margin: 25px 0;
                             width: 100%;
                             p {
-                                font-size: 12px;
-                                display: inline-block;
-                                line-height: 25px;
-                                color: $font-color_3;
-        
-                                strong {
-                                    margin-right: 10px;
-                                    display: inline-block;
-                                    width: 62px; height: 25px;
-                                    text-align: center;
-                                    color: $font-color;
-                                    background-color: $back_color_1
-                                }
+                                @include story();
                             }
                         }
         
@@ -1160,7 +996,7 @@ header {
                                     border-radius: 20px;
                                     width: 50px;
                                     font-size: 9px;
-                                    font-family: $font-2;
+                                    font-family: 'S-CoreDream-2ExtraLight';
                                     text-align: center;
                                 }
                             }
@@ -1210,64 +1046,15 @@ header {
                             margin-bottom: 10px;
         
                             .album_jacket_4_1 {
-                                width: 90px;
-        
-                                .album_jacket {
-                                    img {
-                                        width: 90px; height: 90px;
-                                    }
-                                }
-            
-                                .album_title {
-                                    p {
-                                        font-size: 11px;
-                                        img {
-                                            width: 11px;
-                                            margin-right: 5px;
-                                        }
-                                    }
-                                }
+                                @include album_jacket();
                             }
         
                             .album_jacket_4_2 {
-                                width: 90px;
-        
-                                .album_jacket {
-                                    img {
-                                        width: 90px; height: 90px;
-                                    }
-                                }
-            
-                                .album_title {
-                                    p {
-                                        font-size: 11px;
-                                        img {
-                                            width: 11px;
-                                            margin-right: 5px;
-                                        }
-                                    }
-                                }
+                                @include album_jacket();
                             }
         
                             .album_jacket_4_3 {
-                                width: 90px;
-        
-                                .album_jacket {
-                                    img {
-                                        width: 90px; height: 90px;
-                                    }
-                                }
-            
-                                .album_title {
-            
-                                    p {
-                                        font-size: 11px;
-                                        img {
-                                            width: 11px;
-                                            margin-right: 5px;
-                                        }
-                                    }
-                                }
+                                @include album_jacket();
                             }
                         }
                     }
@@ -1303,7 +1090,7 @@ header {
                             p {
                                 line-height: 34px;
                                 font-size: 13px;
-                                font-family: $font-5;
+                                font-family: 'S-CoreDream-5Medium';
                             }
                         }
             
@@ -1319,36 +1106,13 @@ header {
                             }
                         }
                     }
-        
+
+                    //profile//
                     .profile {
-                        display: none;
-                        flex-wrap: wrap;
-                        justify-content: space-between;
-                        padding: 0 32px;
-                        border: 1px solid #7b8892;
-                        border-top: 0;
-                        border-bottom: 0;
-                        width: 376px; height: 348px;
-                        background-color: $back_color;
+                        @include profile-none();
         
                         .story {
-                            margin: 25px 0;
-                            width: 100%;
-                            p {
-                                font-size: 12px;
-                                display: inline-block;
-                                line-height: 25px;
-                                color: $font-color_3;
-        
-                                strong {
-                                    margin-right: 10px;
-                                    display: inline-block;
-                                    width: 62px; height: 25px;
-                                    text-align: center;
-                                    color: $font-color;
-                                    background-color: $back_color_1
-                                }
-                            }
+                            @include story();
                         }
         
                         .follow {
@@ -1371,7 +1135,7 @@ header {
                                     border-radius: 20px;
                                     width: 50px;
                                     font-size: 9px;
-                                    font-family: $font-2;
+                                    font-family: 'S-CoreDream-2ExtraLight';
                                     text-align: center;
                                 }
                             }
@@ -1421,64 +1185,15 @@ header {
                             margin-bottom: 10px;
         
                             .album_jacket_5_1 {
-                                width: 90px;
-        
-                                .album_jacket {
-                                    img {
-                                        width: 90px; height: 90px;
-                                    }
-                                }
-            
-                                .album_title {
-                                    p {
-                                        font-size: 11px;
-                                        img {
-                                            width: 11px;
-                                            margin-right: 5px;
-                                        }
-                                    }
-                                }
+                                @include album_jacket();
                             }
         
                             .album_jacket_5_2 {
-                                width: 90px;
-        
-                                .album_jacket {
-                                    img {
-                                        width: 90px; height: 90px;
-                                    }
-                                }
-            
-                                .album_title {
-                                    p {
-                                        font-size: 11px;
-                                        img {
-                                            width: 11px;
-                                            margin-right: 5px;
-                                        }
-                                    }
-                                }
+                                @include album_jacket();
                             }
         
                             .album_jacket_5_3 {
-                                width: 90px;
-        
-                                .album_jacket {
-                                    img {
-                                        width: 90px; height: 90px;
-                                    }
-                                }
-            
-                                .album_title {
-            
-                                    p {
-                                        font-size: 11px;
-                                        img {
-                                            width: 11px;
-                                            margin-right: 5px;
-                                        }
-                                    }
-                                }
+                                @include album_jacket();
                             }
                         }
                     }
@@ -1856,7 +1571,6 @@ header {
         }
     
         //----- taste 혜령 -----//
-
         .taste {
             position: absolute;
             bottom: 0;
@@ -1878,19 +1592,19 @@ header {
     
                 p {
                     font-size: 18px;
-                    font-family: $font-5;
+                    font-family: 'S-CoreDream-5Medium';
                     
                     strong {
                         font-size: 18px;
                         color: $font-color_2;
-                        font-family: $font-7;
+                        font-family: 'S-CoreDream-7ExtraBold';
                     }
                 }
     
                 .text {
                     p {
                         font-size: 13px;
-                        font-family: $font-3;
+                        font-family: 'S-CoreDream-3Light';
                     }
                 }
     
@@ -1900,7 +1614,7 @@ header {
                     border-radius: 5px;
                     width: 120px; height: 35px;
                     font-size: 13px;
-                    font-family: $font-5;
+                    font-family: 'S-CoreDream-5Medium';
                     color: $font-color;
                     background-color: $back_color_3;
                 }
@@ -1914,7 +1628,6 @@ header {
         padding-left: 348px;
         padding-right: 348px;
         text-align: center;
-        // background-color: antiquewhite;
         
         //----- flex-box 재진 -----//
         .flex-box {
@@ -1976,7 +1689,7 @@ header {
                 address {
                     text-align: left;
                     font-size: 12px;
-                    font-family: $font-3;
+                    font-family: 'S-CoreDream-3Light';
                 }
             }
         }

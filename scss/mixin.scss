@@ -21,6 +21,70 @@
     background-color: $back_color;
 }
 
+@mixin profile-flex() {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 32px;
+    border: 1px solid #7b8892;
+    border-top: 0;
+    border-bottom: 0;
+    width: 376px; height: 372px;
+    background-color: $back_color;
+}
+
+@mixin profile-none() {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 32px;
+    border: 1px solid #7b8892;
+    border-top: 0;
+    border-bottom: 0;
+    width: 376px; height: 372px;
+    background-color: $back_color;
+}
+
+@mixin story() {
+    margin: 25px 0;
+    width: 100%;
+
+    p {
+        font-size: 12px;
+        display: inline-block;
+        line-height: 25px;
+        color: $font-color_3;
+
+        strong {
+            margin-right: 10px;
+            display: inline-block;
+            width: 62px; height: 25px;
+            text-align: center;
+            color: $font-color;
+            background-color: $back_color_1
+        }
+    }
+}
+
+@mixin album_jacket() {
+    width: 90px;
+
+    .album_jacket {
+        img {
+            width: 90px; height: 90px;
+        }
+    }
+
+    .album_title {
+        p {
+            font-size: 11px;
+            img {
+                width: 11px;
+                margin-right: 5px;
+            }
+        }
+    }
+}
 
 
 
@@ -44,7 +108,7 @@
             a {
                 font-size: 17px;
                 color: $h1_font-color_1;
-                font-weight: $font-3;
+                font-family: 'S-CoreDream-3Light';
                 padding-bottom: 60px;
             }
         }
@@ -104,12 +168,13 @@
     .title {
         font-size: 14px;
         color: $h2_font-color_1;
-        font-family: $font-5;
+        font-family: 'S-CoreDream-5Medium';
     }
     .artist {
         font-size: 13px;
         color: $font-slide-artist;
-        font-family: $font-4;
+        font-family: 'S-CoreDream-4Regular';
         width: 200px;
     }
 }
+

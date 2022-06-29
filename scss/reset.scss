@@ -23,14 +23,14 @@ ol {
 a {
     display: block;
     text-decoration: none;
-    font-family: $font-4;
+    font-family: 'S-CoreDream-4Regular';
     color: $font-color_1;
 }
 
 strong {
     font: {
         size: 12px;
-        family: $font-4;
+        font-family: 'S-CoreDream-4Regular';
         color: $strong-color;
     }
     
@@ -38,25 +38,25 @@ strong {
 
 span {
     display: block;
-    font-family: $font-4;
+    font-family: 'S-CoreDream-4Regular';
     color: $font-color_1;
 }
 
 h1 {
     font: {
         font-size: 24px;
-        font-family: $font-5;
+        font-family: 'S-CoreDream-5Medium';
     }
 }
 
 h2 {
     font-size: 21px;
-    font-family: $font-5;
+    font-family: 'S-CoreDream-5Medium';
 }
 
 h3 {
     font-size: 18px;
-    font-family: $font-5;
+    font-family: 'S-CoreDream-5Medium';
 }
 
 h4 {
@@ -71,7 +71,7 @@ h5 {
 
 p {
     font-size: 14px;
-    font-family: $font-4;
+    font-family: 'S-CoreDream-4Regular';
     color: $font-color_1;
 }
 

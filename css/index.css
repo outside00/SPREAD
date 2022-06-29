@@ -22,35 +22,35 @@ ol {
 a {
   display: block;
   text-decoration: none;
-  font-family: "S-Core Dream 4 Regular";
+  font-family: 'S-CoreDream-4Regular';
   color: #606060;
 }
 
 strong {
   font-size: 12px;
-  font-family: "S-Core Dream 4 Regular";
+  font-font-family: 'S-CoreDream-4Regular';
   font-color: #333;
 }
 
 span {
   display: block;
-  font-family: "S-Core Dream 4 Regular";
+  font-family: 'S-CoreDream-4Regular';
   color: #606060;
 }
 
 h1 {
   font-font-size: 24px;
-  font-font-family: "S-Core Dream 5 Medium";
+  font-font-family: 'S-CoreDream-5Medium';
 }
 
 h2 {
   font-size: 21px;
-  font-family: "S-Core Dream 5 Medium";
+  font-family: 'S-CoreDream-5Medium';
 }
 
 h3 {
   font-size: 18px;
-  font-family: "S-Core Dream 5 Medium";
+  font-family: 'S-CoreDream-5Medium';
 }
 
 h4 {
@@ -65,7 +65,7 @@ h5 {
 
 p {
   font-size: 14px;
-  font-family: "S-Core Dream 4 Regular";
+  font-family: 'S-CoreDream-4Regular';
   color: #606060;
 }
 
@@ -103,6 +103,76 @@ address {
   font-style: normal;
   font-size: 14px;
   color: #606060;
+}
+
+@font-face {
+  font-family: 'BMDOHYEON';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-1Thin';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-1Thin.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-2ExtraLight';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-3Light';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-4Regular';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-5Medium';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-6Bold';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-7ExtraBold';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-7ExtraBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-8Heavy';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-8Heavy.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-9Black';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
@@ -406,7 +476,7 @@ header .web_menu .music_box .music_button img:nth-child(3) {
 .main-footer main .sect-main-slide .main-slide-flexbox .main-img-skateboard_1 .title-music-flexbox .main-title a {
   font-size: 17px;
   color: #fff;
-  font-weight: "S-Core Dream 3 Light";
+  font-family: 'S-CoreDream-3Light';
   padding-bottom: 60px;
 }
 
@@ -482,7 +552,7 @@ header .web_menu .music_box .music_button img:nth-child(3) {
 .main-footer main .sect-main-slide .main-slide-flexbox .main-img-spring_2 .title-music-flexbox .main-title a {
   font-size: 17px;
   color: #fff;
-  font-weight: "S-Core Dream 3 Light";
+  font-family: 'S-CoreDream-3Light';
   padding-bottom: 60px;
 }
 
@@ -558,7 +628,7 @@ header .web_menu .music_box .music_button img:nth-child(3) {
 .main-footer main .sect-main-slide .main-slide-flexbox .main-img-concert_3 .title-music-flexbox .main-title a {
   font-size: 17px;
   color: #fff;
-  font-weight: "S-Core Dream 3 Light";
+  font-family: 'S-CoreDream-3Light';
   padding-bottom: 60px;
 }
 
@@ -634,7 +704,7 @@ header .web_menu .music_box .music_button img:nth-child(3) {
 .main-footer main .sect-main-slide .main-slide-flexbox .main-img-cafe_4 .title-music-flexbox .main-title a {
   font-size: 17px;
   color: #fff;
-  font-weight: "S-Core Dream 3 Light";
+  font-family: 'S-CoreDream-3Light';
   padding-bottom: 60px;
 }
 
@@ -710,7 +780,7 @@ header .web_menu .music_box .music_button img:nth-child(3) {
 .main-footer main .sect-main-slide .main-slide-flexbox .main-img-work_5 .title-music-flexbox .main-title a {
   font-size: 17px;
   color: #fff;
-  font-weight: "S-Core Dream 3 Light";
+  font-family: 'S-CoreDream-3Light';
   padding-bottom: 60px;
 }
 
@@ -786,7 +856,7 @@ header .web_menu .music_box .music_button img:nth-child(3) {
 .main-footer main .sect-main-slide .main-slide-flexbox .main-img-night_6 .title-music-flexbox .main-title a {
   font-size: 17px;
   color: #fff;
-  font-weight: "S-Core Dream 3 Light";
+  font-family: 'S-CoreDream-3Light';
   padding-bottom: 60px;
 }
 
@@ -880,13 +950,13 @@ header .web_menu .music_box .music_button img:nth-child(3) {
 .main-footer main .sect-music-playlist .music-playlist-flex-box .recent-playlist .title {
   font-size: 14px;
   color: #333;
-  font-family: "S-Core Dream 5 Medium";
+  font-family: 'S-CoreDream-5Medium';
 }
 
 .main-footer main .sect-music-playlist .music-playlist-flex-box .recent-playlist .artist {
   font-size: 13px;
   color: #7b8892;
-  font-family: "S-Core Dream 4 Regular";
+  font-family: 'S-CoreDream-4Regular';
   width: 200px;
 }
 
@@ -907,13 +977,13 @@ header .web_menu .music_box .music_button img:nth-child(3) {
 .main-footer main .sect-music-playlist .music-playlist-flex-box .ai-playlist .title {
   font-size: 14px;
   color: #333;
-  font-family: "S-Core Dream 5 Medium";
+  font-family: 'S-CoreDream-5Medium';
 }
 
 .main-footer main .sect-music-playlist .music-playlist-flex-box .ai-playlist .artist {
   font-size: 13px;
   color: #7b8892;
-  font-family: "S-Core Dream 4 Regular";
+  font-family: 'S-CoreDream-4Regular';
   width: 200px;
 }
 
@@ -982,6 +1052,10 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   margin-bottom: 5px;
 }
 
+.main-footer main .flex-box .djplay_list .djplay_1 {
+  background-color: antiquewhite;
+}
+
 .main-footer main .flex-box .djplay_list .djplay_1 .order_1 {
   position: relative;
   display: -webkit-box;
@@ -1016,7 +1090,6 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   height: 34px;
   line-height: 37px;
   font-size: 8px;
-  color: #fff;
 }
 
 .main-footer main .flex-box .djplay_list .djplay_1 .order_1 .id {
@@ -1034,7 +1107,7 @@ header .web_menu .music_box .music_button img:nth-child(3) {
 .main-footer main .flex-box .djplay_list .djplay_1 .order_1 .id p {
   line-height: 34px;
   font-size: 13px;
-  font-family: "S-Core Dream 5 Medium";
+  font-family: 'S-CoreDream-5Medium';
 }
 
 .main-footer main .flex-box .djplay_list .djplay_1 .order_1 .surge {
@@ -1065,7 +1138,7 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   border-top: 0;
   border-bottom: 0;
   width: 376px;
-  height: 348px;
+  height: 372px;
   background-color: #fff;
 }
 
@@ -1117,7 +1190,7 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   border-radius: 20px;
   width: 50px;
   font-size: 9px;
-  font-family: "S-Core Dream 2 ExtraLight";
+  font-family: 'S-CoreDream-2ExtraLight';
   text-align: center;
 }
 
@@ -1275,7 +1348,7 @@ header .web_menu .music_box .music_button img:nth-child(3) {
 .main-footer main .flex-box .djplay_list .djplay_2 .order_2 .id p {
   line-height: 34px;
   font-size: 13px;
-  font-family: "S-Core Dream 5 Medium";
+  font-family: 'S-CoreDream-5Medium';
 }
 
 .main-footer main .flex-box .djplay_list .djplay_2 .order_2 .surge {
@@ -1304,7 +1377,7 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   border-top: 0;
   border-bottom: 0;
   width: 376px;
-  height: 348px;
+  height: 372px;
   background-color: #fff;
 }
 
@@ -1356,7 +1429,7 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   border-radius: 20px;
   width: 50px;
   font-size: 9px;
-  font-family: "S-Core Dream 2 ExtraLight";
+  font-family: 'S-CoreDream-2ExtraLight';
   text-align: center;
 }
 
@@ -1514,7 +1587,7 @@ header .web_menu .music_box .music_button img:nth-child(3) {
 .main-footer main .flex-box .djplay_list .djplay_3 .order_3 .id p {
   line-height: 34px;
   font-size: 13px;
-  font-family: "S-Core Dream 5 Medium";
+  font-family: 'S-CoreDream-5Medium';
 }
 
 .main-footer main .flex-box .djplay_list .djplay_3 .order_3 .surge {
@@ -1543,7 +1616,7 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   border-top: 0;
   border-bottom: 0;
   width: 376px;
-  height: 348px;
+  height: 372px;
   background-color: #fff;
 }
 
@@ -1595,7 +1668,7 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   border-radius: 20px;
   width: 50px;
   font-size: 9px;
-  font-family: "S-Core Dream 2 ExtraLight";
+  font-family: 'S-CoreDream-2ExtraLight';
   text-align: center;
 }
 
@@ -1745,7 +1818,7 @@ header .web_menu .music_box .music_button img:nth-child(3) {
 .main-footer main .flex-box .djplay_list .djplay_4 .order_4 .id p {
   line-height: 34px;
   font-size: 13px;
-  font-family: "S-Core Dream 5 Medium";
+  font-family: 'S-CoreDream-5Medium';
 }
 
 .main-footer main .flex-box .djplay_list .djplay_4 .order_4 .surge {
@@ -1774,7 +1847,7 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   border-top: 0;
   border-bottom: 0;
   width: 376px;
-  height: 348px;
+  height: 372px;
   background-color: #fff;
 }
 
@@ -1784,13 +1857,18 @@ header .web_menu .music_box .music_button img:nth-child(3) {
 }
 
 .main-footer main .flex-box .djplay_list .djplay_4 .profile .story p {
+  margin: 25px 0;
+  width: 100%;
+}
+
+.main-footer main .flex-box .djplay_list .djplay_4 .profile .story p p {
   font-size: 12px;
   display: inline-block;
   line-height: 25px;
   color: #525c63;
 }
 
-.main-footer main .flex-box .djplay_list .djplay_4 .profile .story p strong {
+.main-footer main .flex-box .djplay_list .djplay_4 .profile .story p p strong {
   margin-right: 10px;
   display: inline-block;
   width: 62px;
@@ -1826,7 +1904,7 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   border-radius: 20px;
   width: 50px;
   font-size: 9px;
-  font-family: "S-Core Dream 2 ExtraLight";
+  font-family: 'S-CoreDream-2ExtraLight';
   text-align: center;
 }
 
@@ -1976,7 +2054,7 @@ header .web_menu .music_box .music_button img:nth-child(3) {
 .main-footer main .flex-box .djplay_list .djplay_5 .order_5 .id p {
   line-height: 34px;
   font-size: 13px;
-  font-family: "S-Core Dream 5 Medium";
+  font-family: 'S-CoreDream-5Medium';
 }
 
 .main-footer main .flex-box .djplay_list .djplay_5 .order_5 .surge {
@@ -2005,7 +2083,7 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   border-top: 0;
   border-bottom: 0;
   width: 376px;
-  height: 348px;
+  height: 372px;
   background-color: #fff;
 }
 
@@ -2057,7 +2135,7 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   border-radius: 20px;
   width: 50px;
   font-size: 9px;
-  font-family: "S-Core Dream 2 ExtraLight";
+  font-family: 'S-CoreDream-2ExtraLight';
   text-align: center;
 }
 
@@ -2571,18 +2649,18 @@ header .web_menu .music_box .music_button img:nth-child(3) {
 
 .main-footer main .taste .taste_text p {
   font-size: 18px;
-  font-family: "S-Core Dream 5 Medium";
+  font-family: 'S-CoreDream-5Medium';
 }
 
 .main-footer main .taste .taste_text p strong {
   font-size: 18px;
   color: #8a2ae3;
-  font-family: "S-Core Dream 7 ExtraBold";
+  font-family: 'S-CoreDream-7ExtraBold';
 }
 
 .main-footer main .taste .taste_text .text p {
   font-size: 13px;
-  font-family: "S-Core Dream 3 Light";
+  font-family: 'S-CoreDream-3Light';
 }
 
 .main-footer main .taste .taste_text button {
@@ -2592,7 +2670,7 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   width: 120px;
   height: 35px;
   font-size: 13px;
-  font-family: "S-Core Dream 5 Medium";
+  font-family: 'S-CoreDream-5Medium';
   color: #fff;
   background-color: #8a2ae3;
 }
@@ -2679,6 +2757,6 @@ header .web_menu .music_box .music_button img:nth-child(3) {
 .main-footer footer .flex-box .info-box address {
   text-align: left;
   font-size: 12px;
-  font-family: "S-Core Dream 3 Light";
+  font-family: 'S-CoreDream-3Light';
 }
 /*# sourceMappingURL=index.css.map */
