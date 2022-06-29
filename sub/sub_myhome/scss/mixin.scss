@@ -12,15 +12,6 @@
     }
 }
 
-@mixin order() {
-    position: relative;
-    display: flex;
-    align-items: center;
-    border: 1px solid #7b8892;
-    width: 376px; height: 50px;
-    background-color: $back_color;
-}
-
 @mixin music_list() {
     display: flex;
     align-items: center;
