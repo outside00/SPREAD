@@ -498,9 +498,10 @@ header .web_menu .music_box .music_button img:nth-child(3) {
 
 .main-footer main .subscribe .subscribe-flex .season-ticket1 {
   position: relative;
+  display: block;
   width: 440px;
   height: 100%;
-  background-color: #bbb;
+  border: 0;
 }
 
 .main-footer main .subscribe .subscribe-flex .season-ticket1 .title {
@@ -528,11 +529,15 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   height: 360px;
   border: 2px solid #8a2ae3;
   text-align: center;
-  padding: 30% 24%;
 }
 
 .main-footer main .subscribe .subscribe-flex .season-ticket1 .text-box .text {
   margin-top: 25px;
+  padding: 30% 24%;
+}
+
+.main-footer main .subscribe .subscribe-flex .season-ticket1 .text-box .text h3 {
+  color: #333;
 }
 
 .main-footer main .subscribe .subscribe-flex .season-ticket2 {
@@ -540,6 +545,7 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   width: 440px;
   height: 360px;
   border: 2px solid #606060;
+  background-color: #fff;
 }
 
 .main-footer main .subscribe .subscribe-flex .season-ticket2 .text {
@@ -550,43 +556,47 @@ header .web_menu .music_box .music_button img:nth-child(3) {
           transform: translate(-50%, -50%);
 }
 
+.main-footer main .subscribe .subscribe-flex .season-ticket2 .text h3 {
+  color: #333;
+}
+
 .main-footer main .bar {
   width: 936px;
   margin: 82px 0;
   border: 1px solid #606060;
 }
 
-.main-footer main .benefits {
+.main-footer main .benefits-1 {
   width: 936px;
   height: 100%;
 }
 
-.main-footer main .benefits h2 {
+.main-footer main .benefits-1 h2 {
   margin-bottom: 18px;
 }
 
-.main-footer main .benefits .benefits-box {
+.main-footer main .benefits-1 .benefits-box {
   width: 936px;
   height: 545px;
   background-color: #f5f5f5;
 }
 
-.main-footer main .benefits .benefits-box .benefits-title {
+.main-footer main .benefits-1 .benefits-box .benefits-title {
   margin: 0 0 20px 29px;
   padding-top: 20px;
 }
 
-.main-footer main .benefits .benefits-box .benefits-title p {
+.main-footer main .benefits-1 .benefits-box .benefits-title p {
   font-size: 20px;
   color: #525c63;
 }
 
-.main-footer main .benefits .benefits-box .benefits-title p strong {
+.main-footer main .benefits-1 .benefits-box .benefits-title p strong {
   font-size: 36px;
   color: #8a2ae3;
 }
 
-.main-footer main .benefits .benefits-box .benefits-flex {
+.main-footer main .benefits-1 .benefits-box .benefits-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -601,14 +611,15 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   margin: 0 auto;
 }
 
-.main-footer main .benefits .benefits-box .box {
+.main-footer main .benefits-1 .benefits-box .box {
   position: relative;
   width: 344px;
   height: 155px;
+  border-radius: 100px;
   background-color: #fff;
 }
 
-.main-footer main .benefits .benefits-box .box .text {
+.main-footer main .benefits-1 .benefits-box .box .text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -616,25 +627,121 @@ header .web_menu .music_box .music_button img:nth-child(3) {
           transform: translate(-50%, -50%);
 }
 
-.main-footer main .benefits .benefits-box .box .text p {
+.main-footer main .benefits-1 .benefits-box .box .text p {
   font-size: 20px;
   text-align: center;
   color: #525c63;
 }
 
-.main-footer main .benefits .benefits-box .box .text p strong {
+.main-footer main .benefits-1 .benefits-box .box .text p strong {
   font-size: 24px;
   color: #333;
 }
 
-.main-footer main .benefits .benefits-box .arrow {
+.main-footer main .benefits-1 .benefits-box .arrow {
   width: 0 auto;
   height: 155px;
   line-height: 174px;
 }
 
-.main-footer main .benefits .benefits-box .arrow img {
+.main-footer main .benefits-1 .benefits-box .arrow img {
   height: 38px;
+}
+
+.main-footer main .benefits-2 {
+  display: none;
+  width: 936px;
+  height: 100%;
+}
+
+.main-footer main .benefits-2 h2 {
+  margin-bottom: 18px;
+}
+
+.main-footer main .benefits-2 .benefits-box {
+  width: 936px;
+  height: 545px;
+  background-color: #f5f5f5;
+}
+
+.main-footer main .benefits-2 .benefits-box .benefits-title {
+  margin: 0 0 47px 29px;
+  padding-top: 20px;
+}
+
+.main-footer main .benefits-2 .benefits-box .benefits-title p {
+  font-size: 20px;
+  color: #525c63;
+}
+
+.main-footer main .benefits-2 .benefits-box .benefits-title p strong {
+  font-size: 36px;
+  color: #8a2ae3;
+}
+
+.main-footer main .benefits-2 .benefits-box .benefits-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 825px;
+  height: 155px;
+  margin: 0 auto;
+}
+
+.main-footer main .benefits-2 .benefits-box .box {
+  position: relative;
+  width: 368px;
+  height: 155px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.main-footer main .benefits-2 .benefits-box .box .box-absolute {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 50%;
+  left: 10%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.main-footer main .benefits-2 .benefits-box .box .box-absolute .box-img {
+  margin-right: 50px;
+}
+
+.main-footer main .benefits-2 .benefits-box .box .box-absolute .box-img img {
+  width: 90px;
+}
+
+.main-footer main .benefits-2 .benefits-box .box .box-absolute .box-text p {
+  font-size: 12px;
+  color: #7B8892;
+}
+
+.main-footer main .benefits-2 .benefits-box .box .box-absolute .box-text p strong {
+  font-size: 16px;
+  color: #333;
+}
+
+.main-footer main .benefits-2 .benefits-box .plus {
+  width: 0 auto;
+  height: 155px;
+  line-height: 174px;
+}
+
+.main-footer main .benefits-2 .benefits-box .plus img {
+  height: 20px;
 }
 
 .main-footer main .benefits-text {
