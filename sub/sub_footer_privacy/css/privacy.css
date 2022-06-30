@@ -22,39 +22,39 @@ ol {
 a {
   display: block;
   text-decoration: none;
-  font-family: "S-Core Dream 4 Regular";
+  font-family: 'S-CoreDream-4Regular';
   color: #606060;
 }
 
 strong {
   font-size: 12px;
-  font-family: "S-Core Dream 4 Regular";
+  font-font-family: 'S-CoreDream-4Regular';
   font-color: #333;
 }
 
 span {
   display: block;
-  font-family: "S-Core Dream 4 Regular";
+  font-family: 'S-CoreDream-4Regular';
   color: #606060;
 }
 
 h1 {
   font-font-size: 24px;
-  font-font-family: "S-Core Dream 5 Medium";
+  font-font-family: 'S-CoreDream-5Medium';
 }
 
 h2 {
   font-size: 21px;
-  font-family: "S-Core Dream 5 Medium";
+  font-family: 'S-CoreDream-5Medium';
 }
 
 h3 {
-  font-size: 18px;
-  font-family: "S-Core Dream 5 Medium";
+  font-size: 16px;
+  font-family: 'S-CoreDream-5Medium';
 }
 
 h4 {
-  font-size: 16px;
+  font-size: 13px;
   display: block;
 }
 
@@ -65,7 +65,7 @@ h5 {
 
 p {
   font-size: 14px;
-  font-family: "S-Core Dream 4 Regular";
+  font-family: 'S-CoreDream-4Regular';
   color: #606060;
 }
 
@@ -73,6 +73,76 @@ address {
   font-style: normal;
   font-size: 14px;
   color: #606060;
+}
+
+@font-face {
+  font-family: 'BMDOHYEON';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-1Thin';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-1Thin.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-2ExtraLight';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-3Light';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-4Regular';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-5Medium';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-6Bold';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-7ExtraBold';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-7ExtraBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-8Heavy';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-8Heavy.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-9Black';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
@@ -93,14 +163,14 @@ main .privacy-text {
 
 main .privacy-text h3 {
   font-size: 16px;
-  font-family: "S-Core Dream 5 Medium";
+  font-family: 'S-CoreDream-5Medium';
   color: #333;
   margin-bottom: 36px;
 }
 
 main .privacy-text p strong {
   font-size: 13px;
-  font-family: "S-Core Dream 5 Medium";
+  font-family: 'S-CoreDream-5Medium';
   color: #333;
 }
 
@@ -124,7 +194,7 @@ main .privacy th, main .privacy td {
 main .privacy th, main .privacy td {
   padding: 15px;
   text-align: center;
-  font-family: "S-Core Dream 5 Medium";
+  font-family: 'S-CoreDream-5Medium';
   color: #333;
 }
 
@@ -217,6 +287,6 @@ footer .flex-box .info-box nav .footer_info .footer-menu li a {
 footer .flex-box .info-box address {
   text-align: left;
   font-size: 12px;
-  font-family: "S-Core Dream 3 Light";
+  font-family: 'S-CoreDream-3Light';
 }
 /*# sourceMappingURL=privacy.css.map */
