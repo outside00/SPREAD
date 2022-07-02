@@ -1,0 +1,114 @@
+@mixin responsive($break) {
+    @if $break == mobile-screens {
+        @media screen and (min-width:$break-mobile) {
+            @content;
+        }
+    }
+
+    @else if $break == pc-screens {
+        @media screen and (min-width:$break-pc) {
+            @content;
+        }
+    }
+}
+
+@mixin order() {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid #7b8892;
+    width: 376px; height: 50px;
+    background-color: $back_color;
+}
+
+
+
+
+@mixin main-slide() {
+    text-align: left;
+    background: url(../image/main-slide_board_1.png)no-repeat;
+    background-size: cover;
+    width: 936px;
+    height: 320px;
+    
+    .title-music-flexbox {
+        display: flex;
+        padding-top: 58px;
+        .main-title {
+            padding-left: 70px;
+            h1 {
+                color: $h1_font-color_1;
+                padding-bottom: 20px;
+            }
+            a {
+                font-size: 17px;
+                color: $h1_font-color_1;
+                font-weight: $font-3;
+                padding-bottom: 60px;
+            }
+        }
+        
+        .main-music-flex-box {
+            display: flex;
+            margin-left: 52px;
+            .musicbox-1 {
+                .music {
+                    display: flex;
+                    margin-right: 18px;
+                    img {
+                        width: 56px;
+                        height: 56px;
+                    }
+                    p {
+                        margin: 17px 15px;
+                        width: 200px;
+                        a {
+                            &:first-child{
+                                font-size: 13px;
+                                color: $h1_font-color_1;
+                            }
+    
+                            &:nth-child(2) {
+                                font-size: 12px;
+                                color: $font-slide-artist;
+                            }
+                        }
+                    }
+                }
+            }
+        }// main-music-flex-box 
+    } //title-music-flexbox
+    .next-prev-btn {
+        margin-top: -200px;
+        img {
+            padding: 10px;
+            width: 936px;
+
+        }
+    }
+}
+
+@mixin music-playlist() {
+    text-align: left;
+    h2 {
+        color: $h2_font-color_1;
+        margin-bottom: 5px;
+    }
+    a {
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    }
+    .title {
+        font-size: 14px;
+        color: $h2_font-color_1;
+        font-family: $font-5;
+    }
+    .artist {
+        font-size: 13px;
+        color: $font-slide-artist;
+        font-family: $font-4;
+        width: 200px;
+    }
+}

@@ -38,7 +38,7 @@ a:hover {
 
 h1 {
   font-size: 40px;
-  font-family: "S-Core Dream 4 Regular";
+  font-family: 'S-CoreDream-4Regular';
   color: #777;
 }
 
@@ -48,18 +48,88 @@ span {
 
 h2 {
   font-size: 24px;
-  font-family: 'S-Core Dream';
+  font-family: 'S-CoreDream-5Medium';
 }
 
 p {
   font-size: 16px;
-  font-family: 'S-Core Dream';
+  font-family: 'S-CoreDream-5Medium';
 }
 
 address {
   font-style: normal;
   font-size: 14px;
   color: #606060;
+}
+
+@font-face {
+  font-family: 'BMDOHYEON';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-1Thin';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-1Thin.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-2ExtraLight';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-3Light';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-4Regular';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-5Medium';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-6Bold';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-7ExtraBold';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-7ExtraBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-8Heavy';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-8Heavy.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-9Black';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 header {
@@ -79,7 +149,7 @@ header .logo-login-flexbox .login {
   border-radius: 3px;
   background: white;
   border: 2px solid white;
-  font-family: "S-Core Dream 4 Regular";
+  font-family: 'S-CoreDream-4Regular';
   padding: 5px 15px;
   color: black;
 }
@@ -281,6 +351,6 @@ footer .flex-box .info-box nav .footer_info .footer-menu li a {
 footer .flex-box .info-box address {
   text-align: left;
   font-size: 12px;
-  font-family: "S-Core Dream 3 Light";
+  font-family: 'S-CoreDream-3Light';
 }
 /*# sourceMappingURL=stereo.css.map */

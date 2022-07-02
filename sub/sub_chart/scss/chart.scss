@@ -1,0 +1,690 @@
+@import "./style.scss";
+@import "./reset.scss";
+@import "./mixin.scss";
+
+@font-face {
+    font-family: 'BMDOHYEON';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-1Thin';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-1Thin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-2ExtraLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-4Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-5Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-6Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-7ExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-7ExtraBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-8Heavy';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-8Heavy.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-9Black';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    width: 100%;
+}
+
+//-------------------- header --------------------//
+header {
+    .web_menu {
+        position: fixed;
+        left: 0;
+        width: 288px; height: 100%;
+        padding: 50px 22px 30px 22px;
+        background-color: $back_color;
+        border-right: 1px solid #606060;
+        z-index: 999;
+
+        //----- logo -----//
+        .logo {
+            width: 100%;
+            text-align: center;
+            img {
+                height: 46px;
+            }
+        }
+
+        //----- log -----//
+        .log {
+            width: 100%;
+            margin-top: 60px;
+
+            // logout //
+            .logout {
+                display: block;
+                margin-bottom: 30px;
+
+                .logout_img {
+                    img {
+                        width: 75px; height: 75px;
+                    }
+                }
+        
+                .login_button {
+                    margin-top: 20px;
+                    width: 150px; height: 33px;
+                    border: 3px solid #8a2ae3;
+        
+                    a {
+                        text-align: center;
+                        font-size: 14px;
+                        line-height: 30px;
+                        letter-spacing: 3px;
+                        color: $font-color_2;
+        
+                        img {
+                            margin-right: 5px;
+                            height: 13px;
+                        }
+                    }
+                }
+            }
+
+            // login //
+            .login {
+                display: none;
+                margin-bottom: 30px;
+
+                .login_img {
+                    display: flex;
+                    img {
+                        width: 75px; height: 75px;
+                    }
+                    p {
+                        margin-left: 10px;
+                        line-height: 95px;
+                        font-size: 14px;
+                        
+                        strong {
+                            margin-right: 5px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+        
+                .logout_button {
+                    width: 150px; height: 33px;
+                    border: 1px solid #606060;
+        
+                    a {
+                        text-align: center;
+                        font-size: 14px;
+                        line-height: 33px;
+                        letter-spacing: 3px;
+                        color: $font-color_1;
+                    }
+                }
+            }
+        }
+
+        //----- search -----//
+        .search {
+            width: 100%; height: 45px;
+            border-radius: 15px;
+            background-color: #f5f5f5;
+
+            .search_ico {
+                display: flex;
+                align-items: center;
+                margin-left: 10px;
+                line-height: 45px;
+
+                img {
+                    margin-right: 10px;
+                    width: 16px;
+                    color: #606060;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        //----- contents -----//
+        .contents {
+            margin-top: 50px;
+            margin-bottom: 80px;
+            width: 100%;
+    
+            // menu_1 //
+            .menu_1 {
+                .gnb_1 {
+                    li {
+                        a {
+                            font-size: 14px;
+                            img {
+                                margin-right: 5px;
+                                width: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .dotted_line {
+                margin: 38px 0;
+                width: 100%;
+                border: 1px dashed #606060;
+            }
+    
+            // menu_2 //
+            .menu_2 {
+                .gnb_2 {
+                    li {
+                        a {
+                            font-size: 14px;
+                            img {
+                                margin-right: 5px;
+                                width: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .dotted_line {
+                margin: 30px 0;
+                width: 100%;
+                border: 1px dashed #606060;
+            }
+    
+            // menu_3 //
+            .menu_3 {
+                .gnb_3 {
+                    li {
+                        a {
+                            margin-left: 18px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+
+        //----- music_box -----//
+        .music_box {
+            padding: 13px 5px;
+            border: 2px solid #8a2ae3;
+            width: 100%;
+            height: 105px;
+
+            p {
+                text-align: center;
+                font-size: 12px;
+            }
+
+            // music_time //
+            .music_time {
+                display: flex;
+                justify-content: space-between;
+                span {
+                    font-size: 10px;
+                }
+            }
+
+            // music_bar //
+            .music_bar {
+                position: relative;
+                display: flex;
+                align-items: center;
+                margin-top: 10px;
+                margin-bottom: 20px;
+                width: 100%;
+
+                .bar_1 {
+                    position: absolute;
+                    border: 1px solid #bbb;
+                    width: 100%;
+
+                }
+                .bar_2 {
+                    position: absolute;
+                    border: 1px solid #606060;
+                    width: 30%;
+                }
+
+                .circle {
+                    position: absolute;
+                    width: 15px; height: 15px;
+                    left: 30%;
+                    border-radius: 50%;
+                    background-color: #606060;
+                }
+            }
+
+            // music_button //
+            .music_button {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0 6px;
+
+                img {
+                    height: 15px;
+
+                    &:nth-child(3) {
+                        height: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+//------------------------- main-footer -------------------------//
+.main-footer {
+    position: absolute;
+    right: 0;
+    width: 85%;
+    
+    //-------------------- main --------------------//
+    main {
+        width: 100%;
+        padding-left: 348px;
+        padding-right: 334px;
+        h1 {
+            font-size: 0;
+        }
+
+        section {
+            width: 938px;
+            h2 {
+                display: none;
+            }
+            .top100 {
+                h2 {
+                    display: block;   
+                }
+    
+                .right_button {
+                    text-align: right;
+                    button {
+                        width: 80px; height: 24px;
+                        border: 0;
+                        background-color: #e8e8e8;
+                    }
+                }
+    
+                .re-check {
+                    display: flex;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    label {
+                        margin-left: 24px;
+                    }
+    
+                    p {
+                        margin-left: 28px;
+                    }
+    
+                    .refresh-img {
+                        display: flex;
+                        margin-left: 680px;
+                        a {
+                            margin-left: 5px
+                        }
+                    }
+                }
+                
+                .list-chart {
+                    .music-list {
+                        @include music-list();
+                        &:first-child {
+                            border-left: 1px solid #7f7f7f;
+                            border-right: 1px solid #7f7f7f;
+                            background-color: $back_color_2;
+                        }
+
+                        &:last-child {
+                            border-bottom: 1px solid #7f7f7f;
+                        }
+                        
+                        label { margin: 0 24px; };
+                        
+                        img { width: 48px; };
+            
+                        p {
+                            margin: 0 24px;
+                            font-weight: 600;
+                            width: 216px;
+                        };
+            
+                        span {
+                            width: 400px;
+                            font: {
+                                size: 14px;
+                                color: $font-color_4
+                            }
+                        };
+        
+                        .top100-img {
+                            display: flex;
+                            a {
+                                margin-right: 20px;
+                                img {
+                                    width: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .popup {
+                    display: none;
+                    width: 220px;
+                    height: 250px;
+                    padding: 20px;
+                    border: $border_color2;
+                    ul {
+                        li {
+                            margin: 20px;
+                            a {
+                                img {
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+        
+                .more {
+                    margin-top: 16px;
+                    text-align: center;
+                    button {
+                        width: 80px; height: 32px;
+                        border: 0;
+                        border-radius: 50px;
+                    }
+                }
+            }
+
+            &:nth-child(3) {
+                .top100 {
+                    h2 {
+                        margin-bottom: 24px;
+                    }
+                    .genre {
+                        display: flex;
+                        text-align: center;
+                        li {
+                            margin-right: 24px;
+                            margin-bottom: 24px;
+                        }
+                    }
+                }
+            }
+
+            &:last-child {
+                    border: $border_color5;
+                    background-color: $back_color_2;
+                .preference-shoot {
+                    padding: 71px;
+                    strong {
+                        font-size: 18px;
+                        padding: 5px;
+                        color: $font-color;
+                        background-color: $back_color_1;
+                    }
+                    
+                    h3 {
+                        display: inline-block;
+                        margin-left: 10px;
+                        margin-bottom: 42px;
+                    }
+
+                    .border-box {
+                        display: flex;
+
+                        
+                        .preference {
+                            width: 100%;
+                            .preference-album {
+                                display: flex;
+                                margin-bottom: 42px;
+                                .album {
+                                    margin-right: 10px;
+                                    a {
+                                        img {
+                                            display: block;
+                                        }
+                                    }
+                                }
+    
+                                .title {
+                                    padding-top: 5px;                     
+                                    .hart-img {
+                                        float: left;
+                                        margin-right: 5px;
+                                    }
+    
+                                    p {
+                                        display: inline-block;
+                                        &:last-child {
+                                            padding-left: 5px;
+                                            border-left: $border_color6;
+                                        }
+                                    }
+                                }
+
+                                &:last-child {
+                                    margin-bottom: 0;
+                                }
+                            }
+
+                            &:first-child {
+                                margin-right: 22px;
+                                border-right: 2px solid $border_color;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+
+        article {
+            margin-bottom: 50px;
+            .top100 {
+                h2 {
+                    display: block;
+                    margin-bottom: 24px;
+                }
+                .dj-play {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .pass-button {
+                        a {
+                            margin-top: 55px;
+                        }
+                    }
+                    .rank-dj {
+                        padding: 10px;
+                        border: $border_color5;
+                        background-color: $back_color_2;
+                        .dj-id {
+                            display: flex;
+                            padding-bottom: 10px;
+                            margin-bottom: 10px;
+                            border-bottom: 2px solid $border_color;
+                            a {
+                                margin-right: 10px;
+                                font-size: 14px;
+                                &:first-child {
+                                    padding-top: 4px;
+                                }
+
+                                &:last-child {
+                                    font-size: 14px;
+                                    padding-top: 7px;
+                                    strong {
+                                        font-size: 15px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .dj-info {
+                            strong {
+                                
+                                float: left;
+                                margin-right: 10px;
+                            }
+
+                            p {
+                                span {
+                                    display: inline-block;
+                                    color: red;
+                                }
+                            }
+                        }
+
+                        .hashtag {
+                            display: flex;
+                            text-align: center;
+                            p {
+                                padding: 5px;
+                                margin-right: 10px;
+                                margin-top: 10px;
+                                border-radius: 50px;
+                                border: $border_color2;
+
+                                &:last-child {
+                                    margin-right: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    //-------------------- footer --------------------//
+    footer {
+        margin-top: 80px;
+        padding-left: 348px;
+        padding-right: 348px;
+        text-align: center;
+        
+        //----- flex-box 재진 -----//
+        .flex-box {
+            display: flex;
+            justify-content: center;
+            width: 936px; height: 154px;
+            padding: 15px;
+            background-color: $back_color;
+    
+            .footer-logo {
+                width: 77px;
+                line-height: 169px;
+                a {
+                    width: 100%;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+    
+            .info-box {
+                margin-left: 30px;
+                .notice-menu {
+                    .title-flex {
+                        display: flex; 
+                        h4 {
+                            margin-right: 20px;
+                        }
+                    }
+    
+                    margin-bottom: 30px;
+                }
+    
+                nav {
+                    margin-bottom: 20px;
+                    .footer_info {
+                        .footer-menu {
+                            display: flex;
+                            li {
+                                font-size: 12px;
+                                padding-right: 10px;
+                                border-right: 1px solid $border_color;
+                                &:first-child ~ li {
+                                    padding-left: 10px;
+                                }
+    
+                                &:last-child {
+                                    border-right: 0;
+                                }
+                                
+                                a {
+                                    color : $footer_color;
+                                }
+                            }
+                        }
+                    }
+                }
+    
+                address {
+                    text-align: left;
+                    font-size: 12px;
+                    font-family: $font-3;
+                }
+            }
+        }
+    }
+}
