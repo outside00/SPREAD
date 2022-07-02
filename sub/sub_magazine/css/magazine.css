@@ -499,11 +499,8 @@ header .web_menu .music_box .music_button img:nth-child(3) {
           justify-content: space-between;
 }
 
-.main-footer main section .sub-movie .movie img {
-  display: block;
-}
-
 .main-footer main section .sub-movie .movie strong {
+  display: block;
   color: #8a2ae3;
 }
 

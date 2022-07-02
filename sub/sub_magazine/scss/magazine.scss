@@ -392,11 +392,8 @@ header {
                 display: flex;
                 justify-content: space-between;
                 .movie {
-                    img {
-                        display: block;
-                    }
-
                     strong {
+                        display: block;
                         color: $font-color_2;
                     }
 
