@@ -89,13 +89,14 @@ p {
 }
 
 body {
-  width: 100%;
+  width: 1920px;
 }
 
 header {
   position: fixed;
   z-index: 100;
   height: 85px;
+  width: 1920px;
   line-height: 85px;
   background-color: #fff;
 }
@@ -124,6 +125,7 @@ main .intro-title .main-background {
 
 main .intro-title .main-background .fixed-bg {
   height: 778px;
+  width: 1920px;
   background-color: blue;
 }
 
@@ -225,6 +227,7 @@ main .intro-title .grid .title-flexbox {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 1920px;
 }
 
 main .intro-title .grid .title-flexbox h1 {
@@ -251,6 +254,7 @@ main .intro-title .grid .title-des .window-apple-flexbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 1920px;
 }
 
 main .intro-title .grid .title-des .window-apple-flexbox .window-flexbox {

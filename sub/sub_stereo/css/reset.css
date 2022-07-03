@@ -11,6 +11,10 @@
   margin: 0 auto;
 }
 
+body {
+  width: 1920px;
+}
+
 header {
   width: 100%;
 }
@@ -38,12 +42,13 @@ a:hover {
 
 h1 {
   font-size: 40px;
-  font-family: 'S-CoreDream-4Regular';
+  font-family: 'S-CoreDream-6Bold';
   color: #777;
 }
 
 span {
   color: black;
+  font-family: 'S-CoreDream-6Bold';
 }
 
 h2 {

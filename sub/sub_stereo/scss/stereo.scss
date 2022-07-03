@@ -86,6 +86,7 @@ header {
             border: 2px solid white;
             font-family: 'S-CoreDream-4Regular';
             padding: 5px 15px;
+            margin-left: 25px;
             color: black;
         }
 
@@ -107,6 +108,9 @@ main {
         h2 {
             padding: 43px 0 26px;
         }
+        p {
+            color: $footer_color;
+        }
     }
 
     .sect-asmr {
@@ -115,17 +119,17 @@ main {
         }
         p {
             padding-bottom: 25px;
-            font-size: 24px;
+            font-size: 22px;
+            color: $footer_color;
         }
 
         .asmr-flexbox {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-
             .transbox {
-                // text-align: center;
                 position: relative;
+                margin: 10px 0;
                 .txt {
                     position: absolute;
                     top: 15px;
