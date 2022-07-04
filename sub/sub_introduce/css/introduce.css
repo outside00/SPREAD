@@ -217,10 +217,13 @@ main .intro-title .main-background .wh-line2 {
   height: 70px;
 }
 
-main .intro-title .grid .title-flexbox {
+main .intro-title .grid .title {
   position: absolute;
   top: 260px;
   left: 572px;
+}
+
+main .intro-title .grid .title .title-flexbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -230,34 +233,32 @@ main .intro-title .grid .title-flexbox {
   width: 1920px;
 }
 
-main .intro-title .grid .title-flexbox h1 {
+main .intro-title .grid .title .title-flexbox h1 {
   padding-right: 100px;
   font-weight: 300;
 }
 
-main .intro-title .grid .title-flexbox img {
+main .intro-title .grid .title .title-flexbox img {
   width: 376px;
   height: 376px;
 }
 
-main .intro-title .grid .title-des {
-  position: absolute;
-  bottom: 250px;
+main .intro-title .grid .title .title-des {
+  margin: -25px -70px;
 }
 
-main .intro-title .grid .title-des p {
+main .intro-title .grid .title .title-des p {
   color: white;
 }
 
-main .intro-title .grid .title-des .window-apple-flexbox {
+main .intro-title .grid .title .title-des .window-apple-flexbox {
   margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1920px;
 }
 
-main .intro-title .grid .title-des .window-apple-flexbox .window-flexbox {
+main .intro-title .grid .title .title-des .window-apple-flexbox .window-flexbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -266,16 +267,16 @@ main .intro-title .grid .title-des .window-apple-flexbox .window-flexbox {
   margin-right: 20px;
 }
 
-main .intro-title .grid .title-des .window-apple-flexbox .window-flexbox img {
+main .intro-title .grid .title .title-des .window-apple-flexbox .window-flexbox img {
   width: 13px;
 }
 
-main .intro-title .grid .title-des .window-apple-flexbox .window-flexbox p {
+main .intro-title .grid .title .title-des .window-apple-flexbox .window-flexbox p {
   margin-left: 5px;
   font-size: 13px;
 }
 
-main .intro-title .grid .title-des .window-apple-flexbox .apple-flexbox {
+main .intro-title .grid .title .title-des .window-apple-flexbox .apple-flexbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -283,11 +284,11 @@ main .intro-title .grid .title-des .window-apple-flexbox .apple-flexbox {
   padding: 10px;
 }
 
-main .intro-title .grid .title-des .window-apple-flexbox .apple-flexbox img {
+main .intro-title .grid .title .title-des .window-apple-flexbox .apple-flexbox img {
   width: 13px;
 }
 
-main .intro-title .grid .title-des .window-apple-flexbox .apple-flexbox p {
+main .intro-title .grid .title .title-des .window-apple-flexbox .apple-flexbox p {
   margin-left: 5px;
   font-size: 13px;
 }

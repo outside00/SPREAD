@@ -140,59 +140,59 @@ main {
         } //main-background
 
         .grid {
-            .title-flexbox {
+            .title {
                 position: absolute;
                 top: 260px;
                 left: 572px;
-                display: flex;
-                align-items: center;
-                width: 1920px;
-                h1 {
-                    padding-right: 100px;
-                    font-weight: 300;
-                }
-                img {
-                    width: 376px;
-                    height: 376px;
-                }
-            }
-
-            .title-des {
-                position: absolute;
-                bottom: 250px;
-                p {
-                    color: $white;
-                }
-                .window-apple-flexbox {
-                    margin-top: 20px;
+                .title-flexbox {
                     display: flex;
+                    align-items: center;
                     width: 1920px;
-                    .window-flexbox {
-                        display: flex;
-                        border: 1px solid $white;
-                        padding: 10px;
-                        margin-right: 20px;
-                        img {
-                            width: 13px;
-                        }
-                        p {
-                            margin-left: 5px;
-                            font-size: 13px;
-                        }
+                    h1 {
+                        padding-right: 100px;
+                        font-weight: 300;
                     }
-                    .apple-flexbox {
+                    img {
+                        width: 376px;
+                        height: 376px;
+                    }
+                }
+    
+                .title-des {
+                    margin: -25px -70px;
+                    p {
+                        color: $white;
+                    }
+                    .window-apple-flexbox {
+                        margin-top: 20px;
                         display: flex;
-                        border: 1px solid $white;
-                        padding: 10px;
-                        img {
-                            width: 13px;
+                        .window-flexbox {
+                            display: flex;
+                            border: 1px solid $white;
+                            padding: 10px;
+                            margin-right: 20px;
+                            img {
+                                width: 13px;
+                            }
+                            p {
+                                margin-left: 5px;
+                                font-size: 13px;
+                            }
                         }
-                        p {
-                            margin-left: 5px;
-                            font-size: 13px;
-                        }
-                    }    
-                } //window-apple-flexbox   
+                        .apple-flexbox {
+                            display: flex;
+                            border: 1px solid $white;
+                            padding: 10px;
+                            img {
+                                width: 13px;
+                            }
+                            p {
+                                margin-left: 5px;
+                                font-size: 13px;
+                            }
+                        }    
+                    } //window-apple-flexbox   
+            }
             } //title-des
         } //grid
     } //intro-title
