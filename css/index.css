@@ -462,6 +462,7 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   display: -ms-flexbox;
   display: flex;
   padding-top: 58px;
+  width: 936px;
 }
 
 .main-footer main .sect-main-slide .main-slide-flexbox .main-img-skateboard_1 .title-music-flexbox .main-title {
@@ -477,7 +478,6 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   font-size: 17px;
   color: #fff;
   font-family: 'S-CoreDream-3Light';
-  padding-bottom: 60px;
 }
 
 .main-footer main .sect-main-slide .main-slide-flexbox .main-img-skateboard_1 .title-music-flexbox .main-music-flex-box {
@@ -514,13 +514,25 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   color: #7b8892;
 }
 
-.main-footer main .sect-main-slide .main-slide-flexbox .main-img-skateboard_1 .next-prev-btn {
-  margin-top: -200px;
+.main-footer main .sect-main-slide .main-slide-flexbox .main-img-skateboard_1 .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: -115px;
+  padding: 0 10px;
 }
 
-.main-footer main .sect-main-slide .main-slide-flexbox .main-img-skateboard_1 .next-prev-btn img {
-  padding: 10px;
-  width: 936px;
+.main-footer main .sect-main-slide .main-slide-flexbox .main-img-skateboard_1 .button .prev img {
+  width: 19px;
+  height: 40px;
+}
+
+.main-footer main .sect-main-slide .main-slide-flexbox .main-img-skateboard_1 .button .next img {
+  width: 19px;
+  height: 40px;
 }
 
 .main-footer main .sect-main-slide .main-slide-flexbox .main-img-spring_2 {
@@ -538,6 +550,7 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   display: -ms-flexbox;
   display: flex;
   padding-top: 58px;
+  width: 936px;
 }
 
 .main-footer main .sect-main-slide .main-slide-flexbox .main-img-spring_2 .title-music-flexbox .main-title {
@@ -553,7 +566,6 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   font-size: 17px;
   color: #fff;
   font-family: 'S-CoreDream-3Light';
-  padding-bottom: 60px;
 }
 
 .main-footer main .sect-main-slide .main-slide-flexbox .main-img-spring_2 .title-music-flexbox .main-music-flex-box {
@@ -590,13 +602,25 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   color: #7b8892;
 }
 
-.main-footer main .sect-main-slide .main-slide-flexbox .main-img-spring_2 .next-prev-btn {
-  margin-top: -200px;
+.main-footer main .sect-main-slide .main-slide-flexbox .main-img-spring_2 .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: -115px;
+  padding: 0 10px;
 }
 
-.main-footer main .sect-main-slide .main-slide-flexbox .main-img-spring_2 .next-prev-btn img {
-  padding: 10px;
-  width: 936px;
+.main-footer main .sect-main-slide .main-slide-flexbox .main-img-spring_2 .button .prev img {
+  width: 19px;
+  height: 40px;
+}
+
+.main-footer main .sect-main-slide .main-slide-flexbox .main-img-spring_2 .button .next img {
+  width: 19px;
+  height: 40px;
 }
 
 .main-footer main .sect-main-slide .main-slide-flexbox .main-img-concert_3 {
@@ -614,6 +638,7 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   display: -ms-flexbox;
   display: flex;
   padding-top: 58px;
+  width: 936px;
 }
 
 .main-footer main .sect-main-slide .main-slide-flexbox .main-img-concert_3 .title-music-flexbox .main-title {
@@ -629,7 +654,6 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   font-size: 17px;
   color: #fff;
   font-family: 'S-CoreDream-3Light';
-  padding-bottom: 60px;
 }
 
 .main-footer main .sect-main-slide .main-slide-flexbox .main-img-concert_3 .title-music-flexbox .main-music-flex-box {
@@ -666,13 +690,25 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   color: #7b8892;
 }
 
-.main-footer main .sect-main-slide .main-slide-flexbox .main-img-concert_3 .next-prev-btn {
-  margin-top: -200px;
+.main-footer main .sect-main-slide .main-slide-flexbox .main-img-concert_3 .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: -115px;
+  padding: 0 10px;
 }
 
-.main-footer main .sect-main-slide .main-slide-flexbox .main-img-concert_3 .next-prev-btn img {
-  padding: 10px;
-  width: 936px;
+.main-footer main .sect-main-slide .main-slide-flexbox .main-img-concert_3 .button .prev img {
+  width: 19px;
+  height: 40px;
+}
+
+.main-footer main .sect-main-slide .main-slide-flexbox .main-img-concert_3 .button .next img {
+  width: 19px;
+  height: 40px;
 }
 
 .main-footer main .sect-main-slide .main-slide-flexbox .main-img-cafe_4 {
@@ -690,6 +726,7 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   display: -ms-flexbox;
   display: flex;
   padding-top: 58px;
+  width: 936px;
 }
 
 .main-footer main .sect-main-slide .main-slide-flexbox .main-img-cafe_4 .title-music-flexbox .main-title {
@@ -705,7 +742,6 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   font-size: 17px;
   color: #fff;
   font-family: 'S-CoreDream-3Light';
-  padding-bottom: 60px;
 }
 
 .main-footer main .sect-main-slide .main-slide-flexbox .main-img-cafe_4 .title-music-flexbox .main-music-flex-box {
@@ -742,13 +778,25 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   color: #7b8892;
 }
 
-.main-footer main .sect-main-slide .main-slide-flexbox .main-img-cafe_4 .next-prev-btn {
-  margin-top: -200px;
+.main-footer main .sect-main-slide .main-slide-flexbox .main-img-cafe_4 .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: -115px;
+  padding: 0 10px;
 }
 
-.main-footer main .sect-main-slide .main-slide-flexbox .main-img-cafe_4 .next-prev-btn img {
-  padding: 10px;
-  width: 936px;
+.main-footer main .sect-main-slide .main-slide-flexbox .main-img-cafe_4 .button .prev img {
+  width: 19px;
+  height: 40px;
+}
+
+.main-footer main .sect-main-slide .main-slide-flexbox .main-img-cafe_4 .button .next img {
+  width: 19px;
+  height: 40px;
 }
 
 .main-footer main .sect-main-slide .main-slide-flexbox .main-img-work_5 {
@@ -766,6 +814,7 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   display: -ms-flexbox;
   display: flex;
   padding-top: 58px;
+  width: 936px;
 }
 
 .main-footer main .sect-main-slide .main-slide-flexbox .main-img-work_5 .title-music-flexbox .main-title {
@@ -781,7 +830,6 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   font-size: 17px;
   color: #fff;
   font-family: 'S-CoreDream-3Light';
-  padding-bottom: 60px;
 }
 
 .main-footer main .sect-main-slide .main-slide-flexbox .main-img-work_5 .title-music-flexbox .main-music-flex-box {
@@ -818,13 +866,25 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   color: #7b8892;
 }
 
-.main-footer main .sect-main-slide .main-slide-flexbox .main-img-work_5 .next-prev-btn {
-  margin-top: -200px;
+.main-footer main .sect-main-slide .main-slide-flexbox .main-img-work_5 .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: -115px;
+  padding: 0 10px;
 }
 
-.main-footer main .sect-main-slide .main-slide-flexbox .main-img-work_5 .next-prev-btn img {
-  padding: 10px;
-  width: 936px;
+.main-footer main .sect-main-slide .main-slide-flexbox .main-img-work_5 .button .prev img {
+  width: 19px;
+  height: 40px;
+}
+
+.main-footer main .sect-main-slide .main-slide-flexbox .main-img-work_5 .button .next img {
+  width: 19px;
+  height: 40px;
 }
 
 .main-footer main .sect-main-slide .main-slide-flexbox .main-img-night_6 {
@@ -842,6 +902,7 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   display: -ms-flexbox;
   display: flex;
   padding-top: 58px;
+  width: 936px;
 }
 
 .main-footer main .sect-main-slide .main-slide-flexbox .main-img-night_6 .title-music-flexbox .main-title {
@@ -857,7 +918,6 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   font-size: 17px;
   color: #fff;
   font-family: 'S-CoreDream-3Light';
-  padding-bottom: 60px;
 }
 
 .main-footer main .sect-main-slide .main-slide-flexbox .main-img-night_6 .title-music-flexbox .main-music-flex-box {
@@ -894,13 +954,25 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   color: #7b8892;
 }
 
-.main-footer main .sect-main-slide .main-slide-flexbox .main-img-night_6 .next-prev-btn {
-  margin-top: -200px;
+.main-footer main .sect-main-slide .main-slide-flexbox .main-img-night_6 .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: -115px;
+  padding: 0 10px;
 }
 
-.main-footer main .sect-main-slide .main-slide-flexbox .main-img-night_6 .next-prev-btn img {
-  padding: 10px;
-  width: 936px;
+.main-footer main .sect-main-slide .main-slide-flexbox .main-img-night_6 .button .prev img {
+  width: 19px;
+  height: 40px;
+}
+
+.main-footer main .sect-main-slide .main-slide-flexbox .main-img-night_6 .button .next img {
+  width: 19px;
+  height: 40px;
 }
 
 .main-footer main .sect-main-slide .dots {
@@ -961,6 +1033,7 @@ header .web_menu .music_box .music_button img:nth-child(3) {
 }
 
 .main-footer main .sect-music-playlist .music-playlist-flex-box .ai-playlist {
+  position: relative;
   text-align: left;
 }
 
@@ -1023,14 +1096,35 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   margin: 0 0 0 20px;
 }
 
-.main-footer main .sect-music-playlist .music-playlist-flex-box .ai-playlist .prev-next-btn {
-  width: 680px;
-  margin: -105px 20px;
+.main-footer main .sect-music-playlist .music-playlist-flex-box .ai-playlist .button {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.main-footer main .sect-music-playlist .music-playlist-flex-box .ai-playlist .prev-next-btn img {
-  width: 704px;
-  height: 24px;
+.main-footer main .sect-music-playlist .music-playlist-flex-box .ai-playlist .button .prev {
+  position: absolute;
+  right: 305px;
+}
+
+.main-footer main .sect-music-playlist .music-playlist-flex-box .ai-playlist .button .prev img {
+  width: 14px;
+  height: 28px;
+}
+
+.main-footer main .sect-music-playlist .music-playlist-flex-box .ai-playlist .button .next {
+  position: absolute;
+  left: 355px;
+}
+
+.main-footer main .sect-music-playlist .music-playlist-flex-box .ai-playlist .button .next img {
+  width: 14px;
+  height: 28px;
 }
 
 .main-footer main .flex-box {

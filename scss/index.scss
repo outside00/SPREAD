@@ -414,6 +414,7 @@ header {
                 }
     
                 .ai-playlist {
+                    position: relative;
                     @include music-playlist();
                     h2 {
                         padding-left: 50px;
@@ -448,12 +449,27 @@ header {
                         }
                     } //ai-flex-box
 
-                    .prev-next-btn {
-                        width: 680px;
-                        margin: -105px 20px; 
-                        img {
-                            width: 704px;
-                            height: 24px;
+                    .button {
+                        position: absolute;
+                        top: 50%;
+                        right: 50%;
+                        transform: translate(-50%, -50%);
+                        display: flex;
+                        .prev {
+                            position: absolute;
+                            right: 305px;
+                            img {
+                                width: 14px;
+                                height: 28px;
+                            }
+                        }
+                        .next {
+                            position: absolute;
+                            left: 355px;
+                            img {
+                                width: 14px;
+                                height: 28px;
+                            }
                         }
                     }
                 } //ai-playlist
