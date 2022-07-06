@@ -41,47 +41,42 @@ ol {
 a {
     display: block;
     text-decoration: none;
-    font-family: $font-4;
+    font-family: 'S-CoreDream-4Regular';
     color: $font-color_1;
 }
 
 strong {
-    font: {
-        size: 12px;
-        family: $font-4;
-        color: $strong-color;
-    }
-    
+    font-size: 12px;
+    font-family: 'S-CoreDream-4Regular';
+    color: $strong-color;
 }
 
 span {
     display: block;
-    font-family: $font-4;
+    font-family: 'S-CoreDream-4Regular';
     color: $font-color_1;
 }
 
 h1 {
-    font: {
-        font-size: 24px;
-        font-family: $font-6;
-    }
+    font-size: 24px;
+    font-family: 'S-CoreDream-6Bold';
 }
 
 h2 {
-    border-left: 4px solid #8a2ae3;
-    padding-left: 5px;
     font-size: 21px;
-    font-family: $font-5;
+    padding-left: 5px;
+    border-left: 4px solid #8a2ae3;
+    font-family: 'S-CoreDream-5Medium';
 }
 
 h3 {
     font-size: 18px;
-    font-family: $font-5;
+    font-family: 'S-CoreDream-5Medium';
 }
 
 h4 {
-    font-size: 16px;
     display: block;
+    font-size: 16px;
 }
 
 h5 {
@@ -91,15 +86,12 @@ h5 {
 
 p {
     font-size: 14px;
-    font-family: $font-4;
+    font-family: 'S-CoreDream-4Regular';
     color: $font-color_1;
 }
 
 address {
+    font-size: 14px;
     font-style: normal;
-
-    font: {
-        size: 14px;
-    }
-    color: #606060;
+    color: $font-color_1;
 }

@@ -74,7 +74,6 @@
 
 body {
     width: 100%; height: 100%;
-    //background-color: aquamarine;
 }
 
 //-------------------- header --------------------//
@@ -350,6 +349,7 @@ header {
                 border-left: 5px solid #8a2ae3;
                 padding-left: 5px;
             }
+
             .right_button {
                 text-align: right;
     
@@ -363,23 +363,29 @@ header {
             label {
                 display: block;
                 margin-bottom: 15px;
+                font-size: 13px;
+                font-family: 'S-CoreDream-4Regular';
+                color: $font-color_1;
             }
             
-            .music_list{
-                @include music_list();
+            .music_list-1{
+                @include music_list(1px solid #7f7f7f);
     
                 label { margin: 0 24px; }
                 
                 img { width: 48px; }
     
                 p {
+                    font-family: 'S-CoreDream-5Medium';
                     margin: 0 24px;
                     width: 216px;
                 }
     
                 span {
                     width: 400px;
-                    display: inline;
+                    display: block;
+                    font-size: 12px;
+                    color: $font-color_4;
                 }
     
                 .mymusic_button {
@@ -388,12 +394,11 @@ header {
     
                     button {
                         width: 20px; height: 20px;
-    
+                        border: 0;
+                        background-color: rgba(255, 255, 255, 0);
+
                         &:nth-child(2) {
                            margin: 0 20px;
-                        }
-                        &:nth-child(3) {
-                            display: none;
                         }
     
                         img {
@@ -402,14 +407,118 @@ header {
                     }
                 }
             }
+
+            .music_list-2{
+                @include music_list(0);
+    
+                label { margin: 0 24px; }
+                
+                img { width: 48px; }
+    
+                p {
+                    font-family: 'S-CoreDream-5Medium';
+                    margin: 0 24px;
+                    width: 216px;
+                }
+    
+                span {
+                    width: 400px;
+                    display: block;
+                    font-size: 12px;
+                    color: $font-color_4;
+                }
+    
+                .mymusic_button {
+                    margin: 0 24px;
+                    width: 112px;
+    
+                    button {
+                        width: 20px; height: 20px;
+                        border: 0;
+                        background-color: rgba(255, 255, 255, 0);
+
+                        &:nth-child(2) {
+                           margin: 0 20px;
+                        }
+    
+                        img {
+                            width: 16px;
+                        }
+                    }
+                }
+            }
+
+            .music_list-box {
+                display: none;
+            }
+
+            .music_list-3 {
+                @include music_list(0);
+    
+                label { margin: 0 24px; }
+                
+                img { width: 48px; }
+    
+                p {
+                    font-family: 'S-CoreDream-5Medium';
+                    margin: 0 24px;
+                    width: 216px;
+                }
+    
+                span {
+                    width: 400px;
+                    display: block;
+                    font-size: 12px;
+                    color: $font-color_4;
+                }
+    
+                .mymusic_button {
+                    margin: 0 24px;
+                    width: 112px;
+    
+                    button {
+                        width: 20px; height: 20px;
+                        border: 0;
+                        background-color: rgba(255, 255, 255, 0);
+
+                        &:nth-child(2) {
+                           margin: 0 20px;
+                        }
+    
+                        img {
+                            width: 16px;
+                        }
+                    }
+                }
+            }
+
+            .popup {
+                display: none;
+                width: 220px;
+                height: 250px;
+                padding: 20px;
+                border: $border_color_1;
+
+                ul {
+                    li {
+                        margin: 20px;
+                        a {
+                            img {
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
     
             .more {
                 margin-top: 16px;
                 text-align: center;
+
                 button {
                     width: 96px; height: 32px;
                     border: 0;
-                    border-radius: 10px;
+                    border-radius: 50px;
                 }
             }
         }
@@ -474,27 +583,50 @@ header {
     
                 .list {
                     position: relative;
-                    a {
-                        &:hover {
-                            border-radius: 100px;
-                            background-color: #000;
+                    width: 136px; height: 136px;
+
+                    .list-artist {
+                        position: relative;
+                        width: 100%; height: 100%;
+
+                        .list_img {
+                            position: absolute;
+                            a {
+                                &:hover {
+                                    border-radius: 100px;
+                                    background-color: #000;
+                                }
+        
+                                img {
+                                    display: block;
+                                    width: 136px;
+                                    border-radius: 100px;
+            
+                                    &:hover {
+                                        background-color: #000;
+                                        opacity: 0.5;
+                                    }
+                                }
+                            }
                         }
-                        img {
-                            display: block;
-                            width: 136px;
-                            border-radius: 100px;
     
-                            &:hover {
-                                background-color: #000;
-                                opacity: 0.5;
+                        .artist_text {
+                            position: absolute;
+                            display: none;
+                            top: 50%; left: 50%;
+                            transform: translate(-50%, -50%);
+                            
+                            p {
+                                font-family: 'S-CoreDream-5Medium';
+                                text-align: center;
+                                color: $font-color;
                             }
                         }
                     }
     
                     .list_heart {
                         position: absolute;
-                        right: 0;
-                        bottom: 10%;
+                        right: 0; bottom: 0;
                         button {
                             border: 0;
                             border-radius: 100px;
@@ -505,13 +637,6 @@ header {
                             &:first-child {
                                 display: none;
                             }
-                        }
-                    }
-    
-                    .list_text {
-                        p {
-                            font-family: 'S-CoreDream-5Medium';
-                            text-align: center;
                         }
                     }
                 }

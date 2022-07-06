@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/myhome.css">
-    <title>web menu</title>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/music.js"></script>
+    <title>my home</title>
 </head>
 <body>
     <header>
@@ -103,23 +107,201 @@
                     <button>전체재생</button>
                     <button>랜덤재생</button>
                 </div><!--right_button-->
-                <label><input type="checkbox" name="music" />15곡</label>
+                <label><input id="chkCtrl" type="checkbox" name="music-list" />15곡</label>
     
-                <div class="music_list">
-                    <label><input type="checkbox" name="music" /></label>
+                <div class="music_list-1">
+                    <label><input id="checkbox" type="checkbox" name="music" /></label>
                     <img src="./image/myhome/music_list01.jpg" alt="뮤직앨범01">
                     <p>GANADARA (Feat. 아이유)</p>
                     <span>박재범</span>
                     <div class="mymusic_button">
                         <button><img src="./image/myhome/music_list_icon1.png" alt="플레이"></button>
-                        <button><img src="./image/myhome/music_list_icon2_1.png" alt="좋아요"></button>
-                        <button><img src="./image/myhome/music_list_icon2_2.png" alt="좋아요보라색"></button>
+                        <button id="btn2"><img src="./image/myhome/music_list_icon2_2.png" alt="좋아요보라색"></button>
                         <button><img src="./image/myhome/music_list_icon3.png" alt="더보기"></button>
                     </div><!--mymusic_button-->
-                </div><!--music_list-->
+                </div><!--music_list-1-->
+
+                <div class="music_list-2">
+                    <label><input type="checkbox" name="music" /></label>
+                    <img src="./image/myhome/music_list02.jpg" alt="뮤직앨범02">
+                    <p>회전목마 (Feat. Zion.T, 원···</p>
+                    <span>sokodomo</span>
+                    <div class="mymusic_button">
+                        <button><img src="./image/myhome/music_list_icon1.png" alt="플레이"></button>
+                        <button id="btn2"><img src="./image/myhome/music_list_icon2_2.png" alt="좋아요보라색"></button>
+                        <button><img src="./image/myhome/music_list_icon3.png" alt="더보기"></button>
+                    </div><!--mymusic_button-->
+                </div><!--music_list-2-->
+
+                <div class="music_list-2">
+                    <label><input type="checkbox" name="music" /></label>
+                    <img src="./image/myhome/music_list03.jpg" alt="뮤직앨범03">
+                    <p>Love poem</p>
+                    <span>아이유(IU)</span>
+                    <div class="mymusic_button">
+                        <button><img src="./image/myhome/music_list_icon1.png" alt="플레이"></button>
+                        <button id="btn2"><img src="./image/myhome/music_list_icon2_2.png" alt="좋아요보라색"></button>
+                        <button><img src="./image/myhome/music_list_icon3.png" alt="더보기"></button>
+                    </div><!--mymusic_button-->
+                </div><!--music_list-2-->
+
+                <div class="music_list-2">
+                    <label><input type="checkbox" name="music" /></label>
+                    <img src="./image/myhome/music_list04.jpg" alt="뮤직앨범04">
+                    <p>취기를 빌려 (취향저격 그녀···</p>
+                    <span>산들</span>
+                    <div class="mymusic_button">
+                        <button><img src="./image/myhome/music_list_icon1.png" alt="플레이"></button>
+                        <button id="btn2"><img src="./image/myhome/music_list_icon2_2.png" alt="좋아요보라색"></button>
+                        <button><img src="./image/myhome/music_list_icon3.png" alt="더보기"></button>
+                    </div><!--mymusic_button-->
+                </div><!--music_list-2-->
+
+                <div class="music_list-2">
+                    <label><input type="checkbox" name="music" /></label>
+                    <img src="./image/myhome/music_list05.jpg" alt="뮤직앨범05">
+                    <p>밤편지</p>
+                    <span>아이유(IU)</span>
+                    <div class="mymusic_button">
+                        <button><img src="./image/myhome/music_list_icon1.png" alt="플레이"></button>
+                        <button id="btn2"><img src="./image/myhome/music_list_icon2_2.png" alt="좋아요보라색"></button>
+                        <button><img src="./image/myhome/music_list_icon3.png" alt="더보기"></button>
+                    </div><!--mymusic_button-->
+                </div><!--music_list-2-->
+
+                <div class="music_list-2">
+                    <label><input type="checkbox" name="music" /></label>
+                    <img src="./image/myhome/music_list06.jpg" alt="뮤직앨범06">
+                    <p>밤하늘의 별을 (2020)</p>
+                    <span>경서</span>
+                    <div class="mymusic_button">
+                        <button><img src="./image/myhome/music_list_icon1.png" alt="플레이"></button>
+                        <button id="btn2"><img src="./image/myhome/music_list_icon2_2.png" alt="좋아요보라색"></button>
+                        <button><img src="./image/myhome/music_list_icon3.png" alt="더보기"></button>
+                    </div><!--mymusic_button-->
+                </div><!--music_list-2-->
+
+                <div class="music_list-2">
+                    <label><input type="checkbox" name="music" /></label>
+                    <img src="./image/myhome/music_list07.jpg" alt="뮤직앨범07">
+                    <p>듣고 싶을까</p>
+                    <span>MSG워너비(M.O.M)</span>
+                    <div class="mymusic_button">
+                        <button><img src="./image/myhome/music_list_icon1.png" alt="플레이"></button>
+                        <button id="btn2"><img src="./image/myhome/music_list_icon2_2.png" alt="좋아요보라색"></button>
+                        <button><img src="./image/myhome/music_list_icon3.png" alt="더보기"></button>
+                    </div><!--mymusic_button-->
+                </div><!--music_list-2-->
+
+                <div class="music_list-2">
+                    <label><input type="checkbox" name="music" /></label>
+                    <img src="./image/myhome/music_list08.jpg" alt="뮤직앨범08">
+                    <p>Dynamite</p>
+                    <span>방탄소년단</span>
+                    <div class="mymusic_button">
+                        <button><img src="./image/myhome/music_list_icon1.png" alt="플레이"></button>
+                        <button id="btn2"><img src="./image/myhome/music_list_icon2_2.png" alt="좋아요보라색"></button>
+                        <button><img src="./image/myhome/music_list_icon3.png" alt="더보기"></button>
+                    </div><!--mymusic_button-->
+                </div><!--music_list-2-->
+
+                <div class="music_list-2">
+                    <label><input type="checkbox" name="music" /></label>
+                    <img src="./image/myhome/music_list09.jpg" alt="뮤직앨범09">
+                    <p>Step Back</p>
+                    <span>GOT the beat</span>
+                    <div class="mymusic_button">
+                        <button><img src="./image/myhome/music_list_icon1.png" alt="플레이"></button>
+                        <button id="btn2"><img src="./image/myhome/music_list_icon2_2.png" alt="좋아요보라색"></button>
+                        <button><img src="./image/myhome/music_list_icon3.png" alt="더보기"></button>
+                    </div><!--mymusic_button-->
+                </div><!--music_list-2-->
+
+                <div class="music_list-2">
+                    <label><input type="checkbox" name="music" /></label>
+                    <img src="./image/myhome/music_list10.jpg" alt="뮤직앨범10">
+                    <p>Butter</p>
+                    <span>방탄소년단</span>
+                    <div class="mymusic_button">
+                        <button><img src="./image/myhome/music_list_icon1.png" alt="플레이"></button>
+                        <button id="btn2"><img src="./image/myhome/music_list_icon2_2.png" alt="좋아요보라색"></button>
+                        <button><img src="./image/myhome/music_list_icon3.png" alt="더보기"></button>
+                    </div><!--mymusic_button-->
+                </div><!--music_list-2-->
+
+                <div class="music_list-box">
+                    <div class="music_list-3">
+                        <label><input type="checkbox" name="music" /></label>
+                        <img src="./image/myhome/music_list11.jpg" alt="뮤직앨범11">
+                        <p>RUN2U - STAYC</p>
+                        <span>스테이씨</span>
+                        <div class="mymusic_button">
+                            <button><img src="./image/myhome/music_list_icon1.png" alt="플레이"></button>
+                            <button id="btn2"><img src="./image/myhome/music_list_icon2_2.png" alt="좋아요보라색"></button>
+                            <button><img src="./image/myhome/music_list_icon3.png" alt="더보기"></button>
+                        </div><!--mymusic_button-->
+                    </div><!--music_list-3-->
+
+                    <div class="music_list-3">
+                        <label><input type="checkbox" name="music" /></label>
+                        <img src="./image/myhome/music_list12.jpg" alt="뮤직앨범12">
+                        <p>사랑인가봐</p>
+                        <span>멜로망스</span>
+                        <div class="mymusic_button">
+                            <button><img src="./image/myhome/music_list_icon1.png" alt="플레이"></button>
+                            <button id="btn2"><img src="./image/myhome/music_list_icon2_2.png" alt="좋아요보라색"></button>
+                            <button><img src="./image/myhome/music_list_icon3.png" alt="더보기"></button>
+                        </div><!--mymusic_button-->
+                    </div><!--music_list-3-->
+
+                    <div class="music_list-3">
+                        <label><input type="checkbox" name="music" /></label>
+                        <img src="./image/myhome/music_list13.jpg" alt="뮤직앨범13">
+                        <p>ELEVEN</p>
+                        <span>아이브(IVE)</span>
+                        <div class="mymusic_button">
+                            <button><img src="./image/myhome/music_list_icon1.png" alt="플레이"></button>
+                            <button id="btn2"><img src="./image/myhome/music_list_icon2_2.png" alt="좋아요보라색"></button>
+                            <button><img src="./image/myhome/music_list_icon3.png" alt="더보기"></button>
+                        </div><!--mymusic_button-->
+                    </div><!--music_list-3-->
+
+                    <div class="music_list-3">
+                        <label><input type="checkbox" name="music" /></label>
+                        <img src="./image/myhome/music_list14.jpg" alt="뮤직앨범14">
+                        <p>신호등</p>
+                        <span>이무진</span>
+                        <div class="mymusic_button">
+                            <button><img src="./image/myhome/music_list_icon1.png" alt="플레이"></button>
+                            <button id="btn2"><img src="./image/myhome/music_list_icon2_2.png" alt="좋아요보라색"></button>
+                            <button><img src="./image/myhome/music_list_icon3.png" alt="더보기"></button>
+                        </div><!--mymusic_button-->
+                    </div><!--music_list-3-->
+
+                    <div class="music_list-3">
+                        <label><input type="checkbox" name="music" /></label>
+                        <img src="./image/myhome/music_list15.jpg" alt="뮤직앨범15">
+                        <p>Real Love</p>
+                        <span>오마이걸(OH MY GIRL)</span>
+                        <div class="mymusic_button">
+                            <button><img src="./image/myhome/music_list_icon1.png" alt="플레이"></button>
+                            <button id="btn2"><img src="./image/myhome/music_list_icon2_2.png" alt="좋아요보라색"></button>
+                            <button><img src="./image/myhome/music_list_icon3.png" alt="더보기"></button>
+                        </div><!--mymusic_button-->
+                    </div><!--music_list-3-->
+                </div><!--music_list-box-->
     
+                <div class="popup">
+                    <ul>
+                        <li><a href="#"><img src="" alt="music_set_icon">곡 정보</a></li>
+                        <li><a href="#"><img src="" alt="info_icon">앨범 정보</a></li>
+                        <li><a href="#"><img src="" alt="info_icon2">아티스트 정보</a></li>
+                        <li><a href="#"><img src="" alt="no_icon">이 곡 안듣기</a></li>
+                    </ul>
+                </div> <!-- popup -->
+
                 <div class="more">
-                    <button>더보기 ∨</button>
+                    <button id="more-button">더보기 ∨</button>
                 </div><!--more-->
             </div><!--mymusic-->
     
@@ -185,80 +367,98 @@
     
                 <div class="artist_list">
                     <div class="list">
-                        <a href="#"><img src="./image/myhome/artist1.jpg" alt="아티스트1"></a>
+                        <div class="list-artist">
+                            <div class="list_img">
+                                <a href="#"><img src="./image/myhome/artist1.jpg" alt="아티스트1"></a>
+                            </div>
+                            <div class="artist_text">
+                                <p>수란</p>
+                            </div>
+                        </div>
                         
                         <div class="list_heart">
-                            <button><img src="./image/myhome/artist_heart-p.png" alt="좋아요_보라색"></button>
                             <button><img src="./image/myhome/artist_heart-w.png" alt="좋아요_흰색"></button>
-                        </div>
-    
-                        <div class="list_text">
-                            <p>수란</p>
+                            <button><img src="./image/myhome/artist_heart-p.png" alt="좋아요_보라색"></button>
                         </div>
                     </div>
     
                     <div class="list">
-                        <a href="#"><img src="./image/myhome/artist2.jpg" alt="아티스트2"></a>
-                        
-                        <div class="list_heart">
-                            <button><img src="./image/myhome/artist_heart-p.png" alt="좋아요_보라색"></button>
-                            <button><img src="./image/myhome/artist_heart-w.png" alt="좋아요_흰색"></button>
+                        <div class="list-artist">
+                            <div class="list_img">
+                                <a href="#"><img src="./image/myhome/artist2.jpg" alt="아티스트2"></a>
+                            </div>
+                            <div class="artist_text">
+                                <p>헤이즈</p>
+                            </div>
                         </div>
                         
-                        <div class="list_text">
-                            <p>헤이즈</p>
+                        <div class="list_heart">
+                            <button><img src="./image/myhome/artist_heart-w.png" alt="좋아요_흰색"></button>
+                            <button><img src="./image/myhome/artist_heart-p.png" alt="좋아요_보라색"></button>
                         </div>
                     </div>
     
                     <div class="list">
-                        <a href="#"><img src="./image/myhome/artist3.jpg" alt="아티스트3"></a>
-                        
-                        <div class="list_heart">
-                            <button><img src="./image/myhome/artist_heart-p.png" alt="좋아요_보라색"></button>
-                            <button><img src="./image/myhome/artist_heart-w.png" alt="좋아요_흰색"></button>
+                        <div class="list-artist">
+                            <div class="list_img">
+                                <a href="#"><img src="./image/myhome/artist3.jpg" alt="아티스트3"></a>
+                            </div>
+                            <div class="artist_text">
+                                <p>어반자카파</p>
+                            </div>
                         </div>
                         
-                        <div class="list_text">
-                            <p>어반자카파</p>
+                        <div class="list_heart">
+                            <button><img src="./image/myhome/artist_heart-w.png" alt="좋아요_흰색"></button>
+                            <button><img src="./image/myhome/artist_heart-p.png" alt="좋아요_보라색"></button>
                         </div>
                     </div>
     
                     <div class="list">
-                        <a href="#"><img src="./image/myhome/artist4.jpg" alt="아티스트4"></a>
-                        
-                        <div class="list_heart">
-                            <button><img src="./image/myhome/artist_heart-p.png" alt="좋아요_보라색"></button>
-                            <button><img src="./image/myhome/artist_heart-w.png" alt="좋아요_흰색"></button>
+                        <div class="list-artist">
+                            <div class="list_img">
+                                <a href="#"><img src="./image/myhome/artist4.jpg" alt="아티스트4"></a>
+                            </div>
+                            <div class="artist_text">
+                                <p>지코</p>
+                            </div>
                         </div>
                         
-                        <div class="list_text">
-                            <p>지코</p>
+                        <div class="list_heart">
+                            <button><img src="./image/myhome/artist_heart-w.png" alt="좋아요_흰색"></button>
+                            <button><img src="./image/myhome/artist_heart-p.png" alt="좋아요_보라색"></button>
                         </div>
                     </div>
     
                     <div class="list">
-                        <a href="#"><img src="./image/myhome/artist5.jpg" alt="아티스트5"></a>
-                        
-                        <div class="list_heart">
-                            <button><img src="./image/myhome/artist_heart-p.png" alt="좋아요_보라색"></button>
-                            <button><img src="./image/myhome/artist_heart-w.png" alt="좋아요_흰색"></button>
+                        <div class="list-artist">
+                            <div class="list_img">
+                                <a href="#"><img src="./image/myhome/artist5.jpg" alt="아티스트5"></a>
+                            </div>
+                            <div class="artist_text">
+                                <p>트와이스</p>
+                            </div>
                         </div>
                         
-                        <div class="list_text">
-                            <p>트와이스</p>
+                        <div class="list_heart">
+                            <button><img src="./image/myhome/artist_heart-w.png" alt="좋아요_흰색"></button>
+                            <button><img src="./image/myhome/artist_heart-p.png" alt="좋아요_보라색"></button>
                         </div>
                     </div>
     
                     <div class="list">
-                        <a href="#"><img src="./image/myhome/artist6.jpg" alt="아티스트6"></a>
-                        
-                        <div class="list_heart">
-                            <button><img src="./image/myhome/artist_heart-p.png" alt="좋아요_보라색"></button>
-                            <button><img src="./image/myhome/artist_heart-w.png" alt="좋아요_흰색"></button>
+                        <div class="list-artist">
+                            <div class="list_img">
+                                <a href="#"><img src="./image/myhome/artist6.jpg" alt="아티스트6"></a>
+                            </div>
+                            <div class="artist_text">
+                                <p>마마무</p>
+                            </div>
                         </div>
                         
-                        <div class="list_text">
-                            <p>마마무</p>
+                        <div class="list_heart">
+                            <button><img src="./image/myhome/artist_heart-w.png" alt="좋아요_흰색"></button>
+                            <button><img src="./image/myhome/artist_heart-p.png" alt="좋아요_보라색"></button>
                         </div>
                     </div>
                 </div><!--playlist-->
