@@ -448,7 +448,7 @@ header {
                 }
             }
 
-            .music_list-box {
+            .music_list-box-2 {
                 display: none;
             }
 
@@ -579,10 +579,10 @@ header {
     
             .artist_list {
                 display: flex;
-                justify-content: space-between;
     
                 .list {
                     position: relative;
+                    margin-right: 25px;
                     width: 136px; height: 136px;
 
                     .list-artist {
@@ -633,12 +633,12 @@ header {
                             img {
                                 width: 36px;
                             }
-
-                            &:first-child {
-                                display: none;
-                            }
                         }
                     }
+                }
+
+                #artist-6 {
+                    margin-right: 0;
                 }
             }
         }

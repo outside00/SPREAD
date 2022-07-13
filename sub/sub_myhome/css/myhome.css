@@ -542,7 +542,7 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   width: 16px;
 }
 
-.main-footer main .mymusic .music_list-box {
+.main-footer main .mymusic .music_list-box-2 {
   display: none;
 }
 
@@ -683,13 +683,11 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .main-footer main .artist .artist_list .list {
   position: relative;
+  margin-right: 25px;
   width: 136px;
   height: 136px;
 }
@@ -750,8 +748,8 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   width: 36px;
 }
 
-.main-footer main .artist .artist_list .list .list_heart button:first-child {
-  display: none;
+.main-footer main .artist .artist_list #artist-6 {
+  margin-right: 0;
 }
 
 .main-footer footer {

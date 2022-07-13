@@ -3,74 +3,80 @@ $(function() {
     var chkList = $("input[name = music]");
     
     $("#chkCtrl").on("click", function(){
-      if($(this).is(":checked")){
+      if($(this).is(":checked")) {
         chkList.prop("checked", true);
-      }else
+      } else
         chkList.prop("checked", false);
     });
+
+    $("#chkCtrl").on("click", function() {
+        if($(this).is(":checked")) {
+            $(".music_list-box-1").css("backgroundColor", "#eaeaea");
+        } else {
+            $(".music_list-box-1").css("backgroundColor", "#ffffff");
+        }
+    });
+
+    $("#chkCtrl").on("click", function() {
+        if($(this).is(":checked")) {
+            $(".music_list-box-2").css("backgroundColor", "#eaeaea");
+        } else {
+            $(".music_list-box-2").css("backgroundColor", "#ffffff");
+        }
+    });
 });
 
-$(".music_list-1").css("backgroundColor", "#eaeaea")
 
-// 마이 뮤직 한 곡 선택 시 배경색 회색으로 변경 .music_list-1
-$(function() {
-    var musicBox= $(".music_list-1");
+
+// 마이 뮤직 한 곡 선택 시 배경색 회색으로 변경
+// $(function() {
+//     var musicBox1 = $(".music_list-2");
     
-    $("#checkbox").on("click", function(){
-      if($(".music_list-1").css("backgroundColor", "#eaeaea")){
-        musicBox.prop("checked", true);
-      }else {
-          musicBox.prop("checked", false);
-      };
-    });
-});
+//     $(".checkbox").on("click", function() {
+//         if($(this).is(":checked")) {
+//             $(musicBox1).css("backgroundColor", "#eaeaea");
+//         } else {
+//             $(musicBox1).css("backgroundColor", "#ffffff");
+//         }
+//     });
+// });
 
-// 마이 뮤직 한 곡 선택 시 배경색 회색으로 변경 .music_list-2
+
+
+//나의 뮤직에 버튼 보라색 하트 클릭 시 회색 하트로 변경
 $(function() {
-    var musicBox= $(".music_list-2");
-    
-    $("#checkbox").on("click", function(){
-      if($(".music_list-2").css("backgroundColor", "#eaeaea")){
-        musicBox.prop("checked", true);
-      }else {
-          musicBox.prop("checked", false);
-      };
+    $(document).ready(function(){
+        var btn1 = $(".btn-1");
+        var btn2 = $(".btn-2");
+
+        $(btn2).show();
+        $(btn1).hide();
+
+        $(".button").each(function(index, item) {
+            $(item).addClass('button' + index).is(function(){
+        
+                $(btn1).click(function(){
+                    $(btn1).hide();
+                    $(btn2).show();
+                });
+            
+                $(btn2).click(function(){
+                    $(btn2).hide();
+                    $(btn1).show();
+                });
+            });
+        });
     });
 });
-
-// 마이 뮤직 한 곡 선택 시 배경색 회색으로 변경 .music_list-3
-$(function() {
-    var musicBox= $(".music_list-3");
-    
-    $("#checkbox").on("click", function(){
-      if($(".music_list-3").css("backgroundColor", "#eaeaea")){
-        musicBox.prop("checked", true);
-      }else {
-          musicBox.prop("checked", false);
-      };
-    });
-});
-
-
-
-// .mymusic_button에 button 보라색 하트 좋아요 클릭 시 회색 하트로 변경
-$(function() {
-    var btn = $("#btn2 img");
-
-    $("#btn2").click(function() {
-        btn.attr({"src":"image/myhome/music_list_icon2_1.png"});
-    });
-});
-
 
 
 
 // 마이 뮤직 더보기 접기
 $(function() {
-    $(".music_list-box").hide();
+    $(".music_list-box-2").hide();
 
     $(".more").click (function() {
-        $(".music_list-box").slideToggle(500, "swing");
+        $(".music_list-box-2").slideToggle(500, "swing");
 
         if( $("#more-button").text() == '접기 ∧') {
             $("#more-button").text('더보기 ∨');
@@ -86,32 +92,21 @@ $(function() {
 $(function() {
     $(".list-artist").on({
         "mouseover":function() {
-            $(this).child("div.artist_text").css({"display":"block"});
+            $(this).children(".artist_text").css("display", "block");
         },
         "mouseout":function() {
-            $(this).child("div.artist_text").css({"display":"none"});
+            $(this).children(".artist_text").css("display", "none");
         }
     });
 });
 
-// window.onload = function() {
-//     const artist = document.querySelectorAll(".list-artist");
-//     for (let i = 0; i < artist.length; i++) {
-//         artist[i].addEventListener("mouseover", textIn);
-//         artist[i].addEventListener("mouseout", textOut);
 
-//         function textIn() {
-//             const text = document.getElementsByClassName(".artist_text");
-//             text.style.display = "block";
-//         }
-//     }
-// }
 
-// 아티스트 보라색 하트 클릭 시 아티스트 이미지가 사라짐
+// 아티스트 보라색 하트 이미지 클릭 시 아티스트 이미지가 사라짐
 $(function() {
+    var artist = $(".list");
+
     $(".list_heart").click (function() {
-        $(".artist_list").css("display", "none");
+        $(this).parent(artist).css("display", "none");
     });
 });
-
-
