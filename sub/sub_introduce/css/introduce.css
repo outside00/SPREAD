@@ -90,6 +90,7 @@ p {
 
 body {
   width: 1920px;
+  background-color: brown;
 }
 
 header {
@@ -98,7 +99,7 @@ header {
   height: 85px;
   width: 1920px;
   line-height: 85px;
-  background-color: #fff;
+  background-color: white;
 }
 
 header .grid {
@@ -119,41 +120,38 @@ header .grid .login {
   font-weight: 600;
 }
 
-main .intro-title .main-background {
+main .intro-title {
   position: relative;
-}
-
-main .intro-title .main-background .fixed-bg {
-  height: 778px;
+  background-image: url(../image/1.sect_bg.png);
   width: 1920px;
-  background-color: blue;
+  height: 778px;
 }
 
 main .intro-title .main-background .p-cir {
   position: absolute;
-  bottom: 160px;
-  left: 110px;
+  bottom: 100px;
+  left: 100px;
   width: 293px;
 }
 
 main .intro-title .main-background .p-cir2 {
   position: absolute;
-  top: 260px;
-  right: 220px;
+  top: 100px;
+  right: 200px;
   width: 155px;
 }
 
 main .intro-title .main-background .p-cross {
   position: absolute;
-  top: 150px;
-  left: 450px;
+  top: 100px;
+  left: 400px;
   width: 20px;
 }
 
 main .intro-title .main-background .p-line {
   position: absolute;
   bottom: 170px;
-  right: 410px;
+  right: 100px;
   width: 90px;
   height: 70px;
 }
@@ -161,7 +159,7 @@ main .intro-title .main-background .p-line {
 main .intro-title .main-background .wh-cir {
   position: absolute;
   top: 150px;
-  right: 340px;
+  right: 500px;
   width: 20px;
   height: 20px;
 }
@@ -169,28 +167,28 @@ main .intro-title .main-background .wh-cir {
 main .intro-title .main-background .wh-cir2 {
   position: absolute;
   bottom: 50px;
-  left: 700px;
+  left: 600px;
   width: 15px;
 }
 
 main .intro-title .main-background .wh-cir3 {
   position: absolute;
   top: 200px;
-  left: 100px;
+  left: 80px;
   width: 10px;
 }
 
 main .intro-title .main-background .wh-cir4 {
   position: absolute;
   top: 50px;
-  right: 700px;
+  right: 300px;
   width: 10px;
 }
 
 main .intro-title .main-background .wh-cross {
   position: absolute;
-  bottom: 50px;
-  left: 200px;
+  bottom: 100px;
+  left: 500px;
   width: 35px;
 }
 
@@ -203,62 +201,60 @@ main .intro-title .main-background .wh-cross2 {
 
 main .intro-title .main-background .wh-line {
   position: absolute;
-  top: 0px;
-  right: 500px;
+  top: 300px;
+  right: 300px;
   width: 90px;
   height: 70px;
 }
 
 main .intro-title .main-background .wh-line2 {
   position: absolute;
-  bottom: 100px;
-  left: 450px;
+  bottom: 400px;
+  left: 80px;
   width: 90px;
   height: 70px;
 }
 
-main .intro-title .grid .title {
-  position: absolute;
-  top: 260px;
-  left: 572px;
-}
-
-main .intro-title .grid .title .title-flexbox {
+main .intro-title .title .title-flexbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 1920px;
+  padding-top: 200px;
 }
 
-main .intro-title .grid .title .title-flexbox h1 {
+main .intro-title .title .title-flexbox h1 {
   padding-right: 100px;
   font-weight: 300;
 }
 
-main .intro-title .grid .title .title-flexbox img {
+main .intro-title .title .title-flexbox img {
   width: 376px;
   height: 376px;
 }
 
-main .intro-title .grid .title .title-des {
-  margin: -25px -70px;
+main .intro-title .title .title-des {
+  margin: -10px 600px;
 }
 
-main .intro-title .grid .title .title-des p {
+main .intro-title .title .title-des p {
   color: white;
 }
 
-main .intro-title .grid .title .title-des .window-apple-flexbox {
+main .intro-title .title .title-des .window-apple-flexbox {
   margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-main .intro-title .grid .title .title-des .window-apple-flexbox .window-flexbox {
+main .intro-title .title .title-des .window-apple-flexbox .window-flexbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -267,16 +263,19 @@ main .intro-title .grid .title .title-des .window-apple-flexbox .window-flexbox 
   margin-right: 20px;
 }
 
-main .intro-title .grid .title .title-des .window-apple-flexbox .window-flexbox img {
+main .intro-title .title .title-des .window-apple-flexbox .window-flexbox img {
   width: 13px;
 }
 
-main .intro-title .grid .title .title-des .window-apple-flexbox .window-flexbox p {
+main .intro-title .title .title-des .window-apple-flexbox .window-flexbox a {
+  color: white;
+  text-decoration: none;
   margin-left: 5px;
   font-size: 13px;
+  font-family: 'S-CoreDream-3Light';
 }
 
-main .intro-title .grid .title .title-des .window-apple-flexbox .apple-flexbox {
+main .intro-title .title .title-des .window-apple-flexbox .apple-flexbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -284,13 +283,16 @@ main .intro-title .grid .title .title-des .window-apple-flexbox .apple-flexbox {
   padding: 10px;
 }
 
-main .intro-title .grid .title .title-des .window-apple-flexbox .apple-flexbox img {
+main .intro-title .title .title-des .window-apple-flexbox .apple-flexbox img {
   width: 13px;
 }
 
-main .intro-title .grid .title .title-des .window-apple-flexbox .apple-flexbox p {
+main .intro-title .title .title-des .window-apple-flexbox .apple-flexbox a {
+  color: white;
+  text-decoration: none;
   margin-left: 5px;
   font-size: 13px;
+  font-family: 'S-CoreDream-3Light';
 }
 
 main .intro-slide {
@@ -308,25 +310,37 @@ main .intro-slide .grid h2 {
   padding: 159px 0 37px;
 }
 
-main .intro-slide .grid .slide-img-flexbox {
+main .intro-slide .grid .scroller-wrap {
+  width: 900px;
+  margin: 70px auto;
+  overflow: hidden;
+}
+
+main .intro-slide .grid .scroller-wrap .scroll {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 936px;
-  overflow: hidden;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 70px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 1200px;
+  height: 240px;
 }
 
-main .intro-slide .grid .slide-img-flexbox img {
-  width: 240px;
-  height: 240px;
-  margin: 0 20px;
+main .intro-slide .grid .scroller-wrap .scroll li {
+  width: 18%;
+}
+
+main .intro-slide .grid .scroller-wrap .scroll li img {
+  display: block;
+  width: 100%;
 }
 
 main .intro-playlist {
+  position: relative;
   height: 778px;
   text-align: center;
   background-color: #3db8fc;
@@ -345,24 +359,38 @@ main .intro-playlist .phone-album {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
 main .intro-playlist .phone-album .left-album {
-  margin-top: 3px;
+  position: absolute;
+  bottom: 0;
+  right: 600px;
+}
+
+main .intro-playlist .phone-album .left-album img {
   width: 430px;
 }
 
 main .intro-playlist .phone-album .phone {
-  margin-top: 66px;
+  position: absolute;
+  bottom: -5px;
+  left: 730px;
+}
+
+main .intro-playlist .phone-album .phone img {
   width: 479px;
   height: 295px;
 }
 
 main .intro-playlist .phone-album .right-album {
-  margin-top: 23px;
+  position: absolute;
+  bottom: 0;
+  left: 610px;
+}
+
+main .intro-playlist .phone-album .right-album img {
   width: 400px;
 }
 
@@ -487,6 +515,7 @@ main .intro-subscribe .button {
 }
 
 main .intro-subscribe .button a {
+  text-decoration: none;
   margin-top: 60px;
   color: white;
   font-size: 24px;

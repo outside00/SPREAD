@@ -130,14 +130,18 @@ main {
             .transbox {
                 position: relative;
                 margin: 10px 0;
+                &:hover {
+                    opacity: 0.5;
+                    border: 1px solid gray;
+                }
                 .txt {
                     position: absolute;
                     top: 15px;
                     left: 70px;
                 }
                 img {
-                    width: 295px;
-                    height: 295px;
+                    display: block;
+                    width: 100%;
                 }
             }
         }
@@ -152,7 +156,12 @@ main {
             justify-content: space-between;
             .transbox {
                 position: relative;
+                &:hover {
+                    opacity: 0.5;
+                    border: 1px solid gray;
+                }
                 img {
+                    display: block;
                     width: 456px;
                     height: 456px;
                 }

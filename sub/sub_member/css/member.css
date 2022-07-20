@@ -527,8 +527,12 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   position: absolute;
   width: 440px;
   height: 360px;
-  border: 2px solid #8a2ae3;
+  border: 2px solid #606060;
   text-align: center;
+}
+
+.main-footer main .subscribe .subscribe-flex .season-ticket1 .text-box:hover {
+  border: 2px solid #8a2ae3;
 }
 
 .main-footer main .subscribe .subscribe-flex .season-ticket1 .text-box .text {
@@ -546,6 +550,10 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   height: 360px;
   border: 2px solid #606060;
   background-color: #fff;
+}
+
+.main-footer main .subscribe .subscribe-flex .season-ticket2:hover {
+  border: 2px solid #8a2ae3;
 }
 
 .main-footer main .subscribe .subscribe-flex .season-ticket2 .text {
@@ -566,37 +574,37 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   border: 1px solid #606060;
 }
 
-.main-footer main .benefits-1 {
+.main-footer main #benefits-1 {
   width: 936px;
   height: 100%;
 }
 
-.main-footer main .benefits-1 h2 {
+.main-footer main #benefits-1 h2 {
   margin-bottom: 18px;
 }
 
-.main-footer main .benefits-1 .benefits-box {
+.main-footer main #benefits-1 .benefits-box {
   width: 936px;
   height: 545px;
   background-color: #f5f5f5;
 }
 
-.main-footer main .benefits-1 .benefits-box .benefits-title {
+.main-footer main #benefits-1 .benefits-box .benefits-title {
   margin: 0 0 20px 29px;
   padding-top: 20px;
 }
 
-.main-footer main .benefits-1 .benefits-box .benefits-title p {
+.main-footer main #benefits-1 .benefits-box .benefits-title p {
   font-size: 20px;
   color: #525c63;
 }
 
-.main-footer main .benefits-1 .benefits-box .benefits-title p strong {
+.main-footer main #benefits-1 .benefits-box .benefits-title p strong {
   font-size: 36px;
   color: #8a2ae3;
 }
 
-.main-footer main .benefits-1 .benefits-box .benefits-flex {
+.main-footer main #benefits-1 .benefits-box .benefits-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -611,7 +619,7 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   margin: 0 auto;
 }
 
-.main-footer main .benefits-1 .benefits-box .box {
+.main-footer main #benefits-1 .benefits-box .box {
   position: relative;
   width: 344px;
   height: 155px;
@@ -619,7 +627,7 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   background-color: #fff;
 }
 
-.main-footer main .benefits-1 .benefits-box .box .text {
+.main-footer main #benefits-1 .benefits-box .box .text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -627,59 +635,58 @@ header .web_menu .music_box .music_button img:nth-child(3) {
           transform: translate(-50%, -50%);
 }
 
-.main-footer main .benefits-1 .benefits-box .box .text p {
+.main-footer main #benefits-1 .benefits-box .box .text p {
   font-size: 20px;
   text-align: center;
   color: #525c63;
 }
 
-.main-footer main .benefits-1 .benefits-box .box .text p strong {
+.main-footer main #benefits-1 .benefits-box .box .text p strong {
   font-size: 24px;
   color: #333;
 }
 
-.main-footer main .benefits-1 .benefits-box .arrow {
+.main-footer main #benefits-1 .benefits-box .arrow {
   width: 0 auto;
   height: 155px;
   line-height: 174px;
 }
 
-.main-footer main .benefits-1 .benefits-box .arrow img {
+.main-footer main #benefits-1 .benefits-box .arrow img {
   height: 38px;
 }
 
-.main-footer main .benefits-2 {
-  display: none;
+.main-footer main #benefits-2 {
   width: 936px;
   height: 100%;
 }
 
-.main-footer main .benefits-2 h2 {
+.main-footer main #benefits-2 h2 {
   margin-bottom: 18px;
 }
 
-.main-footer main .benefits-2 .benefits-box {
+.main-footer main #benefits-2 .benefits-box {
   width: 936px;
   height: 545px;
   background-color: #f5f5f5;
 }
 
-.main-footer main .benefits-2 .benefits-box .benefits-title {
+.main-footer main #benefits-2 .benefits-box .benefits-title {
   margin: 0 0 47px 29px;
   padding-top: 20px;
 }
 
-.main-footer main .benefits-2 .benefits-box .benefits-title p {
+.main-footer main #benefits-2 .benefits-box .benefits-title p {
   font-size: 20px;
   color: #525c63;
 }
 
-.main-footer main .benefits-2 .benefits-box .benefits-title p strong {
+.main-footer main #benefits-2 .benefits-box .benefits-title p strong {
   font-size: 36px;
   color: #8a2ae3;
 }
 
-.main-footer main .benefits-2 .benefits-box .benefits-flex {
+.main-footer main #benefits-2 .benefits-box .benefits-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -694,7 +701,7 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   margin: 0 auto;
 }
 
-.main-footer main .benefits-2 .benefits-box .box {
+.main-footer main #benefits-2 .benefits-box .box {
   position: relative;
   width: 368px;
   height: 155px;
@@ -702,7 +709,7 @@ header .web_menu .music_box .music_button img:nth-child(3) {
   background-color: #fff;
 }
 
-.main-footer main .benefits-2 .benefits-box .box .box-absolute {
+.main-footer main #benefits-2 .benefits-box .box .box-absolute {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -716,31 +723,31 @@ header .web_menu .music_box .music_button img:nth-child(3) {
           transform: translateY(-50%);
 }
 
-.main-footer main .benefits-2 .benefits-box .box .box-absolute .box-img {
+.main-footer main #benefits-2 .benefits-box .box .box-absolute .box-img {
   margin-right: 50px;
 }
 
-.main-footer main .benefits-2 .benefits-box .box .box-absolute .box-img img {
+.main-footer main #benefits-2 .benefits-box .box .box-absolute .box-img img {
   width: 90px;
 }
 
-.main-footer main .benefits-2 .benefits-box .box .box-absolute .box-text p {
+.main-footer main #benefits-2 .benefits-box .box .box-absolute .box-text p {
   font-size: 12px;
   color: #7B8892;
 }
 
-.main-footer main .benefits-2 .benefits-box .box .box-absolute .box-text p strong {
+.main-footer main #benefits-2 .benefits-box .box .box-absolute .box-text p strong {
   font-size: 16px;
   color: #333;
 }
 
-.main-footer main .benefits-2 .benefits-box .plus {
+.main-footer main #benefits-2 .benefits-box .plus {
   width: 0 auto;
   height: 155px;
   line-height: 174px;
 }
 
-.main-footer main .benefits-2 .benefits-box .plus img {
+.main-footer main #benefits-2 .benefits-box .plus img {
   height: 20px;
 }
 

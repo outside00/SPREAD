@@ -331,66 +331,162 @@ header {
     position: absolute;
     right: 0;
     width: 85%;
-    
     //-------------------- main --------------------//
     main {
         width: 100%;
         height: 1700px;
         padding-left: 348px;
-        padding-right: 334px;
-
-
         //----- sect-main-slide 하진 -----//
-        .sect-main-slide {
+        .main-slide {
             position: relative;
+            width: 936px;
+            height: 320px;
             margin-top: 50px;
-            text-align: center;
+            // text-align: center;
             .main-slide-flexbox {
                 display: flex;
-
-                .main-img-skateboard_1 {
-                    @include main-slide();
-                } 
-        
-                .main-img-spring_2 {
-                    display: none;
-                    @include main-slide();
-                    background: url(../image/main-slide_spring_2.png)no-repeat;
-                }
-        
-                .main-img-concert_3 {
-                    display: none;
-                    @include main-slide();
-                    background: url(../image/main-slide_concert_3.png)no-repeat;
-                }
-        
-                .main-img-cafe_4 {
-                    display: none;
-                    @include main-slide();
-                    background: url(../image/main-slide_cafe_4.png)no-repeat;
-                }
-        
-                .main-img-work_5 {
-                    display: none;
-                    @include main-slide();
-                    background: url(../image/main-slide_work_5.png)no-repeat;
-                }
-        
-                .main-img-night_6 {
-                    display: none;
-                    @include main-slide();
-                    background: url(../image/main-slide_night_6.png)no-repeat;
-                }
-            }
-    
-            .dots {
-                margin: 20px auto;
-                cursor: pointer;
+                // border: 1px solid red;
                 width: 936px;
+                height: 320px;
+                overflow: hidden;
+                .title-music-flexbox {
+                    display: flex;
+                    position: relative;
+                    width: 5616px;
+                    // padding-top: 70px;
+                    .main-img {
+                        width: 936px;
+                        height: 320px;
+                    } 
+                    .main-title {
+                        position: absolute;
+                        z-index: 1px;
+                        margin: 50px;
+                        width: 190px;
+                        h2 {
+                            color: $h1_font-color_1;
+                            font-size: 24px;
+                        }
+                        a {
+                            padding-top: 25px;
+                            font-size: 12px;
+                            color: $h1_font-color_1;
+                            font-family: 'S-CoreDream-3Light';
+                        }
+                        img {
+                            padding-top: 30px;
+                        }
+                    }
+                
+                    .main-music-flex-box {
+                        position: absolute;
+                        z-index: 1px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin-left: 330px;
+                        margin-top: 50px;
+                        width: 550px;
+                        .music {
+                            display: flex;
+                            align-items: center;
+                            padding-top: 10px;
+                            img {
+                                width: 56px;
+                                height: 56px;
+                            }
+                            p {
+                                margin: 5px;
+                                width: 200px;
+                                a {
+                                    &:first-child{
+                                        font-size: 13px;
+                                        color: $h1_font-color_1;
+                                    }
+            
+                                    &:nth-child(2) {
+                                        font-size: 12px;
+                                        color: $font-slide-artist;
+                                    }
+                                }
+                            }
+                        }
+                    }// main-music-flex-box 
+                } //title-music-flexbox
+            }
+            
+            // .button {
+            //     position: relative;
+            //     width: 936px;
+            //     #main-left {
+            //         position: absolute;
+            //         bottom: 130px;
+            //         left: 5px;
+            //         cursor: pointer;
+            //         img {
+            //             width: 19px;
+            //             height: 40px;
+            //         }
+            //     }
+            //     #main-right {
+            //         position: absolute;
+            //         bottom: 130px;
+            //         right: 5px;
+            //         cursor: pointer;
+            //         img {
+            //             width: 19px;
+            //             height: 40px;
+            //         }
+            //     }
+            // }
+            
+            div#left {
+                position: absolute;
+                top: 50%;
+                left: 5px;
+                transform: translateY(-50%);
+                // span {
+                //     width: 30px;
+                //     height: 3px;
+                //     border-radius: 3px;
+                //     background-color: #fff;
+                //     &:first-child {
+                //         transform: rotate(-45deg);
+                //     }
+                //     &:last-child {
+                //         margin-top: 17px;
+                //         transform: rotate(45deg);
+                //     }
+                // }
+            }
+
+            div#right {
+                position: absolute;
+                top: 50%;
+                right: 8px;
+                transform: translateY(-50%);
+                // span {
+                //     width: 30px;
+                //     height: 3px;
+                //     border-radius: 3px;
+                //     background-color: #fff;
+                //     &:first-child {
+                //         transform: rotate(45deg);
+                //     }
+                //     &:last-child {
+                //         margin-top: 17px;
+                //         transform: rotate(-45deg);
+                //     }
+                // }
+            }
+
+            .dots {
+                padding: 20px;
+                width: 936px;
+                text-align: center;
+                cursor: pointer;
                 span.dot {
                     display: inline-block;
                     margin:  3px;
-                    border: 1px solid $font-slide-artist;
                     width: 8px;
                     height: 8px;
                     border-radius: 50%;
@@ -406,72 +502,77 @@ header {
     
         //----- sect-music-playlist 하진 -----//
         .sect-music-playlist {
-            margin: 45px 0;
+            margin: 80px 0;
             .music-playlist-flex-box { 
                 display: flex;
                 .recent-playlist {
                     @include music-playlist();
                 }
     
+                
                 .ai-playlist {
                     position: relative;
                     @include music-playlist();
                     h2 {
                         padding-left: 50px;
                     }
-                    .ai-flex-box {
-                        position: relative;
-                        display: flex;
-                        margin-left: 48px;
-                        width: 640px;
+                    .ai-music {
+                        // width: 690px;
+                        // height: 250px;
+                        // overflow: hidden;
+                        // background-color: #8a2ae3;
                         background-color: #f5f5f5;
-    
-                        .ai-playlist_1 {
-                            width: (100%/3);
-                            height: 200px;
-                            padding: 15px 0;
-                            text-align: center;
-                            
-                            img {
-                                width: 168px;
-                                height: 168px;
+                        width: 640px;
+                        margin-left: 48px;
+                        .ai-flex-box {
+                            position: relative;
+                            display: flex;
+                            width: 640px;
+                            .ai-playlist_1 {
+                                width: (100%/3);
+                                height: 200px;
+                                padding: 15px 0;
+                                text-align: center;
+                                
+                                img {
+                                    width: 168px;
+                                    height: 168px;
+                                }
+        
+                                .title {
+                                    text-align: left;
+                                    margin: 20px 0 0 20px;
+                                }
+                                
+                                .artist {
+                                    text-align: left;
+                                    margin: 0 0 0 20px;
+                                }
                             }
-    
-                            .title {
-                                text-align: left;
-                                margin: 20px 0 0 20px;
-                            }
-                            
-                            .artist {
-                                text-align: left;
-                                margin: 0 0 0 20px;
-                            }
-                        }
-                    } //ai-flex-box
+                        } //ai-flex-box
 
-                    .button {
-                        position: absolute;
-                        top: 50%;
-                        right: 50%;
-                        transform: translate(-50%, -50%);
-                        display: flex;
-                        .prev {
+                        
+                        #ai-prev {
                             position: absolute;
-                            right: 305px;
+                            top: 50%;
+                            left: 20px;
+                            transform: translateY(-50%);
                             img {
                                 width: 14px;
                                 height: 28px;
                             }
                         }
-                        .next {
+                        #ai-next {
                             position: absolute;
-                            left: 355px;
+                            top: 50%;
+                            right: -30px;
+                            transform: translateY(-50%);
                             img {
                                 width: 14px;
                                 height: 28px;
                             }
                         }
-                    }
+                    } //ai-music 
                 } //ai-playlist
             } //music-playlist-flex-box
         } //sect-music-playlist - 하진 -
@@ -1623,7 +1724,7 @@ header {
                         font-family: 'S-CoreDream-3Light';
                     }
                 }
-    
+                
                 button {
                     margin-top: 18px;
                     border: 0;
@@ -1636,8 +1737,8 @@ header {
                 }
             }
         }
-    }
-    
+    }//main
+        
     //-------------------- footer --------------------//
     footer {
         margin-top: 80px;
@@ -1709,5 +1810,5 @@ header {
                 }
             }
         }
-    }
-}
+    }//footer
+}//main-footer

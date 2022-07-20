@@ -63,7 +63,7 @@ $(function() {
 
 // 마이 뮤직 한 곡 선택 시 배경색 회색으로 변경
 // $(function() {
-//     var musicBox1 = $(".music_list-2");
+//     var musicBox1 = $(".music_list-1");
     
 //     $(".checkbox").on("click", function() {
 //         if($(this).is(":checked")) {
@@ -80,23 +80,20 @@ $(function() {
 $(function() {
     $(document).ready(function(){
         var btn1 = $(".btn-1");
-        var btn2 = $(".btn-2");
+        // var btn2 = $(".btn-2");
 
-        $(btn2).show();
         $(btn1).hide();
 
-        $(".button").each(function(index, item) {
-            $(item).addClass('button' + index).is(function(){
-        
-                $(btn1).click(function(){
+        $(".btn-2").each(function(index, item) {
+            console.log (item);
+            $(item).addClass('.btn-2' + index).is(function(){
+                $(".button").click(function(){
                     $(btn1).hide();
-                    $(btn2).show();
                 });
             
-                $(btn2).click(function(){
-                    $(btn2).hide();
-                    $(btn1).show();
-                });
+                // $(".button").click(function(){
+                //     $(btn1).show();
+                // });
             });
         });
     });
