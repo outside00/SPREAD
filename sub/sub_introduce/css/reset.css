@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.grid {
+  width: 100%;
+  max-width: 936px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  font-size: 16px;
+  display: block;
+  color: #606060;
+  text-decoration: none;
+  font-family: 'S-CoreDream-5Medium';
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 48px;
+  font-family: 'BMDOHYEON';
+  color: white;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: 'S-CoreDream-6Bold';
+  color: #606060;
+}
+
+h4 {
+  font-size: 24px;
+  font-family: 'S-CoreDream-5Medium';
+}
+
+p {
+  font-size: 16px;
+  font-family: 'S-CoreDream-3Light';
+  color: #606060;
+}
+/*# sourceMappingURL=reset.css.map */

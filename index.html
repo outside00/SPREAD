@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/index.css">
     <title>web menu</title>
-    <script src="./js/jquery-3.6.0.min.js"></script>
-    <script src="./js/jquery-migrate-1.4.1.min.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/index.js"></script>
 </head>
 <body>
     <header>
@@ -74,6 +74,11 @@
 
                 <p>음악제목</p>
 
+                <!-- <audio id="myAudio" src="./media/boyswillbeboys_bulow.mp3"></audio> -->
+                <audio id="myAudio">
+                    <source src="./media/boyswillbeboys_bulow.mp3">
+                </audio>
+
                 <div class="music_time">
                     <span>00:00</span>
                     <span>00:00</span>
@@ -86,11 +91,15 @@
                 </div><!--music_bar-->
 
                 <div class="music_button">
-                    <img src="./image/repeat_play_button.png" alt="랜덤">
-                    <img src="./image/before_button.png" alt="이전버튼">
-                    <img src="./image/play.png" alt="재생">
-                    <img src="./image/next_button.png" alt="다음버튼">
-                    <img src="./image/listen_all_button.png" alt="반복">
+                    <button onclick = "repeatBtn()" type="button"><img src="./image/repeat_play_button.png" alt="랜덤"></button>
+
+                    <button onclick="beforeBtn()" type="button"><img src="./image/before_button.png" alt="이전버튼"></button>
+
+                    <button onclick="playBtn()" type="button"><img src="./image/play.png" alt="재생"></button>
+
+                    <button onclick="nextBtn()" type="button"><img src="./image/next_button.png" alt="다음버튼"></button>
+
+                    <button onclick="allBtn()" type="button"><img src="./image/listen_all_button.png" alt="반복"></button>
                 </div><!--music_button-->
             </div><!--music_box-->
         </div><!--log-->
@@ -99,389 +108,345 @@
 
     <div class="main-footer">
         <main>
-            <section class="sect-main-slide"> <!-- 하진 -->
+            <article class="main-slide"> <!-- 하진 -->
+                <h1></h1>
                 <div class="main-slide-flexbox">
-                    <div class="main-img-skateboard_1">
-                        <div class="title-music-flexbox">
-                            <div class="main-title">
-                                <h1>기분전환을 위한 신나는 그루브</h1>
-                                <a href="#">총 20곡 │ 2020.08.11</a> 
-                                
-                            </div>
-            
-                            <div class="main-music-flex-box">
-                                <div class="musicbox-1">
-                                    <div class="music">
-                                        <a href="#"><img src="./image/skateboard_img_1.jpg" alt="img1"></a>
-                                        <p>
-                                            <a href="#">Boys Will Be Boys</a>
-                                            <a href="#">bülow</a> 
-                                        </p>
-                                    </div>
-                                    <div class="music">
-                                        <a href="#"><img src="./image/skateboard_img_2.jpg" alt="img2"></a>
-                                        <p>
-                                            <a href="#">Ice Cream</a> 
-                                            <a href="#">MIKA</a> 
-                                        </p>
-                                    </div>
-                                    <div class="music">
-                                        <a href="#"><img src="./image/skateboard_img_3.jpg" alt="img3"></a>
-                                        <p>
-                                            <a href="#">스무살이 왜이리 ···</a> 
-                                            <a href="#">오반</a> 
-                                        </p>
-                                    </div>
-                                </div> <!-- musicbox-1 -->
-                                
-                                <div class="musicbox-1">
-                                    <div class="music">
-                                        <a href="#"><img src="./image/skateboard_img_4.jpg" alt="img4"></a>
-                                        <p>
-                                            <a href="#">평행우주 (PARALLEL)</a> 
-                                            <a href="#">VIXX (빅스)</a> 
-                                        </p>
-                                    </div>
-                                    <div class="music">
-                                        <a href="#"><img src="./image/skateboard_img_5.jpg" alt="img5"></a>
-                                        <p>
-                                            <a href="#">Tints (feat. Kendrick Lamar)</a> 
-                                            <a href="#">Anderson Paak</a> 
-                                        </p>
-                                    </div>
-                                    <div class="music">
-                                        <a href="#"><img src="./image/skateboard_img_6.jpg" alt="img6"></a>
-                                        <p>
-                                            <a href="#">Don't Don't Do It!</a> 
-                                            <a href="#">N.E.R.D & Kendrick Lamar</a> 
-                                        </p>
-                                    </div>
-                                </div> <!-- musicbox-1 -->
-                            </div> <!-- main-music-flex-box -->
-                        </div> <!-- title-music-flexbox -->
-                        <div class="button">
-                            <a href="#" class="prev"><img src="./image/main_slide_arrow_prev.png" alt="prev"></a>
-                            <a href="#" class="next"><img src="./image/main_slide_arrow_next.png" alt="next"></a>
+                    <div class="title-music-flexbox">
+                        <img src="./image/main-slide_board_1.png" alt="img-1" class="main-img"> 
+                        <div class="main-title">
+                            <h2>기분전환을 위한 신나는 그루브</h2>
+                            <a href="#">총 20곡 │ 2020.08.11</a> 
+                            <img src="./image/main_button.png" alt="main-button">
                         </div>
-                    </div> <!-- main-img-skateboard_1 -->
+        
+                        <div class="main-music-flex-box">
+                            <div class="music">
+                                <a href="#"><img src="./image/skateboard_img_1.jpg" alt="img1"></a>
+                                <p>
+                                    <a href="#">Boys Will Be Boys</a>
+                                    <a href="#">bülow</a> 
+                                </p>
+                            </div>
+                            <div class="music">
+                                <a href="#"><img src="./image/skateboard_img_2.jpg" alt="img2"></a>
+                                <p>
+                                    <a href="#">Ice Cream</a> 
+                                    <a href="#">MIKA</a> 
+                                </p>
+                            </div>
+                            <div class="music">
+                                <a href="#"><img src="./image/skateboard_img_3.jpg" alt="img3"></a>
+                                <p>
+                                    <a href="#">스무살이 왜이리 ···</a> 
+                                    <a href="#">오반</a> 
+                                </p>
+                            </div>
+                            <div class="music">
+                                <a href="#"><img src="./image/skateboard_img_4.jpg" alt="img4"></a>
+                                <p>
+                                    <a href="#">평행우주 (PARALLEL)</a> 
+                                    <a href="#">VIXX (빅스)</a> 
+                                </p>
+                            </div>
+                            <div class="music">
+                                <a href="#"><img src="./image/skateboard_img_5.jpg" alt="img5"></a>
+                                <p>
+                                    <a href="#">Tints (feat. Kendrick Lamar)</a> 
+                                    <a href="#">Anderson Paak</a> 
+                                </p>
+                            </div>
+                            <div class="music">
+                                <a href="#"><img src="./image/skateboard_img_6.jpg" alt="img6"></a>
+                                <p>
+                                    <a href="#">Don't Don't Do It!</a> 
+                                    <a href="#">N.E.R.D & Kendrick Lamar</a> 
+                                </p>
+                            </div>
+                        </div> <!-- main-music-flex-box -->
+                    </div> <!-- title-music-flexbox -->
 
-
-                    <div class="main-img-spring_2">
-                        <div class="title-music-flexbox">
-                            <div class="main-title">
-                                <h1>끝나지 않을 우리의 봄을 담을 노래</h1> 
-                                <a href="#">총 14곡 │ 2020.04.15</a>
-                            </div> <!-- main-title -->
-            
-                            <div class="main-music-flex-box">
-                                <div class="musicbox-1">
-                                    <div class="music">
-                                        <a href="#"><img src="./image/spring_img_1.jpg" alt="img1"></a>
-                                        <p>
-                                            <a href="#">BABY BABY</a> 
-                                            <a href="#">포맨(4MAN)</a>
-                                        </p>
-                                    </div>
-                                    <div class="music">
-                                        <a href="#"><img src="./image/spring_img_2.jpg" alt="img2"></a>
-                                        <p>
-                                            <a href="#">FLY</a> 
-                                            <a href="#">긱스(GEEKS)</a>
-                                        </p>
-                                    </div>
-                                    <div class="music">
-                                        <a href="#"><img src="./image/spring_img_3.jpg" alt="img3"></a>
-                                        <p>
-                                            <a href="#">LOVE</a> 
-                                            <a href="#">프라이머리(PRIMARY)</a>
-                                        </p>
-                                    </div>
-                                </div> <!-- musicbox-1 -->
-            
-                                <div class="musicbox-1">
-                                    <div class="music">
-                                        <a href="#"><img src="./image/spring_img_4.jpg" alt="img4"></a>
-                                        <p>
-                                            <a href="#">Starlight</a> 
-                                            <a href="#">태일</a>
-                                        </p>
-                                    </div>
-                                    <div class="music">
-                                        <a href="#"><img src="./image/spring_img_5.jpg" alt="img5"></a>
-                                        <p>
-                                            <a href="#">Stylist</a> 
-                                            <a href="#">비오(Be O)</a>
-                                        </p>
-                                    </div>
-                                    <div class="music">
-                                        <a href="#"><img src="./image/spring_img_6.jpg" alt="img6"></a>
-                                        <p>
-                                            <a href="#">러브119</a> 
-                                            <a href="#">케이윌(K.Will)</a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div> <!-- main-music-flex-box -->
-                        </div>  <!-- title-music-flexbox --> 
-                        <div class="button">
-                            <a href="#" class="prev"><img src="./image/main_slide_arrow_prev.png" alt="prev"></a>
-                            <a href="#" class="next"><img src="./image/main_slide_arrow_next.png" alt="next"></a>
-                        </div>
-                    </div> <!-- main-img-spring_2 -->
+                    <div class= "title-music-flexbox">
+                        <img src="./image/main-slide_spring_2.png" alt="img-2" class="main-img">
+                        <div class="main-title">
+                            <h2>끝나지 않을 우리의 봄을 담을 노래</h2> 
+                            <a href="#">총 14곡 │ 2020.04.15</a>
+                            <img src="./image/main_button.png" alt="main-button">
+                        </div> <!-- main-title -->
         
-                    <div class="main-img-concert_3">
-                        <div class="title-music-flexbox">
-                            <div class="main-title">
-                                <h1>듣기만 해도 신나는 아이돌 노래</h1> 
-                                <a href="#">총 11곡 │ 2022.04.14</a>
+                        <div class="main-music-flex-box">
+                            <div class="music">
+                                <a href="#"><img src="./image/spring_img_1.jpg" alt="img1"></a>
+                                <p>
+                                    <a href="#">BABY BABY</a> 
+                                    <a href="#">포맨(4MAN)</a>
+                                </p>
                             </div>
-            
-                            <div class="main-music-flex-box">
-                                <div class="musicbox-1">
-                                    <div class="music">
-                                        <a href="#"><img src="./image/concert_img_1.jpg" alt="img1"></a>
-                                        <p>
-                                            <a href="#">DAYDREAM</a> 
-                                            <a href="#">하이라이트</a>
-                                        </p>
-                                    </div>
-                                    <div class="music">
-                                        <a href="#"><img src="./image/concert_img_2.jpg" alt="img2"></a>
-                                        <p>
-                                            <a href="#">Dolphin</a> 
-                                            <a href="#">오마이걸</a>
-                                        </p>
-                                    </div>
-                                    <div class="music">
-                                        <a href="#"><img src="./image/concert_img_3.jpg" alt="img3"></a>
-                                        <p>
-                                            <a href="#">Dreams come true</a> 
-                                            <a href="#">aespa</a>
-                                        </p>
-                                    </div>
-                                </div> <!-- musicbox-1 -->
-            
-                                <div class="musicbox-1">
-                                    <div class="music">
-                                        <a href="#"><img src="./image/concert_img_4.jpg" alt="img4"></a>
-                                        <p>
-                                            <a href="#">Dun Dun Dance</a> 
-                                            <a href="#">오마이걸</a>
-                                        </p>
-                                    </div>
-                                    <div class="music">
-                                        <a href="#"><img src="./image/concert_img_5.jpg" alt="img5"></a>
-                                        <p>
-                                            <a href="#">Feel My Rhythm</a> 
-                                            <a href="#">Red Velvet</a>
-                                        </p>
-                                    </div>
-                                    <div class="music">
-                                        <a href="#"><img src="./image/concert_img_6.jpg" alt="img6"></a>
-                                        <p>
-                                            <a href="#">Love Dive</a> 
-                                            <a href="#">아이브</a>
-                                        </p>
-                                    </div>
-                                </div> <!-- musicbox-1 -->
-                            </div> <!-- main-music-flex-box -->
-                        </div> <!-- title-music-flexbox -->  
-                        <div class="button">
-                            <a href="#" class="prev"><img src="./image/main_slide_arrow_prev.png" alt="prev"></a>
-                            <a href="#" class="next"><img src="./image/main_slide_arrow_next.png" alt="next"></a>
-                        </div>
-                    </div> <!-- main-img-concert_3 -->
+                            <div class="music">
+                                <a href="#"><img src="./image/spring_img_2.jpg" alt="img2"></a>
+                                <p>
+                                    <a href="#">FLY</a> 
+                                    <a href="#">긱스(GEEKS)</a>
+                                </p>
+                            </div>
+                            <div class="music">
+                                <a href="#"><img src="./image/spring_img_3.jpg" alt="img3"></a>
+                                <p>
+                                    <a href="#">LOVE</a> 
+                                    <a href="#">프라이머리(PRIMARY)</a>
+                                </p>
+                            </div>
+                            <div class="music">
+                                <a href="#"><img src="./image/spring_img_4.jpg" alt="img4"></a>
+                                <p>
+                                    <a href="#">Starlight</a> 
+                                    <a href="#">태일</a>
+                                </p>
+                            </div>
+                            <div class="music">
+                                <a href="#"><img src="./image/spring_img_5.jpg" alt="img5"></a>
+                                <p>
+                                    <a href="#">Stylist</a> 
+                                    <a href="#">비오(Be O)</a>
+                                </p>
+                            </div>
+                            <div class="music">
+                                <a href="#"><img src="./image/spring_img_6.jpg" alt="img6"></a>
+                                <p>
+                                    <a href="#">러브119</a> 
+                                    <a href="#">케이윌(K.Will)</a>
+                                </p>
+                            </div>
+                        </div> <!-- main-music-flex-box -->
+                    </div>  <!-- title-music-flexbox --> 
         
-                    <div class="main-img-cafe_4">
-                        <div class="title-music-flexbox">
-                            <div class="main-title">
-                                <h1>카페에서 듣는 잔잔한 발라드</h1>
-                                <a href="#">총 16곡 │ 2022.01.03</a>
-                            </div>
-            
-                            <div class="main-music-flex-box">
-                                <div class="musicbox-1">
-                                    <div class="music">
-                                        <a href="#"><img src="./image/cafe_img_1.jpg" alt="img1"></a>
-                                        <p>
-                                            <a href="#">우리가 헤어져야 했던 이유</a>
-                                            <a href="#">비비(BIBI)</a>
-                                        </p>
-                                    </div>
-                                    <div class="music">
-                                        <a href="#"><img src="./image/cafe_img_2.jpg" alt="img2"></a>
-                                        <p>
-                                            <a href="#">사랑은 말로 표현하는게 아니래요</a>
-                                            <a href="#">규현(KYUHYUN)</a>
-                                        </p>
-                                    </div>
-                                    <div class="music">
-                                        <a href="#"><img src="./image/cafe_img_3.jpg" alt="img3"></a>
-                                        <p>
-                                            <a href="#">사실 나는 (Feat.전건호)</a>
-                                            <a href="#">경서예지</a>
-                                        </p>
-                                    </div>
-                                </div> <!-- musicbox-1 -->
-            
-                                <div class="musicbox-1">
-                                    <div class="music">
-                                        <a href="#"><img src="./image/cafe_img_4.jpg" alt="img4"></a>
-                                        <p>
-                                            <a href="#">그대 잠시 내게</a>
-                                            <a href="#">이무진</a>
-                                        </p>
-                                    </div>
-                                    <div class="music">
-                                        <a href="#"><img src="./image/cafe_img_5.jpg" alt="img5"></a>
-                                        <p>
-                                            <a href="#">찰나가 영원이 될 때Red Moon  Beyond The Light</a>
-                                            <a href="#">마크툽 (MAKTUB)</a>
-                                        </p>
-                                    </div>
-                                    <div class="music">
-                                        <a href="#"><img src="./image/cafe_img_6.jpg" alt="img6"></a>
-                                        <p>
-                                            <a href="#">우린 어쩌다 헤어진 걸까</a>
-                                            <a href="#">허각</a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div> <!-- main-music-flex-box -->
-                        </div> <!-- title-music-flexbox -->
-                        <div class="button">
-                            <a href="#" class="prev"><img src="./image/main_slide_arrow_prev.png" alt="prev"></a>
-                            <a href="#" class="next"><img src="./image/main_slide_arrow_next.png" alt="next"></a>
+                    <div class="title-music-flexbox">
+                        <img src="./image/main-slide_concert_3.png" alt="img-3" class="main-img">
+                        <div class="main-title">
+                            <h2>듣기만 해도 신나는 아이돌 노래</h2> 
+                            <a href="#">총 11곡 │ 2022.04.14</a>
+                            <img src="./image/main_button.png" alt="main-button">
                         </div>
-                    </div> <!-- main-img-cafe_4 -->
         
-                    <div class="main-img-work_5">
-                        <div class="title-music-flexbox">
-                            <div class="main-title">
-                                <h1>퇴근하고 싶을 때 듣는 감성노래</h1>
-                                <a href="#">총 16곡 │ 2022.01.06</a>
+                        <div class="main-music-flex-box">
+                            <div class="music">
+                                <a href="#"><img src="./image/concert_img_1.jpg" alt="img1"></a>
+                                <p>
+                                    <a href="#">DAYDREAM</a> 
+                                    <a href="#">하이라이트</a>
+                                </p>
                             </div>
-            
-                            <div class="main-music-flex-box">
-                                <div class="musicbox-1">
-                                    <div class="music">
-                                        <a href="#"><img src="./image/work_img_1.jpg" alt="img1"></a>
-                                        <p>
-                                            <a href="#">Be There</a>
-                                            <a href="#">치즈</a>
-                                        </p>
-                                    </div>
-                                    <div class="music">
-                                        <a href="#"><img src="./image/work_img_2.jpg" alt="img2"></a>
-                                        <p>
-                                            <a href="#">Blue(Feat.Crush,SOLE)</a>
-                                            <a href="#">다이나믹 듀오</a>
-                                        </p>
-                                    </div>
-                                    <div class="music">
-                                        <a href="#"><img src="./image/work_img_3.jpg" alt="img3"></a>
-                                        <p>
-                                            <a href="#">Bunny</a>
-                                            <a href="#">백예린</a>
-                                        </p>
-                                    </div>
-                                </div> <!-- musicbox-1 -->
-            
-                                <div class="musicbox-1">
-                                    <div class="music">
-                                        <a href="#"><img src="./image/work_img_4.jpg" alt="img4"></a>
-                                        <p>
-                                            <a href="#">By My Side</a>
-                                            <a href="#">JUNNY(주니)</a>
-                                        </p>
-                                    </div>
-                                    <div class="music">
-                                        <a href="#"><img src="./image/work_img_5.jpg" alt="img5"></a>
-                                        <p>
-                                            <a href="#">Clouds</a>
-                                            <a href="#">오존(O3ohn)</a>
-                                        </p>
-                                    </div>
-                                    <div class="music">
-                                        <a href="#"><img src="./image/work_img_6.jpg" alt="img6"></a>
-                                        <p>
-                                            <a href="#">Dali,Van,Picasso</a>
-                                            <a href="#">빈지노(Beenzino)</a>
-                                        </p>
-                                    </div>
-                                </div> <!-- musicbox-1 -->
-                            </div> <!-- main-music-flex-box -->
-                        </div> <!-- title-music-flexbox -->
-                        <div class="button">
-                            <a href="#" class="prev"><img src="./image/main_slide_arrow_prev.png" alt="prev"></a>
-                            <a href="#" class="next"><img src="./image/main_slide_arrow_next.png" alt="next"></a>
-                        </div>
-                    </div> <!-- main-img-work_5 -->
+                            <div class="music">
+                                <a href="#"><img src="./image/concert_img_2.jpg" alt="img2"></a>
+                                <p>
+                                    <a href="#">Dolphin</a> 
+                                    <a href="#">오마이걸</a>
+                                </p>
+                            </div>
+                            <div class="music">
+                                <a href="#"><img src="./image/concert_img_3.jpg" alt="img3"></a>
+                                <p>
+                                    <a href="#">Dreams come true</a> 
+                                    <a href="#">aespa</a>
+                                </p>
+                            </div>
+                            <div class="music">
+                                <a href="#"><img src="./image/concert_img_4.jpg" alt="img4"></a>
+                                <p>
+                                    <a href="#">Dun Dun Dance</a> 
+                                    <a href="#">오마이걸</a>
+                                </p>
+                            </div>
+                            <div class="music">
+                                <a href="#"><img src="./image/concert_img_5.jpg" alt="img5"></a>
+                                <p>
+                                    <a href="#">Feel My Rhythm</a> 
+                                    <a href="#">Red Velvet</a>
+                                </p>
+                            </div>
+                            <div class="music">
+                                <a href="#"><img src="./image/concert_img_6.jpg" alt="img6"></a>
+                                <p>
+                                    <a href="#">Love Dive</a> 
+                                    <a href="#">아이브</a>
+                                </p>
+                            </div>
+                        </div> <!-- main-music-flex-box -->
+                    </div> <!-- title-music-flexbox -->  
         
-                    <div class="main-img-night_6">
-                        <div class="title-music-flexbox">
-                            <div class="main-title">
-                                <h1>야경이 수놓은 저녁에 듣는 음악</h1>
-                                <a href="#">총 20곡 │ 2019.09.26</a>
-                            </div>
-            
-                            <div class="main-music-flex-box">
-                                <div class="musicbox-1">
-                                    <div class="music">
-                                        <a href="#"><img src="./image/night_img_1.jpg" alt="img1"></a>
-                                        <p>
-                                            <a href="#">Autumn Breeze</a>
-                                            <a href="#">JIDA(지다)</a>
-                                        </p>
-                                    </div>
-                                    <div class="music">
-                                        <a href="#"><img src="./image/night_img_2.jpg" alt="img2"></a>
-                                        <p>
-                                            <a href="#">Breathing Underwater</a>
-                                            <a href="#">지안(JLAN)</a>
-                                        </p>
-                                    </div>
-                                    <div class="music">
-                                        <a href="#"><img src="./image/night_img_3.jpg" alt="img3"></a>
-                                        <p>
-                                            <a href="#">Colors Of You_.jpg</a>
-                                            <a href="#">92914</a>
-                                        </p>
-                                    </div>
-                                </div> <!-- musicbox-1 -->
-            
-                                <div class="musicbox-1">
-                                    <div class="music">
-                                        <a href="#"><img src="./image/night_img_4.jpg" alt="img4"></a>
-                                        <p>
-                                            <a href="#">Hole</a>
-                                            <a href="#">Humbert & 구원찬</a>
-                                        </p>
-                                    </div>
-                                    <div class="music">
-                                        <a href="#"><img src="./image/night_img_5.jpg" alt="img5"></a>
-                                        <p>
-                                            <a href="#">In My Heart</a>
-                                            <a href="#">크림(KREAM)</a>
-                                        </p>
-                                    </div>
-                                    <div class="music">
-                                        <a href="#"><img src="./image/night_img_6.jpg" alt="img6"></a>
-                                        <p>
-                                            <a href="#">Little, Big, our Stars</a>
-                                            <a href="#">챈스(Chance)</a>
-                                        </p>
-                                    </div>
-                                </div> <!-- musicbox-1 -->
-                            </div> <!-- main-music-flex-box -->
-                        </div> <!-- title-music-flexbox -->
-                        <div class="button">
-                            <a href="#" class="prev"><img src="./image/main_slide_arrow_prev.png" alt="prev"></a>
-                            <a href="#" class="next"><img src="./image/main_slide_arrow_next.png" alt="next"></a>
+                    <div class="title-music-flexbox">
+                        <img src="./image/main-slide_cafe_4.png" alt="img-4" class="main-img">
+                        <div class="main-title">
+                            <h2>카페에서 듣는 잔잔한 발라드</h2>
+                            <a href="#">총 16곡 │ 2022.01.03</a>
+                            <img src="./image/main_button.png" alt="main-button">
                         </div>
-                    </div> <!-- main-img-night_6 -->
+        
+                        <div class="main-music-flex-box">
+                            <div class="music">
+                                <a href="#"><img src="./image/cafe_img_1.jpg" alt="img1"></a>
+                                <p>
+                                    <a href="#">우리가 헤어져야 했던 이유</a>
+                                    <a href="#">비비(BIBI)</a>
+                                </p>
+                            </div>
+                            <div class="music">
+                                <a href="#"><img src="./image/cafe_img_2.jpg" alt="img2"></a>
+                                <p>
+                                    <a href="#">사랑은 말로 표현하는게 아니래요</a>
+                                    <a href="#">규현(KYUHYUN)</a>
+                                </p>
+                            </div>
+                            <div class="music">
+                                <a href="#"><img src="./image/cafe_img_3.jpg" alt="img3"></a>
+                                <p>
+                                    <a href="#">사실 나는 (Feat.전건호)</a>
+                                    <a href="#">경서예지</a>
+                                </p>
+                            </div>
+                            <div class="music">
+                                <a href="#"><img src="./image/cafe_img_4.jpg" alt="img4"></a>
+                                <p>
+                                    <a href="#">그대 잠시 내게</a>
+                                    <a href="#">이무진</a>
+                                </p>
+                            </div>
+                            <div class="music">
+                                <a href="#"><img src="./image/cafe_img_5.jpg" alt="img5"></a>
+                                <p>
+                                    <a href="#">찰나가 영원이 될 때Red Moon  Beyond The Light</a>
+                                    <a href="#">마크툽 (MAKTUB)</a>
+                                </p>
+                            </div>
+                            <div class="music">
+                                <a href="#"><img src="./image/cafe_img_6.jpg" alt="img6"></a>
+                                <p>
+                                    <a href="#">우린 어쩌다 헤어진 걸까</a>
+                                    <a href="#">허각</a>
+                                </p>
+                            </div>
+                        </div> <!-- main-music-flex-box -->
+                    </div> <!-- title-music-flexbox -->
+        
+                    <div class="title-music-flexbox">
+                        <img src="./image/main-slide_work_5.png" alt="img-5" class="main-img">
+                        <div class="main-title">
+                            <h2>퇴근하고 싶을 때 듣는 감성노래</h2>
+                            <a href="#">총 16곡 │ 2022.01.06</a>
+                            <img src="./image/main_button.png" alt="main-button">
+                        </div>
+        
+                        <div class="main-music-flex-box">
+                            <div class="music">
+                                <a href="#"><img src="./image/work_img_1.jpg" alt="img1"></a>
+                                <p>
+                                    <a href="#">Be There</a>
+                                    <a href="#">치즈</a>
+                                </p>
+                            </div>
+                            <div class="music">
+                                <a href="#"><img src="./image/work_img_2.jpg" alt="img2"></a>
+                                <p>
+                                    <a href="#">Blue(Feat.Crush,SOLE)</a>
+                                    <a href="#">다이나믹 듀오</a>
+                                </p>
+                            </div>
+                            <div class="music">
+                                <a href="#"><img src="./image/work_img_3.jpg" alt="img3"></a>
+                                <p>
+                                    <a href="#">Bunny</a>
+                                    <a href="#">백예린</a>
+                                </p>
+                            </div>
+                            <div class="music">
+                                <a href="#"><img src="./image/work_img_4.jpg" alt="img4"></a>
+                                <p>
+                                    <a href="#">By My Side</a>
+                                    <a href="#">JUNNY(주니)</a>
+                                </p>
+                            </div>
+                            <div class="music">
+                                <a href="#"><img src="./image/work_img_5.jpg" alt="img5"></a>
+                                <p>
+                                    <a href="#">Clouds</a>
+                                    <a href="#">오존(O3ohn)</a>
+                                </p>
+                            </div>
+                            <div class="music">
+                                <a href="#"><img src="./image/work_img_6.jpg" alt="img6"></a>
+                                <p>
+                                    <a href="#">Dali,Van,Picasso</a>
+                                    <a href="#">빈지노(Beenzino)</a>
+                                </p>
+                            </div>
+                        </div> <!-- main-music-flex-box -->
+                    </div> <!-- title-music-flexbox -->
+        
+                    <div class="title-music-flexbox">
+                        <img src="./image/main-slide_night_6.png" alt="img-6" class="main-img">
+                        <div class="main-title">
+                            <h2>야경이 수놓은 저녁에 듣는 음악</h2>
+                            <a href="#">총 20곡 │ 2019.09.26</a>
+                            <img src="./image/main_button.png" alt="main-button">
+                        </div>
+        
+                        <div class="main-music-flex-box">
+                            <div class="music">
+                                <a href="#"><img src="./image/night_img_1.jpg" alt="img1"></a>
+                                <p>
+                                    <a href="#">Autumn Breeze</a>
+                                    <a href="#">JIDA(지다)</a>
+                                </p>
+                            </div>
+                            <div class="music">
+                                <a href="#"><img src="./image/night_img_2.jpg" alt="img2"></a>
+                                <p>
+                                    <a href="#">Breathing Underwater</a>
+                                    <a href="#">지안(JLAN)</a>
+                                </p>
+                            </div>
+                            <div class="music">
+                                <a href="#"><img src="./image/night_img_3.jpg" alt="img3"></a>
+                                <p>
+                                    <a href="#">Colors Of You_.jpg</a>
+                                    <a href="#">92914</a>
+                                </p>
+                            </div>
+                            <div class="music">
+                                <a href="#"><img src="./image/night_img_4.jpg" alt="img4"></a>
+                                <p>
+                                    <a href="#">Hole</a>
+                                    <a href="#">Humbert & 구원찬</a>
+                                </p>
+                            </div>
+                            <div class="music">
+                                <a href="#"><img src="./image/night_img_5.jpg" alt="img5"></a>
+                                <p>
+                                    <a href="#">In My Heart</a>
+                                    <a href="#">크림(KREAM)</a>
+                                </p>
+                            </div>
+                            <div class="music">
+                                <a href="#"><img src="./image/night_img_6.jpg" alt="img6"></a>
+                                <p>
+                                    <a href="#">Little, Big, our Stars</a>
+                                    <a href="#">챈스(Chance)</a>
+                                </p>
+                            </div>
+                        </div> <!-- main-music-flex-box -->
+                    </div> <!-- title-music-flexbox -->
                 </div> <!-- main-slide-flexbox -->
-    
+
+                <!-- <div class="button">
+                    <p id="main-left"><img src="./image/main_slide_arrow_prev.png" alt="prev"></p>
+                    <p id="main-right"><img src="./image/main_slide_arrow_next.png" alt="next"></p>
+                </div> -->
+
+                <div id="left">
+                    <img src="./image/main_slide_arrow_prev.png" alt="prev">
+                </div>
+                <div id="right">
+                    <img src="./image/main_slide_arrow_next.png" alt="next">
+                </div>
                 <div class="dots">
                     <span class="dot"></span>
                     <span class="dot"></span>
@@ -490,9 +455,10 @@
                     <span class="dot"></span>
                     <span class="dot"></span>
                 </div>
-            </section> <!-- main-slide -->
+            </article> <!-- main-slide -->
     
-            <section class="sect-music-playlist">
+            <article class="sect-music-playlist">
+
                 <div class="music-playlist-flex-box">
                     <div class="recent-playlist">
                         <h2>최근에 들은 음악</h2>
@@ -503,31 +469,30 @@
     
                     <div class="ai-playlist">
                         <h2>AI 추천 음악</h2>
-                        <div class="ai-flex-box">
-                            <div class="ai-playlist_1">
-                                <a href="#" class="image"><img src="./image/AI-playlist_1.png" alt="ai-playlist1"></a>
-                                <a href="#" class="title">그대를 비출게요</a>
-                                <a href="#" class="artist">송민경</a>
-                            </div>
-                            <div class="ai-playlist_1">
-                                <a href="#" class="image"><img src="./image/AI-playlist_2.png" alt="ai-playlist2"></a>
-                                <a href="#" class="title">어떨 것 같아</a>
-                                <a href="#" class="artist">새봄 (saevom)</a>
-                            </div>
-                            <div class="ai-playlist_1">
-                                <a href="#" class="image"><img src="./image/AI-playlist_3.png" alt="ai-playlist3"></a>
-                                <a href="#" class="title">멍</a>
-                                <a href="#" class="artist">함예찬</a>
-                            </div>
-                        </div> <!-- ai-flex-box -->
-
-                        <div class="button">
-                            <a href="#" class="prev"><img src="/image/aiplaylist_arrow_prev.png" alt="prev"></a>
-                            <a href="#" class="next"><img src="./image/aiplaylist_arrow_next.png" alt="next"></a>
+                        <div class="ai-music">
+                            <div class="ai-flex-box">
+                                <div class="ai-playlist_1">
+                                    <a href="#" class="image"><img src="./image/AI-playlist_1.png" alt="ai-playlist1"></a>
+                                    <a href="#" class="title">그대를 비출게요</a>
+                                    <a href="#" class="artist">송민경</a>
+                                </div>
+                                <div class="ai-playlist_1">
+                                    <a href="#" class="image"><img src="./image/AI-playlist_2.png" alt="ai-playlist2"></a>
+                                    <a href="#" class="title">어떨 것 같아</a>
+                                    <a href="#" class="artist">새봄 (saevom)</a>
+                                </div>
+                                <div class="ai-playlist_1">
+                                    <a href="#" class="image"><img src="./image/AI-playlist_3.png" alt="ai-playlist3"></a>
+                                    <a href="#" class="title">멍</a>
+                                    <a href="#" class="artist">함예찬</a>
+                                </div>
+                            </div> <!-- ai-flex-box -->
+                            <div id="ai-prev"><img src="/image/aiplaylist_arrow_prev.png" alt="prev"></div>
+                            <div id="ai-next"><img src="./image/aiplaylist_arrow_next.png" alt="next"></div>
                         </div>
                     </div> <!-- ai-playlist -->
                 </div> <!-- music-playlist-flex-box -->
-            </section> <!-- music-playlist --> <!-- 하진 -->
+            </article> <!-- music-playlist --> <!-- 하진 -->
     
             <div class="flex-box">
                 <div class="djplay_list">
@@ -1204,6 +1169,7 @@
     
                                         <div class="like-com">
                                             <a href="#">
+
                                                 <p>
                                                     좋아요 1개
                                                 </p>
@@ -1294,7 +1260,6 @@
                 </div>
             </div><!-- flex-box -->
         </main>
-    
     
     
         <footer>

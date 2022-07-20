@@ -206,6 +206,11 @@ main .sect-asmr .asmr-flexbox .transbox {
   margin: 10px 0;
 }
 
+main .sect-asmr .asmr-flexbox .transbox:hover {
+  opacity: 0.5;
+  border: 1px solid gray;
+}
+
 main .sect-asmr .asmr-flexbox .transbox .txt {
   position: absolute;
   top: 15px;
@@ -213,8 +218,8 @@ main .sect-asmr .asmr-flexbox .transbox .txt {
 }
 
 main .sect-asmr .asmr-flexbox .transbox img {
-  width: 295px;
-  height: 295px;
+  display: block;
+  width: 100%;
 }
 
 main .sect-more h1 {
@@ -234,7 +239,13 @@ main .sect-more .more-flexbox .transbox {
   position: relative;
 }
 
+main .sect-more .more-flexbox .transbox:hover {
+  opacity: 0.5;
+  border: 1px solid gray;
+}
+
 main .sect-more .more-flexbox .transbox img {
+  display: block;
   width: 456px;
   height: 456px;
 }
