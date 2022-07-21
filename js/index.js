@@ -1,30 +1,3 @@
-// $("#main-left").click(function() {
-//     $(".title-music-flexbox").animate({left:"-936px"}, 500, function() {
-//         $(".title-music-flexbox").append($(".title-music-flexbox.active")).css({left:0});
-//     }, 2000);
-// });
-
-// $("#main-left").click(function() {
-//     $(".title-music-flexbox").append($(".title-music-flexbox.active")).css({left:"-936px"}).animate({left:0}, 500);
-// });
-// $("#prev").click(function() {
-//     $(".ai-flex-box").animate({left:"-168"}, 500, function() {
-//         $(".ai-flex-box").append($(".ai-playlist_1:first-child")).css({left:0});
-//     });
-// });
-
-// $('#main-prev').click(function() {
-//     var currentSlide = $('.title-music-flexbox.active');
-//     var nextSlide = currentSlide.next();
-
-//     currentSlide.fadeOut(300).removeClass('active');
-//     nextSlide.fadeIn(300).addClass('active');
-
-//     if(nextSlide.length == 0) {
-//         $(".title-music-flexbox").first().fadeIn(300).addClass('active');
-//     }
-// });
-
 $(function() {
     // 메인 슬라이드
     $("#left").click(function() {
@@ -36,9 +9,10 @@ $(function() {
     })
 
     setInterval(function() {
-        $(".main-slide-flexbox").append($(".title-music-flexbox:first")).animate({left:0}, 500);
+        $(".main-slide-flexbox").append($(".title-music-flexbox:first")).animate({left:0}, 1000);
     }, 3000);
 
+    //ai 플레이리스트
     $("#ai-prev").click(function() {
         $(".ai-flex-box").prepend($(".ai-playlist_1:last")).css({left:"-168px"}).css({left:0}, 500);
     });
@@ -46,4 +20,23 @@ $(function() {
     $("#ai-next").click(function() {
         $(".ai-flex-box").append($(".ai-playlist_1:first")).css({left:"-168px"}).css({left:0}, 500);
     });
-})
+
+
+
+    //DJ플레이
+    $('.menu').click(function() {
+        $('.profile-display').slideUp();
+        
+        if ($(this).next('.profile-display').is(':hidden')){
+            $(this).next('.profile-display').slideDown();
+        } else{
+            $(this).next('.profile-display').slideUp();
+        }
+
+        if ($(this).prev('#lastprofile').is(':hidden')){
+            $(this).prev('#lastprofile').slideDown();
+        } else{
+            $(this).prev('#lastprofile').slideUp();
+        }
+    });
+});

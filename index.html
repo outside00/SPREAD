@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./css/index.css">
     <script src="./js/jquery.js"></script>
     <script src="./js/index.js"></script>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
 </head>
 <body>
     <header>
@@ -436,11 +438,6 @@
                     </div> <!-- title-music-flexbox -->
                 </div> <!-- main-slide-flexbox -->
 
-                <!-- <div class="button">
-                    <p id="main-left"><img src="./image/main_slide_arrow_prev.png" alt="prev"></p>
-                    <p id="main-right"><img src="./image/main_slide_arrow_next.png" alt="next"></p>
-                </div> -->
-
                 <div id="left">
                     <img src="./image/main_slide_arrow_prev.png" alt="prev">
                 </div>
@@ -499,8 +496,8 @@
                     
                     <h2>스프DJ플레이</h2>
             
-                    <div class="djplay_1">
-                        <div class="order_1">
+                    <div id="djplay" class="djplay_1">
+                        <div id="order_1" class="menu">
                             <div class="crown_1">
                                 <img src="./image/magazine_1.png" alt="왕관">
                                 <p>1</p>
@@ -515,75 +512,77 @@
                                 <p><img src="./image/arrow.png" alt="화살표">112</p>
                             </div>
                         </div><!--order_1-->
-        
-                        <div class="profile">
-                            <div class="story">
-                                <p><strong>한마디</strong>스프레드 최고DJ 스프들의 취향저격 앨범보유</p>
-                            </div><!--story-->
-        
-                            <div class="follow">
-                                <p><strong>팔로우</strong> 3,500명</p>
-                                <p><strong>지난순위</strong> <span>1</span>위</p>
-                                <p><strong>보유앨범</strong> 70개</p>
-        
-                                <div class="hashtag">
-                                    <p>#K-POP</p>
-                                </div>
-                            </div><!--follow-->
-        
-                            <div class="album_name">
-                                <p>발라드</p>
-                                <p>K-POP</p>
-                                <P>인디</P>
-                            </div><!--album-->
-        
-                            <div class="album_bar">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-        
-                            <div class="album">
-                                <div class="album_jacket_1_1">
-                                    <div class="album_jacket">
-                                        <img src="./image/album_jacket_5.png" alt="앨범자켓5">
+
+                        <div id="firstprofile" class="profile-display">
+                            <div class="profile">
+                                <div class="story">
+                                    <p><strong>한마디</strong>스프레드 최고DJ 스프들의 취향저격 앨범보유</p>
+                                </div><!--story-->
+            
+                                <div class="follow">
+                                    <p><strong>팔로우</strong> 3,500명</p>
+                                    <p><strong>지난순위</strong> <span>1</span>위</p>
+                                    <p><strong>보유앨범</strong> 70개</p>
+            
+                                    <div class="hashtag">
+                                        <p>#K-POP</p>
                                     </div>
-                                    
-                                    <div class="album_title">
-                                        <p>밤하늘의 별</p>
-                                        <p><img src="./image/free-icon-font-heart-3916579.svg" alt="하트">8,406 ｜ 28곡</p>
-                                    </div>
+                                </div><!--follow-->
+            
+                                <div class="album_name">
+                                    <p>발라드</p>
+                                    <p>K-POP</p>
+                                    <P>인디</P>
+                                </div><!--album-->
+            
+                                <div class="album_bar">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
                                 </div>
             
-                                <div class="album_jacket_1_2">
-                                    <div class="album_jacket">
-                                        <img src="./image/album_jacket_14.png" alt="앨범자켓14">
+                                <div class="album">
+                                    <div class="album_jacket_1_1">
+                                        <div class="album_jacket">
+                                            <img src="./image/album_jacket_5.png" alt="앨범자켓5">
+                                        </div>
+                                        
+                                        <div class="album_title">
+                                            <p>밤하늘의 별</p>
+                                            <p><img src="./image/free-icon-font-heart-3916579.svg" alt="하트">8,406 ｜ 28곡</p>
+                                        </div>
                                     </div>
-            
-                                    <div class="album_title">
-                                        <p>global star</p>
-                                        <p><img src="./image/free-icon-font-heart-3916579.svg" alt="하트">5,452 ｜ 15곡</p>
+                
+                                    <div class="album_jacket_1_2">
+                                        <div class="album_jacket">
+                                            <img src="./image/album_jacket_14.png" alt="앨범자켓14">
+                                        </div>
+                
+                                        <div class="album_title">
+                                            <p>global star</p>
+                                            <p><img src="./image/free-icon-font-heart-3916579.svg" alt="하트">5,452 ｜ 15곡</p>
+                                        </div>
                                     </div>
-                                </div>
-            
-                                <div class="album_jacket_1_3">
-                                    <div class="album_jacket">
-                                        <img src="./image/album_jacket_18.png" alt="앨범자켓18">
-                                    </div>   
-                                    
-                                    <div class="album_title">
-                                        <p>여유로운 오후</p>
-                                        <p><img src="./image/free-icon-font-heart-3916579.svg" alt="하트">1,879 ｜ 8곡</p>
+                
+                                    <div class="album_jacket_1_3">
+                                        <div class="album_jacket">
+                                            <img src="./image/album_jacket_18.png" alt="앨범자켓18">
+                                        </div>   
+                                        
+                                        <div class="album_title">
+                                            <p>여유로운 오후</p>
+                                            <p><img src="./image/free-icon-font-heart-3916579.svg" alt="하트">1,879 ｜ 8곡</p>
+                                        </div>
                                     </div>
-                                </div>
-                            </div><!--album-->
-                        </div><!--profile-->
+                                </div><!--album-->
+                            </div><!--profile-->
+                        </div><!--profile-block-->
                     </div><!--djplay_1-->
         
         
         
-                    <div class="djplay_2">
-                        <div class="order_2">
+                    <div id="djplay" class="djplay_2">
+                        <div id="order_2" class="menu">
                             <div class="crown_2">
                                 <img src="./image/magazine_2.png" alt="왕관">
                                 <p>2</p>
@@ -598,76 +597,78 @@
                                 <p><img src="./image/arrow.png" alt="화살표">75</p>
                             </div>
                         </div><!--order_2-->
-        
-                        <div class="profile">
-                            <div class="story">
-                                <p><strong>한마디</strong>감성적인 음악은 갬성플레이DJ</p>
-                            </div><!--story-->
-        
-                            <div class="follow">
-                                <p><strong>팔로우</strong> 2,540명</p>
-                                <p><strong>지난순위</strong> 2위</p>
-                                <p><strong>보유앨범</strong> 42개</p>
-        
-                                <div class="hashtag">
-                                    <p>#감성</p>
-                                    <p>#재즈</p>
-                                </div>
-                            </div><!--follow-->
-        
-                            <div class="album_name">
-                                <p>재즈</p>
-                                <p>발라드</p>
-                                <P>팝</P>
-                            </div><!--album-->
-        
-                            <div class="album_bar">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-        
-                            <div class="album">
-                                <div class="album_jacket_2_1">
-                                    <div class="album_jacket">
-                                        <img src="./image/album_jacket_17.png" alt="앨범자켓17">
+                        
+                        <div class="profile-display">
+                            <div class="profile">
+                                <div class="story">
+                                    <p><strong>한마디</strong>감성적인 음악은 갬성플레이DJ</p>
+                                </div><!--story-->
+            
+                                <div class="follow">
+                                    <p><strong>팔로우</strong> 2,540명</p>
+                                    <p><strong>지난순위</strong> 2위</p>
+                                    <p><strong>보유앨범</strong> 42개</p>
+            
+                                    <div class="hashtag">
+                                        <p>#감성</p>
+                                        <p>#재즈</p>
                                     </div>
-                                    
-                                    <div class="album_title">
-                                        <p>cloudy day</p>
-                                        <p><img src="./image/free-icon-font-heart-3916579.svg" alt="하트">8,406 ｜ 28곡</p>
-                                    </div>
+                                </div><!--follow-->
+            
+                                <div class="album_name">
+                                    <p>재즈</p>
+                                    <p>발라드</p>
+                                    <P>팝</P>
+                                </div><!--album-->
+            
+                                <div class="album_bar">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
                                 </div>
             
-                                <div class="album_jacket_2_2">
-                                    <div class="album_jacket">
-                                        <img src="./image/album_jacket_8.png" alt="앨범자켓8">
+                                <div class="album">
+                                    <div class="album_jacket_2_1">
+                                        <div class="album_jacket">
+                                            <img src="./image/album_jacket_17.png" alt="앨범자켓17">
+                                        </div>
+                                        
+                                        <div class="album_title">
+                                            <p>cloudy day</p>
+                                            <p><img src="./image/free-icon-font-heart-3916579.svg" alt="하트">8,406 ｜ 28곡</p>
+                                        </div>
                                     </div>
-            
-                                    <div class="album_title">
-                                        <p>mood</p>
-                                        <p><img src="./image/free-icon-font-heart-3916579.svg" alt="하트">5,452 ｜ 15곡</p>
+                
+                                    <div class="album_jacket_2_2">
+                                        <div class="album_jacket">
+                                            <img src="./image/album_jacket_8.png" alt="앨범자켓8">
+                                        </div>
+                
+                                        <div class="album_title">
+                                            <p>mood</p>
+                                            <p><img src="./image/free-icon-font-heart-3916579.svg" alt="하트">5,452 ｜ 15곡</p>
+                                        </div>
                                     </div>
-                                </div>
-            
-                                <div class="album_jacket_2_3">
-                                    <div class="album_jacket">
-                                        <img src="./image/album_jacket_9.png" alt="앨범자켓9">
-                                    </div>   
-                                    
-                                    <div class="album_title">
-                                        <p>늦은 밤 금요일</p>
-                                        <p><img src="./image/free-icon-font-heart-3916579.svg" alt="하트">1,879 ｜ 8곡</p>
+                
+                                    <div class="album_jacket_2_3">
+                                        <div class="album_jacket">
+                                            <img src="./image/album_jacket_9.png" alt="앨범자켓9">
+                                        </div>   
+                                        
+                                        <div class="album_title">
+                                            <p>늦은 밤 금요일</p>
+                                            <p><img src="./image/free-icon-font-heart-3916579.svg" alt="하트">1,879 ｜ 8곡</p>
+                                        </div>
                                     </div>
-                                </div>
-                            </div><!--album-->
-                        </div><!--profile-->
+                                </div><!--album-->
+                            </div><!--profile-->
+                        </div><!--profile-none-->
                     </div><!--djplay_2-->
         
         
         
-                    <div class="djplay_3">
-                        <div class="order_3">
+                    <div id="djplay" class="djplay_3">
+                        <div id="order_3" class="menu">
                             <div class="crown_3">
                                 <img src="./image/magazine_3.png" alt="왕관">
                                 <p>3</p>
@@ -681,76 +682,78 @@
                             <div class="surge">
                                 <p><img src="./image/arrow.png" alt="화살표">20</p>
                             </div>
-                        </div><!--order_1-->
-        
-                        <div class="profile">
-                            <div class="story">
-                                <p><strong>한마디</strong>신나는 음악은 여기로 모여라 퐁당스프!</p>
-                            </div><!--story-->
-        
-                            <div class="follow">
-                                <p><strong>팔로우</strong> 1,358명</p>
-                                <p><strong>지난순위</strong> 4위</p>
-                                <p><strong>보유앨범</strong> 35개</p>
-        
-                                <div class="hashtag">
-                                    <p>#신나는</p>
-                                </div>
-                            </div><!--follow-->
-        
-                            <div class="album_name">
-                                <p>힙합</p>
-                                <p>댄스</p>
-                                <P>알앤비</P>
-                            </div><!--album-->
-        
-                            <div class="album_bar">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-        
-                            <div class="album">
-                                <div class="album_jacket_3_1">
-                                    <div class="album_jacket">
-                                        <img src="./image/album_jacket_9.png" alt="앨범자켓9">
+                        </div><!--order_3-->
+                        
+                        <div class="profile-display">
+                            <div class="profile">
+                                <div class="story">
+                                    <p><strong>한마디</strong>신나는 음악은 여기로 모여라 퐁당스프!</p>
+                                </div><!--story-->
+            
+                                <div class="follow">
+                                    <p><strong>팔로우</strong> 1,358명</p>
+                                    <p><strong>지난순위</strong> 4위</p>
+                                    <p><strong>보유앨범</strong> 35개</p>
+            
+                                    <div class="hashtag">
+                                        <p>#신나는</p>
                                     </div>
-                                    
-                                    <div class="album_title">
-                                        <p>Hip hop</p>
-                                        <p><img src="./image/free-icon-font-heart-3916579.svg" alt="하트">8,406 ｜ 28곡</p>
-                                    </div>
+                                </div><!--follow-->
+            
+                                <div class="album_name">
+                                    <p>힙합</p>
+                                    <p>댄스</p>
+                                    <P>알앤비</P>
+                                </div><!--album-->
+            
+                                <div class="album_bar">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
                                 </div>
             
-                                <div class="album_jacket_3_2">
-                                    <div class="album_jacket">
-                                        <img src="./image/album_jacket_15.png" alt="앨범자켓15">
+                                <div class="album">
+                                    <div class="album_jacket_3_1">
+                                        <div class="album_jacket">
+                                            <img src="./image/album_jacket_9.png" alt="앨범자켓9">
+                                        </div>
+                                        
+                                        <div class="album_title">
+                                            <p>Hip hop</p>
+                                            <p><img src="./image/free-icon-font-heart-3916579.svg" alt="하트">8,406 ｜ 28곡</p>
+                                        </div>
                                     </div>
-            
-                                    <div class="album_title">
-                                        <p>신나는 날</p>
-                                        <p><img src="./image/free-icon-font-heart-3916579.svg" alt="하트">5,452 ｜ 15곡</p>
+                
+                                    <div class="album_jacket_3_2">
+                                        <div class="album_jacket">
+                                            <img src="./image/album_jacket_15.png" alt="앨범자켓15">
+                                        </div>
+                
+                                        <div class="album_title">
+                                            <p>신나는 날</p>
+                                            <p><img src="./image/free-icon-font-heart-3916579.svg" alt="하트">5,452 ｜ 15곡</p>
+                                        </div>
                                     </div>
-                                </div>
-            
-                                <div class="album_jacket_3_3">
-                                    <div class="album_jacket">
-                                        <img src="./image/album_jacket_12.png" alt="앨범자켓12">
-                                    </div>   
-                                    
-                                    <div class="album_title">
-                                        <p>빛나는 밤</p>
-                                        <p><img src="./image/free-icon-font-heart-3916579.svg" alt="하트">1,879 ｜ 8곡</p>
+                
+                                    <div class="album_jacket_3_3">
+                                        <div class="album_jacket">
+                                            <img src="./image/album_jacket_12.png" alt="앨범자켓12">
+                                        </div>   
+                                        
+                                        <div class="album_title">
+                                            <p>빛나는 밤</p>
+                                            <p><img src="./image/free-icon-font-heart-3916579.svg" alt="하트">1,879 ｜ 8곡</p>
+                                        </div>
                                     </div>
-                                </div>
-                            </div><!--album-->
-                        </div><!--profile-->
+                                </div><!--album-->
+                            </div><!--profile-->
+                        </div><!--profile-none-->
                     </div><!--djplay_3-->
         
         
         
-                    <div class="djplay_4">
-                        <div class="order_4">
+                    <div id="djplay" class="djplay_4">
+                        <div id="order_4" class="menu">
                             <div class="crown_4">
                                 <p>4</p>
                             </div>
@@ -763,140 +766,144 @@
                             <div class="surge">
                                 <p>-</p>
                             </div>
-                        </div><!--order_1-->
-        
-                        <div class="profile">
-                            <div class="story">
-                                <p><strong>한마디</strong>포도당보다 달달한 스프 노래 추천</p>
-                            </div><!--story-->
-        
-                            <div class="follow">
-                                <p><strong>팔로우</strong> 768명</p>
-                                <p><strong>지난순위</strong> 4위</p>
-                                <p><strong>보유앨범</strong> 28개</p>
-        
-                                <div class="hashtag">
-                                    <p>#로맨스</p>
-                                </div>
-                            </div><!--follow-->
-        
-                            <div class="album_name">
-                                <p>발라드</p>
-                                <p>가요</p>
-                                <P>팝</P>
-                            </div><!--album-->
-        
-                            <div class="album_bar">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-        
-                            <div class="album">
-                                <div class="album_jacket_4_1">
-                                    <div class="album_jacket">
-                                        <img src="./image/album_jacket_11.png" alt="앨범자켓11">
+                        </div><!--order_4-->
+                        
+                        <div class="profile-display">
+                            <div class="profile">
+                                <div class="story">
+                                    <p><strong>한마디</strong>포도당보다 달달한 스프 노래 추천</p>
+                                </div><!--story-->
+            
+                                <div class="follow">
+                                    <p><strong>팔로우</strong> 768명</p>
+                                    <p><strong>지난순위</strong> 4위</p>
+                                    <p><strong>보유앨범</strong> 28개</p>
+            
+                                    <div class="hashtag">
+                                        <p>#로맨스</p>
                                     </div>
-                                    
-                                    <div class="album_title">
-                                        <p>감성적인 음악</p>
-                                        <p><img src="./image/free-icon-font-heart-3916579.svg" alt="하트">8,406 ｜ 28곡</p>
-                                    </div>
+                                </div><!--follow-->
+            
+                                <div class="album_name">
+                                    <p>발라드</p>
+                                    <p>가요</p>
+                                    <P>팝</P>
+                                </div><!--album-->
+            
+                                <div class="album_bar">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
                                 </div>
             
-                                <div class="album_jacket_4_2">
-                                    <div class="album_jacket">
-                                        <img src="./image/album_jacket_6.png" alt="앨범자켓6">
+                                <div class="album">
+                                    <div class="album_jacket_4_1">
+                                        <div class="album_jacket">
+                                            <img src="./image/album_jacket_11.png" alt="앨범자켓11">
+                                        </div>
+                                        
+                                        <div class="album_title">
+                                            <p>감성적인 음악</p>
+                                            <p><img src="./image/free-icon-font-heart-3916579.svg" alt="하트">8,406 ｜ 28곡</p>
+                                        </div>
                                     </div>
-            
-                                    <div class="album_title">
-                                        <p>노을지는 하늘</p>
-                                        <p><img src="./image/free-icon-font-heart-3916579.svg" alt="하트">5,452 ｜ 15곡</p>
+                
+                                    <div class="album_jacket_4_2">
+                                        <div class="album_jacket">
+                                            <img src="./image/album_jacket_6.png" alt="앨범자켓6">
+                                        </div>
+                
+                                        <div class="album_title">
+                                            <p>노을지는 하늘</p>
+                                            <p><img src="./image/free-icon-font-heart-3916579.svg" alt="하트">5,452 ｜ 15곡</p>
+                                        </div>
                                     </div>
-                                </div>
-            
-                                <div class="album_jacket_4_3">
-                                    <div class="album_jacket">
-                                        <img src="./image/album_jacket_13.png" alt="앨범자켓13">
-                                    </div>   
-                                    
-                                    <div class="album_title">
-                                        <p>우리의 블루스</p>
-                                        <p><img src="./image/free-icon-font-heart-3916579.svg" alt="하트">1,879 ｜ 8곡</p>
+                
+                                    <div class="album_jacket_4_3">
+                                        <div class="album_jacket">
+                                            <img src="./image/album_jacket_13.png" alt="앨범자켓13">
+                                        </div>   
+                                        
+                                        <div class="album_title">
+                                            <p>우리의 블루스</p>
+                                            <p><img src="./image/free-icon-font-heart-3916579.svg" alt="하트">1,879 ｜ 8곡</p>
+                                        </div>
                                     </div>
-                                </div>
-                            </div><!--album-->
-                        </div><!--profile-->
+                                </div><!--album-->
+                            </div><!--profile-->
+                        </div><!--profile-none-->
                     </div><!--djplay_4-->
         
         
         
-                    <div class="djplay_5">
-        
-                        <div class="profile">
-                            <div class="story">
-                                <p><strong>한마디</strong>스프레드를 좋아하는 사람들 스좋사</p>
-                            </div><!--story-->
-        
-                            <div class="follow">
-                                <p><strong>팔로우</strong> 542명</p>
-                                <p><strong>지난순위</strong> 5위</p>
-                                <p><strong>보유앨범</strong> 22개</p>
-        
-                                <div class="hashtag">
-                                    <p>#신나는</p>
-                                </div>
-                            </div><!--follow-->
-        
-                            <div class="album_name">
-                                <p>트로트</p>
-                                <p>클래식</p>
-                                <P>재즈</P>
-                            </div><!--album-->
-        
-                            <div class="album_bar">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-        
-                            <div class="album">
-                                <div class="album_jacket_5_1">
-                                    <div class="album_jacket">
-                                        <img src="./image/album_jacket_10.png" alt="앨범자켓10">
+                    <div id="djplay" class="djplay_5">
+                        
+                        <div id="lastprofile" class="profile-display">
+                            <div class="profile">
+                                <div class="story">
+                                    <p><strong>한마디</strong>스프레드를 좋아하는 사람들 스좋사</p>
+                                </div><!--story-->
+            
+                                <div class="follow">
+                                    <p><strong>팔로우</strong> 542명</p>
+                                    <p><strong>지난순위</strong> 5위</p>
+                                    <p><strong>보유앨범</strong> 22개</p>
+            
+                                    <div class="hashtag">
+                                        <p>#신나는</p>
                                     </div>
-                                    
-                                    <div class="album_title">
-                                        <p>레트로</p>
-                                        <p><img src="./image/free-icon-font-heart-3916579.svg" alt="하트">8,406 ｜ 28곡</p>
-                                    </div>
+                                </div><!--follow-->
+            
+                                <div class="album_name">
+                                    <p>트로트</p>
+                                    <p>클래식</p>
+                                    <P>재즈</P>
+                                </div><!--album-->
+            
+                                <div class="album_bar">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
                                 </div>
             
-                                <div class="album_jacket_5_2">
-                                    <div class="album_jacket">
-                                        <img src="./image/album_jacket_17.png" alt="앨범자켓17">
+                                <div class="album">
+                                    <div class="album_jacket_5_1">
+                                        <div class="album_jacket">
+                                            <img src="./image/album_jacket_10.png" alt="앨범자켓10">
+                                        </div>
+                                        
+                                        <div class="album_title">
+                                            <p>레트로</p>
+                                            <p><img src="./image/free-icon-font-heart-3916579.svg" alt="하트">8,406 ｜ 28곡</p>
+                                        </div>
                                     </div>
-            
-                                    <div class="album_title">
-                                        <p>카페에서</p>
-                                        <p><img src="./image/free-icon-font-heart-3916579.svg" alt="하트">5,452 ｜ 15곡</p>
+                
+                                    <div class="album_jacket_5_2">
+                                        <div class="album_jacket">
+                                            <img src="./image/album_jacket_17.png" alt="앨범자켓17">
+                                        </div>
+                
+                                        <div class="album_title">
+                                            <p>카페에서</p>
+                                            <p><img src="./image/free-icon-font-heart-3916579.svg" alt="하트">5,452 ｜ 15곡</p>
+                                        </div>
                                     </div>
-                                </div>
-            
-                                <div class="album_jacket_5_3">
-                                    <div class="album_jacket">
-                                        <img src="./image/album_jacket_12.png" alt="앨범자켓12">
-                                    </div>   
-                                    
-                                    <div class="album_title">
-                                        <p>술 한잔 하면서</p>
-                                        <p><img src="./image/free-icon-font-heart-3916579.svg" alt="하트">1,879 ｜ 8곡</p>
+                
+                                    <div class="album_jacket_5_3">
+                                        <div class="album_jacket">
+                                            <img src="./image/album_jacket_12.png" alt="앨범자켓12">
+                                        </div>   
+                                        
+                                        <div class="album_title">
+                                            <p>술 한잔 하면서</p>
+                                            <p><img src="./image/free-icon-font-heart-3916579.svg" alt="하트">1,879 ｜ 8곡</p>
+                                        </div>
                                     </div>
-                                </div>
-                            </div><!--album-->
-                        </div><!--profile-->
+                                </div><!--album-->
+                            </div><!--profile-->
+                        </div><!--profile-none-->
         
-                        <div class="order_5">
+                        <div id="order_5" class="menu">
                             <div class="crown_5">
                                 <p>5</p>
                             </div>
