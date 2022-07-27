@@ -19,22 +19,11 @@
     border: 1px solid #7b8892;
     width: 376px; height: 50px;
     background-color: $back_color;
+    cursor: pointer;
 }
 
 @mixin profile-flex() {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0 32px;
-    border: 1px solid #7b8892;
-    border-top: 0;
-    border-bottom: 0;
-    width: 376px; height: 372px;
-    background-color: $back_color;
-}
-
-@mixin profile-none() {
-    display: none;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 32px;

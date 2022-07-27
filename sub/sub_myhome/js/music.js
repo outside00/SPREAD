@@ -1,3 +1,36 @@
+//뮤직플레이어
+
+//변수 선언
+$this = this, $player = {}, $btnPlayPause = {}, $btnNext = {},
+$infoCurrent = {}, $infoTotal = {}, indexPlaying = 0,
+$progressBar = {}, $vol = {}, $msg = {}, playerStatus = '';
+$this.append(htmlOutput);
+
+//재생, 일시중지
+$("#play").playPause = function(e){
+    if ($("#play").paused === true){
+        $("#play").play();
+        $btnPlay.trigger('focus');
+        setEventStatusChange('playing');
+
+    }else if ($("#play").paused === false){
+        $("#play").pause();
+        $btnPause.trigger('focus');
+        setEventStatusChange('paused');
+    }
+}
+
+//다음 노래
+function nextSong(){
+    if (indexPlaying < settings.songs.length - 1){
+        indexPlaying++;
+    }else{
+        indexPlaying = 0;
+    }
+}
+
+
+
 // 마이 뮤직 15 곡 선택 시 하위 체크박스 선택
 $(function() {
     var chkList = $("input[name = music]");
